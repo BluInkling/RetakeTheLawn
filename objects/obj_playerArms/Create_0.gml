@@ -16,5 +16,5 @@ armAngle = 0
 diffAngle=0
 handAngle = 0
 handsLength = 18
-handX = 0
-handY = 0
+handsX = 0
+handsY = 0

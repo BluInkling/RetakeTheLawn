@@ -49,7 +49,8 @@ handAngle = armAngle
 image_angle = armAngle
 draw_self()
 
-draw_sprite_ext(spr_peashooterIdle,0,handsX,handsY,1,obj_player.xDir,handAngle,c_white,1)
+
+//draw_sprite_ext(spr_peashooterIdle,0,handsX,handsY,1,obj_player.xDir,handAngle,c_white,1)
 draw_sprite_ext(spr_daveHandR,0,handsX,handsY,1,obj_player.xDir,handAngle,c_white,1)
 draw_sprite_ext(spr_daveHandL,0,handsX,handsY,1,obj_player.xDir,handAngle,c_white,1)
 

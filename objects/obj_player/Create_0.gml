@@ -11,7 +11,10 @@ moveSpd = 1.5
 
 xDir = 1 //for sprite flipping
 
+activeWeapon = obj_primary
+
 instance_create_depth(x,y,-10,obj_playerArms)
+
 
 //States
 moving = false
@@ -19,5 +22,6 @@ moving = false
 //Animations
 animIdle = spr_daveIdle
 animRun = spr_daveRun
+
 
 

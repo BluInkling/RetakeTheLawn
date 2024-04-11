@@ -44,7 +44,7 @@
     {"id":{"name":"spr_peashooterShoot","path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},},
     {"id":{"name":"spr_zombieRun","path":"sprites/spr_zombieRun/spr_zombieRun.yy",},},
     {"id":{"name":"spr_daveArm","path":"sprites/spr_daveArm/spr_daveArm.yy",},},
-    {"id":{"name":"obj_peashooter","path":"objects/obj_peashooter/obj_peashooter.yy",},},
+    {"id":{"name":"obj_primary","path":"objects/obj_primary/obj_primary.yy",},},
     {"id":{"name":"spr_daveHandR","path":"sprites/spr_daveHandR/spr_daveHandR.yy",},},
     {"id":{"name":"spr_daveIdle","path":"sprites/spr_daveIdle/spr_daveIdle.yy",},},
     {"id":{"name":"spr_peashooterReload","path":"sprites/spr_peashooterReload/spr_peashooterReload.yy",},},
