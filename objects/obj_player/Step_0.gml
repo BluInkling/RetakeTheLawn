@@ -8,11 +8,13 @@ yInput = keyboard_check(ord("S"))-keyboard_check(ord("W"))
 xVel = xInput*moveSpd+forceX
 yVel = yInput*moveSpd+forceY
 
+//Normalizing Movement
 if (abs(xVel)+abs(yVel)> moveSpd){
 	xVel = xVel/sqrt(2)
 	yVel = yVel/sqrt(2)
 }
 
+//Collisions
 if !place_meeting(x+xVel,y,obj_wall){
 	x+=xVel
 }
