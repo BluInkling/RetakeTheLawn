@@ -18,10 +18,10 @@
     {"name":"primary","order":1,"path":"folders/Sprites/plants/primary.yy",},
     {"name":"peashooter","order":1,"path":"folders/Sprites/plants/primary/peashooter.yy",},
     {"name":"player","order":1,"path":"folders/Sprites/player.yy",},
+    {"name":"projectiles","order":5,"path":"folders/Sprites/projectiles.yy",},
     {"name":"zombies","order":2,"path":"folders/Sprites/zombies.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"projectiles","order":5,"path":"folders/Sprites/projectiles.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_peashooterShoot","order":1,"path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},
