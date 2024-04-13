@@ -1,14 +1,14 @@
 {
   "FolderOrderSettings": [
+    {"name":"fumeshroom","order":5,"path":"folders/Sprites/plants/primary/fumeshroom.yy",},
+    {"name":"puffshroom","order":4,"path":"folders/Sprites/plants/primary/puffshroom.yy",},
     {"name":"repeater","order":1,"path":"folders/Sprites/plants/primary/repeater.yy",},
-    {"name":"tiles","order":1,"path":"folders/Sprites/tiles.yy",},
     {"name":"snowpea","order":2,"path":"folders/Sprites/plants/primary/snowpea.yy",},
     {"name":"threepeater","order":3,"path":"folders/Sprites/plants/primary/threepeater.yy",},
-    {"name":"puffshroom","order":4,"path":"folders/Sprites/plants/primary/puffshroom.yy",},
-    {"name":"fumeshroom","order":5,"path":"folders/Sprites/plants/primary/fumeshroom.yy",},
     {"name":"secondary","order":1,"path":"folders/Sprites/plants/secondary.yy",},
     {"name":"potatomine","order":1,"path":"folders/Sprites/plants/secondary/potatomine.yy",},
     {"name":"torchwood","order":2,"path":"folders/Sprites/plants/secondary/torchwood.yy",},
+    {"name":"tiles","order":1,"path":"folders/Sprites/tiles.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_peashooterShoot","order":1,"path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},

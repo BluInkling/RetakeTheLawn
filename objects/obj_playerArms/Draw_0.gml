@@ -63,4 +63,3 @@ draw_sprite_ext(spr_daveHandL,0,handsX,handsY,1,obj_player.xDir,handsAngle,c_whi
 
 
 
-
