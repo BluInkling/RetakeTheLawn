@@ -1,7 +1,23 @@
 
 /// @description Insert description here
 // You can write your code in this editor
-#region Complex Turning Attempts
+#region Complex Turning
+if aimAngle > 0 && aimAngle < 180{
+	armAngle = round(aimAngle/10)*10 //So the visual only increments in angles of 10
+	handsX = x+lengthdir_x(handsDistance,armAngle)
+	handsY = y+lengthdir_y(handsDistance,armAngle)
+	handsAngle = armAngle
+}else{
+	if aimAngle > 270{
+		armAngle = 0
+		handsY = y+lengthdir_y(handsDistance,armAngle)+lerp(0,8,(-angle_difference(aimAngle,0))/90)
+	}else{
+		armAngle = 180
+		handsY = y+lengthdir_y(handsDistance,armAngle)+lerp(0,8,(angle_difference(aimAngle,180))/90)
+	}
+	handsX = x+lengthdir_x(handsDistance,armAngle)
+	handsAngle = round(aimAngle/10)*10
+}
 /*
 armAngle = round(aimAngle/10)*10 //So the visual only increments in angles of 10
 
@@ -36,10 +52,6 @@ handAngle = round(aimAngle/10)*10
 #endregion
 
 image_yscale = obj_player.xDir
-armAngle = round(aimAngle/10)*10 //So the visual only increments in angles of 10
-handsX = x+lengthdir_x(handsDistance,armAngle)
-handsY = y+lengthdir_y(handsDistance,armAngle)
-handsAngle = armAngle
 image_angle = armAngle
 
 draw_self()
