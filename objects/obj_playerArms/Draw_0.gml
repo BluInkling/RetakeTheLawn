@@ -2,7 +2,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 #region Complex Turning
-if aimAngle > 0 && aimAngle < 180{
+if aimAngle > -1 && aimAngle < 180{
 	armAngle = round(aimAngle/10)*10 //So the visual only increments in angles of 10
 	handsX = x+lengthdir_x(handsDistance,armAngle)
 	handsY = y+lengthdir_y(handsDistance,armAngle)
