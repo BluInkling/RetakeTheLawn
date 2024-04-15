@@ -2,11 +2,11 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function PlayerState_Free(){
 
-if (!instance_exists(oMainWeapon)){
-	instance_create_layer(x,y,"Gun",oMainWeapon)	
+if (!instance_exists(obj_MainWeapon)){
+	instance_create_layer(x,y,"Gun",obj_MainWeapon)	
 }
-if (!instance_exists(oSubWeapon)){
-	instance_create_layer(x,y,"Gun",oSubWeapon)	
+if (!instance_exists(obj_SubWeapon)){
+	instance_create_layer(x,y,"Gun",obj_SubWeapon)	
 }
 
 //calculate movement

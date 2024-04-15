@@ -7,7 +7,7 @@ yInput = 0
 
 xVel = 0
 yVel = 0
-moveSpd = 1.25
+moveSpd = 1.5
 
 xDir = 1 //for sprite flipping
 
@@ -20,3 +20,10 @@ moving = false
 //Animations
 animIdle = spr_daveIdle
 animRun = spr_daveRun
+
+hascontrol = true;
+
+instance_create_layer(0,0,"Player",obj_Controller)
+instance_create_layer(0,0,"Player",obj_MainWeapon)
+instance_create_layer(0,0,"Player",obj_SubWeapon)
+
