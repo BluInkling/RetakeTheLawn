@@ -1,6 +1,6 @@
 
 
-if (oController.mainweapon == "peashooter"){
+if (obj_Controller.mainweapon == "peashooter"){
 	mainsprite = sPeashooter
 	projsprite = sPea
 	movespeed = 1
@@ -10,7 +10,7 @@ if (oController.mainweapon == "peashooter"){
 	damage = 2
 }
 
-if (oController.mainweapon == "repeater"){
+if (obj_Controller.mainweapon == "repeater"){
 	mainsprite = sRepeater
 	projsprite = sPea
 	movespeed = 1
@@ -19,7 +19,6 @@ if (oController.mainweapon == "repeater"){
 	clip = 8
 	damage = 2
 }
-
 
 
 

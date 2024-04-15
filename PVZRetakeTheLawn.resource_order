@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
@@ -19,20 +20,37 @@
     {"name":"bullets","order":2,"path":"folders/Scripts/bullets.yy",},
   ],
   "ResourceOrderSettings": [
+=======
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"spr_peashooterShoot","order":1,"path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},
+    {"name":"spr_zombieRun","order":1,"path":"sprites/spr_zombieRun/spr_zombieRun.yy",},
+    {"name":"spr_daveArm","order":2,"path":"sprites/spr_daveArm/spr_daveArm.yy",},
+    {"name":"obj_primary","order":6,"path":"objects/obj_primary/obj_primary.yy",},
+    {"name":"spr_daveHandR","order":4,"path":"sprites/spr_daveHandR/spr_daveHandR.yy",},
+    {"name":"spr_peashooterReload","order":2,"path":"sprites/spr_peashooterReload/spr_peashooterReload.yy",},
+    {"name":"spr_daveHandL","order":3,"path":"sprites/spr_daveHandL/spr_daveHandL.yy",},
+    {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"spr_daveRun","order":1,"path":"sprites/spr_daveRun/spr_daveRun.yy",},
+    {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"obj_playerArms","order":4,"path":"objects/obj_playerArms/obj_playerArms.yy",},
+    {"name":"obj_camera","order":5,"path":"objects/obj_camera/obj_camera.yy",},
+>>>>>>> Stashed changes
     {"name":"sfireeffect","order":12,"path":"sprites/sfireeffect/sfireeffect.yy",},
     {"name":"sEnemy","order":3,"path":"sprites/sEnemy/sEnemy.yy",},
-    {"name":"oController","order":4,"path":"objects/oController/oController.yy",},
+    {"name":"obj_Controller","order":4,"path":"objects/obj_Controller/obj_Controller.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
     {"name":"sWall","order":4,"path":"sprites/sWall/sWall.yy",},
-    {"name":"oMainWeapon","order":2,"path":"objects/oMainWeapon/oMainWeapon.yy",},
+    {"name":"obj_MainWeapon","order":2,"path":"objects/obj_MainWeapon/obj_MainWeapon.yy",},
     {"name":"sTorchvood","order":7,"path":"sprites/sTorchvood/sTorchvood.yy",},
     {"name":"sFlamingPea","order":6,"path":"sprites/sFlamingPea/sFlamingPea.yy",},
+    {"name":"sExplosion","order":1,"path":"sprites/sExplosion/sExplosion.yy",},
     {"name":"sPeashooter","order":2,"path":"sprites/sPeashooter/sPeashooter.yy",},
     {"name":"sPlayer","order":1,"path":"sprites/sPlayer/sPlayer.yy",},
     {"name":"sPotatomin","order":11,"path":"sprites/sPotatomin/sPotatomin.yy",},
-    {"name":"oSubWeapon","order":6,"path":"objects/oSubWeapon/oSubWeapon.yy",},
+    {"name":"obj_SubWeapon","order":6,"path":"objects/obj_SubWeapon/obj_SubWeapon.yy",},
     {"name":"spocket","order":10,"path":"sprites/spocket/spocket.yy",},
-    {"name":"oProjectile","order":3,"path":"objects/oProjectile/oProjectile.yy",},
+    {"name":"obj_Projectile","order":3,"path":"objects/obj_Projectile/obj_Projectile.yy",},
     {"name":"sRepeater","order":5,"path":"sprites/sRepeater/sRepeater.yy",},
     {"name":"modernpacket","order":8,"path":"sprites/modernpacket/modernpacket.yy",},
     {"name":"oStats","order":5,"path":"objects/oStats/oStats.yy",},

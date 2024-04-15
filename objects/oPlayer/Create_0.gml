@@ -15,7 +15,7 @@ enum PLAYERSTATE
 	
 }
 
-instance_create_layer(0,0,"Player",oController)
+instance_create_layer(0,0,"Player",obj_Controller)
 instance_create_layer(0,0,"Player",oStats)
 
 
