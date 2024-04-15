@@ -6,6 +6,7 @@ followTarget = obj_player
 
 
 /* Removed because it clashes with the outline system
+*/
 //From https://www.reddit.com/r/gamemaker/comments/p4la1c/any_idea_how_to_get_this_effect_where_the_pixels/
 
 view = view_camera[0]
@@ -25,4 +26,3 @@ surface_resize(application_surface,view_width, view_height);// * window_scale
 //On room start
 view_enabled = true;
 view_visible[0] = true;
-*/

@@ -5,25 +5,30 @@ weaponstats = {
 		mainidlesprite : spr_peashooterIdle,
 		mainreloadsprite : spr_peashooterReload,
 		mainshootsprite : spr_peashooterShoot,
-		projsprite : sPea,
-		movespeed : 1,
-		firingspeed : 19,
-		accuracy : 3,
+		projsprite : spr_pea,
+		movespeed : 7,
+		accuracy : 7,
 		clip : 8,
-		damage : 2
+		damage : 2,
+		shootFrames : [1],
+		projOffsetX : 2,
+		projOffsetY : -5
+		
 	},
 	repeater : 
 	{
 		wepname: "repeater",
-		mainidlesprite : spr_peashooterIdle,
-		mainreloadsprite : spr_peashooterReload,
-		mainshootsprite : spr_peashooterShoot,
-		projsprite : sPea,
-		movespeed : 1,
-		firingspeed : 19,
-		accuracy : 3,
+		mainidlesprite : spr_repeaterIdle,
+		mainreloadsprite : spr_repeaterReload,
+		mainshootsprite : spr_repeaterShoot,
+		projsprite : spr_pea,
+		movespeed : 7,
+		accuracy : 7,
 		clip : 8,
-		damage : 2
+		damage : 2,
+		shootFrames : [1,2],
+		projOffsetX : 2,
+		projOffsetY : -5
 	},
 		
 }

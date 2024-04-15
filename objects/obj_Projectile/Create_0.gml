@@ -15,7 +15,8 @@ if type == "frozen"{
 }
 
 
-
+moveDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-main.accuracy,main.accuracy)
+moveSpd = main.movespeed
 
 
 

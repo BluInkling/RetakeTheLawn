@@ -1,7 +1,7 @@
 if(obj_player.hascontrol){
 
-x = obj_player.x;
-y = obj_player.y + 10;
+x = obj_playerArms.handsX + obj_player.xVel
+y = obj_playerArms.handsY + obj_player.yVel
 
 image_angle = point_direction(x,y,mouse_x,mouse_y);
 
@@ -10,38 +10,60 @@ if (image_angle > 90 and image_angle < 270){
 } else image_yscale = 1
 
 
-firingdelay -= 1;
 
-if (mouse_check_button(mb_left)) && (firingdelay < 0) && shootavailable{ //SHOOTING
-	
+
+if (mouse_check_button(mb_left)) && shootavailable && idle && !shooting{ //SHOOTING
+	idle = false
+	shooting = true
+	image_index = 0
 	//var _x = x + lengthdir_x(60, image_angle - 0);
 	//var _y = y + lengthdir_y(60, image_angle - 0);
 	//instance_create_layer(_x, _y, "Bullets", oEffect);
 	
 	//instance_create_layer(x,y,"Instances",oShell)
-	
-	ammo --;
-	
+	/*
 	if (main.wepname == "peashooter"){
 		//projtype = "normal"
 		show_debug_message("pea shoot")
-		ShootPea()
+		ShootProjectile()
 	}
-	
 	if (main.wepname == "repeater"){
 		//projtype = "normal"
 		show_debug_message("repeater shoot")
-		ShootPea()
+		ShootProjectile()
 		alarm_set(1,5)
 		
 	}
+	*/
+}
+if shooting{
+	var testFrame = image_index
+	if image_index < floor(image_index)+.1{
+		testFrame = floor(image_index)
+	}
+	if array_contains(main.shootFrames,testFrame){
+		ammo --;
+		ShootProjectile()
+	}
+	if image_index > image_number-1{
+		shooting = false
+		idle = true
+	}
 }
 
-
-
+	if keyboard_check_pressed(vk_shift){
+		ChangePrimary()
+	}
 }
 
-
+if reloading{
+	if image_index > image_number-1{
+		reloading = false
+		idle = true
+		ammo = clip
+		shootavailable = true
+	}
+}
 
 
 
