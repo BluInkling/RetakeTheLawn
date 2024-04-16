@@ -5,7 +5,7 @@ x += lengthdir_x(moveSpd,moveDir)
 y += lengthdir_y(moveSpd,moveDir)
 
 if place_meeting(x,y,obj_wall){
-	instance_destroy()
+	Destroy()
 }
 
 

@@ -12,7 +12,7 @@ shootavailable = true
 projtype = "normal" // flaming, ice, butter
 
 function ShootProjectile(){
-	var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle),"Bullets",obj_Projectile)
+	var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
 }
 
 //Shoot Offset
