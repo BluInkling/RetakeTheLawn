@@ -1,9 +1,9 @@
 {
   "FolderOrderSettings": [
+    {"name":"enemy states","order":5,"path":"folders/Scripts/enemy states.yy",},
+    {"name":"misc","order":3,"path":"folders/Sprites/misc.yy",},
     {"name":"misc","order":1,"path":"folders/Sprites/plants/misc.yy",},
     {"name":"ui","order":2,"path":"folders/Sprites/ui.yy",},
-    {"name":"misc","order":3,"path":"folders/Sprites/misc.yy",},
-    {"name":"enemy states","order":5,"path":"folders/Scripts/enemy states.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_frozenPea","order":1,"path":"sprites/spr_frozenPea/spr_frozenPea.yy",},
@@ -31,12 +31,12 @@
     {"name":"spr_repeaterShoot","order":1,"path":"sprites/spr_repeaterShoot/spr_repeaterShoot.yy",},
     {"name":"spr_puffshroomReload","order":5,"path":"sprites/spr_puffshroomReload/spr_puffshroomReload.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
-    {"name":"spr_graveDSpawn","order":4,"path":"sprites/spr_graveDSpawn/spr_graveDSpawn.yy",},
     {"name":"sDirt","order":15,"path":"sprites/sDirt/sDirt.yy",},
     {"name":"spr_zombieAttackHB","order":8,"path":"sprites/spr_zombieAttackHB/spr_zombieAttackHB.yy",},
     {"name":"spr_zombieBucket","order":3,"path":"sprites/spr_zombieBucket/spr_zombieBucket.yy",},
     {"name":"EnemyState_Wander","order":3,"path":"scripts/EnemyState_Wander/EnemyState_Wander.yy",},
     {"name":"spr_puffshroomSingleShoot","order":4,"path":"sprites/spr_puffshroomSingleShoot/spr_puffshroomSingleShoot.yy",},
+    {"name":"spr_graveDSpawn","order":4,"path":"sprites/spr_graveDSpawn/spr_graveDSpawn.yy",},
     {"name":"spr_daveRun","order":1,"path":"sprites/spr_daveRun/spr_daveRun.yy",},
     {"name":"spr_potatomineExplode","order":2,"path":"sprites/spr_potatomineExplode/spr_potatomineExplode.yy",},
     {"name":"spr_potatomineThrow","order":3,"path":"sprites/spr_potatomineThrow/spr_potatomineThrow.yy",},
