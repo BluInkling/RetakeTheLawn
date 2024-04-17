@@ -40,6 +40,7 @@ weaponstats = {
 		mainshootsprite : spr_snowpeaShoot,
 		projsprite : TESTspr_frozenpea,
 		movespeed : 7,
+		lifetime: 20,
 		accuracy : 7,
 		clip : 8,
 		damage : 2,
@@ -51,7 +52,7 @@ weaponstats = {
 }
 
 //mainweapon = "peashooter"
-mainweapon = weaponstats.repeater
+mainweapon = weaponstats.snowpea
 
 subweapon = "torchwood"
 //subweapon = "torchwood"
