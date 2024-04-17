@@ -2,6 +2,7 @@ main = obj_Controller.mainweapon
 
 type = obj_MainWeapon.projtype
 sprite_index = main.projsprite
+splat = main.projsplat
 //show_debug_message(type)
 //show_debug_message("projetciles type: " + string(type))
 
@@ -22,7 +23,14 @@ moveSpd = main.movespeed
 
 alarm[0] = main.lifetime
 
-function Destroy(){ //Will eventually add splat animation
+function Destroy(_other){ //Will eventually add splat animation
+	if !is_undefined(_other){
+		if _other.object_index == obj_wall{
+			var splatObj = instance_create_layer(x,y,"Bullets",obj_splat)
+			splatObj.sprite_index = splat
+			splatObj.image_angle = round(point_direction(_other.x,_other.y,x,y)/90)*90+180
+		}
+	}
 	instance_destroy()
 }
 

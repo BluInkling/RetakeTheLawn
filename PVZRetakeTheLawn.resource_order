@@ -1,14 +1,16 @@
 {
   "FolderOrderSettings": [
     {"name":"ui","order":2,"path":"folders/Sprites/ui.yy",},
+    {"name":"misc","order":1,"path":"folders/Sprites/plants/misc.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"spr_frozenpea","order":1,"path":"sprites/spr_frozenpea/spr_frozenpea.yy",},
+    {"name":"spr_frozenPea","order":1,"path":"sprites/spr_frozenPea/spr_frozenPea.yy",},
     {"name":"spr_peashooterShoot","order":1,"path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},
     {"name":"spr_zombieRun","order":1,"path":"sprites/spr_zombieRun/spr_zombieRun.yy",},
     {"name":"obj_outlineControl","order":7,"path":"objects/obj_outlineControl/obj_outlineControl.yy",},
     {"name":"spr_daveArm","order":2,"path":"sprites/spr_daveArm/spr_daveArm.yy",},
     {"name":"obj_primary","order":6,"path":"objects/obj_primary/obj_primary.yy",},
+    {"name":"spr_splatPea","order":2,"path":"sprites/spr_splatPea/spr_splatPea.yy",},
     {"name":"spr_fumeshroomReload","order":1,"path":"sprites/spr_fumeshroomReload/spr_fumeshroomReload.yy",},
     {"name":"spr_torchwoodActive","order":1,"path":"sprites/spr_torchwoodActive/spr_torchwoodActive.yy",},
     {"name":"spr_daveHandR","order":4,"path":"sprites/spr_daveHandR/spr_daveHandR.yy",},
@@ -16,6 +18,7 @@
     {"name":"outline_start_surface","order":4,"path":"scripts/outline_start_surface/outline_start_surface.yy",},
     {"name":"spr_peashooterReload","order":2,"path":"sprites/spr_peashooterReload/spr_peashooterReload.yy",},
     {"name":"spr_daveHandL","order":3,"path":"sprites/spr_daveHandL/spr_daveHandL.yy",},
+    {"name":"obj_splat","order":9,"path":"objects/obj_splat/obj_splat.yy",},
     {"name":"spr_potatomineEmerge","order":1,"path":"sprites/spr_potatomineEmerge/spr_potatomineEmerge.yy",},
     {"name":"spr_daveArmDown","order":5,"path":"sprites/spr_daveArmDown/spr_daveArmDown.yy",},
     {"name":"outline_start","order":3,"path":"scripts/outline_start/outline_start.yy",},
@@ -66,5 +69,6 @@
     {"name":"modernpacket","order":8,"path":"sprites/modernpacket/modernpacket.yy",},
     {"name":"oStats","order":5,"path":"objects/oStats/oStats.yy",},
     {"name":"sFrozenPea","order":9,"path":"sprites/sFrozenPea/sFrozenPea.yy",},
+    {"name":"spr_splatFrozenPea","order":3,"path":"sprites/spr_splatFrozenPea/spr_splatFrozenPea.yy",},
   ],
 }
