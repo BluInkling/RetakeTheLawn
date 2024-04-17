@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sgrave",
-    "path": "sprites/sgrave/sgrave.yy",
+    "name": "spr_gravestones",
+    "path": "sprites/spr_gravestones/spr_gravestones.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,3 +1,4 @@
+randomize()
 weaponstats = {
 	peashooter : 
 	{
