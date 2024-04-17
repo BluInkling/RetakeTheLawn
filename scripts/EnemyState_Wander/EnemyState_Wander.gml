@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyState_Wander(){
 	counter += 1;
+	show_debug_message("WANDER")
 	if !place_meeting(x+moveX,y,obj_wall){
 		x += moveX;
 	}
@@ -23,7 +24,8 @@ function EnemyState_Wander(){
 				counter = 0;
 		}
 	}
-	if(collision_circle(x,y,48,obj_player,false,false)){ //maybe if it senses a projectile itll start chasing the player too?
+	if (collision_circle(x,y,radius, obj_player,false,false) && !collision_line(x,y-16,obj_player.x,obj_player.y,obj_wall,false,false)){
+	//if(collision_circle(x,y,radius, obj_player,false,false) and !collision_line(x,y,obj_player.x,obj_player.y,obj_wall,false,false)){  //maybe if it senses a projectile itll start chasing the player too?
 		state = ENEMYSTATE.CHASE;
 	}
 	

@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyState_Idle(){
+	show_debug_message("IDLE")
 	counter += 1;
 	
 	//Transition triggers
@@ -12,9 +13,14 @@ function EnemyState_Idle(){
 		}
 	}
 	//I DID NTO KNOW COLLISON CIRCLE WAS A FUNCTION THIS IS AMAZING NEWS
-	if(collision_circle(x,y,48, obj_player,false,false)){ 
+	
+	//if hiding behind wall goes back and forth btwn idle and chase
+	
+	//if player is  in range AND enemy can see them
+	if (collision_circle(x,y,radius, obj_player,false,false) && !collision_line(x,y-16,obj_player.x,obj_player.y,obj_wall,false,false)){
 		state = ENEMYSTATE.CHASE;	//okay 64 is to big, 32 is too small
 	}
+	
 	
 	sprite_index = obj_Controller.enemystats.basic.idlespr
 }

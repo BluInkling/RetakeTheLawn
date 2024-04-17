@@ -2,8 +2,8 @@
 // You can write your code in this editor
 event_inherited()
 
-
-hp = 10;
+maxhp = 10
+hp = maxhp;
 
 xInput = 0
 yInput = 0

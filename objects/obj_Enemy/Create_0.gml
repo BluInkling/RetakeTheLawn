@@ -3,7 +3,9 @@
 event_inherited();
 
 
-
+radius = 220;
+lineofsight = false;
+attackradius = 16
 state = ENEMYSTATE.IDLE
 hitByAttack = ds_list_create();
 
