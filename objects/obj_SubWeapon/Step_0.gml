@@ -19,7 +19,7 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 	if sub == "torchwood"{
 		show_debug_message("torch activated!")
 		obj_MainWeapon.projtype = "flaming" //the sprites are changed in oProjectile
-		cooldown = 60
+		cooldown = 120
 		subavailable = false
 		alarm_set(0,cooldown)
 	}
