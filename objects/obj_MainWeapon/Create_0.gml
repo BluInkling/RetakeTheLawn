@@ -9,7 +9,7 @@ sprite_index = main.mainidlesprite
 clip = main.clip
 ammo = clip
 shootavailable = true
-projtype = "normal" // flaming, ice, butter
+projtype = main.projtype // flaming, ice, butter SET IN CONTROLLER SRTUCT
 
 function ShootProjectile(){
 	var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
@@ -32,14 +32,18 @@ reloading = false
 function ChangePrimary(){
 	if (obj_Controller.mainweapon.wepname == "peashooter"){
 		obj_Controller.mainweapon = obj_Controller.weaponstats.repeater
+		
 	} else {
 		obj_Controller.mainweapon = obj_Controller.weaponstats.peashooter
+
 	}
 	
 	main = obj_Controller.mainweapon
 	animIdle = main.mainidlesprite
 	animShoot = main.mainshootsprite
 	animReload = main.mainreloadsprite
+	projtype = main.projtype
+	show_debug_message(projtype)
 }
 
 function Reload(){
