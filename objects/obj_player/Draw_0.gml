@@ -19,9 +19,9 @@ if moving{
 }
 
 image_xscale = xDir
-
 draw_self()
 
+event_inherited()
 
 
 

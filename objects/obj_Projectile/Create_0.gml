@@ -1,19 +1,20 @@
 main = obj_Controller.mainweapon
 
 type = obj_MainWeapon.projtype
+show_debug_message(type)
 sprite_index = main.projsprite
 splat = main.projsplat
 //show_debug_message(type)
 //show_debug_message("projetciles type: " + string(type))
 
-if main.wepname == "peashooter" or main.wepname == "repeater" { //tochwood only affects peas
+if main.wepname == "peashooter" or main.wepname == "repeater"{ //tochwood only affects NORMAL peas
 	if type == "flaming"{
 		//show_debug_message("is flaming pea created")
 		sprite_index = sFlamingPea;
 	}
 	if type == "frozen"{
-		//show_debug_message("is flaming pea created")
-		sprite_index = sFrozenPea;
+		//show_debug_message("is frozen pea created")
+		//sprite_index = sFrozenPea;
 	}
 }
 

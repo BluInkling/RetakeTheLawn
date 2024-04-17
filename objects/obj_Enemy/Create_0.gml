@@ -1,0 +1,27 @@
+
+// Inherit the parent event
+event_inherited();
+
+
+
+state = ENEMYSTATE.IDLE
+hitByAttack = ds_list_create();
+
+
+enum ENEMYSTATE
+{
+	IDLE, //stands still
+	WANDER, //moves to a random nearby spot
+	CHASE, //moves towards player
+	ATTACK //Attacks toward player
+	
+}
+
+enemyType = obj_Controller.enemystats.basic;
+//-------------------
+hp = enemyType.hp
+counter = 0;
+spd = enemyType.spd
+my_dir = irandom_range(0,359)
+moveX = lengthdir_x(spd, my_dir);
+moveY = lengthdir_y(spd, my_dir);

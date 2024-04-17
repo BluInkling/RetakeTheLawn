@@ -10,6 +10,9 @@ function Force(_length,_dir){
 	forceY = lengthdir_y(_length,_dir)
 }
 
+flashAlpha = 0;
+flashColor = c_white
+
 
 
 

@@ -2,6 +2,9 @@
 // You can write your code in this editor
 event_inherited()
 
+
+hp = 10;
+
 xInput = 0
 yInput = 0
 

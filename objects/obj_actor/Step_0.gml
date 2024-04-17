@@ -20,5 +20,11 @@ if forceX != 0 || forceY != 0{
 }
 
 
-
+//if(mouse_check_button_pressed(mb_left)){
+//	show_debug_message("FLASH")
+//	flashAlpha = 1;
+//}
+if (flashAlpha > 0){
+	flashAlpha -= 0.05;
+}
 
