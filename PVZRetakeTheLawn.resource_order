@@ -3,7 +3,7 @@
     {"name":"ui","order":2,"path":"folders/Sprites/ui.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"TESTspr_frozenpea","order":1,"path":"sprites/TESTspr_frozenpea/TESTspr_frozenpea.yy",},
+    {"name":"spr_frozenpea","order":1,"path":"sprites/spr_frozenpea/spr_frozenpea.yy",},
     {"name":"spr_peashooterShoot","order":1,"path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},
     {"name":"spr_zombieRun","order":1,"path":"sprites/spr_zombieRun/spr_zombieRun.yy",},
     {"name":"obj_outlineControl","order":7,"path":"objects/obj_outlineControl/obj_outlineControl.yy",},
