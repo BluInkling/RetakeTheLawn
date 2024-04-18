@@ -2,6 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyState_Wander(){
 	counter += 1;
+<<<<<<< Updated upstream
+=======
+	//show_debug_message("WANDER")
+>>>>>>> Stashed changes
 	if !place_meeting(x+moveX,y,obj_wall){
 		x += moveX;
 	}

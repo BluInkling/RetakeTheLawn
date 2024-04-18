@@ -16,6 +16,8 @@ if main.wepname == "peashooter" or main.wepname == "repeater" or main.wepname ==
 			flashAlpha = 1;
 			flashColor = c_aqua;
 			show_debug_message("Enemy hit!")
+			spd = .2
+			alarm_set(0,120)
 			}
 		}
 		else{

@@ -1,6 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyState_Chase(){
+<<<<<<< Updated upstream
+=======
+	//show_debug_message("CHASE")
+>>>>>>> Stashed changes
 	//behavior
 	my_dir = point_direction(x,y,obj_player.x,obj_player.y)
 	moveX = lengthdir_x(spd,my_dir)
