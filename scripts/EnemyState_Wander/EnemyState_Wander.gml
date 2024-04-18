@@ -23,7 +23,12 @@ function EnemyState_Wander(){
 	}
 	
 	//sprite!
-	sprite_index = obj_Controller.enemystats.basic.movespr
+	if hasHand{
+		sprite_index = obj_Controller.enemystats.basic.movespr
+	}else{
+		sprite_index = spr_zombieNoHandRun
+	}
+	
 	if moveX != 0{
 		image_xscale = sign(moveX);
 	}

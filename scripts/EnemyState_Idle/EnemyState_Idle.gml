@@ -24,6 +24,9 @@ function EnemyState_Idle(){
 		state = ENEMYSTATE.CHASE;	//okay 64 is to big, 32 is too small
 	}
 	
-	
-	sprite_index = obj_Controller.enemystats.basic.idlespr
+	if hasHand{
+		sprite_index = obj_Controller.enemystats.basic.idlespr
+	}else{
+		sprite_index = spr_zombieNoHandIdle
+	}
 }

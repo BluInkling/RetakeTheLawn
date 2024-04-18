@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-xVel = random_range(-1,1)
-yVel = random_range(-2,0)
+xVel = random_range(-1.5,1.5)
+yVel = random_range(-3,0)
 rotForce = random_range(-5,5)
 
 grav = .25

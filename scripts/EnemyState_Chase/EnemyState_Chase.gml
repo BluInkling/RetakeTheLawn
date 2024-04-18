@@ -21,7 +21,10 @@ function EnemyState_Chase(){
 		state = ENEMYSTATE.ATTACK;
 	}
 	
-	
-	sprite_index = obj_Controller.enemystats.basic.movespr
+	if hasHand{
+		sprite_index = obj_Controller.enemystats.basic.movespr
+	}else{
+		sprite_index = spr_zombieNoHandRun
+	}
 	image_xscale = sign(moveX)
 }

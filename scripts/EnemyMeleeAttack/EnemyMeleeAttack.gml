@@ -9,7 +9,11 @@ function EnemyMeleeAttack(){
 
 if (sprite_index != argument0)
 {
-	sprite_index = argument0;
+	if hasHand{
+		sprite_index = argument0;
+	}else{
+		sprite_index = spr_zombieNoHandAttack
+	}
 	//image_index = 0;
 	image_speed = 1
 	ds_list_clear(hitByAttack);
