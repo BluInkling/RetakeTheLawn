@@ -4,7 +4,7 @@
 style = irandom_range(0,3)
 
 graveSprite = spr_gravestones
-spawnSprites = [spr_graveASpawn,spr_graveBSpawn,spr_graveDSpawn,spr_graveCSpawn]
+spawnSprites = [spr_graveASpawn,spr_graveBSpawn,spr_graveCSpawn,spr_graveDSpawn]
 
 spawning = true
 

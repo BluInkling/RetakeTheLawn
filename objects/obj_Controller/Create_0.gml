@@ -62,6 +62,7 @@ weaponstats = {
 mainweapon = weaponstats.snowpea
 
 subweapon = "torchwood"
+
 //subweapon = "torchwood"
 
 enemystats = {
@@ -73,7 +74,7 @@ enemystats = {
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
 		attacksprHB : spr_zombieAttackHB,
-		spd : .5,
+		spd : .75,
 		onhead : "none"
 	},
 	conehead :

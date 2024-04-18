@@ -1,9 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyMeleeAttack(){
-	
+	xMove = 0
+	yMove = 0
 	//show_debug_message("processign atatck!")
 //start of the attack
+
 
 if (sprite_index != argument0)
 {

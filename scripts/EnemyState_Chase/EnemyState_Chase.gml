@@ -4,21 +4,15 @@ function EnemyState_Chase(){
 	show_debug_message("CHASE")
 	//behavior
 	my_dir = point_direction(x,y,obj_player.x,obj_player.y)
-	moveX = lengthdir_x(spd,my_dir)
-	moveY = lengthdir_y(spd,my_dir)
-	if !place_meeting(x+moveX,y,obj_wall){
-		x += moveX;
-	}
-	if !place_meeting(x,y+moveY,obj_wall){
-		y += moveY;
-	}
+	moveX = lengthdir_x(1,my_dir)
+	moveY = lengthdir_y(1,my_dir)
  	
 	//Transition Triggers
 	
 	//Changes to 
 	
 	//if player NOT in range OR (player is in range AND cannot be seen)
-	if !collision_circle(x,y,radius, obj_player,false,false) or collision_line(x,y-16,obj_player.x,obj_player.y,obj_wall,false,false){ //if colliding with wall returns true
+	if !collision_circle(x,y,radius, obj_player,false,false){// or collision_line(x,y-16,obj_player.x,obj_player.y,obj_wall,false,false){ //if colliding with wall returns true
 		state = ENEMYSTATE.IDLE;
 	}
 	

@@ -25,10 +25,22 @@ if (abs(xVel)+abs(yVel)> moveSpd){
 
 //Collisions
 if !place_meeting(x+xVel,y,obj_wall){
-	x+=xVel
+	if !place_meeting(x+xVel,y, obj_actor){
+		x+=xVel
+	}else{
+		var _other = instance_place(x+xVel,y, obj_actor)
+		_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+	}
+	
 }
 if !place_meeting(x,y+yVel,obj_wall){
-	y+=yVel
+	if !place_meeting(x,y+yVel, obj_actor){
+		y+=yVel
+	}else{
+		var _other = instance_place(x,y+yVel, obj_actor)
+		_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+		y+=yVel
+	}
 }
 
 }

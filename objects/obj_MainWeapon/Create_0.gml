@@ -11,6 +11,7 @@ ammo = clip
 shootavailable = true
 projtype = main.projtype // flaming, ice, butter SET IN CONTROLLER SRTUCT
 
+
 function ShootProjectile(){
 	var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
 }

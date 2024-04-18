@@ -11,6 +11,7 @@
     {"name":"spr_zombieRun","order":1,"path":"sprites/spr_zombieRun/spr_zombieRun.yy",},
     {"name":"obj_outlineControl","order":7,"path":"objects/obj_outlineControl/obj_outlineControl.yy",},
     {"name":"spr_daveArm","order":2,"path":"sprites/spr_daveArm/spr_daveArm.yy",},
+    {"name":"global_variables","order":6,"path":"scripts/global_variables/global_variables.yy",},
     {"name":"obj_primary","order":6,"path":"objects/obj_primary/obj_primary.yy",},
     {"name":"spr_splatPea","order":2,"path":"sprites/spr_splatPea/spr_splatPea.yy",},
     {"name":"spr_fumeshroomReload","order":1,"path":"sprites/spr_fumeshroomReload/spr_fumeshroomReload.yy",},

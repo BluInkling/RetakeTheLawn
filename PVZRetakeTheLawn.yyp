@@ -55,7 +55,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"spr_frozenPea","path":"sprites/spr_frozenPea/spr_frozenPea.yy",},},
@@ -66,6 +66,7 @@
     {"id":{"name":"ts_grass","path":"tilesets/ts_grass/ts_grass.yy",},},
     {"id":{"name":"spr_pocket","path":"sprites/spr_pocket/spr_pocket.yy",},},
     {"id":{"name":"spr_daveArm","path":"sprites/spr_daveArm/spr_daveArm.yy",},},
+    {"id":{"name":"global_variables","path":"scripts/global_variables/global_variables.yy",},},
     {"id":{"name":"spr_potatomineIdle","path":"sprites/spr_potatomineIdle/spr_potatomineIdle.yy",},},
     {"id":{"name":"obj_primary","path":"objects/obj_primary/obj_primary.yy",},},
     {"id":{"name":"spr_splatPea","path":"sprites/spr_splatPea/spr_splatPea.yy",},},
