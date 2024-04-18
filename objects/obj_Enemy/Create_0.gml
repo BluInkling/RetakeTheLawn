@@ -28,6 +28,8 @@ spd = enemyType.spd
 my_dir = irandom_range(0,359)
 moveX = lengthdir_x(1, my_dir);
 moveY = lengthdir_y(1, my_dir);
+cold = false
+
 
 xVel = moveX*spd + forceX
 yVel = moveY*spd + forceY
@@ -68,9 +70,17 @@ function Hit(damage,type,dir){
 	}
 	flashAlpha = 1;
 	if type == "frozen"{
+		cold = true
+		flashAlpha = 0.2;
 		flashColor = c_aqua;
+		spd = spd / 2;
+		alarm_set(0,120)
 	}else if type == "flaming"{
-		flashColor = c_red;
+		if obj_MainWeapon.main.wepname == "snowpea"{
+			flashColor = c_white;
+		} else {
+			flashColor = c_red;
+		}
 	}else{
 		flashColor = c_white;
 	}

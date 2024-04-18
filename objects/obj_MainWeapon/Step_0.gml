@@ -10,7 +10,7 @@ if (image_angle > 90 and image_angle < 270){
 } else image_yscale = 1
 
 
-
+//show_debug_message("Main type:" + string(projtype))
 
 if (mouse_check_button(mb_left)) && shootavailable && idle && !shooting{ //SHOOTING
 	idle = false
@@ -66,6 +66,25 @@ if reloading{
 }
 
 
+if (keyboard_check_pressed(ord("9"))) obj_Controller.subweapon = "torchwood"
+if (keyboard_check_pressed(ord("0"))) obj_Controller.subweapon = "potatomine"
+
+if (keyboard_check_pressed(ord("1"))){ 
+	obj_Controller.mainweapon = obj_Controller.weaponstats.peashooter; 
+	ChangePrimary(); 
+	}
+if (keyboard_check_pressed(ord("2"))){ 
+	obj_Controller.mainweapon = obj_Controller.weaponstats.repeater; 
+	ChangePrimary(); 
+	}
+if (keyboard_check_pressed(ord("3"))){ 
+	obj_Controller.mainweapon = obj_Controller.weaponstats.snowpea; 
+	ChangePrimary(); 
+	}
+if (keyboard_check_pressed(ord("4"))){ 
+	obj_Controller.mainweapon = obj_Controller.weaponstats.threepeater; 
+	ChangePrimary(); 
+	}
 
 
 

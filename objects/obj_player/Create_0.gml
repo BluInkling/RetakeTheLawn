@@ -32,6 +32,7 @@ instance_create_layer(0,0,"Player",obj_Controller)
 instance_create_layer(0,0,"Gun",obj_MainWeapon)
 instance_create_layer(0,0,"Player",obj_SubWeapon)
 
+
 /*
 //Outline Shader
 upixelH = shader_get_uniform(shd_outline,"pixelH")

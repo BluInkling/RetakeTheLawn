@@ -12,6 +12,13 @@ if place_meeting(x,y,obj_zombieHitbox){
 	var enemy = instance_nearest(x,y,obj_zombieHitbox).host
 	show_debug_message("Enemy hit!")
 	enemy.Hit(1,type,moveDir)
+
+}
+
+if place_meeting(x,y,obj_Enemy){
+	var enemy = instance_nearest(x,y,obj_Enemy)
+	show_debug_message("Enemy hit!")
+	enemy.Hit(damage,type,moveDir)
 	Destroy()
 }
 

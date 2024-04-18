@@ -2,10 +2,6 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-
-
-
-
 event_inherited();
 
 draw_set_font(fnt1)
@@ -23,7 +19,9 @@ if global.debug{
 	}
 }
 
+
 draw_self()
+
 
 if hasHat{
 	hatFrame = armor <= enemyType.armor/2
@@ -40,6 +38,4 @@ if hasHat{
 	draw_sprite_ext(hatSpr,hatFrame,x+hatX,y+hatY,image_xscale,1,0,c_white,1)
 	show_debug_message("HAS HAT")
 }
-
-
 

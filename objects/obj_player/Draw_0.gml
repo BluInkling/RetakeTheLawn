@@ -23,5 +23,9 @@ draw_self()
 
 event_inherited()
 
+if obj_MainWeapon.projtype = "flaming"{
+	draw_sprite(sfireeffect,image_number,x,y)
+}
+
 
 

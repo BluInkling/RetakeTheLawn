@@ -9,11 +9,22 @@ sprite_index = main.mainidlesprite
 clip = main.clip
 ammo = clip
 shootavailable = true
-projtype = main.projtype // flaming, ice, butter SET IN CONTROLLER SRTUCT
 
+projtype = main.projtype // flaming, ice, butter SET IN CONTROLLER SRTUCT
+angle = 0
 
 function ShootProjectile(){
+	if main.wepname == "threepeater"{
+		angle = -45
+		for(var i = 0; i<3;i++){
+			var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
+			angle += 30;
+		}
+		angle = 0;
+	}
+	else{
 	var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
+	}
 }
 
 //Shoot Offset
@@ -31,20 +42,21 @@ shooting = false
 reloading = false
 
 function ChangePrimary(){
-	if (obj_Controller.mainweapon.wepname == "peashooter"){
-		obj_Controller.mainweapon = obj_Controller.weaponstats.repeater
+	//if (obj_Controller.mainweapon.wepname == "peashooter"){
+	//	obj_Controller.mainweapon = obj_Controller.weaponstats.repeater
 		
-	} else {
-		obj_Controller.mainweapon = obj_Controller.weaponstats.peashooter
-
-	}
-	
+	//} else {
+	//	obj_Controller.mainweapon = obj_Controller.weaponstats.peashooter
+	//}
 	main = obj_Controller.mainweapon
 	animIdle = main.mainidlesprite
 	animShoot = main.mainshootsprite
 	animReload = main.mainreloadsprite
+
 	projtype = main.projtype
-	show_debug_message(projtype)
+	//show_debug_message(projtype)
+	shootOffsetAngle = point_direction(0,0,main.projOffsetX,main.projOffsetY)
+	shootOffsetDistance = sqrt(sqr(main.projOffsetX)+sqr(main.projOffsetY))
 }
 
 function Reload(){
@@ -54,3 +66,6 @@ function Reload(){
 	reloading = true
 	image_index = 0 
 }
+
+
+show_debug_message("Initial typee:" + string(projtype))

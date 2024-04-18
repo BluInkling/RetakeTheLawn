@@ -58,6 +58,7 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"obj_throwable","path":"objects/obj_throwable/obj_throwable.yy",},},
     {"id":{"name":"spr_frozenPea","path":"sprites/spr_frozenPea/spr_frozenPea.yy",},},
     {"id":{"name":"spr_peashooterShoot","path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},},
     {"id":{"name":"spr_repeaterIdle","path":"sprites/spr_repeaterIdle/spr_repeaterIdle.yy",},},
