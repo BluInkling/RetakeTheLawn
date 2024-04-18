@@ -15,7 +15,7 @@ angle = 0
 
 function ShootProjectile(){
 	if main.wepname == "threepeater"{
-		angle = -45
+		angle = -30
 		for(var i = 0; i<3;i++){
 			var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
 			angle += 30;
