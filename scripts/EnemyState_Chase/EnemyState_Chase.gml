@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyState_Chase(){
 	show_debug_message("CHASE")
+
 	//behavior
 	my_dir = point_direction(x,y,obj_player.x,obj_player.y)
 	moveX = lengthdir_x(1,my_dir)

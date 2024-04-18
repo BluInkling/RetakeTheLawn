@@ -4,6 +4,7 @@ function EnemyState_Idle(){
 	moveX = 0
 	moveY = 0
 	show_debug_message("IDLE")
+
 	counter += 1;
 	
 	//Transition triggers
