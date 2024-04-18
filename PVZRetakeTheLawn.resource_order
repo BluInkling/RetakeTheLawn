@@ -70,6 +70,7 @@
     {"name":"spr_graveBSpawn","order":2,"path":"sprites/spr_graveBSpawn/spr_graveBSpawn.yy",},
     {"name":"spr_graveDSpawn","order":3,"path":"sprites/spr_graveDSpawn/spr_graveDSpawn.yy",},
     {"name":"spr_snowpeaReload","order":1,"path":"sprites/spr_snowpeaReload/spr_snowpeaReload.yy",},
+    {"name":"obj_zombieHand","order":12,"path":"objects/obj_zombieHand/obj_zombieHand.yy",},
     {"name":"sPlayer","order":1,"path":"sprites/sPlayer/sPlayer.yy",},
     {"name":"spr_repeaterReload","order":2,"path":"sprites/spr_repeaterReload/spr_repeaterReload.yy",},
     {"name":"sPotatomin","order":11,"path":"sprites/sPotatomin/sPotatomin.yy",},

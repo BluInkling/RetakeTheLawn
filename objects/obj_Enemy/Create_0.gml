@@ -30,3 +30,22 @@ moveY = lengthdir_y(1, my_dir);
 
 xVel = moveX*spd + forceX
 yVel = moveY*spd + forceY
+
+hasHand = true
+
+function Hit(damage,type,dir){
+	hp -= damage;
+	if hasHand && hp <= enemyType.hp/2{
+		hasHand = false
+		instance_create_layer(x-2*image_xscale,y-8,"Bullets",obj_zombieHand)
+	}
+	flashAlpha = 1;
+	if type == "frozen"{
+		flashColor = c_aqua;
+	}else if type == "flaming"{
+		flashColor = c_red;
+	}else{
+		flashColor = c_white;
+	}
+	Force(2,dir)
+}

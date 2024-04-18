@@ -143,6 +143,7 @@
     {"id":{"name":"spr_graveBSpawn","path":"sprites/spr_graveBSpawn/spr_graveBSpawn.yy",},},
     {"id":{"name":"spr_graveDSpawn","path":"sprites/spr_graveDSpawn/spr_graveDSpawn.yy",},},
     {"id":{"name":"spr_snowpeaReload","path":"sprites/spr_snowpeaReload/spr_snowpeaReload.yy",},},
+    {"id":{"name":"obj_zombieHand","path":"objects/obj_zombieHand/obj_zombieHand.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"spr_repeaterReload","path":"sprites/spr_repeaterReload/spr_repeaterReload.yy",},},
     {"id":{"name":"sTest","path":"sprites/sTest/sTest.yy",},},
