@@ -56,7 +56,12 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+<<<<<<< Updated upstream
     {"id":{"name":"spr_frozenpea","path":"sprites/spr_frozenpea/spr_frozenpea.yy",},},
+=======
+    {"id":{"name":"obj_throwable","path":"objects/obj_throwable/obj_throwable.yy",},},
+    {"id":{"name":"spr_frozenPea","path":"sprites/spr_frozenPea/spr_frozenPea.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_peashooterShoot","path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},},
     {"id":{"name":"spr_repeaterIdle","path":"sprites/spr_repeaterIdle/spr_repeaterIdle.yy",},},
     {"id":{"name":"spr_zombieRun","path":"sprites/spr_zombieRun/spr_zombieRun.yy",},},

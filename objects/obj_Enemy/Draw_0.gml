@@ -4,8 +4,13 @@
 // Inherit the parent event
 
 
+<<<<<<< Updated upstream
 draw_self()
 
+=======
+
+draw_self()
+>>>>>>> Stashed changes
 event_inherited();
 
 draw_set_font(fnt1)
@@ -23,5 +28,10 @@ draw_text_transformed(x,y+16,"Health: " + string(hp) + "Type: " + string(enemyTy
 //	draw_line_color(x,y-16,obj_player.x,obj_player.y,c_green,c_lime)
 //}
 
+<<<<<<< Updated upstream
 draw_self()
+>>>>>>> Stashed changes
+=======
+
+
 >>>>>>> Stashed changes

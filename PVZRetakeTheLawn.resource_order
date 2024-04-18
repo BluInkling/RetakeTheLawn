@@ -4,7 +4,12 @@
     {"name":"ui","order":2,"path":"folders/Sprites/ui.yy",},
   ],
   "ResourceOrderSettings": [
+<<<<<<< Updated upstream
     {"name":"spr_frozenpea","order":1,"path":"sprites/spr_frozenpea/spr_frozenpea.yy",},
+=======
+    {"name":"obj_throwable","order":13,"path":"objects/obj_throwable/obj_throwable.yy",},
+    {"name":"spr_frozenPea","order":1,"path":"sprites/spr_frozenPea/spr_frozenPea.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_peashooterShoot","order":1,"path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},
     {"name":"spr_zombieRun","order":1,"path":"sprites/spr_zombieRun/spr_zombieRun.yy",},
     {"name":"obj_outlineControl","order":7,"path":"objects/obj_outlineControl/obj_outlineControl.yy",},

@@ -1,3 +1,11 @@
+<<<<<<< Updated upstream
+=======
+randomize()
+activate = false
+currSprite = sTest;
+imgnum = 0;
+maximgnum = 0;
+>>>>>>> Stashed changes
 weaponstats = {
 	peashooter : 
 	{
@@ -40,11 +48,33 @@ weaponstats = {
 		projOffsetX : 2,
 		projOffsetY : -5
 	},
+	threepeater : 
+	{
+		wepname: "threepeater",
+		mainidlesprite : spr_threepeaterIdle,
+		mainreloadsprite : spr_threepeaterReload,
+		mainshootsprite : spr_threepeaterShoot,
+		projsprite : spr_pea,
+		projtype : "normal",
+		projsplat : spr_splatPea,
+		movespeed : 7,
+		lifetime: 20,
+		accuracy : 2,
+		clip : 4,
+		damage : 2,
+		shootFrames : [1],
+		projOffsetX : 2,
+		projOffsetY : -5
+	}
 		
 }
 
 //mainweapon = "peashooter"
+<<<<<<< Updated upstream
 mainweapon = weaponstats.repeater
+=======
+mainweapon = weaponstats.threepeater
+>>>>>>> Stashed changes
 
 subweapon = "torchwood"
 //subweapon = "torchwood"

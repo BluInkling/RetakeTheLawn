@@ -15,6 +15,11 @@ function EnemyState_Wander(){
 	
 	
 	
+<<<<<<< Updated upstream
+=======
+	//show_debug_message("WANDER")
+
+>>>>>>> Stashed changes
 	//Transition Triggers
 	if(counter >= room_speed * 3){
 		var change = choose(0,1);
