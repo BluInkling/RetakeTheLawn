@@ -69,7 +69,8 @@ enemystats = {
 	basic :
 	{
 		type : "basic",
-		hp : 3,
+		hp : 4,
+		armor : 0,
 		idlespr : spr_zombieIdle,
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
@@ -80,7 +81,8 @@ enemystats = {
 	conehead :
 	{
 		type : "conehead",
-		hp : 5,
+		hp : 4,
+		armor : 2,
 		idlespr : spr_zombieIdle,
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
@@ -91,7 +93,8 @@ enemystats = {
 	buckethead :
 	{
 		type : "buckethead",
-		hp : 8,
+		hp : 4,
+		armor : 4,
 		idlespr : spr_zombieIdle,
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
@@ -111,16 +114,16 @@ enemystats = {
 
 zombieHeadAnims = { //Storing it here for now
 	idle : {
-		x : [-28,-28,-27,-27,-28],
-		y : [3,3,3,3,3]
+		y : [-28,-28,-27,-27,-28],
+		x : [3,3,3,3,3]
 	},
 	run : {
-		x : [-28,-29,-29,-28,-28],
-		y : [3,3,3,3,3]
+		y : [-28,-29,-29,-28,-28],
+		x : [3,3,3,3,3]
 	},
 	attack : {
-		x : [-28,-28,-27,-26,-25,-25,-28,-29,-28,-25,-27,-28,-29,-26,-27],
-		y : [3,3,3,3,3,4,3,4,5,4,3,3,4,4]
+		y : [-28,-28,-27,-26,-25,-25,-28,-29,-28,-25,-27,-28,-29,-26,-27],
+		x : [3,3,3,3,3,4,3,4,5,4,3,3,4,4]
 	}
 }
 

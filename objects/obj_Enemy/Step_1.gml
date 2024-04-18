@@ -8,7 +8,7 @@ if !place_meeting(x+xVel,y,obj_wall){
 		x+=xVel
 	}else{
 		var _other = instance_place(x+xVel,y, obj_Enemy)
-		_other.Force(spd,point_direction(_other.x,_other.y,x,y))
+		_other.Force(point_distance(0,0,xVel,yVel),point_direction(x,y,_other.x,_other.y))
 		x+=xVel
 	}
 	
@@ -18,7 +18,7 @@ if !place_meeting(x,y+yVel,obj_wall){
 		y+=yVel
 	}else{
 		var _other = instance_place(x,y+yVel, obj_Enemy)
-		_other.Force(spd,point_direction(x,y,_other.x,_other.y))//point_direction(0,0,xVel,yVel))
+		_other.Force(point_distance(0,0,xVel,yVel),point_direction(x,y,_other.x,_other.y))//point_direction(0,0,xVel,yVel))
 		y+=yVel
 	}
 }
@@ -33,7 +33,7 @@ if (hp <= 0)
 //}
 	
 	
-	instance_destroy();
+	Destroy()
 }
 
 
