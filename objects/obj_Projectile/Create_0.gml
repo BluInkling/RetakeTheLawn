@@ -7,6 +7,7 @@ sprite_index = main.projsprite
 //show_debug_message(type)
 //show_debug_message("projetciles type: " + string(type))
 
+<<<<<<< Updated upstream
 if main.wepname == "peashooter" or main.wepname == "repeater"{ //tochwood only affects NORMAL peas
 	if type == "flaming"{
 		//show_debug_message("is flaming pea created")
@@ -17,11 +18,29 @@ if main.wepname == "peashooter" or main.wepname == "repeater"{ //tochwood only a
 		//sprite_index = sFrozenPea;
 	}
 =======
+=======
+
+//if main.wepname == "peashooter" or main.wepname == "repeater"{ //tochwood only affects NORMAL peas
+//	if type == "flaming"{
+//		//show_debug_message("is flaming pea created")
+//		sprite_index = sFlamingPea;
+//	}
+//	if type == "frozen"{
+//		//show_debug_message("is frozen pea created")
+//		//sprite_index = sFrozenPea;
+//	}
+//}
+
+>>>>>>> Stashed changes
 sprite_index = main.projsprite //sets sprite to mainweapons normal proj sprite
 splat = main.projsplat
 damage = main.damage
 //show_debug_message(type)
 //show_debug_message("projetciles type: " + string(type))
+
+show_debug_message("before checks")
+show_debug_message(type)
+show_debug_message(damage)
 
 //changes the sprite if buff is active
 if type == "flaming"{

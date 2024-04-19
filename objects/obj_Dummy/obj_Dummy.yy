@@ -1,18 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_Dummy",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":82,"eventType":9,"isDnD":false,},
-<<<<<<< Updated upstream
-=======
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":84,"eventType":9,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
->>>>>>> Stashed changes
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -21,8 +16,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_actor",
-    "path": "objects/obj_actor/obj_actor.yy",
+    "name": "obj_Enemy",
+    "path": "objects/obj_Enemy/obj_Enemy.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -40,12 +35,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_daveIdle",
-    "path": "sprites/spr_daveIdle/spr_daveIdle.yy",
+    "name": "spr_zombieIdle",
+    "path": "sprites/spr_zombieIdle/spr_zombieIdle.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_daveIdle",
-    "path": "sprites/spr_daveIdle/spr_daveIdle.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

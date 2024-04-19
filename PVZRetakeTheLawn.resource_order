@@ -14,6 +14,11 @@
     {"name":"spr_zombieRun","order":1,"path":"sprites/spr_zombieRun/spr_zombieRun.yy",},
     {"name":"obj_outlineControl","order":7,"path":"objects/obj_outlineControl/obj_outlineControl.yy",},
     {"name":"spr_daveArm","order":2,"path":"sprites/spr_daveArm/spr_daveArm.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"global_variables","order":6,"path":"scripts/global_variables/global_variables.yy",},
+    {"name":"rm_mainTestRoom","order":1,"path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},
+>>>>>>> Stashed changes
     {"name":"obj_primary","order":6,"path":"objects/obj_primary/obj_primary.yy",},
     {"name":"spr_fumeshroomReload","order":1,"path":"sprites/spr_fumeshroomReload/spr_fumeshroomReload.yy",},
     {"name":"spr_torchwoodActive","order":1,"path":"sprites/spr_torchwoodActive/spr_torchwoodActive.yy",},
@@ -43,9 +48,11 @@
     {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"obj_outlinable","order":8,"path":"objects/obj_outlinable/obj_outlinable.yy",},
     {"name":"obj_playerArms","order":4,"path":"objects/obj_playerArms/obj_playerArms.yy",},
+    {"name":"Approach","order":7,"path":"scripts/Approach/Approach.yy",},
     {"name":"shFlash","order":1,"path":"shaders/shFlash/shFlash.yy",},
     {"name":"obj_camera","order":5,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"sfireeffect","order":12,"path":"sprites/sfireeffect/sfireeffect.yy",},
+    {"name":"obj_Dummy","order":14,"path":"objects/obj_Dummy/obj_Dummy.yy",},
     {"name":"sEnemy","order":3,"path":"sprites/sEnemy/sEnemy.yy",},
     {"name":"obj_Gravestone","order":11,"path":"objects/obj_Gravestone/obj_Gravestone.yy",},
     {"name":"spr_zombieHead","order":5,"path":"sprites/spr_zombieHead/spr_zombieHead.yy",},
@@ -55,16 +62,27 @@
     {"name":"spr_zombieHand","order":2,"path":"sprites/spr_zombieHand/spr_zombieHand.yy",},
     {"name":"fnt2","order":1,"path":"fonts/fnt2/fnt2.yy",},
     {"name":"sWall","order":4,"path":"sprites/sWall/sWall.yy",},
+    {"name":"sTrigger","order":17,"path":"sprites/sTrigger/sTrigger.yy",},
     {"name":"obj_MainWeapon","order":2,"path":"objects/obj_MainWeapon/obj_MainWeapon.yy",},
     {"name":"EnemyState_Idle","order":2,"path":"scripts/EnemyState_Idle/EnemyState_Idle.yy",},
     {"name":"spr_threepeaterShoot","order":2,"path":"sprites/spr_threepeaterShoot/spr_threepeaterShoot.yy",},
     {"name":"sTorchvood","order":7,"path":"sprites/sTorchvood/sTorchvood.yy",},
     {"name":"sFlamingPea","order":6,"path":"sprites/sFlamingPea/sFlamingPea.yy",},
     {"name":"sExplosion","order":1,"path":"sprites/sExplosion/sExplosion.yy",},
+<<<<<<< Updated upstream
     {"name":"obj_EnemyController","order":10,"path":"objects/obj_EnemyController/obj_EnemyController.yy",},
+=======
+    {"name":"obj_zombieHitbox","order":13,"path":"objects/obj_zombieHitbox/obj_zombieHitbox.yy",},
+    {"name":"obj_RoomController","order":10,"path":"objects/obj_RoomController/obj_RoomController.yy",},
+>>>>>>> Stashed changes
     {"name":"sPeashooter","order":2,"path":"sprites/sPeashooter/sPeashooter.yy",},
     {"name":"spr_puffshroomSingleReload","order":3,"path":"sprites/spr_puffshroomSingleReload/spr_puffshroomSingleReload.yy",},
     {"name":"spr_snowpeaReload","order":1,"path":"sprites/spr_snowpeaReload/spr_snowpeaReload.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"sgravewall","order":18,"path":"sprites/sgravewall/sgravewall.yy",},
+    {"name":"obj_zombieGib","order":12,"path":"objects/obj_zombieGib/obj_zombieGib.yy",},
+>>>>>>> Stashed changes
     {"name":"sPlayer","order":1,"path":"sprites/sPlayer/sPlayer.yy",},
     {"name":"spr_repeaterReload","order":2,"path":"sprites/spr_repeaterReload/spr_repeaterReload.yy",},
     {"name":"sPotatomin","order":11,"path":"sprites/sPotatomin/sPotatomin.yy",},
@@ -75,6 +93,7 @@
     {"name":"obj_Projectile","order":3,"path":"objects/obj_Projectile/obj_Projectile.yy",},
     {"name":"sgrave","order":13,"path":"sprites/sgrave/sgrave.yy",},
     {"name":"sRepeater","order":5,"path":"sprites/sRepeater/sRepeater.yy",},
+    {"name":"obj_Door","order":15,"path":"objects/obj_Door/obj_Door.yy",},
     {"name":"spr_puffshroomSingleIdle","order":2,"path":"sprites/spr_puffshroomSingleIdle/spr_puffshroomSingleIdle.yy",},
     {"name":"spr_snowpeaIdle","order":2,"path":"sprites/spr_snowpeaIdle/spr_snowpeaIdle.yy",},
     {"name":"spr_zombieCone","order":4,"path":"sprites/spr_zombieCone/spr_zombieCone.yy",},

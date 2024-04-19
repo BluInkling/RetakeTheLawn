@@ -101,7 +101,12 @@ enemystats = {
 	conehead :
 	{
 		type : "conehead",
+<<<<<<< Updated upstream
 		hp : 5,
+=======
+		hp : 4,
+		armor : 3,
+>>>>>>> Stashed changes
 		idlespr : spr_zombieIdle,
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
@@ -112,7 +117,12 @@ enemystats = {
 	buckethead :
 	{
 		type : "buckethead",
+<<<<<<< Updated upstream
 		hp : 8,
+=======
+		hp : 4,
+		armor : 5,
+>>>>>>> Stashed changes
 		idlespr : spr_zombieIdle,
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
