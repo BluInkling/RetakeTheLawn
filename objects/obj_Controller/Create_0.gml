@@ -118,7 +118,7 @@ enemystats = {
 	basic :
 	{
 		type : "basic",
-		hp : 4,
+		hp : 8,
 		armor : 0,
 		idlespr : spr_zombieIdle,
 		movespr : spr_zombieRun,
@@ -130,8 +130,8 @@ enemystats = {
 	conehead :
 	{
 		type : "conehead",
-		hp : 4,
-		armor : 2,
+		hp : 8,
+		armor : 4,
 		idlespr : spr_zombieIdle,
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
@@ -142,8 +142,8 @@ enemystats = {
 	buckethead :
 	{
 		type : "buckethead",
-		hp : 4,
-		armor : 4,
+		hp : 8,
+		armor : 8,
 		idlespr : spr_zombieIdle,
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,

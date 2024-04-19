@@ -77,7 +77,6 @@
     {"name":"sFlamingPea","order":6,"path":"sprites/sFlamingPea/sFlamingPea.yy",},
     {"name":"spr_zombieHitbox","order":12,"path":"sprites/spr_zombieHitbox/spr_zombieHitbox.yy",},
     {"name":"sExplosion","order":1,"path":"sprites/sExplosion/sExplosion.yy",},
-    {"name":"obj_EnemyController","order":10,"path":"objects/obj_EnemyController/obj_EnemyController.yy",},
     {"name":"obj_zombieHitbox","order":13,"path":"objects/obj_zombieHitbox/obj_zombieHitbox.yy",},
     {"name":"obj_RoomController","order":10,"path":"objects/obj_RoomController/obj_RoomController.yy",},
     {"name":"sPeashooter","order":2,"path":"sprites/sPeashooter/sPeashooter.yy",},

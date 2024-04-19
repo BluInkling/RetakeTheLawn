@@ -12,5 +12,7 @@ height = y+8
 
 hasFallen = false
 
-
+function Destroy(){
+	instance_destroy()
+}
 

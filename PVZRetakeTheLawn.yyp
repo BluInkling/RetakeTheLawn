@@ -150,7 +150,6 @@
     {"id":{"name":"spr_zombieHitbox","path":"sprites/spr_zombieHitbox/spr_zombieHitbox.yy",},},
     {"id":{"name":"sExplosion","path":"sprites/sExplosion/sExplosion.yy",},},
     {"id":{"name":"PlayerState_Free","path":"scripts/PlayerState_Free/PlayerState_Free.yy",},},
-    {"id":{"name":"obj_EnemyController","path":"objects/obj_EnemyController/obj_EnemyController.yy",},},
     {"id":{"name":"obj_zombieHitbox","path":"objects/obj_zombieHitbox/obj_zombieHitbox.yy",},},
     {"id":{"name":"obj_RoomController","path":"objects/obj_RoomController/obj_RoomController.yy",},},
     {"id":{"name":"spr_grassTiles","path":"sprites/spr_grassTiles/spr_grassTiles.yy",},},
