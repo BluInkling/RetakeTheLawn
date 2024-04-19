@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-event_inherited();
+
 
 draw_set_font(fnt1)
 draw_text_transformed(x,y+16,string(depth)+" Health: " + string(hp+armor) + "Type: " + string(enemyType.type),.20,.20,0)
@@ -20,7 +20,8 @@ if global.debug{
 }
 
 
-draw_self()
+//draw_self()
+event_inherited();
 
 
 if hasHat{

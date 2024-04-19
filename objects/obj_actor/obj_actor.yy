@@ -14,8 +14,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_outlinable",
-    "path": "objects/obj_outlinable/obj_outlinable.yy",
+    "name": "obj_fadable",
+    "path": "objects/obj_fadable/obj_fadable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

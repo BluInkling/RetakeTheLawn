@@ -24,16 +24,12 @@ if !place_meeting(x,y+yVel,obj_wall){
 }
 
 
-if (hp <= 0)
+if (hp <= 0 && !dying)
 {
-	
-//	with(instance_create_layer(x,y,layer,oDead))
-//	{
-		
-//}
-	
-	
-	Destroy()
+	dying = true
+	image_index = 0
+	SpawnHead(spr_zombieHead)
+	instance_destroy(hb)
 }
 
 

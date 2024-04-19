@@ -25,7 +25,7 @@ if forceX != 0 || forceY != 0{
 //	flashAlpha = 1;
 //}
 if (flashAlpha > 0 and cold == false){
-	flashAlpha -= 0.05;
-	show_debug_message("changing flash")
+	flashAlpha -= 0.1;
+	//show_debug_message("changing flash")
 }
 

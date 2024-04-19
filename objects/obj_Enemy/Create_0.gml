@@ -41,6 +41,9 @@ hatSpr = spr_pea //Just placeholder
 hatFrame = 0
 hatX = 0
 hatY = 0
+
+dying = false
+isDead = false
 	
 if hat == "cone"{
 	hatSpr = spr_zombieCone
@@ -57,7 +60,7 @@ function Hit(damage,type,dir){
 		armor -= damage
 		if armor <= 0{
 			hasHat = false
-			SpawnHat(hatSpr)
+			SpawnHat()
 			hp+=armor
 			armor=0
 		}
@@ -87,11 +90,17 @@ function Hit(damage,type,dir){
 	Force(2,dir)
 }
 
-function SpawnHat(spr){
+function SpawnHat(){
 	var hat = instance_create_layer(x+hatX,y+hatY,"Bullets",obj_zombieGib)
 	hat.sprite_index = hatSpr
 	hat.image_index = hatFrame
 	hat.height = y//-hatY/2
+}
+
+function SpawnHead(spr){
+	var head = instance_create_layer(x+4*image_xscale,y-16,"Bullets",obj_zombieGib)
+	head.sprite_index = spr
+	head.height = y
 }
 
 function Destroy(){
