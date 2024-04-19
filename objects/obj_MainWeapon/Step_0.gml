@@ -51,9 +51,6 @@ if shooting{
 	}
 }
 
-	if keyboard_check_pressed(vk_shift){
-		ChangePrimary()
-	}
 }
 
 if reloading{
@@ -69,22 +66,29 @@ if reloading{
 if (keyboard_check_pressed(ord("9"))) obj_Controller.subweapon = "torchwood"
 if (keyboard_check_pressed(ord("0"))) obj_Controller.subweapon = "potatomine"
 
+if keyboard_check_pressed(vk_shift){
+	with obj_Controller{
+		primary += 1
+		if primary > array_length(inventoryPrimary)-1{
+			primary = 0
+		}
+		mainweapon = inventoryPrimary[primary]
+	}
+	ChangePrimary()
+}
+
 if (keyboard_check_pressed(ord("1"))){ 
-	obj_Controller.mainweapon = obj_Controller.weaponstats.peashooter; 
-	ChangePrimary(); 
-	}
+	GotoPrimary(0)
+}
 if (keyboard_check_pressed(ord("2"))){ 
-	obj_Controller.mainweapon = obj_Controller.weaponstats.repeater; 
-	ChangePrimary(); 
-	}
+	GotoPrimary(1)
+}
 if (keyboard_check_pressed(ord("3"))){ 
-	obj_Controller.mainweapon = obj_Controller.weaponstats.snowpea; 
-	ChangePrimary(); 
-	}
+	GotoPrimary(2) 
+}
 if (keyboard_check_pressed(ord("4"))){ 
-	obj_Controller.mainweapon = obj_Controller.weaponstats.threepeater; 
-	ChangePrimary(); 
-	}
+	GotoPrimary(3)
+}
 
 
 

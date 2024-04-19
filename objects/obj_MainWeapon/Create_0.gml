@@ -42,12 +42,6 @@ shooting = false
 reloading = false
 
 function ChangePrimary(){
-	//if (obj_Controller.mainweapon.wepname == "peashooter"){
-	//	obj_Controller.mainweapon = obj_Controller.weaponstats.repeater
-		
-	//} else {
-	//	obj_Controller.mainweapon = obj_Controller.weaponstats.peashooter
-	//}
 	main = obj_Controller.mainweapon
 	animIdle = main.mainidlesprite
 	animShoot = main.mainshootsprite
@@ -65,6 +59,14 @@ function Reload(){
 	shooting = false
 	reloading = true
 	image_index = 0 
+}
+
+function GotoPrimary(ind){
+	if !(ind > array_length(obj_Controller.inventoryPrimary)-1){
+		obj_Controller.primary = ind
+		obj_Controller.mainweapon = obj_Controller.inventoryPrimary[obj_Controller.primary]
+		ChangePrimary()
+	}
 }
 
 

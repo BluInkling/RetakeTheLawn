@@ -82,7 +82,12 @@ weaponstats = {
 		
 }
 
-mainweapon = weaponstats.threepeater
+inventoryPrimary = [weaponstats.peashooter,weaponstats.repeater,weaponstats.snowpea,weaponstats.threepeater]
+inventorySecondary = []
+primary = 0
+secondary = 0
+
+mainweapon = inventoryPrimary[primary]
 
 
 subweapon = "torchwood"
