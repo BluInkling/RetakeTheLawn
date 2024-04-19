@@ -44,3 +44,8 @@ if !place_meeting(x,y+yVel,obj_wall){
 }
 
 }
+
+if hp < 1 && !dead{
+	dead = true
+	obj_endController.End()
+}

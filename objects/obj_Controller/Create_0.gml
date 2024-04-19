@@ -83,6 +83,8 @@ weaponstats = {
 }
 
 inventoryPrimary = [weaponstats.peashooter,weaponstats.repeater,weaponstats.snowpea,weaponstats.threepeater]
+ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip]
+
 inventorySecondary = []
 primary = 0
 secondary = 0

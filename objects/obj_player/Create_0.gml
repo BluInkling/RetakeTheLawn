@@ -26,7 +26,7 @@ animRun = spr_daveRun
 
 hascontrol = true;
 
-
+dead = false
 
 instance_create_layer(0,0,"Player",obj_Controller)
 instance_create_layer(0,0,"Gun",obj_MainWeapon)

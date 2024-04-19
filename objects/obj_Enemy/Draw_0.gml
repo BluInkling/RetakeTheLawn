@@ -4,10 +4,11 @@
 // Inherit the parent event
 
 
-draw_set_font(fnt1)
-draw_text_transformed(x,y+16,string(depth)+" Health: " + string(hp+armor) + "Type: " + string(enemyType.type),.20,.20,0)
+
 
 if global.debug{
+	draw_set_font(fnt1)
+	draw_text_transformed(x,y+16,string(depth)+" Health: " + string(hp+armor) + "Type: " + string(enemyType.type),.20,.20,0)
 	draw_circle_color(x,y,radius,c_yellow,c_yellow,false)
 	draw_circle_color(x,y,attackradius,c_red,c_red,false)
 

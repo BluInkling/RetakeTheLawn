@@ -46,8 +46,8 @@ function ChangePrimary(){
 	animIdle = main.mainidlesprite
 	animShoot = main.mainshootsprite
 	animReload = main.mainreloadsprite
-
 	projtype = main.projtype
+	ammo = obj_Controller.ammoPrimary[obj_Controller.primary]
 	//show_debug_message(projtype)
 	shootOffsetAngle = point_direction(0,0,main.projOffsetX,main.projOffsetY)
 	shootOffsetDistance = sqrt(sqr(main.projOffsetX)+sqr(main.projOffsetY))
