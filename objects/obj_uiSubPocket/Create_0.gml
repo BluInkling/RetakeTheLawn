@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-ammoSprite = spr_pea
 
-
+activate = false
+currSprite = sTest;
+imgnum = 0;
+maximgnum = 0;
 
 
 

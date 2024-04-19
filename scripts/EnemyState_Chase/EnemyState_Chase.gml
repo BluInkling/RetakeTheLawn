@@ -20,6 +20,7 @@ function EnemyState_Chase(){
 	
 	if(collision_circle(x,y,attackradius,obj_player,false,false)){
 		state = ENEMYSTATE.ATTACK;
+		attackDir = point_direction(x,y,obj_player.x,obj_player.y)
 	}
 	
 	if hasHand{

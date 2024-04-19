@@ -5,7 +5,7 @@ event_inherited();
 
 radius = 220;
 lineofsight = false;
-attackradius = 16
+attackradius = 48
 state = ENEMYSTATE.IDLE
 hitByAttack = ds_list_create();
 
@@ -29,6 +29,7 @@ my_dir = irandom_range(0,359)
 moveX = lengthdir_x(1, my_dir);
 moveY = lengthdir_y(1, my_dir);
 cold = false
+attackDir = 0
 
 
 xVel = moveX*spd + forceX
@@ -93,6 +94,7 @@ function Hit(damage,type,dir){
 function SpawnHat(){
 	var hat = instance_create_layer(x+hatX,y+hatY,"Bullets",obj_zombieGib)
 	hat.sprite_index = hatSpr
+	hat.image_xscale = image_xscale
 	hat.image_index = hatFrame
 	hat.height = y//-hatY/2
 }
@@ -100,6 +102,7 @@ function SpawnHat(){
 function SpawnHead(spr){
 	var head = instance_create_layer(x+4*image_xscale,y-16,"Bullets",obj_zombieGib)
 	head.sprite_index = spr
+	head.image_xscale = image_xscale
 	head.height = y
 }
 

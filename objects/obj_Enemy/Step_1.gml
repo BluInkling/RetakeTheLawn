@@ -2,6 +2,8 @@
 xVel = moveX*spd + forceX
 yVel = moveY*spd + forceY
 
+show_debug_message(string(moveX)+","+string(moveY))
+
 
 if !place_meeting(x+xVel,y,obj_wall){
 	if !place_meeting(x+xVel,y, obj_Enemy){

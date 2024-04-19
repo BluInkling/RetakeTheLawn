@@ -19,6 +19,7 @@ if idle{
 }else if reloading{
 	sprite_index = animReload
 }
+depth = obj_player.depth-50
 
 draw_self()
 

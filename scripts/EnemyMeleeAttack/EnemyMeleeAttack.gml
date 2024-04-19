@@ -1,8 +1,20 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyMeleeAttack(){
-	xMove = 0
-	yMove = 0
+
+	if image_index < 8{
+		attackDir = point_direction(x,y,obj_player.x,obj_player.y)
+	}
+	if image_index < 5{
+		moveX = 0
+		moveY = 0
+	}else{
+		moveX = lengthdir_x(1,attackDir)
+		moveY = lengthdir_y(1,attackDir)
+		spd = 1
+	}
+	
+
 	//show_debug_message("processign atatck!")
 //start of the attack
 

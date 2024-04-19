@@ -14,4 +14,4 @@ if(flashAlpha > 0){
 	shader_reset();
 }
 
-depth = 300-(y)///100)
+depth = 300-y//100)
