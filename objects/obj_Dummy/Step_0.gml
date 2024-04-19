@@ -1,0 +1,41 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+
+//Forces (this isn't neat but it works)
+if forceX != 0 || forceY != 0{
+	if forceX > forceDecay{
+		//forceX -= forceDecay
+	}else if forceX < -forceDecay{
+		//forceX += forceDecay
+	}else{
+		forceX = 0
+	}
+	if forceY > forceDecay{
+		//forceY -= forceDecay
+	}else if forceY < -forceDecay{
+		//forceY += forceDecay
+	}else{
+		forceY = 0
+	}
+}
+
+if (flashAlpha > 0 and cold == false){
+	flashAlpha -= 0.05;
+	//show_debug_message("changing flash")
+}
+
+switch (state){
+		case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
+	
+	}
+
+
+
+
+
+
+
+
+
+

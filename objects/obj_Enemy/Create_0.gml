@@ -20,11 +20,18 @@ enum ENEMYSTATE
 }
 
 enemyType = obj_Controller.enemystats.conehead;
+
+//enemyType = obj_Controller.enemystats.conehead;
+
+enemyType = global.grabthis;
+show_debug_message("grabbed:" + string(enemyType))
+
 //-------------------
 hp = enemyType.hp
 armor = enemyType.armor
 counter = 0;
 spd = enemyType.spd
+coldspd = spd / 2;
 my_dir = irandom_range(0,359)
 moveX = lengthdir_x(1, my_dir);
 moveY = lengthdir_y(1, my_dir);
@@ -57,17 +64,21 @@ if hat == "cone"{
 hb = instance_create_layer(x,y,"Player",obj_zombieHitbox)
 
 function Hit(damage,type,dir){
-	if armor > 0{
-		armor -= damage
-		if armor <= 0{
+	if armor > 0{ //if has armor
+		armor -= damage//armor takes damage
+		if armor <= 0{ //if no more armor
 			hasHat = false
-			SpawnHat()
-			hp+=armor
+			SpawnHat(hatSpr)
+			hp += armor;
 			armor=0
 		}
-	}else{
+	}else{ //if no armor, health takes damage
+		show_debug_message(damage)
+		show_debug_message("minus")
+		show_debug_message(hp)
 		hp -= damage;
 	}
+
 	if hasHand && hp <= enemyType.hp/2{
 		hasHand = false
 		instance_create_layer(x-2*image_xscale,y-8,"Bullets",obj_zombieGib)
@@ -77,7 +88,7 @@ function Hit(damage,type,dir){
 		cold = true
 		flashAlpha = 0.2;
 		flashColor = c_aqua;
-		spd = spd / 2;
+		spd = coldspd;
 		alarm_set(0,120)
 	}else if type == "flaming"{
 		if obj_MainWeapon.main.wepname == "snowpea"{
@@ -90,6 +101,7 @@ function Hit(damage,type,dir){
 	}
 	Force(2,dir)
 }
+
 
 function SpawnHat(){
 	var hat = instance_create_layer(x+hatX,y+hatY,"Bullets",obj_zombieGib)
@@ -108,5 +120,15 @@ function SpawnHead(spr){
 
 function Destroy(){
 	instance_destroy(hb)
+	if (instance_exists(obj_RoomController))
+	{
+		with(obj_RoomController)
+		{
+			if(triggered)
+			{
+				remaining[current_wave]--;
+			}
+		}
+	}
 	instance_destroy()
 }

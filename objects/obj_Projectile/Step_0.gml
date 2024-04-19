@@ -10,8 +10,10 @@ if place_meeting(x,y,obj_wall){
 
 if place_meeting(x,y,obj_zombieHitbox){
 	var enemy = instance_nearest(x,y,obj_zombieHitbox).host
-	enemy.Hit(1,type,moveDir)
+	show_debug_message("Enemy hit!")
+	enemy.Hit(damage,type,moveDir)
 	Destroy()
+	
 }
 
 

@@ -4,8 +4,6 @@
 // Inherit the parent event
 
 
-
-
 if global.debug{
 	draw_set_font(fnt1)
 	draw_text_transformed(x,y+16,string(depth)+" Health: " + string(hp+armor) + "Type: " + string(enemyType.type),.20,.20,0)
@@ -22,7 +20,8 @@ if global.debug{
 }
 
 
-//draw_self()
+draw_self()
+
 event_inherited();
 
 
@@ -40,4 +39,3 @@ if hasHat{
 	}
 	draw_sprite_ext(hatSpr,hatFrame,x+hatX,y+hatY,image_xscale,1,0,c_white,1)
 }
-
