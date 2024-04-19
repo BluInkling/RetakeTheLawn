@@ -1,4 +1,4 @@
-sub = obj_Controller.subweapon
+//sub = obj_Controller.subweapon
 main = obj_Controller.mainweapon
 
 

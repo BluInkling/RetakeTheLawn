@@ -19,7 +19,7 @@ if (subweapon == "potatomine") draw_sprite_ext(sPotatomin,0,220,35,0.10,0.10,0,c
 //if (mainweapon == "repeater") draw_sprite(sRepeater,0,1230,695)
 */
 
-
+/*
 draw_sprite(spr_pocket,0,52,17)
 switch(subweapon){
 	case "torchwood": 
@@ -51,7 +51,5 @@ switch(subweapon){
 	case "potatomine":
 		draw_sprite(spr_potatomineIdle,image_index,52,17)
 		break;
-		
-	
-	
 }
+*/

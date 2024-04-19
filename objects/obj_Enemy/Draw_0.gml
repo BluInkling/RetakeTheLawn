@@ -9,9 +9,10 @@
 if global.debug{
 	draw_set_font(fnt1)
 	draw_text_transformed(x,y+16,string(depth)+" Health: " + string(hp+armor) + "Type: " + string(enemyType.type),.20,.20,0)
+	draw_set_alpha(0.25)
 	draw_circle_color(x,y,radius,c_yellow,c_yellow,false)
 	draw_circle_color(x,y,attackradius,c_red,c_red,false)
-
+	draw_set_alpha(1)
 
 	if collision_line(x,y-16,obj_player.x,obj_player.y,obj_wall,0,0){
 		draw_line_color(x,y-16,obj_player.x,obj_player.y,c_red,c_red)
@@ -38,6 +39,5 @@ if hasHat{
 		hatY = obj_Controller.zombieHeadAnims.run.y[image_index]
 	}
 	draw_sprite_ext(hatSpr,hatFrame,x+hatX,y+hatY,image_xscale,1,0,c_white,1)
-	show_debug_message("HAS HAT")
 }
 

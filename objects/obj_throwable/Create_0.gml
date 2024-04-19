@@ -21,7 +21,7 @@ startX = x
 startY = y
 targetX = startX
 targetY = startY
-/*
+/*Moved to alarm to account for changes in spawner object having a delayed effect
 if !fixedDist{
 	if dist > maxDist{
 		targetX = x+lengthdir_x(maxDist,dir)

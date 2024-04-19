@@ -16,7 +16,7 @@
 //if(place_meeting(x,y,obj_wall)) speed=0;
 
 
-switch(sub){
+switch(sub.wepname){
 	case "potatomine":
 		switch(state){
 			case "flying":

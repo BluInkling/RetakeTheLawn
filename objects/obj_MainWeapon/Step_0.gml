@@ -62,10 +62,6 @@ if reloading{
 	}
 }
 
-
-if (keyboard_check_pressed(ord("9"))) obj_Controller.subweapon = "torchwood"
-if (keyboard_check_pressed(ord("0"))) obj_Controller.subweapon = "potatomine"
-
 if keyboard_check_pressed(vk_shift){
 	obj_Controller.ammoPrimary[obj_Controller.primary] = ammo
 	with obj_Controller{

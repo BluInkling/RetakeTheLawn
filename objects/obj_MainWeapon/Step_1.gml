@@ -10,7 +10,7 @@ clip = main.clip
 
 //sprite_index = main.mainidlesprite
 
-if ((ammo <= 0) && shootavailable = true) || keyboard_check_pressed(ord("R")){
+if ((ammo <= 0) && shootavailable = true) || keyboard_check_pressed(ord("R")) && !reloading{
 	Reload()
 }
 
