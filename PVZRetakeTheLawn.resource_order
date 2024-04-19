@@ -96,6 +96,7 @@
     {"name":"modernpacket","order":8,"path":"sprites/modernpacket/modernpacket.yy",},
     {"name":"sFrozenPea","order":9,"path":"sprites/sFrozenPea/sFrozenPea.yy",},
     {"name":"spr_splatFrozenPea","order":3,"path":"sprites/spr_splatFrozenPea/spr_splatFrozenPea.yy",},
+    {"name":"spr_reload","order":6,"path":"sprites/spr_reload/spr_reload.yy",},
     {"name":"sgraveShine","order":14,"path":"sprites/sgraveShine/sgraveShine.yy",},
   ],
 }

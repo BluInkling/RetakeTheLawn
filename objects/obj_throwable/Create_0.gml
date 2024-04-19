@@ -4,11 +4,45 @@
 
 //Get the arch throw code from ryan snowball
 //this is temp
-
+// * DONE
+/*
 direction = point_direction(x,y,mouse_x,mouse_y);
 speed = 3;
 alarm_set(0,30);
+*/
 
+dir = 0//point_direction(x,y,mouse_x,mouse_y);
+//For potato mine this is determined by the subweapon script when spawned
+fixedDist = false //To be determined by the struct, if true, uses maxDist as the universal distance
+maxDist = 100
+dist =0
+
+startX = x
+startY = y
+targetX = startX
+targetY = startY
+/*
+if !fixedDist{
+	if dist > maxDist{
+		targetX = x+lengthdir_x(maxDist,dir)
+		targetY = y+lengthdir_y(maxDist,dir)
+	}else{
+		targetX = x+lengthdir_x(dist,dir)
+		targetY = y+lengthdir_y(dist,dir)
+	}
+}else{
+	targetX = x+lengthdir_x(maxDist,dir)
+	targetY = y+lengthdir_y(maxDist,dir)
+}
+*/
+
+alarm[0] = 1
+z = 0
+stepSpd = 0.04
+step = 0
+
+drawX = x
+drawY = y-z
 
 sub = obj_SubWeapon.sub
 state = "flying"
@@ -34,7 +68,7 @@ function ProcessExplosion(){
 				with (hitID)
 				{
 					show_debug_message("hit :" + string(hitID))
-					Hit(4,"normal",0)
+					Hit(6,"normal", point_direction(x,y,hitID.x,hitID.y))
 					
 					
 				}

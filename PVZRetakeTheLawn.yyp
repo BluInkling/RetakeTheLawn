@@ -176,6 +176,7 @@
     {"id":{"name":"sFrozenPea","path":"sprites/sFrozenPea/sFrozenPea.yy",},},
     {"id":{"name":"spr_splatFrozenPea","path":"sprites/spr_splatFrozenPea/spr_splatFrozenPea.yy",},},
     {"id":{"name":"spr_puffshroomIdle","path":"sprites/spr_puffshroomIdle/spr_puffshroomIdle.yy",},},
+    {"id":{"name":"spr_reload","path":"sprites/spr_reload/spr_reload.yy",},},
     {"id":{"name":"sgraveShine","path":"sprites/sgraveShine/sgraveShine.yy",},},
   ],
   "RoomOrderNodes": [
