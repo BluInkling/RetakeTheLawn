@@ -162,6 +162,7 @@
     {"id":{"name":"spr_snowpeaReload","path":"sprites/spr_snowpeaReload/spr_snowpeaReload.yy",},},
     {"id":{"name":"obj_zombieGib","path":"objects/obj_zombieGib/obj_zombieGib.yy",},},
     {"id":{"name":"sgravewall","path":"sprites/sgravewall/sgravewall.yy",},},
+    {"id":{"name":"spr_pocketReloading","path":"sprites/spr_pocketReloading/spr_pocketReloading.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"obj_endController","path":"objects/obj_endController/obj_endController.yy",},},
     {"id":{"name":"spr_repeaterReload","path":"sprites/spr_repeaterReload/spr_repeaterReload.yy",},},

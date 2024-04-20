@@ -2,13 +2,13 @@
 // You can write your code in this editor
 
 
-	if paused && keyboard_check_pressed(vk_anykey){
-		room_restart()
-	}
-	if paused == true{
-	    alarm[0]++;
-	    alarm[1]++;
-	}
+if paused && keyboard_check_pressed(vk_anykey){
+	room_restart()
+}
+if paused == true{
+	alarm[0]++;
+	alarm[1]++;
+}
 
 
 

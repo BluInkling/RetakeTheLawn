@@ -120,15 +120,5 @@ function SpawnHead(spr){
 
 function Destroy(){
 	instance_destroy(hb)
-	if (instance_exists(obj_RoomController))
-	{
-		with(obj_RoomController)
-		{
-			if(triggered)
-			{
-				remaining[current_wave]--;
-			}
-		}
-	}
 	instance_destroy()
 }

@@ -62,12 +62,19 @@ if reloading{
 	}
 }
 
-if keyboard_check_pressed(vk_shift){
+if keyboard_check_pressed(vk_shift) || mouse_wheel_up() || mouse_wheel_down(){
 	obj_Controller.ammoPrimary[obj_Controller.primary] = ammo
 	with obj_Controller{
-		primary += 1
+		if mouse_wheel_down(){
+			primary -= 1
+		}else{
+			primary += 1
+		}
 		if primary > array_length(inventoryPrimary)-1{
 			primary = 0
+		}
+		if primary < 0{
+			primary = array_length(inventoryPrimary)-1
 		}
 		mainweapon = inventoryPrimary[primary]
 	}

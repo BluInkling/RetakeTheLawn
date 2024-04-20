@@ -32,6 +32,16 @@ if (hp <= 0 && !dying)
 	image_index = 0
 	SpawnHead(spr_zombieHead)
 	instance_destroy(hb)
+	if (instance_exists(obj_RoomController))
+	{
+		with(obj_RoomController)
+		{
+			if(triggered)
+			{
+				remaining[current_wave]--;
+			}
+		}
+	}
 }
 
 

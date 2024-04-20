@@ -23,8 +23,12 @@ switch(sub.wepname){
 				//show_debug_message("flying")
 				sprite_index = spr_potatomineThrow
 				step+=stepSpd
-				x = lerp(startX,targetX,step)
-				y = lerp(startY,targetY,step)
+				if !place_meeting(lerp(startX,targetX,step),y,obj_wall){
+					x = lerp(startX,targetX,step)
+				}
+				if !place_meeting(x,lerp(startY,targetY,step),obj_wall){
+					y = lerp(startY,targetY,step)
+				}
 				drawX = x
 				drawY = y-z
 				z=(-1*power(step,2)+step)*175
