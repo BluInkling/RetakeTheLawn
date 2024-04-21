@@ -5,7 +5,7 @@ obj_MainWeapon.projtype = main.projtype
 		
 //subavailable = true
 
-show_debug_message("back to normal!")
+//show_debug_message("back to normal!")
 
-show_debug_message(obj_MainWeapon.projtype)
+//show_debug_message(obj_MainWeapon.projtype)
 

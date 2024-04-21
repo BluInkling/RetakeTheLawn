@@ -51,11 +51,12 @@ alarm[0] = main.lifetime
 
 function Destroy(_other){ //Will eventually add splat animation
 	if !is_undefined(_other){
-		if _other.object_index == obj_wall{
+		//show_debug_message("SPLAT")
+		//if _other.object_index == obj_wall{
 			var splatObj = instance_create_layer(x,y,"Bullets",obj_splat)
 			splatObj.sprite_index = splat
 			splatObj.image_angle = round(point_direction(_other.x,_other.y,x,y)/90)*90+180
-		}
+		//}
 	}
 	instance_destroy()
 }

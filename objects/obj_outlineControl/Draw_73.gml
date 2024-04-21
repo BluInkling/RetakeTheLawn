@@ -6,7 +6,7 @@ surface_set_target(surf_outline)
 draw_clear_alpha(1, 0)
     with (obj_outlinable) {
         // draw event for object; if no additional effects are needed, just use draw_self()
-		draw_self()
+		//draw_sprite(sprite_index,image_index,round(x),round(y))
     }
 	with (obj_MainWeapon) {
 		draw_self()

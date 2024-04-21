@@ -11,9 +11,9 @@ followTarget = obj_player
 
 view = view_camera[0]
 
-view_width = 340//1920/6;
+view_width = 320//1920/6;
 
-view_height = 192//1080/6;
+view_height = 180//1080/6;
 
 window_scale = 4;
 
