@@ -24,12 +24,12 @@ if (mouse_check_button(mb_left)) && shootavailable && idle && !shooting{ //SHOOT
 	/*
 	if (main.wepname == "peashooter"){
 		//projtype = "normal"
-		show_debug_message("pea shoot")
+		//show_debug_message("pea shoot")
 		ShootProjectile()
 	}
 	if (main.wepname == "repeater"){
 		//projtype = "normal"
-		show_debug_message("repeater shoot")
+		//show_debug_message("repeater shoot")
 		ShootProjectile()
 		alarm_set(1,5)
 		

@@ -56,9 +56,9 @@ function Hit(damage,type,dir){
 			armor=0
 		}
 	}else{ //if no armor, health takes damage
-		show_debug_message(damage)
-		show_debug_message("minus")
-		show_debug_message(hp)
+		//show_debug_message(damage)
+		//show_debug_message("minus")
+		//show_debug_message(hp)
 		hp -= damage;
 	}
 	if hasHand && hp <= enemyType.hp/2{

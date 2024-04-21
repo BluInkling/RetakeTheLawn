@@ -178,11 +178,3 @@ zombieHeadAnims = { //Storing it here for now
 
 
 
-
-
-
-
-
-
-
-

@@ -67,7 +67,7 @@ function ProcessExplosion(){
 				ds_list_add(hitByAttack,hitID);
 				with (hitID)
 				{
-					show_debug_message("hit :" + string(hitID))
+					//show_debug_message("hit :" + string(hitID))
 					Hit(6,"normal", point_direction(x,y,hitID.x,hitID.y))
 					
 					

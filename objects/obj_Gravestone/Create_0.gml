@@ -28,7 +28,7 @@ function kakusummongai(whatenemy,enemytype){
 	YPlace = irandom_range(-10,10)
 	global.grabthis = enemytype
 	instance_create_layer(x + XPlace,y + YPlace,"Player",whatenemy)
-	show_debug_message("ENEMY SPANWED")
+	//show_debug_message("ENEMY SPANWED")
 }
 
 function crumble(){

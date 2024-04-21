@@ -24,7 +24,7 @@ enemyType = obj_Controller.enemystats.conehead;
 //enemyType = obj_Controller.enemystats.conehead;
 
 enemyType = global.grabthis;
-show_debug_message("grabbed:" + string(enemyType))
+//show_debug_message("grabbed:" + string(enemyType))
 
 //-------------------
 hp = enemyType.hp
@@ -73,9 +73,9 @@ function Hit(damage,type,dir){
 			armor=0
 		}
 	}else{ //if no armor, health takes damage
-		show_debug_message(damage)
-		show_debug_message("minus")
-		show_debug_message(hp)
+		//show_debug_message(damage)
+		//show_debug_message("minus")
+		//show_debug_message(hp)
 		hp -= damage;
 	}
 

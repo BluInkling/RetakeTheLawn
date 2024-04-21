@@ -38,7 +38,7 @@ if obj_player.xDir == 1{
 
 armAngle = 90-90*obj_player.xDir + diffAngle
 
-show_debug_message(armAngle)
+//show_debug_message(armAngle)
 image_yscale = obj_player.xDir
 
 armAngle = round(armAngle/10)*10

@@ -46,7 +46,7 @@ if (hits > 0)
 			ds_list_add(hitByAttack,hitID);
 			with (hitID)
 			{
-				show_debug_message("Ahh im hit")
+				//show_debug_message("Ahh im hit")
 				hp--; // minus 1 //DEAR FUTURE MAX: make hp when u wake upaw
 				//flash = 3;
 				//hitfrom = other.direction;

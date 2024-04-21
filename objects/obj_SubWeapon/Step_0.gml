@@ -19,7 +19,7 @@ if obj_Controller.cooldownSecondary[obj_Controller.secondary] == 0{
 
 if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable == true{
 	//show_debug_message("sub activated!")
-	show_debug_message(sub)
+	//show_debug_message(sub)
 	if sub.wepname == "torchwood"{
 		//show_debug_message("torch activated!")
 		if (main.wepname == "peashooter" or main.wepname == "repeater" or main.wepname == "snowpea" or main.wepname == "threepeater") obj_MainWeapon.projtype = "flaming" //the sprites and projectile stats are changed in oProjectile

@@ -19,7 +19,7 @@ if(triggered == false){
 		}
 		remaining[total_waves]++;
 	}
-	show_debug_message("spawning grave")
+	//show_debug_message("spawning grave")
 	
 	
 	for(var h = 0;h < array_length(spawn); h++){ //SPAWNS GRAVES ACCORIFNG TO COORDS IN INSTRANCE CREATION CODE
@@ -30,7 +30,7 @@ if(triggered == false){
 	for (var b = 0; b < instance_number(obj_Gravestone); ++b;)
 	{
 		graves[b] = instance_find(obj_Gravestone,b);
-		show_debug_message("grave found" + string(graves[b]))
+		//show_debug_message("grave found" + string(graves[b]))
 	}
 	
 }

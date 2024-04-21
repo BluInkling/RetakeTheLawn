@@ -38,7 +38,13 @@ if !place_meeting(x,y+yVel,obj_wall){
 		y+=yVel
 	}else{
 		var _other = instance_place(x,y+yVel, obj_actor)
-		_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+		if _other.object_index == obj_Enemy{
+			if !_other.dying{
+				_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+			}
+		}else{
+			_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+		}
 		y+=yVel
 	}
 }
