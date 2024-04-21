@@ -124,6 +124,7 @@ enemystats = {
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
 		attacksprHB : spr_zombieAttackHB,
+		spawnspr : spr_zombieSpawn,
 		spd : .75,
 		onhead : "none"
 	},
@@ -136,6 +137,7 @@ enemystats = {
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
 		attacksprHB : spr_zombieAttackHB,
+		spawnspr : spr_zombieSpawn,
 		spd : .5,
 		onhead : "cone"
 	},
@@ -148,6 +150,7 @@ enemystats = {
 		movespr : spr_zombieRun,
 		attackspr : spr_zombieAttack,
 		attacksprHB : spr_zombieAttackHB,
+		spawnspr : spr_zombieSpawn,
 		spd : .5,
 		onhead : "bucket"
 	}
@@ -173,6 +176,10 @@ zombieHeadAnims = { //Storing it here for now
 	attack : {
 		y : [-28,-28,-27,-26,-25,-25,-28,-29,-28,-25,-27,-28,-29,-26,-27],
 		x : [3,3,3,3,3,4,3,4,5,4,3,3,4,4]
+	},
+	spawn : {
+		y : [16,16,16,16,16,16,-7,-13,-19,-23,-26,-28,-29,-27],
+		x : [0,0,0,0,0,0,-3,-3,0,3,4,3,4]
 	}
 }
 

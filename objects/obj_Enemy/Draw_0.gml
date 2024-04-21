@@ -36,6 +36,11 @@ if hasHat{
 	}else if sprite_index == spr_zombieRun{
 		hatX = obj_Controller.zombieHeadAnims.run.x[image_index]*image_xscale
 		hatY = obj_Controller.zombieHeadAnims.run.y[image_index]
+	} else if sprite_index == spr_zombieSpawn{
+		hatX = obj_Controller.zombieHeadAnims.spawn.x[image_index]*image_xscale
+		hatY = obj_Controller.zombieHeadAnims.spawn.y[image_index]
 	}
-	draw_sprite_ext(hatSpr,hatFrame,x+hatX,y+hatY,image_xscale,1,0,c_white,1)
+	if hatY < 0{
+		draw_sprite_ext(hatSpr,hatFrame,x+hatX,y+hatY,image_xscale,1,0,c_white,1)
+	}
 }

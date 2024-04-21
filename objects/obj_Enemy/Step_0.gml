@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 if !dying && !isDead{
+	if !spawning{
 	switch (state){
 			case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
 			case ENEMYSTATE.CHASE: EnemyState_Chase(); break;
@@ -11,6 +12,15 @@ if !dying && !isDead{
 			case ENEMYSTATE.ATTACK: EnemyState_Attack(); break;
 	
 		}
+	}else{
+		moveX = 0
+		moveY = 0
+		sprite_index = enemyType.spawnspr
+		if image_index > image_number-1{
+			spawning = false
+			hb = instance_create_layer(x,y,"Player",obj_zombieHitbox)
+		}
+	}
 }else{
 	if state != ENEMYSTATE.IDLE{
 		//Run death

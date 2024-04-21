@@ -52,6 +52,9 @@ hatY = 0
 
 dying = false
 isDead = false
+
+spawning = true
+sprite_index = enemyType.spawnspr
 	
 if hat == "cone"{
 	hatSpr = spr_zombieCone
@@ -60,8 +63,6 @@ if hat == "cone"{
 	hatSpr = spr_zombieBucket
 	hasHat = true
 }
-
-hb = instance_create_layer(x,y,"Player",obj_zombieHitbox)
 
 function Hit(damage,type,dir){
 	if armor > 0{ //if has armor
