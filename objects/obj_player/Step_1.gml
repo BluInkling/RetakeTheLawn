@@ -9,7 +9,7 @@
 //need to make death state/animation
 if(hp <= 0) game_restart()
 
-
+if(hp > maxhp) hp = maxhp
 
 
 

@@ -7,7 +7,7 @@ closed = false
 
 
 
-
+dir =  "y"
 
 
 

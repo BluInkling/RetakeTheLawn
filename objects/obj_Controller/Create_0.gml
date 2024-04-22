@@ -101,16 +101,26 @@ subweaponstats = {
 	}
 }
 
-inventoryPrimary = [weaponstats.peashooter,weaponstats.repeater,weaponstats.snowpea,weaponstats.threepeater]
-ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip]
 
-inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
-cooldownSecondary = [0,0]
+//inventoryPrimary = [weaponstats.peashooter,weaponstats.repeater,weaponstats.snowpea,weaponstats.threepeater]
+inventoryPrimary = [weaponstats.peashooter]
+//ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip]
+ammoPrimary = [weaponstats.peashooter.clip]
+
+//inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
+inventorySecondary = [subweaponstats.potatomine]
+
+cooldownSecondary = [0]//[0,0]
 primary = 0
 secondary = 0
 
+
+mainamount = 4 //total amn of main weps
+secondaryamount = 2; //total amnt of subs
+
 mainweapon = inventoryPrimary[primary]
 subweapon = inventorySecondary[secondary]
+
 
 //subweapon = "torchwood"
 

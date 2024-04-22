@@ -2,6 +2,7 @@
 // You can write your code in this editor
 event_inherited()
 
+
 maxhp = 10
 hp = maxhp;
 
@@ -26,8 +27,9 @@ animRun = spr_daveRun
 
 hascontrol = true;
 
-
+//how morbid!
 dead = false
+
 cold = false;
 
 instance_create_layer(0,0,"Player",obj_Controller)
