@@ -130,7 +130,6 @@
     {"id":{"name":"spr_fumeshroomIdle","path":"sprites/spr_fumeshroomIdle/spr_fumeshroomIdle.yy",},},
     {"id":{"name":"shFlash","path":"shaders/shFlash/shFlash.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
-    {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"sfireeffect","path":"sprites/sfireeffect/sfireeffect.yy",},},
     {"id":{"name":"obj_Dummy","path":"objects/obj_Dummy/obj_Dummy.yy",},},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
@@ -216,7 +215,6 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_prototyperoom","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},},
     {"roomId":{"name":"rm_mainTestRoom","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},},
-    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"rm_tileTest","path":"rooms/rm_tileTest/rm_tileTest.yy",},},
   ],
   "templateType": "game",

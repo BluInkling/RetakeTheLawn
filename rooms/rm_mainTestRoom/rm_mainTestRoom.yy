@@ -96,7 +96,6 @@
     {"name":"inst_35F22801","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},
     {"name":"inst_3EA59F84","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},
     {"name":"inst_19451FEC","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},
-    {"name":"inst_6AD80DEB","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},
     {"name":"inst_462CE873","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},
     {"name":"inst_394DE315","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},
     {"name":"inst_6A693DAE","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},

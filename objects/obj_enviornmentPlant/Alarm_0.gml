@@ -31,6 +31,8 @@ with(instance_create_layer(x,y,"Player",obj_collectable))
 	sprite_index = spr_sun
 }
 
+alarm[1] = 30
+
 
 
 

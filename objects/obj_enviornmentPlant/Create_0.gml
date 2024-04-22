@@ -1,7 +1,7 @@
 
 
 type = choose("sunflower")
-
+hasSunned = false
 
 
 if type == "sunflower"{
