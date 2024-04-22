@@ -3,7 +3,12 @@
 event_inherited()
 
 
+<<<<<<< Updated upstream
 hp = 10;
+=======
+maxhp = 10
+hp = maxhp;
+>>>>>>> Stashed changes
 
 xInput = 0
 yInput = 0
@@ -27,7 +32,13 @@ animRun = spr_daveRun
 hascontrol = true;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+
+//how morbid!
+dead = false
+>>>>>>> Stashed changes
 cold = false;
 
 

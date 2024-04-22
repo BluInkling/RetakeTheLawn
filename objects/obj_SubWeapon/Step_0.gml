@@ -32,6 +32,23 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 		subavailable = false
 		alarm_set(0,cooldown)
 	}
+<<<<<<< Updated upstream
+=======
+	obj_Controller.cooldownSecondary[obj_Controller.secondary] = sub.cooldown
+}
+//show_debug_message(obj_Controller.cooldownSecondary[obj_Controller.secondary])
+
+if keyboard_check_pressed(vk_control){
+	with obj_Controller{
+		secondary += 1
+		if secondary > array_length(inventorySecondary)-1{
+			secondary = 0
+		}
+		subweapon = inventorySecondary[secondary]
+		
+	}
+	ChangeSecondary()
+>>>>>>> Stashed changes
 }
 
 

@@ -69,11 +69,46 @@ weaponstats = {
 		
 }
 
+<<<<<<< Updated upstream
 //mainweapon = "peashooter"
 <<<<<<< Updated upstream
 mainweapon = weaponstats.repeater
 =======
 mainweapon = weaponstats.threepeater
+>>>>>>> Stashed changes
+=======
+subweaponstats = {
+	potatomine :{
+		wepname : "potatomine",
+		subidlesprite : spr_potatomineIdle, // for pocket
+		subdownsprite : spr_potatomineThrow,
+		cooldown : 1200,
+		throwable : true
+	},
+	torchwood :{
+		wepname : "torchwood",
+		subidlesprite : spr_torchwoodIdle, // for pocket
+		subdownsprite : spr_torchwoodActivate,
+		cooldown : 200,
+		throwable: false
+	}
+}
+
+//inventoryPrimary = [weaponstats.peashooter,weaponstats.repeater,weaponstats.snowpea,weaponstats.threepeater]
+inventoryPrimary = [weaponstats.peashooter]
+ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip]
+
+//inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
+inventorySecondary = [subweaponstats.potatomine]
+cooldownSecondary = [0,0]
+primary = 0
+secondary = 0
+
+mainamount = 4 //total amn of main weps
+secondaryamount = 2; //total amnt of subs
+
+mainweapon = inventoryPrimary[primary]
+subweapon = inventorySecondary[secondary]
 >>>>>>> Stashed changes
 
 subweapon = "torchwood"

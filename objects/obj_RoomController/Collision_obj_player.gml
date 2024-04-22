@@ -4,6 +4,7 @@
 if(triggered == false){
 	//close doors and stop from retriggering
 	with(obj_Door) closed = true;
+	instance_create_layer(x+irandom_range(-10,10),y+irandom_range(-10,10),"Walls",obj_enviornmentPlant)
 	triggered = true
 	
 	

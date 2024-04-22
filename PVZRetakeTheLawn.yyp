@@ -60,6 +60,7 @@
     {"id":{"name":"spr_frozenpea","path":"sprites/spr_frozenpea/spr_frozenpea.yy",},},
 =======
     {"id":{"name":"obj_throwable","path":"objects/obj_throwable/obj_throwable.yy",},},
+    {"id":{"name":"quad_bezier","path":"scripts/quad_bezier/quad_bezier.yy",},},
     {"id":{"name":"spr_frozenPea","path":"sprites/spr_frozenPea/spr_frozenPea.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"spr_peashooterShoot","path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},},
@@ -92,6 +93,11 @@
     {"id":{"name":"obj_Enemy","path":"objects/obj_Enemy/obj_Enemy.yy",},},
     {"id":{"name":"outline_start","path":"scripts/outline_start/outline_start.yy",},},
     {"id":{"name":"spr_zombieAttack","path":"sprites/spr_zombieAttack/spr_zombieAttack.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"obj_pickupable","path":"objects/obj_pickupable/obj_pickupable.yy",},},
+    {"id":{"name":"spr_zombieDeadRun","path":"sprites/spr_zombieDeadRun/spr_zombieDeadRun.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_pea","path":"sprites/spr_pea/spr_pea.yy",},},
     {"id":{"name":"spr_repeaterShoot","path":"sprites/spr_repeaterShoot/spr_repeaterShoot.yy",},},
     {"id":{"name":"spr_puffshroomReload","path":"sprites/spr_puffshroomReload/spr_puffshroomReload.yy",},},
@@ -105,6 +111,7 @@
     {"id":{"name":"spr_peashooterIdle","path":"sprites/spr_peashooterIdle/spr_peashooterIdle.yy",},},
     {"id":{"name":"spr_daveRun","path":"sprites/spr_daveRun/spr_daveRun.yy",},},
     {"id":{"name":"spr_potatomineExplode","path":"sprites/spr_potatomineExplode/spr_potatomineExplode.yy",},},
+    {"id":{"name":"obj_collectable","path":"objects/obj_collectable/obj_collectable.yy",},},
     {"id":{"name":"spr_potatomineThrow","path":"sprites/spr_potatomineThrow/spr_potatomineThrow.yy",},},
     {"id":{"name":"Documentation","path":"scripts/Documentation/Documentation.yy",},},
     {"id":{"name":"EnemyState_Chase","path":"scripts/EnemyState_Chase/EnemyState_Chase.yy",},},
@@ -114,6 +121,7 @@
     {"id":{"name":"obj_outlinable","path":"objects/obj_outlinable/obj_outlinable.yy",},},
     {"id":{"name":"obj_playerArms","path":"objects/obj_playerArms/obj_playerArms.yy",},},
     {"id":{"name":"Approach","path":"scripts/Approach/Approach.yy",},},
+    {"id":{"name":"rm_prototyperoom","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},},
     {"id":{"name":"spr_fumeshroomIdle","path":"sprites/spr_fumeshroomIdle/spr_fumeshroomIdle.yy",},},
     {"id":{"name":"shFlash","path":"shaders/shFlash/shFlash.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
@@ -124,6 +132,7 @@
     {"id":{"name":"obj_Gravestone","path":"objects/obj_Gravestone/obj_Gravestone.yy",},},
     {"id":{"name":"spr_zombieHead","path":"sprites/spr_zombieHead/spr_zombieHead.yy",},},
     {"id":{"name":"outline_init","path":"scripts/outline_init/outline_init.yy",},},
+    {"id":{"name":"obj_enviornmentPlant","path":"objects/obj_enviornmentPlant/obj_enviornmentPlant.yy",},},
     {"id":{"name":"obj_Controller","path":"objects/obj_Controller/obj_Controller.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"spr_zombieHand","path":"sprites/spr_zombieHand/spr_zombieHand.yy",},},
@@ -165,6 +174,7 @@
     {"id":{"name":"spr_threepeaterReload","path":"sprites/spr_threepeaterReload/spr_threepeaterReload.yy",},},
     {"id":{"name":"obj_SubWeapon","path":"objects/obj_SubWeapon/obj_SubWeapon.yy",},},
     {"id":{"name":"obj_Projectile","path":"objects/obj_Projectile/obj_Projectile.yy",},},
+    {"id":{"name":"shiny","path":"sprites/shiny/shiny.yy",},},
     {"id":{"name":"sgrave","path":"sprites/sgrave/sgrave.yy",},},
     {"id":{"name":"ShootPea","path":"scripts/ShootPea/ShootPea.yy",},},
     {"id":{"name":"sRepeater","path":"sprites/sRepeater/sRepeater.yy",},},
@@ -186,6 +196,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_prototyperoom","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},},
     {"roomId":{"name":"rm_mainTestRoom","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},},
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

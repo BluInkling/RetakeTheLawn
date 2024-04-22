@@ -83,4 +83,4 @@ function Reload(){
 }
 
 
-show_debug_message("Initial typee:" + string(projtype))
+//show_debug_message("Initial typee:" + string(projtype))
