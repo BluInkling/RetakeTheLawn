@@ -65,13 +65,15 @@ function ProcessExplosion(){
 			if (ds_list_find_index(hitByAttack,hitID) == -1)//checks to see if the i enemy hit is already in the list
 			{ 
 				ds_list_add(hitByAttack,hitID);
+				/*
 				with (hitID)
 				{
 					//show_debug_message("hit :" + string(hitID))
+					//Bug found: because 'with' was being used, the x and y referenced were the same as hitID's x and y
+					//A direct invocation solves this
 					Hit(6,"normal", point_direction(x,y,hitID.x,hitID.y))
-					
-					
-				}
+				}*/
+				hitID.Hit(10,"normal", point_direction(x,y,hitID.x,hitID.y))
 			}
 	
 		}

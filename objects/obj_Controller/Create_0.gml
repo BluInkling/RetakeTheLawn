@@ -96,7 +96,7 @@ subweaponstats = {
 		wepname : "torchwood",
 		subidlesprite : spr_torchwoodIdle, // for pocket
 		subdownsprite : spr_torchwoodActivate,
-		cooldown : 200,
+		cooldown : 600,
 		throwable: false
 	}
 }

@@ -55,6 +55,8 @@ isDead = false
 
 spawning = true
 sprite_index = enemyType.spawnspr
+
+hb = noone
 	
 if hat == "cone"{
 	hatSpr = spr_zombieCone

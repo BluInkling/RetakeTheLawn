@@ -27,7 +27,7 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 		
 		//cooldown = 120
 		subavailable = false
-		alarm_set(0,120)
+		alarm_set(0,240)
 	}
 	if sub.wepname == "potatomine"{
 		//show_debug_message("potatomine activated!")
