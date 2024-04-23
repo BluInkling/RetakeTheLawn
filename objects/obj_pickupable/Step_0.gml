@@ -8,6 +8,7 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 				show_debug_message("added to main arsenal")
 				array_push(obj_Controller.inventoryPrimary,type)
 				array_push(obj_Controller.ammoPrimary,type.clip)
+				obj_MainWeapon.GotoPrimary(array_length(obj_Controller.inventoryPrimary)-1)
 			} else {
 				show_debug_message("alreayd have this main....");
 			}
@@ -18,6 +19,7 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 				show_debug_message("added to sub arsenal")
 				array_push(obj_Controller.inventorySecondary,type)
 				array_push(obj_Controller.cooldownSecondary,0)
+				obj_SubWeapon.GotoSecondary(array_length(obj_Controller.inventorySecondary)-1)
 			} else {
 				show_debug_message("alreayd have this sub....");
 			}
