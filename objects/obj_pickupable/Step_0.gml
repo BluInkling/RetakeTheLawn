@@ -28,7 +28,13 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 			with(obj_player) hp += 3;
 			show_debug_message("Sun healed!")
 		}
+		
 		instance_destroy();
+		for (var i=0;i<instance_number(obj_pickupable);++i){
+			var col = instance_find(obj_pickupable,i)
+			col.RandomChoose()	
+			
+		}
 	}
 } else draw = false
 
