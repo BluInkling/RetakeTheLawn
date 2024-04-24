@@ -139,8 +139,8 @@ cooldownSecondary = [0]//[0,0]
 primary = 0
 secondary = 0
 
+mainamount = 5 //total amn of main weps
 
-mainamount = 4 //total amn of main weps
 secondaryamount = 2; //total amnt of subs
 
 mainweapon = inventoryPrimary[primary]
