@@ -34,6 +34,7 @@ function ShootProjectile(){
 			}
 		}
 		counter = 0
+		//TEST
 	}
 	else{
 		if main.wepname == "threepeater"{
