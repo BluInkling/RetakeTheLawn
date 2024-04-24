@@ -39,7 +39,7 @@ if !main.chargeable{
 	}
 } else { //charge shooting
 	
-	if (mouse_check_button(mb_left)) && shootavailable && !shooting{ //SHOOTING
+	if (mouse_check_button(mb_left)) && shootavailable && !shooting && ammo > 0{ //SHOOTING
 		var _max = main.chargetime;
 		if counter == 0{
 			image_index = 0
@@ -61,7 +61,7 @@ if !main.chargeable{
 		}
 		
 	}
-	if mouse_check_button_released(mb_left){
+	if mouse_check_button_released(mb_left) && counter > 0{
 		//image_index = 0
 		show_debug_message("SHOOT")
 		image_index = 0

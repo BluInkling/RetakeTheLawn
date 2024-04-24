@@ -36,6 +36,11 @@ instance_create_layer(0,0,"Player",obj_Controller)
 instance_create_layer(0,0,"Gun",obj_MainWeapon)
 instance_create_layer(0,0,"Player",obj_SubWeapon)
 
+function Hit(_damage){
+	flashAlpha = 1;
+	hp -= _damage
+	
+}
 
 /*
 //Outline Shader
