@@ -117,6 +117,7 @@
     {"name":"sgraveShine","order":14,"path":"sprites/sgraveShine/sgraveShine.yy",},
     {"name":"props","order":1,"path":"folders/Objects/props.yy",},
     {"name":"props","order":1,"path":"folders/Sprites/props.yy",},
+    {"name":"props","order":1,"path":"folders/Objects/props.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"ts_objects","order":1,"path":"tilesets/ts_objects/ts_objects.yy",},
