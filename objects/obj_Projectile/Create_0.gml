@@ -28,8 +28,9 @@ damage = main.damage
 if type == "flaming"{
 	if main.wepname == "peashooter" or main.wepname == "repeater" or main.wepname == "threepeater"{ //tochwood only affects NORMAL peas
 		//show_debug_message("is flaming pea created") 
+		//sprite_index = sFlamingPea;
 		//show_debug_message("sprite changed to on fire!")
-		sprite_index = sFlamingPea;
+		sprite_index = sCabbage;
 		damage = damage + 2;
 	}
 	if main.wepname == "snowpea"{ //tochwood makes frozen peas normal

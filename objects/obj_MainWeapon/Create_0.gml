@@ -5,6 +5,8 @@ recoil = 0;
 
 sprite_index = main.mainidlesprite
 
+increasing = true
+counter = 0
 
 clip = main.clip
 ammo = clip
@@ -14,16 +16,38 @@ projtype = main.projtype // flaming, ice, butter SET IN CONTROLLER SRTUCT
 angle = 0
 
 function ShootProjectile(){
+<<<<<<< Updated upstream
 	if main.wepname == "threepeater"{
 		angle = -30
 		for(var i = 0; i<3;i++){
 			var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
 			angle += 30;
+=======
+	if (main.chargeable){
+		var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
+		with (proj){
+			var percentagecharged = 0
+			show_debug_message(other.counter)
+			percentagecharged = other.counter / other.main.chargetime
+			show_debug_message(percentagecharged)
+			alarm[0] = main.lifetime * percentagecharged
+			damage = damage * percentagecharged
+			moveSpd = moveSpd * percentagecharged
+>>>>>>> Stashed changes
 		}
-		angle = 0;
 	}
 	else{
-	var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
+		if main.wepname == "threepeater"{
+			angle = -30
+			for(var i = 0; i<3;i++){
+				var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
+				angle += 30;
+			}
+			angle = 0;
+		}
+		else{
+		var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
+		}
 	}
 }
 
