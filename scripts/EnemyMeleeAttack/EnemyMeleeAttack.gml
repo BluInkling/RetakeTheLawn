@@ -48,8 +48,7 @@ if (hits > 0)
 			with (hitID)
 			{
 				//show_debug_message("Ahh im hit")
-				//hp--; // minus 1 //DEAR FUTURE MAX: make hp when u wake upaw
-				Hit(1)
+				hp--; // minus 1 //DEAR FUTURE MAX: make hp when u wake upaw
 				//flash = 3;
 				//hitfrom = other.direction;
 				//audio_play_sound(feral_bash_land_01,1,false)
