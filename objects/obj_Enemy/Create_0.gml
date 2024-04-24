@@ -57,6 +57,8 @@ spawning = true
 sprite_index = enemyType.spawnspr
 
 hb = noone
+
+hasHit = false
 	
 if hat == "cone"{
 	hatSpr = spr_zombieCone

@@ -24,6 +24,7 @@ if type == "sun"{
 		with(obj_player){
 			hp += 3;
 		}
+		instance_create_layer(x,y,"Gun",obj_uiSun)
 		//audio_sound_pitch(sunsfx,random_range(0.90,1.50))
 		//audio_play_sound(sunsfx,1,false)
 		instance_destroy(self)
@@ -41,6 +42,7 @@ if type == "stagnantsun"{
 		}
 		//audio_sound_pitch(sunsfx,random_range(0.90,1.50))
 		//audio_play_sound(sunsfx,1,false)
+		instance_create_layer(x,y,"Gun",obj_uiSun)
 		instance_destroy(self)
 
 	}

@@ -34,6 +34,9 @@ switch(obj_Controller.subweapon.wepname){
 				currSprite = spr_torchwoodActive
 				//draw_sprite(currSprite,image_index,52,17)
 			}
+			if currSprite = spr_torchwoodActive && obj_MainWeapon.projtype == obj_SubWeapon.main.projtype{
+				currSprite = spr_torchwoodIdle
+			}
 		}
 		draw_sprite(currSprite,image_index,20,164)
 		break;

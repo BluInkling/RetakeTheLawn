@@ -12,6 +12,7 @@ function EnemyState_Attack(){
 	//Transition triggers
 	if(image_index > image_number-1){ 
 		state = ENEMYSTATE.CHASE;
+		hasHit = false
 		spd = enemyType.spd
 	}
 	//sprite_index = obj_Controller.enemystats.basic.attackspr

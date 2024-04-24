@@ -33,6 +33,7 @@ if (sprite_index != argument0)
 
 //use ATTACK HITBOX and check for hits
 mask_index = argument1;
+if !hasHit{
 var hitByAttackNow = ds_list_create();
 var hits = instance_place_list(x,y,obj_player,hitByAttackNow,false);
 if (hits > 0)
@@ -52,6 +53,7 @@ if (hits > 0)
 				//hitfrom = other.direction;
 				//audio_play_sound(feral_bash_land_01,1,false)
 			}
+			hasHit = true
 		}
 	
 	}
@@ -59,5 +61,5 @@ if (hits > 0)
 ds_list_destroy(hitByAttackNow);
 mask_index = enemyType.idlespr
 
-
+}
 }
