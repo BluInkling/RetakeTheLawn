@@ -26,7 +26,7 @@ function ShootProjectile(){
 			show_debug_message(other.counter)
 			percentagecharged = other.counter / other.main.chargetime
 			show_debug_message(percentagecharged)
-			alarm[0] = 10 + main.lifetime * percentagecharged
+			alarm[0] = 1 + main.lifetime * percentagecharged
 			damage = 1 + damage * percentagecharged
 			moveSpd = 5 + moveSpd * percentagecharged
 			if percentagecharged == 1{
