@@ -20,20 +20,7 @@ if !main.chargeable{
 		//var _y = y + lengthdir_y(60, image_angle - 0);
 		//instance_create_layer(_x, _y, "Bullets", oEffect);
 	
-<<<<<<< Updated upstream
-	//instance_create_layer(x,y,"Instances",oShell)
-	/*
-	if (main.wepname == "peashooter"){
-		//projtype = "normal"
-		//show_debug_message("pea shoot")
-		ShootProjectile()
-	}
-	if (main.wepname == "repeater"){
-		//projtype = "normal"
-		//show_debug_message("repeater shoot")
-		ShootProjectile()
-		alarm_set(1,5)
-=======
+
 		//instance_create_layer(x,y,"Instances",oShell)
 		/*
 		if (main.wepname == "peashooter"){
@@ -46,36 +33,47 @@ if !main.chargeable{
 			//show_debug_message("repeater shoot")
 			ShootProjectile()
 			alarm_set(1,5)
->>>>>>> Stashed changes
 		
 		}
 		*/
 	}
 } else { //charge shooting
-	//show_debug_message("Charge it:")
-	if (mouse_check_button(mb_left)) && shootavailable && idle && !shooting{ //SHOOTING
-		//show_debug_message("pluhs")
+	
+	if (mouse_check_button(mb_left)) && shootavailable && !shooting{ //SHOOTING
 		var _max = main.chargetime;
+		if counter == 0{
+			image_index = 0
+		}
 		if increasing{
-			image_index = 1
+			//image_index = 1
+			idle = false
+			charging = true
 			counter += 1;
-			show_debug_message(counter)
+			//show_debug_message("charging")
+			if counter >= _max{
+				charging = false
+				chargeMax = true
+				obj_player.flashAlpha = 0.8;
+				obj_player.flashColor = c_white;
+				increasing = false
+				//show_debug_message("chargemax")
+			}
 		}
-		if increasing and counter >= _max{
-			image_index = 2
-			obj_player.flashAlpha = 0.8;
-			obj_player.flashColor = c_white;
-			increasing = false
-		}
+		
 	}
 	if mouse_check_button_released(mb_left){
-		image_index = 0
+		//image_index = 0
 		show_debug_message("SHOOT")
-		ShootProjectile()
+		image_index = 0
+		charging = false
+		chargeMax = false
+		idle = false
+		shooting = true
+		//ShootProjectile()
 		increasing = true
-		counter = 0
+		
 		shootavailable = false
-		alarm_set(2,10)
+		alarm_set(2,30)
 	}
 }
 if shooting{

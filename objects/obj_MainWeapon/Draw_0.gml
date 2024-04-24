@@ -18,6 +18,10 @@ if idle{
 	sprite_index = animShoot
 }else if reloading{
 	sprite_index = animReload
+}else if charging{
+	sprite_index = animCharge
+}else if chargeMax{
+	sprite_index = animChargeMax
 }
 depth = obj_player.depth-50
 

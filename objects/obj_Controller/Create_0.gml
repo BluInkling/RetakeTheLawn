@@ -87,17 +87,19 @@ weaponstats = {
 	cabbagepult : 
 	{
 		wepname : "cabbagepult",
-		mainidlesprite : sCabbagepult,
-		mainreloadsprite : sCabbagepult,
-		mainshootsprite : sCabbagepult,
-		projsprite : sCabbage,
+		mainidlesprite : spr_cabbagePultIdle,
+		mainreloadsprite : spr_cabbagePultIdle,
+		mainshootsprite : spr_cabbagePultShoot,
+		mainchargesprite : spr_cabbagePultCharge,
+		mainchargemaxsprite : spr_cabbagePultChargeMax,
+		projsprite : spr_cabbage,
 		projtype : "normal",
 		projsplat : spr_splatPea,
 		movespeed : 8,
 		lifetime: 30,
 		accuracy : 4,
-		clip : 8,
-		damage : 3.5,
+		clip : 4,
+		damage : 3,
 		shootFrames : [1],
 		projOffsetX : 2,
 		projOffsetY : -5,
@@ -125,23 +127,15 @@ subweaponstats = {
 	}
 }
 
-/*
-//inventoryPrimary = [weaponstats.peashooter,weaponstats.repeater,weaponstats.snowpea,weaponstats.threepeater]
+
+
+
 inventoryPrimary = [weaponstats.peashooter]
-//ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip]
 ammoPrimary = [weaponstats.peashooter.clip]
-*/
-
-//inventoryPrimary = [weaponstats.peashooter]
-inventoryPrimary = [weaponstats.cabbagepult]
-//ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip]
-ammoPrimary = [weaponstats.cabbagepult.clip]
-
-
 //inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
 inventorySecondary = [subweaponstats.potatomine]
-
 cooldownSecondary = [0]//[0,0]
+
 primary = 0
 secondary = 0
 

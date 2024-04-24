@@ -15,26 +15,25 @@ shootavailable = true
 projtype = main.projtype // flaming, ice, butter SET IN CONTROLLER SRTUCT
 angle = 0
 
+chargeable = main.chargeable
+
 function ShootProjectile(){
-<<<<<<< Updated upstream
-	if main.wepname == "threepeater"{
-		angle = -30
-		for(var i = 0; i<3;i++){
-			var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
-			angle += 30;
-=======
-	if (main.chargeable){
+
+	if (chargeable){
 		var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
 		with (proj){
 			var percentagecharged = 0
 			show_debug_message(other.counter)
 			percentagecharged = other.counter / other.main.chargetime
 			show_debug_message(percentagecharged)
-			alarm[0] = main.lifetime * percentagecharged
-			damage = damage * percentagecharged
-			moveSpd = moveSpd * percentagecharged
->>>>>>> Stashed changes
+			alarm[0] = 1 + main.lifetime * percentagecharged
+			damage = 1 + damage * percentagecharged
+			moveSpd = 5 + moveSpd * percentagecharged
+			if percentagecharged == 1{
+				piercing = true
+			}
 		}
+		counter = 0
 	}
 	else{
 		if main.wepname == "threepeater"{
@@ -59,17 +58,28 @@ shootOffsetDistance = sqrt(sqr(main.projOffsetX)+sqr(main.projOffsetY)) //Pythag
 animIdle = main.mainidlesprite
 animShoot = main.mainshootsprite
 animReload = main.mainreloadsprite
+if chargeable{
+	animCharge = main.mainchargesprite
+	animChargeMax = main.mainchargemaxsprite
+}
 
 //Animation States
 idle = true
 shooting = false
 reloading = false
+charging = false
+chargeMax = false
 
 function ChangePrimary(){
 	main = obj_Controller.mainweapon
 	animIdle = main.mainidlesprite
 	animShoot = main.mainshootsprite
 	animReload = main.mainreloadsprite
+	chargeable = main.chargeable
+	if chargeable{
+		animCharge = main.mainchargesprite
+		animChargeMax = main.mainchargemaxsprite
+	}
 	projtype = main.projtype
 	ammo = obj_Controller.ammoPrimary[obj_Controller.primary]
 	//show_debug_message(projtype)

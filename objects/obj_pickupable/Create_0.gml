@@ -6,7 +6,7 @@ type = noone;
 //set "what it is" with a string
 //if player in radius and pickable thing isnt in players inventory array: 
 //then add it to their array and switch to it
-kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.subweaponstats)
+kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_Controller.weaponstats,obj_Controller.subweaponstats)
 
 //if ((array_length(obj_Controller.inventoryPrimary) == obj_Controller.mainamount) and (array_length(obj_Controller.inventorySecondary) == obj_Controller.secondaryamount)){ DOESNT WORK FOR SOME REAOSN
 	if (kindofpickup == obj_Controller.weaponstats){
@@ -17,7 +17,7 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.subweaponstats)
 			name = "sun"
 		} else {
 			do{
-				type = choose(kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater)
+				type = choose(kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater,kindofpickup.cabbagepult)
 			} until(!(array_contains(obj_Controller.inventoryPrimary,type))); //repeat new item is not in the inventory
 	
 			overlap = type.mainidlesprite

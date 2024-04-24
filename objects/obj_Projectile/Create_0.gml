@@ -2,21 +2,24 @@ main = obj_Controller.mainweapon
 
 type = obj_MainWeapon.projtype
 //show_debug_message(type)
-
-//if main.wepname == "peashooter" or main.wepname == "repeater"{ //tochwood only affects NORMAL peas
-//	if type == "flaming"{
-//		//show_debug_message("is flaming pea created")
-//		sprite_index = sFlamingPea;
-//	}
-//	if type == "frozen"{
-//		//show_debug_message("is frozen pea created")
-//		//sprite_index = sFrozenPea;
-//	}
-//}
-
+/*
+if main.wepname == "peashooter" or main.wepname == "repeater"{ //tochwood only affects NORMAL peas
+	if type == "flaming"{
+		//show_debug_message("is flaming pea created")
+		sprite_index = sFlamingPea;
+	}
+	if type == "frozen"{
+		//show_debug_message("is frozen pea created")
+		//sprite_index = sFrozenPea;
+	}
+}
+*/
 sprite_index = main.projsprite //sets sprite to mainweapons normal proj sprite
 splat = main.projsplat
 damage = main.damage
+
+piercing = false
+piercingList = []
 //show_debug_message(type)
 //show_debug_message("projetciles type: " + string(type))
 
@@ -28,9 +31,9 @@ damage = main.damage
 if type == "flaming"{
 	if main.wepname == "peashooter" or main.wepname == "repeater" or main.wepname == "threepeater"{ //tochwood only affects NORMAL peas
 		//show_debug_message("is flaming pea created") 
-		//sprite_index = sFlamingPea;
+		sprite_index = sFlamingPea;
 		//show_debug_message("sprite changed to on fire!")
-		sprite_index = sCabbage;
+		//sprite_index = sCabbage;
 		damage = damage + 2;
 	}
 	if main.wepname == "snowpea"{ //tochwood makes frozen peas normal
@@ -48,6 +51,7 @@ if type == "flaming"{
 moveDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-main.accuracy,main.accuracy) + obj_MainWeapon.angle
 moveSpd = main.movespeed
 
+image_angle = moveDir
 alarm[0] = main.lifetime
 
 function Destroy(_other){ //Will eventually add splat animation
