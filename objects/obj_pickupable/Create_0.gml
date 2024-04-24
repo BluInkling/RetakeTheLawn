@@ -1,4 +1,5 @@
 
+randomize()
 draw = false
 
 
@@ -6,6 +7,7 @@ type = noone;
 //set "what it is" with a string
 //if player in radius and pickable thing isnt in players inventory array: 
 //then add it to their array and switch to it
+function RandomChoose(){
 kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_Controller.weaponstats,obj_Controller.subweaponstats)
 
 //if ((array_length(obj_Controller.inventoryPrimary) == obj_Controller.mainamount) and (array_length(obj_Controller.inventorySecondary) == obj_Controller.secondaryamount)){ DOESNT WORK FOR SOME REAOSN
@@ -41,6 +43,9 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_
 			name = type.wepname
 		}
 	}
+}
+
+RandomChoose()
 //} 
 //else {
 //	show_debug_message(array_length(obj_Controller.inventoryPrimary))
