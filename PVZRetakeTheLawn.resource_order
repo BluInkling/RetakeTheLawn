@@ -53,6 +53,11 @@
     {"name":"spr_potatomineThrow","order":3,"path":"sprites/spr_potatomineThrow/spr_potatomineThrow.yy",},
     {"name":"EnemyState_Chase","order":1,"path":"scripts/EnemyState_Chase/EnemyState_Chase.yy",},
     {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"spr_Bigsun","order":6,"path":"sprites/spr_Bigsun/spr_Bigsun.yy",},
+    {"name":"spr_zombieNoHandAttack","order":9,"path":"sprites/spr_zombieNoHandAttack/spr_zombieNoHandAttack.yy",},
+>>>>>>> Stashed changes
     {"name":"obj_outlinable","order":8,"path":"objects/obj_outlinable/obj_outlinable.yy",},
     {"name":"obj_playerArms","order":4,"path":"objects/obj_playerArms/obj_playerArms.yy",},
     {"name":"Approach","order":7,"path":"scripts/Approach/Approach.yy",},
@@ -71,12 +76,21 @@
     {"name":"spr_zombieHand","order":2,"path":"sprites/spr_zombieHand/spr_zombieHand.yy",},
     {"name":"fnt2","order":1,"path":"fonts/fnt2/fnt2.yy",},
     {"name":"sWall","order":4,"path":"sprites/sWall/sWall.yy",},
+    {"name":"sFlamingPea","order":21,"path":"sprites/sFlamingPea/sFlamingPea.yy",},
     {"name":"sTrigger","order":17,"path":"sprites/sTrigger/sTrigger.yy",},
+    {"name":"ssunshro","order":23,"path":"sprites/ssunshro/ssunshro.yy",},
     {"name":"obj_MainWeapon","order":2,"path":"objects/obj_MainWeapon/obj_MainWeapon.yy",},
+    {"name":"scircle","order":22,"path":"sprites/scircle/scircle.yy",},
     {"name":"EnemyState_Idle","order":2,"path":"scripts/EnemyState_Idle/EnemyState_Idle.yy",},
     {"name":"spr_threepeaterShoot","order":2,"path":"sprites/spr_threepeaterShoot/spr_threepeaterShoot.yy",},
     {"name":"sTorchvood","order":7,"path":"sprites/sTorchvood/sTorchvood.yy",},
+<<<<<<< Updated upstream
     {"name":"sFlamingPea","order":6,"path":"sprites/sFlamingPea/sFlamingPea.yy",},
+=======
+    {"name":"obj_wallPart","order":18,"path":"objects/obj_wallPart/obj_wallPart.yy",},
+    {"name":"sCabbage","order":6,"path":"sprites/sCabbage/sCabbage.yy",},
+    {"name":"spr_zombieHitbox","order":12,"path":"sprites/spr_zombieHitbox/spr_zombieHitbox.yy",},
+>>>>>>> Stashed changes
     {"name":"sExplosion","order":1,"path":"sprites/sExplosion/sExplosion.yy",},
 <<<<<<< Updated upstream
     {"name":"obj_EnemyController","order":10,"path":"objects/obj_EnemyController/obj_EnemyController.yy",},
@@ -113,6 +127,12 @@
     {"name":"modernpacket","order":8,"path":"sprites/modernpacket/modernpacket.yy",},
     {"name":"oStats","order":5,"path":"objects/oStats/oStats.yy",},
     {"name":"sFrozenPea","order":9,"path":"sprites/sFrozenPea/sFrozenPea.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"spr_splatFrozenPea","order":3,"path":"sprites/spr_splatFrozenPea/spr_splatFrozenPea.yy",},
+    {"name":"spr_reload","order":2,"path":"sprites/spr_reload/spr_reload.yy",},
+    {"name":"sCabbagepult","order":20,"path":"sprites/sCabbagepult/sCabbagepult.yy",},
+>>>>>>> Stashed changes
     {"name":"sgraveShine","order":14,"path":"sprites/sgraveShine/sgraveShine.yy",},
   ],
 }

@@ -18,7 +18,16 @@ weaponstats = {
 		firingspeed : 19,
 		accuracy : 3,
 		clip : 8,
+<<<<<<< Updated upstream
 		damage : 2
+=======
+		damage : 2,
+		shootFrames : [1],
+		projOffsetX : 2,
+		projOffsetY : -5,
+		chargeable : false
+		
+>>>>>>> Stashed changes
 	},
 	repeater : 
 	{
@@ -31,7 +40,15 @@ weaponstats = {
 		firingspeed : 19,
 		accuracy : 3,
 		clip : 8,
+<<<<<<< Updated upstream
 		damage : 2
+=======
+		damage : 2,
+		shootFrames : [1,2],
+		projOffsetX : 2,
+		projOffsetY : -5,
+		chargeable : false
+>>>>>>> Stashed changes
 	},
 	snowpea : 
 	{
@@ -46,7 +63,8 @@ weaponstats = {
 		damage : 2,
 		shootFrames : [1],
 		projOffsetX : 2,
-		projOffsetY : -5
+		projOffsetY : -5,
+		chargeable : false
 	},
 	threepeater : 
 	{
@@ -64,7 +82,29 @@ weaponstats = {
 		damage : 2,
 		shootFrames : [1],
 		projOffsetX : 2,
-		projOffsetY : -5
+		projOffsetY : -5,
+		chargeable : false
+	},
+	cabbagepult : 
+	{
+		wepname : "cabbagepult",
+		mainidlesprite : sCabbagepult,
+		mainreloadsprite : sCabbagepult,
+		mainshootsprite : sCabbagepult,
+		projsprite : sCabbage,
+		projtype : "normal",
+		projsplat : spr_splatPea,
+		movespeed : 8,
+		lifetime: 30,
+		accuracy : 4,
+		clip : 8,
+		damage : 3.5,
+		shootFrames : [1],
+		projOffsetX : 2,
+		projOffsetY : -5,
+		chargeable : true,
+		chargetime : 30
+		
 	}
 		
 }
@@ -95,8 +135,15 @@ subweaponstats = {
 }
 
 //inventoryPrimary = [weaponstats.peashooter,weaponstats.repeater,weaponstats.snowpea,weaponstats.threepeater]
+<<<<<<< Updated upstream
 inventoryPrimary = [weaponstats.peashooter]
 ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip]
+=======
+//inventoryPrimary = [weaponstats.peashooter]
+inventoryPrimary = [weaponstats.cabbagepult]
+//ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip]
+ammoPrimary = [weaponstats.cabbagepult.clip]
+>>>>>>> Stashed changes
 
 //inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
 inventorySecondary = [subweaponstats.potatomine]
