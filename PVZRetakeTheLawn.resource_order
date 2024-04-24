@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings": [
+<<<<<<< Updated upstream
     {"name":"enemy states","order":5,"path":"folders/Scripts/enemy states.yy",},
     {"name":"ui","order":2,"path":"folders/Sprites/ui.yy",},
   ],
@@ -134,5 +135,26 @@
     {"name":"sCabbagepult","order":20,"path":"sprites/sCabbagepult/sCabbagepult.yy",},
 >>>>>>> Stashed changes
     {"name":"sgraveShine","order":14,"path":"sprites/sgraveShine/sgraveShine.yy",},
+=======
+    {"name":"props","order":1,"path":"folders/Objects/props.yy",},
+    {"name":"props","order":1,"path":"folders/Sprites/props.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"ts_objects","order":1,"path":"tilesets/ts_objects/ts_objects.yy",},
+    {"name":"sTempPool","order":2,"path":"sprites/sTempPool/sTempPool.yy",},
+    {"name":"spr_cabbagePultRecover","order":3,"path":"sprites/spr_cabbagePultRecover/spr_cabbagePultRecover.yy",},
+    {"name":"spr_cabbagePultShoot","order":4,"path":"sprites/spr_cabbagePultShoot/spr_cabbagePultShoot.yy",},
+    {"name":"spr_carB","order":2,"path":"sprites/spr_carB/spr_carB.yy",},
+    {"name":"obj_carC","order":4,"path":"objects/obj_carC/obj_carC.yy",},
+    {"name":"send","order":1,"path":"sprites/send/send.yy",},
+    {"name":"spr_cabbagePultIdle","order":2,"path":"sprites/spr_cabbagePultIdle/spr_cabbagePultIdle.yy",},
+    {"name":"obj_carA","order":2,"path":"objects/obj_carA/obj_carA.yy",},
+    {"name":"spr_carC","order":3,"path":"sprites/spr_carC/spr_carC.yy",},
+    {"name":"obj_tree","order":1,"path":"objects/obj_tree/obj_tree.yy",},
+    {"name":"spr_carA","order":1,"path":"sprites/spr_carA/spr_carA.yy",},
+    {"name":"spr_cabbagePultChargeMax","order":1,"path":"sprites/spr_cabbagePultChargeMax/spr_cabbagePultChargeMax.yy",},
+    {"name":"spr_objectTiles","order":1,"path":"sprites/spr_objectTiles/spr_objectTiles.yy",},
+    {"name":"obj_carB","order":3,"path":"objects/obj_carB/obj_carB.yy",},
+>>>>>>> Stashed changes
   ],
 }

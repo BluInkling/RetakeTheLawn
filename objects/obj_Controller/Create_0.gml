@@ -151,7 +151,12 @@ cooldownSecondary = [0,0]
 primary = 0
 secondary = 0
 
+<<<<<<< Updated upstream
 mainamount = 4 //total amn of main weps
+=======
+
+mainamount = 5 //total amn of main weps
+>>>>>>> Stashed changes
 secondaryamount = 2; //total amnt of subs
 
 mainweapon = inventoryPrimary[primary]

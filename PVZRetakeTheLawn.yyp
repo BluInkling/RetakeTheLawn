@@ -16,6 +16,11 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
+<<<<<<< Updated upstream
+=======
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"props","folderPath":"folders/Objects/props.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ui","folderPath":"folders/Objects/ui.yy",},
+>>>>>>> Stashed changes
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Particle Systems","folderPath":"folders/Particle Systems.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
@@ -43,6 +48,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"torchwood","folderPath":"folders/Sprites/plants/secondary/torchwood.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Sprites/player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"projectiles","folderPath":"folders/Sprites/projectiles.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"props","folderPath":"folders/Sprites/props.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"tiles","folderPath":"folders/Sprites/tiles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ui","folderPath":"folders/Sprites/ui.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"zombies","folderPath":"folders/Sprites/zombies.yy",},
@@ -82,6 +88,7 @@
     {"id":{"name":"spr_daveHandR","path":"sprites/spr_daveHandR/spr_daveHandR.yy",},},
     {"id":{"name":"spr_daveIdle","path":"sprites/spr_daveIdle/spr_daveIdle.yy",},},
     {"id":{"name":"spr_zombieFlag","path":"sprites/spr_zombieFlag/spr_zombieFlag.yy",},},
+    {"id":{"name":"sTempPool","path":"sprites/sTempPool/sTempPool.yy",},},
     {"id":{"name":"outline_start_surface","path":"scripts/outline_start_surface/outline_start_surface.yy",},},
     {"id":{"name":"spr_peashooterReload","path":"sprites/spr_peashooterReload/spr_peashooterReload.yy",},},
     {"id":{"name":"EnemyMeleeAttack","path":"scripts/EnemyMeleeAttack/EnemyMeleeAttack.yy",},},
@@ -130,7 +137,11 @@
     {"id":{"name":"spr_fumeshroomIdle","path":"sprites/spr_fumeshroomIdle/spr_fumeshroomIdle.yy",},},
     {"id":{"name":"shFlash","path":"shaders/shFlash/shFlash.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
+=======
+    {"id":{"name":"send","path":"sprites/send/send.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"sfireeffect","path":"sprites/sfireeffect/sfireeffect.yy",},},
     {"id":{"name":"obj_Dummy","path":"objects/obj_Dummy/obj_Dummy.yy",},},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
