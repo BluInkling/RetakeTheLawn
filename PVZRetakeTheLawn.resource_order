@@ -116,6 +116,8 @@
     {"name":"sgraveShine","order":14,"path":"sprites/sgraveShine/sgraveShine.yy",},
     {"name":"props","order":1,"path":"folders/Objects/props.yy",},
     {"name":"props","order":1,"path":"folders/Sprites/props.yy",},
+  ],
+  "ResourceOrderSettings": [
     {"name":"ts_objects","order":1,"path":"tilesets/ts_objects/ts_objects.yy",},
     {"name":"sTempPool","order":2,"path":"sprites/sTempPool/sTempPool.yy",},
     {"name":"spr_cabbagePultRecover","order":3,"path":"sprites/spr_cabbagePultRecover/spr_cabbagePultRecover.yy",},
