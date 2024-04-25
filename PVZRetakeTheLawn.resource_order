@@ -9,6 +9,7 @@
     {"name":"spr_cabbagePultRecover","order":3,"path":"sprites/spr_cabbagePultRecover/spr_cabbagePultRecover.yy",},
     {"name":"spr_cabbagePultShoot","order":4,"path":"sprites/spr_cabbagePultShoot/spr_cabbagePultShoot.yy",},
     {"name":"spr_carB","order":2,"path":"sprites/spr_carB/spr_carB.yy",},
+    {"name":"spr_potatomineExplodeBefore","order":1,"path":"sprites/spr_potatomineExplodeBefore/spr_potatomineExplodeBefore.yy",},
     {"name":"obj_carC","order":4,"path":"objects/obj_carC/obj_carC.yy",},
     {"name":"send","order":1,"path":"sprites/send/send.yy",},
     {"name":"spr_cabbagePultIdle","order":2,"path":"sprites/spr_cabbagePultIdle/spr_cabbagePultIdle.yy",},

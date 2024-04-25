@@ -118,6 +118,7 @@
     {"id":{"name":"spr_zombieBucket","path":"sprites/spr_zombieBucket/spr_zombieBucket.yy",},},
     {"id":{"name":"EnemyState_Wander","path":"scripts/EnemyState_Wander/EnemyState_Wander.yy",},},
     {"id":{"name":"spr_puffshroomSingleShoot","path":"sprites/spr_puffshroomSingleShoot/spr_puffshroomSingleShoot.yy",},},
+    {"id":{"name":"spr_potatomineExplodeBefore","path":"sprites/spr_potatomineExplodeBefore/spr_potatomineExplodeBefore.yy",},},
     {"id":{"name":"sh_outline","path":"shaders/sh_outline/sh_outline.yy",},},
     {"id":{"name":"spr_peashooterIdle","path":"sprites/spr_peashooterIdle/spr_peashooterIdle.yy",},},
     {"id":{"name":"spr_graveCSpawn","path":"sprites/spr_graveCSpawn/spr_graveCSpawn.yy",},},

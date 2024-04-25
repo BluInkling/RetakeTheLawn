@@ -48,7 +48,7 @@ switch(sub.wepname){
 			case "waiting":
 				//show_debug_message("waiting")
 				sprite_index = spr_potatomineIdle
-				if(collision_circle(x,y-6,6,obj_zombieHitbox,false,false)){
+				if(collision_circle(x,y-10,4,obj_zombieHitbox,false,false)){
 					state = "explode"
 					image_index = 0
 				}
