@@ -23,11 +23,11 @@ function ShootProjectile(){
 		var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
 		with (proj){
 			var percentagecharged = 0
-			show_debug_message(other.counter)
+			//show_debug_message(other.counter)
 			percentagecharged = other.counter / other.main.chargetime
-			show_debug_message(percentagecharged)
-			alarm[0] = 10 + main.lifetime * percentagecharged
-			damage = 1 + damage * percentagecharged
+			//show_debug_message(percentagecharged)
+			alarm[0] = 1 + lifetime * percentagecharged
+			damage = 0.5 + damage * percentagecharged
 			moveSpd = 5 + moveSpd * percentagecharged
 			if percentagecharged == 1{
 				piercing = true
@@ -70,6 +70,8 @@ shooting = false
 reloading = false
 charging = false
 chargeMax = false
+
+flaming = false
 
 function ChangePrimary(){
 	main = obj_Controller.mainweapon

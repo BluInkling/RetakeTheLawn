@@ -63,7 +63,7 @@ if !main.chargeable{
 	}
 	if mouse_check_button_released(mb_left) && counter > 0{
 		//image_index = 0
-		show_debug_message("SHOOT")
+		//show_debug_message("SHOOT")
 		image_index = 0
 		charging = false
 		chargeMax = false

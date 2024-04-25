@@ -14,9 +14,10 @@ if main.wepname == "peashooter" or main.wepname == "repeater"{ //tochwood only a
 	}
 }
 */
-sprite_index = main.projsprite //sets sprite to mainweapons normal proj sprite
-splat = main.projsplat
-damage = main.damage
+sprite_index = type.mainsprite //sets sprite to mainweapons normal proj sprite
+splat = type.splatsprite
+damage = type.damage
+dispSpr = type.dispsprite
 
 piercing = false
 piercingList = []
@@ -28,6 +29,20 @@ piercingList = []
 //show_debug_message(damage)
 
 //changes the sprite if buff is active
+
+if obj_MainWeapon.flaming{
+	if type == obj_Controller.projstats.snow{
+		type = obj_Controller.projstats.pea
+		sprite_index = type.mainsprite
+		splat = type.splatsprite
+		damage = type.damage
+		dispSpr = type.dispsprite
+	}else{
+		image_blend = c_orange
+		damage += 2
+	}
+}
+/*
 if type == "flaming"{
 	if main.wepname == "peashooter" or main.wepname == "repeater" or main.wepname == "threepeater"{ //tochwood only affects NORMAL peas
 		//show_debug_message("is flaming pea created") 
@@ -42,17 +57,20 @@ if type == "flaming"{
 	}	
 
 }
-
+*/
 
 //show_debug_message("after checks")
 //show_debug_message(type)
 //show_debug_message(damage)
 
 moveDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-main.accuracy,main.accuracy) + obj_MainWeapon.angle
-moveSpd = main.movespeed
+moveSpd = type.movespeed
+lifetime = type.lifetime
 
 image_angle = moveDir
-alarm[0] = main.lifetime
+alarm[0] = lifetime
+
+disp = false //Determines when a projectile dissipates
 
 function Destroy(_other){ //Will eventually add splat animation
 	if !is_undefined(_other){

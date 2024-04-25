@@ -22,6 +22,12 @@ if place_meeting(x,y,obj_zombieHitbox){
 	//show_debug_message("Enemy hit!")
 }
 
-
+if disp && sprite_index == dispSpr{
+	show_debug_message(image_index)
+	sprite_index = dispSpr
+	if image_index > image_number-1{// || image_number == 1{
+		Destroy()
+	}
+}
 
 

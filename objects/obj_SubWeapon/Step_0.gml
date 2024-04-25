@@ -22,8 +22,10 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 	//show_debug_message(sub)
 	if sub.wepname == "torchwood"{
 		//show_debug_message("torch activated!")
-		if (main.wepname == "peashooter" or main.wepname == "repeater" or main.wepname == "snowpea" or main.wepname == "threepeater") obj_MainWeapon.projtype = "flaming" //the sprites and projectile stats are changed in oProjectile
-		//if (main.wepname == "snowpea") obj_MainWeapon.projtype = "normal"
+		//if (main.wepname == "peashooter" or main.wepname == "repeater" or main.wepname == "snowpea" or main.wepname == "threepeater")
+		//{
+			obj_MainWeapon.flaming = true//obj_MainWeapon.projtype = "flaming" //the sprites and projectile stats are changed in oProjectile
+		//}//if (main.wepname == "snowpea") obj_MainWeapon.projtype = "normal"
 		
 		//cooldown = 120
 		subavailable = false

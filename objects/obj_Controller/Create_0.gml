@@ -6,6 +6,36 @@ currSprite = sTest;
 imgnum = 0;
 maximgnum = 0;
 */
+projstats = {
+	pea :
+	{
+		mainsprite : spr_pea,
+		splatsprite : spr_splatPea,
+		dispsprite : spr_peaDisp,
+		movespeed : 7,
+		lifetime: 15,//20,
+		damage : 2,
+	},
+	snow :
+	{
+		mainsprite : spr_frozenPea,
+		splatsprite : spr_splatFrozenPea,
+		dispsprite : spr_snowDisp,
+		movespeed : 7,
+		lifetime: 15,//20,
+		damage : 2,
+	},
+	cabbage :
+	{
+		mainsprite : spr_cabbage,
+		splatsprite : spr_splatPea,
+		dispsprite: spr_cabbageDisp,
+		movespeed : 8,
+		lifetime: 20,
+		damage : 3.5,
+	}
+}
+
 
 weaponstats = {
 	peashooter : 
@@ -14,18 +44,14 @@ weaponstats = {
 		mainidlesprite : spr_peashooterIdle,
 		mainreloadsprite : spr_peashooterReload,
 		mainshootsprite : spr_peashooterShoot,
-		projsprite : spr_pea,
-		projtype : "normal",
-		projsplat : spr_splatPea,
-		movespeed : 7,
-		lifetime: 20,
+		projtype : projstats.pea,
 		accuracy : 7,
 		clip : 8,
-		damage : 2,
 		shootFrames : [1],
 		projOffsetX : 2,
 		projOffsetY : -5,
-		chargeable : false
+		chargeable : false,
+		secondammo : false
 	},
 	repeater : 
 	{
@@ -33,18 +59,14 @@ weaponstats = {
 		mainidlesprite : spr_repeaterIdle,
 		mainreloadsprite : spr_repeaterReload,
 		mainshootsprite : spr_repeaterShoot,
-		projsprite : spr_pea,
-		projtype : "normal",
-		projsplat : spr_splatPea,
-		movespeed : 7,
-		lifetime: 20,
+		projtype : projstats.pea,
 		accuracy : 7,
 		clip : 8,
-		damage : 2,
 		shootFrames : [1,2],
 		projOffsetX : 2,
 		projOffsetY : -5,
-		chargeable : false
+		chargeable : false,
+		secondammo : false
 	},
 	snowpea : 
 	{
@@ -52,18 +74,14 @@ weaponstats = {
 		mainidlesprite : spr_snowpeaIdle,
 		mainreloadsprite : spr_snowpeaReload,
 		mainshootsprite : spr_snowpeaShoot,
-		projsprite : spr_frozenPea,
-		projtype : "frozen",
-		projsplat : spr_splatFrozenPea,
-		movespeed : 7,
-		lifetime: 20,
+		projtype : projstats.snow,
 		accuracy : 7,
 		clip : 4,
-		damage : 2,
 		shootFrames : [1],
 		projOffsetX : 2,
 		projOffsetY : -5,
-		chargeable : false
+		chargeable : false,
+		secondammo : false
 	},
 	threepeater : 
 	{
@@ -71,18 +89,14 @@ weaponstats = {
 		mainidlesprite : spr_threepeaterIdle,
 		mainreloadsprite : spr_threepeaterReload,
 		mainshootsprite : spr_threepeaterShoot,
-		projsprite : spr_pea,
-		projtype : "normal",
-		projsplat : spr_splatPea,
-		movespeed : 7,
-		lifetime: 20,
+		projtype : projstats.pea,
 		accuracy : 2,
 		clip : 4,
-		damage : 2,
 		shootFrames : [1],
 		projOffsetX : 2,
 		projOffsetY : -5,
-		chargeable : false
+		chargeable : false,
+		secondammo : false
 	},
 	cabbagepult : 
 	{
@@ -92,22 +106,16 @@ weaponstats = {
 		mainshootsprite : spr_cabbagePultShoot,
 		mainchargesprite : spr_cabbagePultCharge,
 		mainchargemaxsprite : spr_cabbagePultChargeMax,
-		projsprite : spr_cabbage,
-		projtype : "normal",
-		projsplat : spr_splatPea,
-		movespeed : 8,
-		lifetime: 30,
+		projtype : projstats.cabbage,
 		accuracy : 4,
 		clip : 4,
-		damage : 3,
 		shootFrames : [1],
 		projOffsetX : 2,
 		projOffsetY : -5,
 		chargeable : true,
-		chargetime : 30
-		
-	}
-		
+		chargetime : 35,//30,
+		secondammo : false //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+	}	
 }
 
 subweaponstats = {

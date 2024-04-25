@@ -3,7 +3,7 @@
 
 sprite_index = obj_MainWeapon.sprite_index
 
-ammoSprite = obj_Controller.mainweapon.projsprite
+ammoSprite = obj_Controller.mainweapon.projtype.mainsprite
 	
 
 draw_sprite(spr_pocket,0,300,160)
