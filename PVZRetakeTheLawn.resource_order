@@ -7,6 +7,7 @@
     {"name":"spr_bubbleBig","order":6,"path":"sprites/spr_bubbleBig/spr_bubbleBig.yy",},
     {"name":"spr_kernel","order":4,"path":"sprites/spr_kernel/spr_kernel.yy",},
     {"name":"ts_objects","order":1,"path":"tilesets/ts_objects/ts_objects.yy",},
+    {"name":"GM_Fire_spr_Fire","order":2,"path":"sprites/GM_Fire_spr_Fire/GM_Fire_spr_Fire.yy",},
     {"name":"spr_zombieButter","order":1,"path":"sprites/spr_zombieButter/spr_zombieButter.yy",},
     {"name":"spr_snowDisp","order":3,"path":"sprites/spr_snowDisp/spr_snowDisp.yy",},
     {"name":"spr_daveArmPuff","order":3,"path":"sprites/spr_daveArmPuff/spr_daveArmPuff.yy",},
@@ -35,5 +36,7 @@
     {"name":"spr_bubbleSmall","order":9,"path":"sprites/spr_bubbleSmall/spr_bubbleSmall.yy",},
     {"name":"spr_bubbleSmallDisp","order":10,"path":"sprites/spr_bubbleSmallDisp/spr_bubbleSmallDisp.yy",},
     {"name":"obj_carB","order":3,"path":"objects/obj_carB/obj_carB.yy",},
+    {"name":"spr_fire","order":1,"path":"sprites/spr_fire/spr_fire.yy",},
+    {"name":"GM_FlameIntensity_spr_Fire","order":1,"path":"sprites/GM_FlameIntensity_spr_Fire/GM_FlameIntensity_spr_Fire.yy",},
   ],
 }

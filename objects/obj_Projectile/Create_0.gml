@@ -29,8 +29,10 @@ piercingList = []
 //show_debug_message(damage)
 
 //changes the sprite if buff is active
+flaming = obj_MainWeapon.flaming
+flamePS = noone
 
-if obj_MainWeapon.flaming{
+if flaming{
 	if type == obj_Controller.projstats.snow{
 		type = obj_Controller.projstats.pea
 		sprite_index = type.mainsprite
@@ -40,6 +42,7 @@ if obj_MainWeapon.flaming{
 	}else{
 		image_blend = c_orange
 		damage += 2
+		flamePS = part_system_create(ps_fire)
 	}
 }
 /*
@@ -80,6 +83,9 @@ function Destroy(_other){ //Will eventually add splat animation
 			splatObj.sprite_index = splat
 			splatObj.image_angle = round(point_direction(_other.x,_other.y,x,y)/90)*90+180
 		//}
+	}
+	if flaming{
+		part_system_destroy(flamePS)
 	}
 	instance_destroy()
 }

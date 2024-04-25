@@ -72,6 +72,7 @@ charging = false
 chargeMax = false
 
 flaming = false
+flamePS = noone
 
 function ChangePrimary(){
 	main = obj_Controller.mainweapon

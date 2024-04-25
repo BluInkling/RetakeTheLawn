@@ -10,9 +10,21 @@ if (reloading){
 image_yscale = obj_player.xDir
 image_angle = round(obj_playerArms.handsAngle/20)*20
 
+
+
+
 if obj_MainWeapon.flaming{
 	image_blend = c_orange
+	if flamePS == noone{
+		flamePS = part_system_create_layer(layer_get_id("Gun"),0,ps_fire)
+	}else{
+		part_system_position(flamePS,x,y)
+	}
 }else{
+	if flamePS != noone{
+		part_system_destroy(flamePS)
+		flamePS = noone
+	}
 	image_blend = c_white
 }
 

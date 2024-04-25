@@ -29,5 +29,8 @@ if disp && sprite_index == dispSpr{
 		Destroy()
 	}
 }
+if flaming && flamePS != noone && part_system_exists(flamePS){
+	part_system_position(flamePS,x,y)
+}
 
 
