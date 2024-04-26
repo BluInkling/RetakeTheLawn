@@ -19,7 +19,7 @@ enum ENEMYSTATE
 	
 }
 
-enemyType = obj_Controller.enemystats.footsoldier;
+enemyType = obj_Controller.enemystats.basic;
 
 if enemyType.behavior == "ranged"{
 	state = ENEMYSTATE.WANDER
