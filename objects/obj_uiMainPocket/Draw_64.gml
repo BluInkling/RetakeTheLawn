@@ -5,7 +5,10 @@ sprite_index = obj_MainWeapon.sprite_index
 
 ammoSprite = obj_Controller.mainweapon.projtype.mainsprite
 	
-
+for (var i=0; i<array_length(obj_Controller.inventoryPrimary)-1; i++){
+	draw_sprite(spr_pocket,0,(300-3*(array_length(obj_Controller.inventoryPrimary)-1))+3*i,160)
+	//draw_sprite(obj_Controller.inventoryPrimary[i].mainidlesprite,0,(300-3*(array_length(obj_Controller.inventoryPrimary)-1))+3*i,160)
+}
 draw_sprite(spr_pocket,0,300,160)
 draw_sprite(sprite_index,obj_MainWeapon.image_index,300,160)
 

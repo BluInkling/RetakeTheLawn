@@ -4,7 +4,9 @@
 sprite_index = obj_SubWeapon.sprite_index
 
 
-	
+for (var i=0; i<array_length(obj_Controller.inventorySecondary)-1; i++){
+	draw_sprite(spr_pocket,0,(20+3*(array_length(obj_Controller.inventorySecondary)-1))-3*i,160)
+}
 
 draw_sprite(spr_pocket,0,20,160)
 //draw_sprite(sprite_index,0,20,174)

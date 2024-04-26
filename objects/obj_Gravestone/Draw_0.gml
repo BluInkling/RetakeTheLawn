@@ -6,6 +6,12 @@ if spawning{
 	}
 }
 
+if breaking{
+	if image_index > image_number-1{
+		instance_destroy()
+	}
+}
+
 draw_self()
 
 if (summoning == true) && (alarm[0] <= 0){

@@ -5,8 +5,10 @@ style = irandom_range(0,3)
 
 graveSprite = spr_gravestones
 spawnSprites = [spr_graveASpawn,spr_graveBSpawn,spr_graveCSpawn,spr_graveDSpawn]
+breakSprites = [spr_graveABreak,spr_graveBBreak,spr_graveCBreak,spr_graveDBreak]
 
 spawning = true
+breaking = false
 
 sprite_index = spawnSprites[style]
 
@@ -33,6 +35,9 @@ function kakusummongai(whatenemy,enemytype){
 
 function crumble(){
 	//add gravestone destroy animation
-	instance_destroy(self)
+	breaking = true
+	sprite_index = breakSprites[style]
+	image_index = 0
+	//instance_destroy(self)
 } 
 

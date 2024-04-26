@@ -107,7 +107,7 @@ function Hit(damage,type,dir,flaming){
 	if type == obj_Controller.projstats.snow{
 		cold = true
 		flashAlpha = 0.2;
-		flashColor = c_aqua;
+		flashColor = c_blue//c_aqua;
 		spd = coldspd;
 		image_speed = 0.5
 		alarm_set(0,coldLength)
@@ -118,7 +118,11 @@ function Hit(damage,type,dir,flaming){
 			flashColor = c_red;
 		}
 	}else{
-		flashColor = c_white;
+		if !cold{
+			flashColor = c_white;
+		}else{
+			flashAlpha = 0.2;
+		}
 	}
 	Force(2,dir)
 }
