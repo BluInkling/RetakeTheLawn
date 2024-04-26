@@ -20,9 +20,12 @@ function EnemyState_Idle(){
 	//if hiding behind wall goes back and forth btwn idle and chase
 	
 	//if player is  in range AND enemy can see them
-	if (collision_circle(x,y,radius, obj_player,false,false) && !collision_line(x,y-16,obj_player.x,obj_player.y,obj_wall,false,false)){
-		state = ENEMYSTATE.CHASE;	//okay 64 is to big, 32 is too small
+	if enemyType.behavior == "melee"{
+		if (collision_circle(x,y,radius, obj_player,false,false) && !collision_line(x,y-16,obj_player.x,obj_player.y,obj_wall,false,false)){
+			state = ENEMYSTATE.CHASE;	//okay 64 is to big, 32 is too small
+		}
 	}
+	
 	
 	if hasHand{
 		sprite_index = obj_Controller.enemystats.basic.idlespr

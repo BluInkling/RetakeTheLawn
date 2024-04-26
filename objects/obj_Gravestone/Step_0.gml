@@ -3,22 +3,25 @@
 
 
 
-//if keyboard_check_released(ord("L")) and summoning == false{
-//	summoning = true
-//	for (var i = 0; i < 3; i++) {
-//		XPlace = irandom_range(-10,10)
-//		YPlace = irandom_range(-10,10)
-//		with instance_create_layer(x + XPlace,y + YPlace,"Player",obj_Enemy){
-//			//This section dosen't work, it acts second and if it dosent line up it overrides
-//			/*
-//			enemyType = obj_Controller.enemystats.conehead; //sets the kidn of zombie to spawn
-//			//-------------------
-//			hp = enemyType.hp
-//			armor = enemyType.armor
-//			spd = enemyType.spd
-//			*/
-//		}
-//}	
+if keyboard_check_released(ord("L")){
+	summoning = true
+	for (var i = 0; i < 3; i++) {
+		XPlace = irandom_range(-30,30)
+		YPlace = irandom_range(-30,30)
+		kakusummongai(obj_Enemy,obj_Controller.enemystats.footsoldier)
+		//instance_create_layer(x + XPlace,y + YPlace,"Player",obj_Enemy)
+		//with instance_create_layer(x + XPlace,y + YPlace,"Player",obj_Enemy){
+			//This section dosen't work, it acts second and if it dosent line up it overrides
+			/*
+			enemyType = obj_Controller.enemystats.conehead; //sets the kidn of zombie to spawn
+			//-------------------
+			hp = enemyType.hp
+			armor = enemyType.armor
+			spd = enemyType.spd
+			*/
+		//}
+}	
+}
 
 
 

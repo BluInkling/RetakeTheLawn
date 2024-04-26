@@ -5,12 +5,30 @@
 event_inherited();
 if !dying && !isDead{
 	if !spawning{
-	switch (state){
-			case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
-			case ENEMYSTATE.CHASE: EnemyState_Chase(); break;
-			case ENEMYSTATE.WANDER: EnemyState_Wander(); break;
-			case ENEMYSTATE.ATTACK: EnemyState_Attack(); break;
+		if enemyType.behavior = "ranged"{
+			switch (state){
+					case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
+					//case ENEMYSTATE.CHASE: EnemyState_Chase(); break;
+					case ENEMYSTATE.WANDER: EnemyState_Wander(); break;
+					case ENEMYSTATE.ATTACK: EnemyState_Attack(); break;
+			}
+			if (state != ENEMYSTATE.ATTACK){
+				shootcounter += random_range(0.4,1);
+			}
+
+			if(shootcounter >= room_speed * 4){ //100% chance to start SHOOT every 2 seconds
+				state = ENEMYSTATE.ATTACK
+				shootcounter = 0
+			}
+			
+		} else if enemyType.behavior == "melee" {
+			switch (state){
+					case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
+					case ENEMYSTATE.CHASE: EnemyState_Chase(); break;
+					case ENEMYSTATE.WANDER: EnemyState_Wander(); break;
+					case ENEMYSTATE.ATTACK: EnemyState_Attack(); break;
 	
+				}
 		}
 	}else{
 		moveX = 0
@@ -19,6 +37,15 @@ if !dying && !isDead{
 		if image_index > image_number-1{
 			spawning = false
 			hb = instance_create_layer(x,y,"Player",obj_zombieHitbox)
+			egun = instance_create_layer(x,y,"Gun",obj_EnemyWeapon);
+			with(egun){
+				spawned = other.id;
+				type = "gun"
+				projspd = other.projspd
+				damage = other.damage
+				projspr = other.projspr
+				sprite_index = other.wepspr
+			}
 		}
 	}
 }else{
