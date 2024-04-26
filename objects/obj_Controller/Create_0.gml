@@ -6,6 +6,75 @@ currSprite = sTest;
 imgnum = 0;
 maximgnum = 0;
 */
+<<<<<<< Updated upstream
+=======
+projstats = {
+	pea :
+	{
+		mainsprite : spr_pea,
+		splatsprite : spr_splatPea,
+		dispsprite : spr_peaDisp,
+		movespeed : 7,
+		lifetime: 15,//20,
+		damage : 2,
+	},
+	snow :
+	{
+		mainsprite : spr_frozenPea,
+		splatsprite : spr_splatFrozenPea,
+		dispsprite : spr_snowDisp,
+		movespeed : 7,
+		lifetime: 15,//20,
+		damage : 2,
+	},
+	cabbage :
+	{
+		mainsprite : spr_cabbage,
+		splatsprite : spr_splatPea,
+		dispsprite: spr_cabbageDisp,
+		movespeed : 8,
+		lifetime: 20,
+		damage : 3.5,
+	},
+	kernel :
+	{
+		mainsprite : spr_kernel,
+		splatsprite : spr_kernelDisp,
+		dispsprite: spr_kernelDisp,
+		movespeed : 8,
+		lifetime: 20,
+		damage : 2,
+	},
+	butter :
+	{
+		mainsprite : spr_butter,
+		splatsprite : spr_kernelDisp,
+		dispsprite: spr_butterDisp,
+		movespeed : 7,
+		lifetime: 20,
+		damage : 2.5,
+	},
+	bigbubble :
+	{
+		mainsprite : spr_bubbleBig,
+		splatsprite : spr_bubbleBigDisp,
+		dispsprite : spr_bubbleBigDisp,
+		movespeed : 8,
+		lifetime: 13,//20,
+		damage : 1,
+	},
+	smallbubble :
+	{
+		mainsprite : spr_bubbleSmall,
+		splatsprite : spr_bubbleSmallDisp,
+		dispsprite : spr_bubbleSmallDisp,
+		movespeed : 10,
+		lifetime: 11,//20,
+		damage : 0.5,
+	}
+}
+
+>>>>>>> Stashed changes
 
 weaponstats = {
 	peashooter : 
@@ -104,10 +173,64 @@ weaponstats = {
 		projOffsetX : 2,
 		projOffsetY : -5,
 		chargeable : true,
+<<<<<<< Updated upstream
 		chargetime : 30
 		
 	}
 		
+=======
+		chargetime : 30,//30,
+		secondammo : false //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+	},
+	kernelpult : 
+	{
+		wepname : "kernelpult",
+		mainidlesprite : spr_kernelPultIdle,
+		mainreloadsprite : spr_kernelPultReload,
+		mainshootsprite : spr_kernelPultShoot,
+		mainchargesprite : spr_kernelPultCharge,
+		mainchargemaxsprite : spr_kernelPultChargeMax,
+		projtype : projstats.kernel,
+		accuracy : 4,
+		clip : 6,
+		shootFrames : [1],
+		projOffsetX : 2,
+		projOffsetY : -5,
+		chargeable : true,
+		chargetime : 35,//30,
+		secondammo : projstats.butter //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+	},	
+	fumeshroom : 
+	{
+		wepname : "fumeshroom",
+		mainidlesprite : spr_fumeshroomIdle,
+		mainreloadsprite : spr_fumeshroomReload,
+		mainshootsprite : spr_fumeshroomShoot,
+		projtype : projstats.bigbubble,
+		accuracy : 10,
+		clip : 5,
+		shootFrames : [5],
+		projOffsetX : 2,
+		projOffsetY : -2,
+		chargeable : false,
+		secondammo : projstats.smallbubble
+	},
+	puffshroom : 
+	{
+		wepname : "puffshroom",
+		mainidlesprite : spr_puffshroomIdle,
+		mainreloadsprite : spr_puffshroomReload,
+		mainshootsprite : spr_puffshroomShoot,
+		projtype : projstats.smallbubble,
+		accuracy : 4,
+		clip : 12,
+		shootFrames : [2,4],
+		projOffsetX : 3,
+		projOffsetY : -2,
+		chargeable : false,
+		secondammo : false
+	}
+>>>>>>> Stashed changes
 }
 
 subweaponstats = {
@@ -130,8 +253,10 @@ subweaponstats = {
 
 
 
-inventoryPrimary = [weaponstats.peashooter]
-ammoPrimary = [weaponstats.peashooter.clip]
+//inventoryPrimary = [weaponstats.peashooter]
+//ammoPrimary = [weaponstats.peashooter.clip]
+inventoryPrimary = [weaponstats.puffshroom]
+ammoPrimary = [weaponstats.puffshroom.clip]
 //inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
 inventorySecondary = [subweaponstats.potatomine]
 cooldownSecondary = [0]//[0,0]
@@ -139,7 +264,7 @@ cooldownSecondary = [0]//[0,0]
 primary = 0
 secondary = 0
 
-mainamount = 5 //total amn of main weps
+mainamount = 8 //total amn of main weps
 
 secondaryamount = 2; //total amnt of subs
 

@@ -18,6 +18,11 @@
     {"name":"spr_carC","order":3,"path":"sprites/spr_carC/spr_carC.yy",},
     {"name":"obj_tree","order":1,"path":"objects/obj_tree/obj_tree.yy",},
     {"name":"spr_carA","order":1,"path":"sprites/spr_carA/spr_carA.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"spr_kernelPultChargeMax","order":1,"path":"sprites/spr_kernelPultChargeMax/spr_kernelPultChargeMax.yy",},
+    {"name":"sKernelpult","order":5,"path":"sprites/sKernelpult/sKernelpult.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_cabbagePultChargeMax","order":1,"path":"sprites/spr_cabbagePultChargeMax/spr_cabbagePultChargeMax.yy",},
     {"name":"spr_objectTiles","order":1,"path":"sprites/spr_objectTiles/spr_objectTiles.yy",},
     {"name":"EnemyRangeAttack","order":1,"path":"scripts/EnemyRangeAttack/EnemyRangeAttack.yy",},

@@ -15,6 +15,9 @@ if !main.chargeable{
 	if (mouse_check_button(mb_left)) && shootavailable && idle && !shooting{ //SHOOTING
 		idle = false
 		shooting = true
+		//if main.wepname == "puffshroom"{
+		//	puffCheck = puffCheck * -1
+		//}
 		image_index = 0
 		//var _x = x + lengthdir_x(60, image_angle - 0);
 		//var _y = y + lengthdir_y(60, image_angle - 0);
@@ -82,12 +85,21 @@ if shooting{
 		testFrame = floor(image_index)
 	}
 	if array_contains(main.shootFrames,testFrame){
+		if main.wepname == "fumeshroom"{
+			bubblesShot = 0
+			ammo --;
+			alarm_set(3,1)
+		} else {
 		ammo --;
 		ShootProjectile()
+		}
 	}
 	if image_index > image_number-1{
+		show_debug_message("shooting done")
 		shooting = false
 		idle = true
+		bubbleCounter = 0
+		bubblesShot = 0
 	}
 }
 

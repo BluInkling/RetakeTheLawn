@@ -43,6 +43,11 @@ moveY = lengthdir_y(1, my_dir);
 cold = false
 attackDir = 0
 
+hasButter = false
+stunLength = 120
+butterX = 0
+butterY = 0
+
 
 xVel = moveX*spd + forceX
 yVel = moveY*spd + forceY
@@ -103,7 +108,16 @@ function Hit(damage,type,dir){
 		instance_create_layer(x-2*image_xscale,y-8,"Bullets",obj_zombieGib)
 	}
 	flashAlpha = 1;
+<<<<<<< Updated upstream
 	if type == "frozen"{
+=======
+	if type == obj_Controller.projstats.butter{ //BUTTER STUN
+		spd = 0;
+		hasButter = true;
+		alarm_set(0,stunLength)
+	}
+	if type == obj_Controller.projstats.snow{
+>>>>>>> Stashed changes
 		cold = true
 		flashAlpha = 0.2;
 		flashColor = c_aqua;

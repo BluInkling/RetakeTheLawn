@@ -196,6 +196,11 @@
     {"id":{"name":"spr_graveBSpawn","path":"sprites/spr_graveBSpawn/spr_graveBSpawn.yy",},},
     {"id":{"name":"spr_graveDSpawn","path":"sprites/spr_graveDSpawn/spr_graveDSpawn.yy",},},
     {"id":{"name":"spr_snowpeaReload","path":"sprites/spr_snowpeaReload/spr_snowpeaReload.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"sKernelpult","path":"sprites/sKernelpult/sKernelpult.yy",},},
+    {"id":{"name":"spr_kernelPultShoot","path":"sprites/spr_kernelPultShoot/spr_kernelPultShoot.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_cabbagePultChargeMax","path":"sprites/spr_cabbagePultChargeMax/spr_cabbagePultChargeMax.yy",},},
     {"id":{"name":"spr_objectTiles","path":"sprites/spr_objectTiles/spr_objectTiles.yy",},},
     {"id":{"name":"obj_zombieGib","path":"objects/obj_zombieGib/obj_zombieGib.yy",},},

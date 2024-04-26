@@ -44,3 +44,24 @@ if hasHat{
 		draw_sprite_ext(hatSpr,hatFrame,x+hatX,y+hatY,image_xscale,1,0,c_white,1)
 	}
 }
+
+
+if hasButter{
+	if sprite_index == spr_zombieIdle{
+		butterX = obj_Controller.zombieHeadAnims.idle.x[image_index]*image_xscale
+		butterY = obj_Controller.zombieHeadAnims.idle.y[image_index]
+	}else if sprite_index == spr_zombieAttack{
+		butterX = obj_Controller.zombieHeadAnims.attack.x[image_index]*image_xscale
+		butterY = obj_Controller.zombieHeadAnims.attack.y[image_index]
+	}else if sprite_index == spr_zombieRun{
+		butterX = obj_Controller.zombieHeadAnims.run.x[image_index]*image_xscale
+		butterY = obj_Controller.zombieHeadAnims.run.y[image_index]
+	} else if sprite_index == spr_zombieSpawn{
+		butterX = obj_Controller.zombieHeadAnims.spawn.x[image_index]*image_xscale
+		butterY = obj_Controller.zombieHeadAnims.spawn.y[image_index]
+	}
+	if butterY < 0{
+		draw_sprite_ext(spr_zombieButter,0,x+butterX,y+butterY,image_xscale,1,0,c_white,1)
+	}
+	
+}
