@@ -59,7 +59,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"obj_throwable","path":"objects/obj_throwable/obj_throwable.yy",},},
@@ -211,6 +211,7 @@
     {"id":{"name":"spr_graveDSpawn","path":"sprites/spr_graveDSpawn/spr_graveDSpawn.yy",},},
     {"id":{"name":"spr_snowpeaReload","path":"sprites/spr_snowpeaReload/spr_snowpeaReload.yy",},},
     {"id":{"name":"spr_cabbagePultChargeMax","path":"sprites/spr_cabbagePultChargeMax/spr_cabbagePultChargeMax.yy",},},
+    {"id":{"name":"obj_devManager","path":"objects/obj_devManager/obj_devManager.yy",},},
     {"id":{"name":"spr_objectTiles","path":"sprites/spr_objectTiles/spr_objectTiles.yy",},},
     {"id":{"name":"obj_zombieGib","path":"objects/obj_zombieGib/obj_zombieGib.yy",},},
     {"id":{"name":"obj_uiSun","path":"objects/obj_uiSun/obj_uiSun.yy",},},

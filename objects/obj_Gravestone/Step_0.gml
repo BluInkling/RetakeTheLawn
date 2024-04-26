@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-
+/*
 if keyboard_check_released(ord("L")){
 	summoning = true
 	for (var i = 0; i < 3; i++) {
@@ -12,16 +12,17 @@ if keyboard_check_released(ord("L")){
 		//instance_create_layer(x + XPlace,y + YPlace,"Player",obj_Enemy)
 		//with instance_create_layer(x + XPlace,y + YPlace,"Player",obj_Enemy){
 			//This section dosen't work, it acts second and if it dosent line up it overrides
-			/*
-			enemyType = obj_Controller.enemystats.conehead; //sets the kidn of zombie to spawn
+			
+			//enemyType = obj_Controller.enemystats.conehead; //sets the kidn of zombie to spawn
 			//-------------------
-			hp = enemyType.hp
-			armor = enemyType.armor
-			spd = enemyType.spd
-			*/
+			//hp = enemyType.hp
+			//armor = enemyType.armor
+			//spd = enemyType.spd
+			
 		//}
 }	
 }
+*/
 
 
 
