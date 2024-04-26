@@ -11,7 +11,7 @@ if keyboard_check_pressed(vk_enter){ // Summon pickup
 	}
 }
 if keyboard_check_pressed(ord("Y")){ // Go to tile Test
-	room_goto(rm_tileTest)
+	room_goto(rm_prototyperoom)
 }
 
 if keyboard_check_released(ord("L")){ // Spawn footsoldier at nearest grave

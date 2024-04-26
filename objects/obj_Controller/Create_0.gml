@@ -102,7 +102,7 @@ weaponstats = {
 	{
 		wepname : "cabbagepult",
 		mainidlesprite : spr_cabbagePultIdle,
-		mainreloadsprite : spr_cabbagePultIdle,
+		mainreloadsprite : spr_cabbagePultReload,
 		mainshootsprite : spr_cabbagePultShoot,
 		mainchargesprite : spr_cabbagePultCharge,
 		mainchargemaxsprite : spr_cabbagePultChargeMax,

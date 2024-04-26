@@ -11,7 +11,7 @@ function EnemyMeleeAttack(){
 	}else{
 		moveX = lengthdir_x(1,attackDir)
 		moveY = lengthdir_y(1,attackDir)
-		spd = 1
+		//spd = 1
 	}
 	
 
@@ -27,7 +27,7 @@ if (sprite_index != argument0)
 		sprite_index = spr_zombieNoHandAttack
 	}
 	//image_index = 0;
-	image_speed = 1
+	//image_speed = 1
 	ds_list_clear(hitByAttack);
 }
 

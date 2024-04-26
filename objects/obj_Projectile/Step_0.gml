@@ -12,11 +12,11 @@ if place_meeting(x,y,obj_zombieHitbox){
 	var enemy = instance_nearest(x,y,obj_zombieHitbox).host
 	if piercing{
 		if !array_contains(piercingList,enemy){
-			enemy.Hit(damage,type,moveDir)
+			enemy.Hit(damage,type,moveDir,flaming)
 			array_push(piercingList,enemy)
 		}
 	}else{
-		enemy.Hit(damage,type,moveDir)
+		enemy.Hit(damage,type,moveDir,flaming)
 		Destroy()
 	}
 	//show_debug_message("Enemy hit!")

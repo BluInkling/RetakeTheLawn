@@ -36,7 +36,8 @@ armor = enemyType.armor
 counter = 0;
 shootcounter = 0;
 spd = enemyType.spd
-coldspd = spd / 2;
+coldspd = spd*2 / 3;
+coldLength = 180
 my_dir = irandom_range(0,359)
 moveX = lengthdir_x(1, my_dir);
 moveY = lengthdir_y(1, my_dir);
@@ -82,7 +83,7 @@ if hat == "cone"{
 
 }
 
-function Hit(damage,type,dir){
+function Hit(damage,type,dir,flaming){
 	if armor > 0{ //if has armor
 		armor -= damage//armor takes damage
 		if armor <= 0{ //if no more armor
@@ -103,13 +104,14 @@ function Hit(damage,type,dir){
 		instance_create_layer(x-2*image_xscale,y-8,"Bullets",obj_zombieGib)
 	}
 	flashAlpha = 1;
-	if type == "frozen"{
+	if type == obj_Controller.projstats.snow{
 		cold = true
 		flashAlpha = 0.2;
 		flashColor = c_aqua;
 		spd = coldspd;
-		alarm_set(0,120)
-	}else if type == "flaming"{
+		image_speed = 0.5
+		alarm_set(0,coldLength)
+	}else if flaming{
 		if obj_MainWeapon.main.wepname == "snowpea"{
 			flashColor = c_white;
 		} else {
