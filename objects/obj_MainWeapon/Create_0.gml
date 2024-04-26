@@ -17,6 +17,12 @@ angle = 0
 
 chargeable = main.chargeable
 
+bubbleCounter = 0
+bubblesShot = 0
+
+puffCheck = 1
+
+
 function ShootProjectile(){
 
 	if (chargeable){
@@ -30,7 +36,22 @@ function ShootProjectile(){
 			damage = 0.5 + damage * percentagecharged
 			moveSpd = 5 + moveSpd * percentagecharged
 			if percentagecharged == 1{
-				piercing = true
+				if (main.wepname == "cabbagepult"){
+					piercing = true
+				}
+				if (main.wepname == "kernelpult"){
+					type = main.secondammo
+					show_debug_message(type)
+				}
+			} else if(percentagecharged < 1){
+				if (main.wepname == "kernelpult"){
+					var num = irandom_range(0,100)
+					if num < 20{ //20% chnace to be butter
+						type = main.secondammo
+						sprite_index = type.mainspr
+						butter = true;
+					} 
+				}
 			}
 		}
 		counter = 0

@@ -218,6 +218,7 @@
     {"id":{"name":"spr_graveBSpawn","path":"sprites/spr_graveBSpawn/spr_graveBSpawn.yy",},},
     {"id":{"name":"spr_graveDSpawn","path":"sprites/spr_graveDSpawn/spr_graveDSpawn.yy",},},
     {"id":{"name":"spr_snowpeaReload","path":"sprites/spr_snowpeaReload/spr_snowpeaReload.yy",},},
+    {"id":{"name":"sKernelpult","path":"sprites/sKernelpult/sKernelpult.yy",},},
     {"id":{"name":"spr_kernelPultShoot","path":"sprites/spr_kernelPultShoot/spr_kernelPultShoot.yy",},},
     {"id":{"name":"spr_cabbagePultChargeMax","path":"sprites/spr_cabbagePultChargeMax/spr_cabbagePultChargeMax.yy",},},
     {"id":{"name":"obj_devManager","path":"objects/obj_devManager/obj_devManager.yy",},},

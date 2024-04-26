@@ -1,6 +1,17 @@
 main = obj_Controller.mainweapon
 
 type = obj_MainWeapon.projtype
+
+butter = false
+
+
+
+if (main.wepname == "fumeshroom"){
+	var num = irandom_range(0,100)
+	if num < 45{ //45% chnace to be small bubuel
+		type = main.secondammo
+	}
+}
 //show_debug_message(type)
 /*
 if main.wepname == "peashooter" or main.wepname == "repeater"{ //tochwood only affects NORMAL peas
@@ -21,6 +32,7 @@ dispSpr = type.dispsprite
 
 piercing = false
 piercingList = []
+if (main.wepname == "fumeshroom") piercing = true
 //show_debug_message(type)
 //show_debug_message("projetciles type: " + string(type))
 

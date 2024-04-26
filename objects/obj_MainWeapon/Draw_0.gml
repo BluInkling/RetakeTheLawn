@@ -31,7 +31,14 @@ if obj_MainWeapon.flaming{
 if idle{
 	sprite_index = animIdle
 }else if shooting{
-	sprite_index = animShoot
+	//if main.wepname == "puffshroom"{
+	//	if puffCheck == -1{
+	//		spr_puffshroomShoot
+	//	} else sprite_index = spr_puffshroomSingleShoot
+	//} 
+	//else {
+		sprite_index = animShoot
+	//}
 }else if reloading{
 	sprite_index = animReload
 }else if charging{
