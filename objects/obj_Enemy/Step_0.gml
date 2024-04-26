@@ -37,14 +37,16 @@ if !dying && !isDead{
 		if image_index > image_number-1{
 			spawning = false
 			hb = instance_create_layer(x,y,"Player",obj_zombieHitbox)
-			egun = instance_create_layer(x,y,"Gun",obj_EnemyWeapon);
-			with(egun){
-				spawned = other.id;
-				type = "gun"
-				projspd = other.projspd
-				damage = other.damage
-				projspr = other.projspr
-				sprite_index = other.wepspr
+			if (enemyType.type == "footsoldier"){ //gives footsoldiers a GUN
+				egun = instance_create_layer(x,y,"Gun",obj_EnemyWeapon);
+				with(egun){
+					spawned = other.id;
+					type = "gun"
+					projspd = other.projspd
+					damage = other.damage
+					projspr = other.projspr
+					sprite_index = other.wepspr
+				}
 			}
 		}
 	}
