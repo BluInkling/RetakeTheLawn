@@ -29,6 +29,7 @@ if !place_meeting(x,y+yVel,obj_wall){
 
 if (hp <= 0 && !dying)
 {
+	hasButter = false
 	dying = true
 	if (instance_exists(egun)) instance_destroy(egun)
 	image_index = 0

@@ -41,14 +41,16 @@ function ShootProjectile(){
 				}
 				if (main.wepname == "kernelpult"){
 					type = main.secondammo
-					show_debug_message(type)
+					sprite_index = type.mainsprite
+					butter = true;
+					//show_debug_message(type)
 				}
 			} else if(percentagecharged < 1){
 				if (main.wepname == "kernelpult"){
 					var num = irandom_range(0,100)
 					if num < 20{ //20% chnace to be butter
 						type = main.secondammo
-						sprite_index = type.mainspr
+						sprite_index = type.mainsprite
 						butter = true;
 					} 
 				}

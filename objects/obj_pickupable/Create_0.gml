@@ -19,7 +19,7 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_
 			name = "sun"
 		} else {
 			do{
-				type = choose(kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater,kindofpickup.cabbagepult)
+				type = choose(kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater,kindofpickup.cabbagepult,kindofpickup.kernelpult,kindofpickup.puffshroom,kindofpickup.fumeshroom)
 			} until(!(array_contains(obj_Controller.inventoryPrimary,type))); //repeat new item is not in the inventory
 	
 			overlap = type.mainidlesprite

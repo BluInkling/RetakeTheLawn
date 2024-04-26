@@ -47,6 +47,7 @@ if hasHat{
 
 
 if hasButter{
+	
 	if sprite_index == spr_zombieIdle{
 		butterX = obj_Controller.zombieHeadAnims.idle.x[image_index]*image_xscale
 		butterY = obj_Controller.zombieHeadAnims.idle.y[image_index]
@@ -60,6 +61,8 @@ if hasButter{
 		butterX = obj_Controller.zombieHeadAnims.spawn.x[image_index]*image_xscale
 		butterY = obj_Controller.zombieHeadAnims.spawn.y[image_index]
 	}
+	
+	//draw_sprite_ext(spr_zombieButter,0,x+hatX,y+hatY,image_xscale,1,0,c_white,1)
 	if butterY < 0{
 		draw_sprite_ext(spr_zombieButter,0,x+butterX,y+butterY,image_xscale,1,0,c_white,1)
 	}

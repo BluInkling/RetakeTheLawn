@@ -47,7 +47,7 @@ projstats = {
 	butter :
 	{
 		mainsprite : spr_butter,
-		splatsprite : spr_kernelDisp,
+		splatsprite : spr_butterDisp,
 		dispsprite: spr_butterDisp,
 		movespeed : 7,
 		lifetime: 20,
@@ -58,18 +58,18 @@ projstats = {
 		mainsprite : spr_bubbleBig,
 		splatsprite : spr_bubbleBigDisp,
 		dispsprite : spr_bubbleBigDisp,
-		movespeed : 8,
-		lifetime: 13,//20,
-		damage : 1,
+		movespeed : 4,
+		lifetime: 8,//20,
+		damage : 1.25,
 	},
 	smallbubble :
 	{
-		mainsprite : spr_bubbleSmall,
+		mainsprite : spr_bubbleSmall,//spr_bubbleSmall,
 		splatsprite : spr_bubbleSmallDisp,
 		dispsprite : spr_bubbleSmallDisp,
-		movespeed : 10,
-		lifetime: 11,//20,
-		damage : 0.5,
+		movespeed : 6,
+		lifetime: 10,//20,
+		damage : 0.75,
 	}
 }
 
@@ -178,7 +178,7 @@ weaponstats = {
 		mainreloadsprite : spr_fumeshroomReload,
 		mainshootsprite : spr_fumeshroomShoot,
 		projtype : projstats.bigbubble,
-		accuracy : 10,
+		accuracy : 20,
 		clip : 5,
 		shootFrames : [5],
 		projOffsetX : 2,
@@ -191,11 +191,11 @@ weaponstats = {
 		wepname : "puffshroom",
 		mainidlesprite : spr_puffshroomIdle,
 		mainreloadsprite : spr_puffshroomReload,
-		mainshootsprite : spr_puffshroomShoot,
+		mainshootsprite : spr_puffshroomShoot2,
 		projtype : projstats.smallbubble,
-		accuracy : 4,
+		accuracy : 12,
 		clip : 12,
-		shootFrames : [2,4],
+		shootFrames : [0,2],
 		projOffsetX : 3,
 		projOffsetY : -2,
 		chargeable : false,

@@ -95,7 +95,6 @@ if shooting{
 		}
 	}
 	if image_index > image_number-1{
-		show_debug_message("shooting done")
 		shooting = false
 		idle = true
 		bubbleCounter = 0
