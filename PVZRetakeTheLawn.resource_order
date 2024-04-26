@@ -7,6 +7,8 @@
     {"name":"ts_objects","order":1,"path":"tilesets/ts_objects/ts_objects.yy",},
     {"name":"sTempPool","order":2,"path":"sprites/sTempPool/sTempPool.yy",},
     {"name":"spr_cabbagePultRecover","order":3,"path":"sprites/spr_cabbagePultRecover/spr_cabbagePultRecover.yy",},
+    {"name":"sEnemyGun","order":4,"path":"sprites/sEnemyGun/sEnemyGun.yy",},
+    {"name":"obj_EnemyProjectile","order":3,"path":"objects/obj_EnemyProjectile/obj_EnemyProjectile.yy",},
     {"name":"spr_cabbagePultShoot","order":4,"path":"sprites/spr_cabbagePultShoot/spr_cabbagePultShoot.yy",},
     {"name":"spr_carB","order":2,"path":"sprites/spr_carB/spr_carB.yy",},
     {"name":"obj_carC","order":4,"path":"objects/obj_carC/obj_carC.yy",},
@@ -18,6 +20,9 @@
     {"name":"spr_carA","order":1,"path":"sprites/spr_carA/spr_carA.yy",},
     {"name":"spr_cabbagePultChargeMax","order":1,"path":"sprites/spr_cabbagePultChargeMax/spr_cabbagePultChargeMax.yy",},
     {"name":"spr_objectTiles","order":1,"path":"sprites/spr_objectTiles/spr_objectTiles.yy",},
+    {"name":"EnemyRangeAttack","order":1,"path":"scripts/EnemyRangeAttack/EnemyRangeAttack.yy",},
     {"name":"obj_carB","order":3,"path":"objects/obj_carB/obj_carB.yy",},
+    {"name":"sArmyHat","order":3,"path":"sprites/sArmyHat/sArmyHat.yy",},
+    {"name":"obj_EnemyWeapon","order":2,"path":"objects/obj_EnemyWeapon/obj_EnemyWeapon.yy",},
   ],
 }

@@ -161,7 +161,8 @@ enemystats = {
 		attacksprHB : spr_zombieAttackHB,
 		spawnspr : spr_zombieSpawn,
 		spd : .75,
-		onhead : "none"
+		onhead : "none",
+		behavior : "melee"
 	},
 	conehead :
 	{
@@ -174,7 +175,8 @@ enemystats = {
 		attacksprHB : spr_zombieAttackHB,
 		spawnspr : spr_zombieSpawn,
 		spd : .5,
-		onhead : "cone"
+		onhead : "cone",
+		behavior : "melee"
 	},
 	buckethead :
 	{
@@ -187,7 +189,26 @@ enemystats = {
 		attacksprHB : spr_zombieAttackHB,
 		spawnspr : spr_zombieSpawn,
 		spd : .5,
-		onhead : "bucket"
+		onhead : "bucket",
+		behavior : "melee"
+	},
+	footsoldier :
+	{
+		type : "footsoldier",
+		hp : 4,
+		armor : 6,
+		idlespr : spr_zombieIdle,
+		movespr : spr_zombieRun,
+		attackspr : spr_zombieAttack,
+		attacksprHB : spr_zombieAttackHB,
+		spawnspr : spr_zombieSpawn,
+		spd : .5,
+		onhead : "armyhat",
+		behavior : "ranged",
+		damage : 2,
+		projspd : 5,
+		weaponspr : sEnemyGun,
+		projspr : sFrozenPea
 	}
 	
 }

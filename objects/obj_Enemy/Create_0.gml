@@ -6,7 +6,7 @@ event_inherited();
 radius = 220;
 lineofsight = false;
 attackradius = 48
-state = ENEMYSTATE.IDLE
+
 hitByAttack = ds_list_create();
 
 
@@ -19,7 +19,11 @@ enum ENEMYSTATE
 	
 }
 
-enemyType = obj_Controller.enemystats.conehead;
+enemyType = obj_Controller.enemystats.footsoldier;
+
+if enemyType.behavior == "ranged"{
+	state = ENEMYSTATE.WANDER
+} else state = ENEMYSTATE.IDLE
 
 //enemyType = obj_Controller.enemystats.conehead;
 
@@ -30,6 +34,7 @@ enemyType = global.grabthis;
 hp = enemyType.hp
 armor = enemyType.armor
 counter = 0;
+shootcounter = 0;
 spd = enemyType.spd
 coldspd = spd / 2;
 my_dir = irandom_range(0,359)
@@ -57,6 +62,7 @@ spawning = true
 sprite_index = enemyType.spawnspr
 
 hb = noone
+egun = noone
 
 hasHit = false
 	
@@ -66,6 +72,14 @@ if hat == "cone"{
 }else if hat == "bucket"{
 	hatSpr = spr_zombieBucket
 	hasHat = true
+}else if hat == "armyhat"{ //if soldier zombie then give it a hat and gun
+	hatSpr = sArmyHat
+	hasHat = true	
+	projspd = enemyType.projspd
+	damage = enemyType.damage
+	wepspr = enemyType.weaponspr
+	projspr = enemyType.projspr
+
 }
 
 function Hit(damage,type,dir){
@@ -124,6 +138,7 @@ function SpawnHead(spr){
 }
 
 function Destroy(){
+	
 	instance_destroy(hb)
 	instance_destroy()
 }
