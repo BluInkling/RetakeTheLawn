@@ -4,7 +4,7 @@ yVel = moveY*spd + forceY
 
 //show_debug_message(string(moveX)+","+string(moveY))
 
-
+if !dying{
 if !place_meeting(x+xVel,y,obj_wall) && !place_meeting(x,y+yVel,obj_wallPool){
 	if !place_meeting(x+xVel,y, obj_Enemy){
 		x+=xVel
@@ -24,7 +24,7 @@ if !place_meeting(x,y+yVel,obj_wall) && !place_meeting(x,y+yVel,obj_wallPool){
 		y+=yVel
 	}
 }
-
+}
 
 
 if (hp <= 0 && !dying)

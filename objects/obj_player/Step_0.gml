@@ -28,8 +28,18 @@ if !place_meeting(x+xVel,y,obj_wall) && !place_meeting(x+xVel,y,obj_wallPool){
 	if !place_meeting(x+xVel,y, obj_actor){
 		x+=xVel
 	}else{
+		//var _other = instance_place(x+xVel,y, obj_actor)
+		//_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
 		var _other = instance_place(x+xVel,y, obj_actor)
-		_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+		if _other.object_index == obj_Enemy{
+			if !_other.dying{
+				_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+			}else{
+				x+=xVel
+			}
+		}else{
+			_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+		}
 	}
 	
 }
@@ -41,11 +51,13 @@ if !place_meeting(x,y+yVel,obj_wall) && !place_meeting(x,y+yVel,obj_wallPool){
 		if _other.object_index == obj_Enemy{
 			if !_other.dying{
 				_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+			}else{
+				y+=yVel
 			}
 		}else{
 			_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
 		}
-		y+=yVel
+		//y+=yVel
 	}
 }
 

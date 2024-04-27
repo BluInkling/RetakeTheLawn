@@ -30,5 +30,7 @@ if obj_MainWeapon.projtype = "flaming"{
 	draw_sprite(sfireeffect,image_number,x,y)
 }
 
-
+if layer_exists("Night"){
+	layer_depth(layer_get_id("Night"),depth - 500)
+}
 

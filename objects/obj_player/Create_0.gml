@@ -50,6 +50,8 @@ function Hit(damage){
 }
 
 
+
+
 /*
 //Outline Shader
 upixelH = shader_get_uniform(shd_outline,"pixelH")
