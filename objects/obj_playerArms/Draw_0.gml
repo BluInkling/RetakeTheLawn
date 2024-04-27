@@ -54,7 +54,7 @@ handAngle = round(aimAngle/10)*10
 image_yscale = obj_player.xDir
 image_angle = armAngle
 
-depth = obj_player.depth-100
+depth = obj_player.depth-10
 
 
 

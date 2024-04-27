@@ -3,7 +3,12 @@
 
 x += lengthdir_x(moveSpd,moveDir)
 y += lengthdir_y(moveSpd,moveDir)
-
+if place_meeting(x,y,obj_vaseHB){
+	var vase = instance_nearest(x,y,obj_vase)
+	if !vase.breaking{
+		vase.Break()
+	}
+}
 if place_meeting(x,y,obj_wall){
 	Destroy(instance_nearest(x,y,obj_wall))
 }
@@ -23,7 +28,7 @@ if place_meeting(x,y,obj_zombieHitbox){
 }
 
 if disp && sprite_index == dispSpr{
-	show_debug_message(image_index)
+	//show_debug_message(image_index)
 	sprite_index = dispSpr
 	if image_index > image_number-1{// || image_number == 1{
 		Destroy()

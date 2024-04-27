@@ -19,6 +19,9 @@ if moving{
 }
 
 image_xscale = xDir
+
+draw_sprite(spr_shadowMain,0,x,y+14)
+
 draw_self()
 
 event_inherited()

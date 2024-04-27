@@ -5,7 +5,20 @@
 if type == "sun"{
 	
 	if moving == true{
-
+		yVel+=grav
+		x+=xVel
+		if y < height{
+			y+=yVel
+		}else{
+			yVel = yVel * -0.5
+			xVel = xVel * 0.5
+			if !hasFallen{
+				hasFallen = true
+				moving = false
+			}
+		}
+	}
+/*
 	counter += 1; // Update position in the arc.
 	x = quad_bezier(ax,bx,cx,counter/60); // Move in an arc over 60 steps.
 	y = quad_bezier(ay,by,cy,counter/60);
@@ -17,7 +30,7 @@ if type == "sun"{
 	}
 
 	} else x = x y = y
-	
+	*/
 	
 	
 	if(moving == false && place_meeting(x,y,obj_player)){

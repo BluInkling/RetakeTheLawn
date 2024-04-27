@@ -18,8 +18,9 @@ if global.debug{
 		draw_line_color(x,y-16,obj_player.x,obj_player.y,c_green,c_lime)
 	}
 }
-
-
+if !spawning{
+	draw_sprite(spr_shadowMain,0,x,y-2) 
+}
 draw_self()
 
 event_inherited();

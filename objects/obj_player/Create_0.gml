@@ -46,6 +46,7 @@ function Hit(damage){
 	}else{ //if no armor, health takes damage
 		hp -= damage;
 	}
+	flashAlpha = 1;
 }
 
 

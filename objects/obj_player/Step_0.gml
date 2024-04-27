@@ -24,7 +24,7 @@ if (abs(xVel)+abs(yVel)> moveSpd){
 }
 
 //Collisions
-if !place_meeting(x+xVel,y,obj_wall){
+if !place_meeting(x+xVel,y,obj_wall) && !place_meeting(x+xVel,y,obj_wallPool){
 	if !place_meeting(x+xVel,y, obj_actor){
 		x+=xVel
 	}else{
@@ -33,7 +33,7 @@ if !place_meeting(x+xVel,y,obj_wall){
 	}
 	
 }
-if !place_meeting(x,y+yVel,obj_wall){
+if !place_meeting(x,y+yVel,obj_wall) && !place_meeting(x,y+yVel,obj_wallPool){
 	if !place_meeting(x,y+yVel, obj_actor){
 		y+=yVel
 	}else{

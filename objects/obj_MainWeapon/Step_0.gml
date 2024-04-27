@@ -89,9 +89,20 @@ if shooting{
 			bubblesShot = 0
 			ammo --;
 			alarm_set(3,1)
-		} else {
-		ammo --;
-		ShootProjectile()
+		}else{
+			ammo --;
+			if main.wepname == "puffshroom"{
+				if testFrame == main.shootFrames[0]{
+					main.projOffsetX = 1
+					main.projOffsetY = 2
+				}else if testFrame == main.shootFrames[1]{
+					main.projOffsetX = 7
+					main.projOffsetY = 0
+				}
+				shootOffsetAngle = point_direction(0,0,main.projOffsetX,main.projOffsetY)
+				shootOffsetDistance = sqrt(sqr(main.projOffsetX)+sqr(main.projOffsetY))
+			}
+			ShootProjectile()
 		}
 	}
 	if image_index > image_number-1{

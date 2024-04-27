@@ -46,7 +46,7 @@ if idle{
 }else if chargeMax{
 	sprite_index = animChargeMax
 }
-depth = obj_player.depth-50
+depth = obj_player.depth-5
 
 draw_self()
 
