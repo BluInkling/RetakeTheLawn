@@ -16,7 +16,6 @@ moveSpd = 1.5
 
 xDir = 1 //for sprite flipping
 
-activeWeapon = obj_primary
 //instance_create_layer(x,y,"Instances",obj_playerArms)
 
 //States

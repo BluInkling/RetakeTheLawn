@@ -44,6 +44,12 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 		subavailable = false
 		//alarm_set(0,cooldown)
 	}
+	if sub.wepname == "cocoabean"{
+		obj_MainWeapon.image_speed = 2
+
+		subavailable = false
+		alarm[1] = 360
+	}
 	obj_Controller.cooldownSecondary[obj_Controller.secondary] = sub.cooldown
 }
 //show_debug_message(obj_Controller.cooldownSecondary[obj_Controller.secondary])

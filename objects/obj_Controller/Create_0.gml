@@ -217,6 +217,13 @@ subweaponstats = {
 		subdownsprite : spr_torchwoodActivate,
 		cooldown : 600,
 		throwable: false
+	},
+	cocoabean :{
+		wepname : "cocoabean",
+		subidlesprite : spr_cocoaBeanIdle, // for pocket
+		subdownsprite : spr_cocoaBeanActivate,
+		cooldown : 800,
+		throwable: false
 	}
 }
 
@@ -228,7 +235,7 @@ subweaponstats = {
 inventoryPrimary = [weaponstats.puffshroom]
 ammoPrimary = [weaponstats.puffshroom.clip]
 //inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
-inventorySecondary = [subweaponstats.potatomine]
+inventorySecondary = [subweaponstats.cocoabean]//[subweaponstats.potatomine]
 cooldownSecondary = [0]//[0,0]
 
 primary = 0

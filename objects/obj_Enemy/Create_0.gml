@@ -135,7 +135,7 @@ function Hit(damage,type,dir,flaming){
 			flashAlpha = 0.2;
 		}
 	}
-	Force(damage,dir)
+	Force(clamp(damage,0,2),dir)
 }
 
 

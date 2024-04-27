@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-sprite_index = obj_SubWeapon.sprite_index
+//sprite_index = obj_SubWeapon.sprite_index
 
 
 for (var i=0; i<array_length(obj_Controller.inventorySecondary)-1; i++){
@@ -44,6 +44,32 @@ switch(obj_Controller.subweapon.wepname){
 		break;
 	case "potatomine":
 		draw_sprite(spr_potatomineIdle,image_index,20,164)
+		break;
+	case "cocoabean": 
+		if obj_SubWeapon.subavailable == true{
+			sprite_index = spr_cocoaBeanIdle
+			activateCocoa = true
+		}else if obj_SubWeapon.subavailable == false{
+			if activateCocoa{
+				sprite_index = spr_cocoaBeanActivate
+				image_index = 0
+				activateCocoa = false
+			}else if sprite_index == spr_cocoaBeanActivate{
+				if image_index > 20{
+				//show_debug_message("drawign active")
+					activate = false;
+					//currSprite = spr_none
+					sprite_index = spr_cocoaBeanReset
+					image_index = 0
+				//draw_sprite(currSprite,image_index,52,17)
+				}
+			}else if sprite_index == spr_cocoaBeanReset{
+				if image_index > image_number-1{
+					sprite_index = spr_cocoaBeanIdle
+				}
+			}
+		}
+		draw_sprite(sprite_index,image_index,20,164)
 		break;
 }
 //draw_sprite(spr_pocket,0,20,172)

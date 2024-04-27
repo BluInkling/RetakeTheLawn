@@ -6,7 +6,7 @@ activate = false
 currSprite = sTest;
 imgnum = 0;
 maximgnum = 0;
-
+activateCocoa = false
 
 
 

@@ -2,6 +2,7 @@
   "FolderOrderSettings": [
     {"name":"props","order":1,"path":"folders/Objects/props.yy",},
     {"name":"kernelPult","order":1,"path":"folders/Sprites/plants/primary/kernelPult.yy",},
+    {"name":"cocoabean","order":1,"path":"folders/Sprites/plants/secondary/cocoabean.yy",},
     {"name":"props","order":1,"path":"folders/Sprites/props.yy",},
   ],
   "ResourceOrderSettings": [
@@ -19,6 +20,7 @@
     {"name":"spr_wallnut","order":1,"path":"sprites/spr_wallnut/spr_wallnut.yy",},
     {"name":"sEnemyGun","order":4,"path":"sprites/sEnemyGun/sEnemyGun.yy",},
     {"name":"spr_graveBBreak","order":4,"path":"sprites/spr_graveBBreak/spr_graveBBreak.yy",},
+    {"name":"spr_none","order":6,"path":"sprites/spr_none/spr_none.yy",},
     {"name":"spr_butterDisp","order":11,"path":"sprites/spr_butterDisp/spr_butterDisp.yy",},
     {"name":"obj_EnemyProjectile","order":3,"path":"objects/obj_EnemyProjectile/obj_EnemyProjectile.yy",},
     {"name":"spr_cabbagePultShoot","order":4,"path":"sprites/spr_cabbagePultShoot/spr_cabbagePultShoot.yy",},
@@ -26,6 +28,7 @@
     {"name":"spr_kernelPultCharge","order":3,"path":"sprites/spr_kernelPultCharge/spr_kernelPultCharge.yy",},
     {"name":"spr_potatomineExplodeBefore","order":1,"path":"sprites/spr_potatomineExplodeBefore/spr_potatomineExplodeBefore.yy",},
     {"name":"spr_bubbleSmallDisp","order":12,"path":"sprites/spr_bubbleSmallDisp/spr_bubbleSmallDisp.yy",},
+    {"name":"spr_cocoaBeanReset","order":2,"path":"sprites/spr_cocoaBeanReset/spr_cocoaBeanReset.yy",},
     {"name":"spr_daveHandLPuff","order":1,"path":"sprites/spr_daveHandLPuff/spr_daveHandLPuff.yy",},
     {"name":"spr_kernelDisp","order":5,"path":"sprites/spr_kernelDisp/spr_kernelDisp.yy",},
     {"name":"spr_heart","order":2,"path":"sprites/spr_heart/spr_heart.yy",},
@@ -56,6 +59,7 @@
     {"name":"spr_graveDBreak","order":5,"path":"sprites/spr_graveDBreak/spr_graveDBreak.yy",},
     {"name":"obj_carB","order":3,"path":"objects/obj_carB/obj_carB.yy",},
     {"name":"sArmyHat","order":3,"path":"sprites/sArmyHat/sArmyHat.yy",},
+    {"name":"spr_cocoaBeanActivate","order":1,"path":"sprites/spr_cocoaBeanActivate/spr_cocoaBeanActivate.yy",},
     {"name":"spr_cabbagePultReload","order":5,"path":"sprites/spr_cabbagePultReload/spr_cabbagePultReload.yy",},
     {"name":"spr_fire","order":1,"path":"sprites/spr_fire/spr_fire.yy",},
     {"name":"spr_graveCBreak","order":2,"path":"sprites/spr_graveCBreak/spr_graveCBreak.yy",},
