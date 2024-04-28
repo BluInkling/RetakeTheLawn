@@ -29,8 +29,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "zombies",
-    "path": "folders/Sprites/zombies.yy",
+    "name": "base",
+    "path": "folders/Sprites/zombies/base.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
