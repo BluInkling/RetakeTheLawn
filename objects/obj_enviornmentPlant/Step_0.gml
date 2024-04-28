@@ -12,6 +12,9 @@ if type == "wallnut"{
 	sprite_index = spr_wallnut
 	if(place_meeting(x,y,obj_player)){
 		with(obj_player){
+			if (pumpkinArmor > 0){
+				pumpkinArmor = 0
+			} 
 			wallnutArmor = 3;
 		}
 		instance_destroy()
@@ -19,11 +22,15 @@ if type == "wallnut"{
 }
 
 
-
-
-
-
-
-
-
+if type == "pumpkin"{
+	sprite_index = sPumpkind
+	if(place_meeting(x,y,obj_player)){
+		with(obj_player){
+			if (wallnutArmor > 0) wallnutArmor = 0
+			pumpkinArmor = 5;
+			
+		}
+		instance_destroy()
+	}
+}
 

@@ -6,17 +6,17 @@
 
 if global.debug{
 	draw_set_font(fnt1)
-	draw_text_transformed(x,y+16,string(depth)+" Health: " + string(hp+armor) + "Type: " + string(enemyType.type),.20,.20,0)
-	draw_set_alpha(0.25)
-	draw_circle_color(x,y,radius,c_yellow,c_yellow,false)
-	draw_circle_color(x,y,attackradius,c_red,c_red,false)
-	draw_set_alpha(1)
+	draw_text_transformed(x,y+16,string(depth)+" Health: " + string(hp+armor) + "Type: " + string(enemyType.type),.25,.25,0)
+	//draw_set_alpha(0.25)
+	//draw_circle_color(x,y,radius,c_yellow,c_yellow,false)
+	//draw_circle_color(x,y,attackradius,c_red,c_red,false)
+	//draw_set_alpha(1)
 
-	if collision_line(x,y-16,obj_player.x,obj_player.y,obj_wall,0,0){
-		draw_line_color(x,y-16,obj_player.x,obj_player.y,c_red,c_red)
-	}else{
-		draw_line_color(x,y-16,obj_player.x,obj_player.y,c_green,c_lime)
-	}
+	//if collision_line(x,y-16,obj_player.x,obj_player.y,obj_wall,0,0){
+	//	draw_line_color(x,y-16,obj_player.x,obj_player.y,c_red,c_red)
+	//}else{
+	//	draw_line_color(x,y-16,obj_player.x,obj_player.y,c_green,c_lime)
+	//}
 }
 if !spawning{
 	draw_sprite(spr_shadowMain,0,x,y-2) 
@@ -68,4 +68,12 @@ if hasButter{
 		draw_sprite_ext(spr_zombieButter,0,x+butterX,y+butterY,image_xscale,1,0,c_white,1)
 	}
 	
+}
+
+if buffField{
+	draw_sprite(spr_flagBuff,0,x,y)
+}
+
+if alreadyBuffed{
+	draw_sprite(sBuffed,0,x,y)
 }

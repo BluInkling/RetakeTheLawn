@@ -70,6 +70,8 @@ switch(obj_Controller.subweapon.wepname){
 			}
 		}
 		draw_sprite(sprite_index,image_index,20,164)
+	case "cherrybomb":
+		draw_sprite(sCherry,image_index,20,164)
 		break;
 }
 //draw_sprite(spr_pocket,0,20,172)

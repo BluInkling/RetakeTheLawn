@@ -50,6 +50,18 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 		subavailable = false
 		alarm[1] = 360
 	}
+	if sub.wepname == "cherrybomb"{
+		//show_debug_message("potatomine activated!")
+		var aimDir = point_direction(obj_player.x,obj_player.y,mouse_x,mouse_y);
+			var bomb = instance_create_layer(obj_player.x,obj_player.y,"Player",obj_throwable)
+			bomb.dist = point_distance(obj_player.x,obj_player.y,mouse_x,mouse_y)
+			bomb.dir = aimDir
+			//show_debug_message(mine.dir)
+
+		//cooldown = 1200
+		subavailable = false
+		//alarm_set(0,cooldown)
+	}
 	obj_Controller.cooldownSecondary[obj_Controller.secondary] = sub.cooldown
 }
 //show_debug_message(obj_Controller.cooldownSecondary[obj_Controller.secondary])

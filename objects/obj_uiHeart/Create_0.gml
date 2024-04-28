@@ -6,5 +6,8 @@ beatStep = 0
 
 wallnutSprite = spr_wallnutArmor
 
+wallnutSprite = spr_wallnutArmor
+pumpkinSprite = sPumpkinUI
+
 
 

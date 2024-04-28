@@ -1,6 +1,7 @@
 
 
-type = choose("sunflower","wallnut")
+type = choose("sunflower","wallnut","pumpkin")
+
 hasSunned = false
 
 
@@ -11,7 +12,9 @@ if type == "sunflower"{
 if type == "wallnut"{
 	sprite_index = spr_wallnut
 }
-
+if type == "pumpkin"{
+	sprite_index = sPumpkinUI
+}
 
 
 

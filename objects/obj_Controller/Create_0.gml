@@ -224,18 +224,25 @@ subweaponstats = {
 		subdownsprite : spr_cocoaBeanActivate,
 		cooldown : 800,
 		throwable: false
+	},
+	cherrybomb :{
+		wepname : "cherrybomb",
+		subidlesprite : sCherry, // for pocket
+		subdownsprite : sCherry,
+		cooldown : 300,
+		throwable : true
 	}
 }
 
 
 
 
-//inventoryPrimary = [weaponstats.peashooter]
-//ammoPrimary = [weaponstats.peashooter.clip]
 inventoryPrimary = [weaponstats.peashooter]
 ammoPrimary = [weaponstats.peashooter.clip]
+//inventoryPrimary = [weaponstats.puffshroom]
+//ammoPrimary = [weaponstats.puffshroom.clip]
 //inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
-inventorySecondary = [subweaponstats.torchwood]//[subweaponstats.potatomine]
+inventorySecondary = [subweaponstats.cherrybomb]
 cooldownSecondary = [0]//[0,0]
 
 primary = 0
@@ -311,6 +318,21 @@ enemystats = {
 		projspd : 5,
 		weaponspr : sEnemyGun,
 		projspr : sFrozenPea
+	},
+	flagzombie :
+	{
+		type : "flagzombie",
+		hp : 8,
+		armor : 0,
+		idlespr : spr_zombieIdle,
+		movespr : spr_zombieRun,
+		attackspr : spr_zombieAttack,
+		attacksprHB : spr_zombieAttackHB,
+		spawnspr : spr_zombieSpawn,
+		spd : .9,
+		onhead : "flag", //TEMPORARY UNTIL FLAG ZOMBIE SPRITES PUTIN
+		behavior : "support",
+		damage : 0,
 	}
 	
 }

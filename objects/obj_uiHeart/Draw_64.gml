@@ -10,6 +10,9 @@ if obj_player.wallnutArmor > 0{
 	draw_sprite(spr_wallnutArmor,obj_player.wallnutArmor,24,24)
 }
 
+if obj_player.pumpkinArmor > 0{
+	draw_sprite(sPumpkinUI,obj_player.pumpkinArmor,24,24)
+}
 
 
 
