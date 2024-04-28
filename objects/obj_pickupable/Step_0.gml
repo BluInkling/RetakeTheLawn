@@ -1,6 +1,6 @@
 
 
-if(collision_circle(x,y,16,obj_player,false,false)){
+if(collision_circle(x,y,8,obj_player,false,false)){
 	draw = true
 	if(keyboard_check_pressed(ord("E"))){
 		if (kindofpickup == obj_Controller.weaponstats){
@@ -35,10 +35,14 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 			col.RandomChoose()	
 			
 		}
+		if host != noone{
+			host.Collapse()
+		}
 		instance_destroy();
 		
 	}
 } else draw = false
+
 
 
 

@@ -132,7 +132,7 @@ function Hit(damage,type,dir,flaming){
 		if obj_MainWeapon.main.wepname == "snowpea"{
 			flashColor = c_white;
 		} else {
-			flashColor = c_red;
+			flashColor = c_red; 
 		}
 	}else{
 		if !cold{

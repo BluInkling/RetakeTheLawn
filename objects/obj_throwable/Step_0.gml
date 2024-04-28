@@ -70,17 +70,28 @@ switch(sub.wepname){
 			switch(state){
 			case "flying":
 				//show_debug_message("flying")
-				sprite_index = sCherry
-				step+=stepSpd
-				if !place_meeting(lerp(startX,targetX,step),y,obj_wall){
-					x = lerp(startX,targetX,step)
+				step+=0.05
+				sprite_index = spr_cherryBombIdle
+				xVel = lengthdir_x(moveSpd,dir)
+				yVel = lengthdir_y(moveSpd,dir)
+				if !place_meeting(x+xVel,y,obj_wall){
+					x += xVel
+				}else{
+					state = "explode"
+					image_index = 0
 				}
-				if !place_meeting(x,lerp(startY,targetY,step),obj_wall){
-					y = lerp(startY,targetY,step)
+				if !place_meeting(x,y+yVel,obj_wall){
+					y += yVel
+				}else{
+					state = "explode"
+					image_index = 0
+				}
+				if place_meeting(x,y,obj_zombieHitbox){
+					state = "explode"
+					image_index = 0
 				}
 				drawX = x
-				drawY = y-z
-				z=(-1*power(step,2)+step)*175
+				drawY = y
 				if step > 1{
 					state = "explode"
 					image_index = 0
@@ -88,7 +99,7 @@ switch(sub.wepname){
 				break;
 			case "explode":
 				//show_debug_message("exploding")
-				sprite_index = sExplosion
+				sprite_index = spr_cherryBombPowie
 				ProcessExplosion()
 				if image_index >= image_number-1{
 					//show_debug_message("dying")

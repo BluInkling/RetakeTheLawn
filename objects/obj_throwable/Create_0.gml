@@ -17,6 +17,11 @@ fixedDist = false //To be determined by the struct, if true, uses maxDist as the
 maxDist = 100
 dist =0
 
+//Move Speed for cherry bomb
+moveSpd = 7
+xVel = 0
+yVel = 0
+
 startX = x
 startY = y
 targetX = startX

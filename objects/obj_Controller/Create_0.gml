@@ -227,9 +227,9 @@ subweaponstats = {
 	},
 	cherrybomb :{
 		wepname : "cherrybomb",
-		subidlesprite : sCherry, // for pocket
-		subdownsprite : sCherry,
-		cooldown : 300,
+		subidlesprite : spr_cherryBombIdle, // for pocket
+		subdownsprite : spr_cherryBombIdle,
+		cooldown : 600,
 		throwable : true
 	}
 }

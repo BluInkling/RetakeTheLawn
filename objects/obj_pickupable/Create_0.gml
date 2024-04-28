@@ -8,6 +8,8 @@ type = noone;
 //if player in radius and pickable thing isnt in players inventory array: 
 //then add it to their array and switch to it
 
+//If in a collection
+host = noone
 
 function RandomChoose(){
 kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_Controller.weaponstats,obj_Controller.subweaponstats)
@@ -77,3 +79,16 @@ part_system_position(part,x,y)
 //		overlap = spr_sun
 //		name = "sun"
 //}
+
+//Outline Shader
+upixelH = shader_get_uniform(shd_outline,"pixelH")
+upixelW = shader_get_uniform(shd_outline,"pixelW")
+texelW = texture_get_texel_width(sprite_get_texture(sprite_index,0))
+texelH = texture_get_texel_height(sprite_get_texture(sprite_index,0))
+/*
+var lay_id = layer_get_id("Player");
+layer_shader(lay_id,shd_outline);
+*/
+//layer_shader(layer_get_id("Gun"),shd_outline);
+
+
