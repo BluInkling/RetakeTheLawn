@@ -43,18 +43,24 @@ function Hit(damage){
 		var tempHp = hp+wallnutArmor+pumpkinArmor
 		var tempArmor = 0
 		tempHp-=damage
-		if tempHp >= maxhp{
-			hp = maxhp
-			tempArmor = tempHp - maxhp
-			show_debug_message(tempHp)
+		tempArmor = tempHp - hp
+		if wallnutArmor && pumpkinArmor{
 			if tempArmor == 1{
 				pumpkinArmor = 0
 			}else if tempArmor == 0{
 				wallnutArmor = 0
 			}
-		}else{
-			hp = tempHp
+		}else if pumpkinArmor{
+			if tempArmor == 0{
+				pumpkinArmor = 0
+			}
+		}else if wallnutArmor{
+			if tempArmor == 0{
+				wallnutArmor = 0
+			}
 		}
+		//show_debug_message(tempHp)
+		
 	}else{
 		hp -= damage;
 	}

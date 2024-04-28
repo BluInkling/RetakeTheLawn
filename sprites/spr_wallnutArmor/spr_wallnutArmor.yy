@@ -13,10 +13,10 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a470f7d3-ad30-4452-bb65-080bfe75fa17",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec8e8183-74ff-459d-b6b6-aed7b3609bc8",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c7db008a-1987-443c-91b1-534a49e411fa",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"84c14fa0-291c-400b-97d7-5ad027d4c322",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c7db008a-1987-443c-91b1-534a49e411fa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec8e8183-74ff-459d-b6b6-aed7b3609bc8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a470f7d3-ad30-4452-bb65-080bfe75fa17",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -57,10 +57,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a470f7d3-ad30-4452-bb65-080bfe75fa17","path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},},},"Disabled":false,"id":"9a6ce790-a001-4f71-a6e2-d494182b3ef6","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ec8e8183-74ff-459d-b6b6-aed7b3609bc8","path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},},},"Disabled":false,"id":"ef18dac5-8df1-4a0f-8cfa-b323be7b2721","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c7db008a-1987-443c-91b1-534a49e411fa","path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},},},"Disabled":false,"id":"3e181974-ad47-46fe-8c7d-25410c9b5160","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"84c14fa0-291c-400b-97d7-5ad027d4c322","path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},},},"Disabled":false,"id":"62857317-3dce-4a9c-896b-eabc667e684f","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"84c14fa0-291c-400b-97d7-5ad027d4c322","path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},},},"Disabled":false,"id":"62857317-3dce-4a9c-896b-eabc667e684f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c7db008a-1987-443c-91b1-534a49e411fa","path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},},},"Disabled":false,"id":"3e181974-ad47-46fe-8c7d-25410c9b5160","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ec8e8183-74ff-459d-b6b6-aed7b3609bc8","path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},},},"Disabled":false,"id":"ef18dac5-8df1-4a0f-8cfa-b323be7b2721","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a470f7d3-ad30-4452-bb65-080bfe75fa17","path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},},},"Disabled":false,"id":"9a6ce790-a001-4f71-a6e2-d494182b3ef6","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
