@@ -13,7 +13,7 @@ if type == "wallnut"{
 	sprite_index = spr_wallnut
 }
 if type == "pumpkin"{
-	sprite_index = sPumpkinUI
+	sprite_index = spr_pumpkin
 }
 
 

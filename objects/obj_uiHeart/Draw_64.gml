@@ -11,7 +11,7 @@ if obj_player.wallnutArmor > 0{
 }
 
 if obj_player.pumpkinArmor > 0{
-	draw_sprite(sPumpkinUI,0,24,24)
+	draw_sprite(spr_pumpkinArmor,0,24,24)
 }
 
 

@@ -29,8 +29,8 @@ function EnemyState_Idle(){
 	
 	
 	if hasHand{
-		sprite_index = obj_Controller.enemystats.basic.idlespr
+		sprite_index = enemyType.idlespr
 	}else{
-		sprite_index = spr_zombieNoHandIdle
+		sprite_index = enemyType.idlesprH
 	}
 }

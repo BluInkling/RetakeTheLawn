@@ -6,8 +6,6 @@ function EnemyState_Attack(){
 	//moveY = 0
 	if enemyType.behavior == "melee"{
 		EnemyMeleeAttack(enemyType.attackspr,enemyType.attacksprHB); //Args: attack animation, attack animation HITBOX
-
-	
 		//Transition triggers
 		if(image_index > image_number-1){ 
 			state = ENEMYSTATE.CHASE;
@@ -33,9 +31,15 @@ function EnemyState_Attack(){
 		}
 	}
 	else if enemyType.behavior == "support"{
-		sprite_index = enemyType.idlespr //shooting sprite?
+		if hasHand{
+			sprite_index = enemyType.attackspr //shooting sprite?
+		}else{
+			sprite_index = enemyType.attacksprH //shooting sprite?
+		}
+		moveX = 0
+		moveY = 0
 		buffField = true;
-		counter += 1;
+		//counter += 1;
 		//if(collision_circle(x,y,128,obj_Enemy,false,true)){
 			 
 		//	with(obj_Enemy){
@@ -60,17 +64,19 @@ function EnemyState_Attack(){
 						Buff()
 						alreadyBuffed = true
 						show_debug_message("Buffed!")
+						sprite_index = enemyType.idlespr
 					}
 				}
 		        //instance_destroy(_list[| i]);
 		    }
 		}
 		ds_list_destroy(_list);
-		if(counter >= room_speed * 3){ //50% chance to start wandering every 3 seconds
+		if(image_index > image_number-1){
+		//if(counter >= room_speed * 3){ //50% chance to start wandering every 3 seconds
 			show_debug_message("buff state ended")
 			buffField = false
 			state = ENEMYSTATE.WANDER
-			counter = 0
+			//counter = 0
 		}
 	}
 	

@@ -19,7 +19,7 @@ if type == "wallnut"{
 }
 
 if type == "pumpkin"{
-	sprite_index = sPumpkind
+	sprite_index = spr_pumpkin
 	if(place_meeting(x,y,obj_player)){
 		with(obj_player){
 			pumpkinArmor = 1;
