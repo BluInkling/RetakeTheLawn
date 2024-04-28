@@ -27,6 +27,17 @@ if place_meeting(x,y,obj_zombieHitbox){
 	//show_debug_message("Enemy hit!")
 }
 
+//lil fun easter egg
+if place_meeting(x,y,obj_pickupable){
+	var col = instance_nearest(x,y,obj_pickupable)
+	if col.type == obj_Controller.subweaponstats.torchwood && !flaming{
+		flaming = true
+		image_blend = c_orange
+		damage += 2
+		flamePS = part_system_create(ps_fire)
+	}
+}
+
 if disp && sprite_index == dispSpr{
 	//show_debug_message(image_index)
 	sprite_index = dispSpr

@@ -1,8 +1,12 @@
 
-draw_self()
-draw_set_font(fnt1)
+//draw_self()
 
-draw_sprite(overlap,image_index,x,y)
+draw_set_font(fnt1)
+if overlap == spr_potatomineIdle{
+	draw_sprite(overlap,image_index,x,y+4)
+}else{
+	draw_sprite(overlap,image_index,x,y)
+}
 
 if (draw){
 	draw_text_transformed(x-10,y-48,"Pickup " + name + "?",0.35,0.35,0)

@@ -4,6 +4,7 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 	draw = true
 	if(keyboard_check_pressed(ord("E"))){
 		if (kindofpickup == obj_Controller.weaponstats){
+			
 			if !(array_contains(obj_Controller.inventoryPrimary,type)){
 				show_debug_message("added to main arsenal")
 				array_push(obj_Controller.inventoryPrimary,type)
@@ -12,7 +13,7 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 			} else {
 				show_debug_message("alreayd have this main....");
 			}
-			
+
 		} 
 		if (kindofpickup == obj_Controller.subweaponstats) {
 			if !(array_contains(obj_Controller.inventorySecondary,type)){
@@ -28,13 +29,14 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 			with(obj_player) hp += 3;
 			show_debug_message("Sun healed!")
 		}
-		
-		instance_destroy();
+		part_system_destroy(part)
 		for (var i=0;i<instance_number(obj_pickupable);++i){
 			var col = instance_find(obj_pickupable,i)
 			col.RandomChoose()	
 			
 		}
+		instance_destroy();
+		
 	}
 } else draw = false
 
