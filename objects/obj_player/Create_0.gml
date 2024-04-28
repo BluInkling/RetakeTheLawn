@@ -3,7 +3,7 @@
 event_inherited()
 
 
-maxhp = 10
+maxhp = 8
 hp = maxhp;
 wallnutArmor = 0
 pumpkinArmor = 0
@@ -39,6 +39,27 @@ instance_create_layer(0,0,"Player",obj_SubWeapon)
 
 
 function Hit(damage){
+	if wallnutArmor+pumpkinArmor > 0{
+		var tempHp = hp+wallnutArmor+pumpkinArmor
+		var tempArmor = 0
+		tempHp-=damage
+		if tempHp >= maxhp{
+			hp = maxhp
+			tempArmor = tempHp - maxhp
+			show_debug_message(tempHp)
+			if tempArmor == 1{
+				pumpkinArmor = 0
+			}else if tempArmor == 0{
+				wallnutArmor = 0
+			}
+		}else{
+			hp = tempHp
+		}
+	}else{
+		hp -= damage;
+	}
+	flashAlpha = 1;
+	/*
 	if wallnutArmor > 0{ //if has armor
 		wallnutArmor -= damage//armor takes damage
 		if wallnutArmor <= 0{ //if no more armor
@@ -54,7 +75,7 @@ function Hit(damage){
 	}else{ //if no armor, health takes damage
 		hp -= damage;
 	}
-	flashAlpha = 1;
+	*/
 
 }
 
