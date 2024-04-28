@@ -4,7 +4,12 @@
 beat = 0
 beatStep = 0
 
+<<<<<<< Updated upstream
 
 
+=======
+wallnutSprite = spr_wallnutArmor
+pumpkinSprite = sPumpkinUI
+>>>>>>> Stashed changes
 
 

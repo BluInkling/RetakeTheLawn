@@ -23,6 +23,7 @@ if keyboard_check_released(ord("L")){ // Spawn footsoldier at nearest grave
 				for (var i = 0; i < 3; i++) {
 					XPlace = irandom_range(-30,30)
 					YPlace = irandom_range(-30,30)
+					
 					kakusummongai(obj_Enemy,obj_Controller.enemystats.basic)
 					//instance_create_layer(x + XPlace,y + YPlace,"Player",obj_Enemy)
 					//with instance_create_layer(x + XPlace,y + YPlace,"Player",obj_Enemy){
@@ -36,6 +37,7 @@ if keyboard_check_released(ord("L")){ // Spawn footsoldier at nearest grave
 						*/
 					//}
 				}
+				kakusummongai(obj_Enemy,obj_Controller.enemystats.flagzombie)
 			}	
 		}
 	}

@@ -4,8 +4,23 @@
     {"name":"props","order":1,"path":"folders/Sprites/props.yy",},
   ],
   "ResourceOrderSettings": [
+<<<<<<< Updated upstream
     {"name":"ts_objects","order":1,"path":"tilesets/ts_objects/ts_objects.yy",},
+=======
+    {"name":"spr_bubbleSmall","order":6,"path":"sprites/spr_bubbleSmall/spr_bubbleSmall.yy",},
+    {"name":"sCherry","order":6,"path":"sprites/sCherry/sCherry.yy",},
+    {"name":"spr_kernel","order":4,"path":"sprites/spr_kernel/spr_kernel.yy",},
+    {"name":"spr_pocket","order":3,"path":"sprites/spr_pocket/spr_pocket.yy",},
+    {"name":"ts_objects","order":1,"path":"tilesets/ts_objects/ts_objects.yy",},
+    {"name":"GM_Fire_spr_Fire","order":2,"path":"sprites/GM_Fire_spr_Fire/GM_Fire_spr_Fire.yy",},
+    {"name":"spr_zombieButter","order":1,"path":"sprites/spr_zombieButter/spr_zombieButter.yy",},
+    {"name":"sPumpkinUI","order":7,"path":"sprites/sPumpkinUI/sPumpkinUI.yy",},
+    {"name":"spr_snowDisp","order":3,"path":"sprites/spr_snowDisp/spr_snowDisp.yy",},
+    {"name":"spr_daveArmPuff","order":3,"path":"sprites/spr_daveArmPuff/spr_daveArmPuff.yy",},
+>>>>>>> Stashed changes
     {"name":"sTempPool","order":2,"path":"sprites/sTempPool/sTempPool.yy",},
+    {"name":"sPumpkind","order":8,"path":"sprites/sPumpkind/sPumpkind.yy",},
+    {"name":"spr_flagBuff","order":2,"path":"sprites/spr_flagBuff/spr_flagBuff.yy",},
     {"name":"spr_cabbagePultRecover","order":3,"path":"sprites/spr_cabbagePultRecover/spr_cabbagePultRecover.yy",},
     {"name":"sEnemyGun","order":4,"path":"sprites/sEnemyGun/sEnemyGun.yy",},
     {"name":"obj_EnemyProjectile","order":3,"path":"objects/obj_EnemyProjectile/obj_EnemyProjectile.yy",},
@@ -21,6 +36,11 @@
 <<<<<<< Updated upstream
 =======
     {"name":"spr_kernelPultChargeMax","order":1,"path":"sprites/spr_kernelPultChargeMax/spr_kernelPultChargeMax.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"spr_wallnutArmor","order":4,"path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},
+    {"name":"sBuffed","order":3,"path":"sprites/sBuffed/sBuffed.yy",},
+>>>>>>> Stashed changes
     {"name":"sKernelpult","order":5,"path":"sprites/sKernelpult/sKernelpult.yy",},
 >>>>>>> Stashed changes
     {"name":"spr_cabbagePultChargeMax","order":1,"path":"sprites/spr_cabbagePultChargeMax/spr_cabbagePultChargeMax.yy",},

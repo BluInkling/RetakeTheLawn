@@ -5,6 +5,11 @@ event_inherited()
 
 maxhp = 10
 hp = maxhp;
+<<<<<<< Updated upstream
+=======
+wallnutArmor = 0
+pumpkinArmor = 0
+>>>>>>> Stashed changes
 
 xInput = 0
 yInput = 0
@@ -36,6 +41,29 @@ instance_create_layer(0,0,"Player",obj_Controller)
 instance_create_layer(0,0,"Gun",obj_MainWeapon)
 instance_create_layer(0,0,"Player",obj_SubWeapon)
 
+<<<<<<< Updated upstream
+=======
+function Hit(damage){
+	if wallnutArmor > 0{ //if has armor
+		wallnutArmor -= damage//armor takes damage
+		if wallnutArmor <= 0{ //if no more armor
+			hp += wallnutArmor;
+			wallnutArmor=0
+		}
+	}
+	else if pumpkinArmor > 0{ //if has armor
+		pumpkinArmor -= damage//armor takes damage
+		if pumpkinArmor <= 0{ //if no more armor
+			hp += pumpkinArmor;
+			pumpkinArmor=0
+		}
+	}
+	else{ //if no armor, health takes damage
+		hp -= damage;
+	}
+}
+
+>>>>>>> Stashed changes
 
 /*
 //Outline Shader

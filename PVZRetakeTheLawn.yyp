@@ -71,6 +71,7 @@
     {"id":{"name":"obj_uiSubPocket","path":"objects/obj_uiSubPocket/obj_uiSubPocket.yy",},},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},},
     {"id":{"name":"obj_outlineControl","path":"objects/obj_outlineControl/obj_outlineControl.yy",},},
+    {"id":{"name":"sCherry","path":"sprites/sCherry/sCherry.yy",},},
     {"id":{"name":"ts_grass","path":"tilesets/ts_grass/ts_grass.yy",},},
     {"id":{"name":"spr_pocket","path":"sprites/spr_pocket/spr_pocket.yy",},},
     {"id":{"name":"ts_objects","path":"tilesets/ts_objects/ts_objects.yy",},},
@@ -81,6 +82,11 @@
     {"id":{"name":"spr_potatomineIdle","path":"sprites/spr_potatomineIdle/spr_potatomineIdle.yy",},},
     {"id":{"name":"obj_primary","path":"objects/obj_primary/obj_primary.yy",},},
     {"id":{"name":"spr_splatPea","path":"sprites/spr_splatPea/spr_splatPea.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"spr_zombieButter","path":"sprites/spr_zombieButter/spr_zombieButter.yy",},},
+    {"id":{"name":"sPumpkinUI","path":"sprites/sPumpkinUI/sPumpkinUI.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_fumeshroomReload","path":"sprites/spr_fumeshroomReload/spr_fumeshroomReload.yy",},},
     {"id":{"name":"spr_sun","path":"sprites/spr_sun/spr_sun.yy",},},
     {"id":{"name":"obj_pauseController","path":"objects/obj_pauseController/obj_pauseController.yy",},},
@@ -91,10 +97,12 @@
     {"id":{"name":"spr_zombieFlag","path":"sprites/spr_zombieFlag/spr_zombieFlag.yy",},},
     {"id":{"name":"sTempPool","path":"sprites/sTempPool/sTempPool.yy",},},
     {"id":{"name":"outline_start_surface","path":"scripts/outline_start_surface/outline_start_surface.yy",},},
+    {"id":{"name":"sPumpkind","path":"sprites/sPumpkind/sPumpkind.yy",},},
     {"id":{"name":"spr_peashooterReload","path":"sprites/spr_peashooterReload/spr_peashooterReload.yy",},},
     {"id":{"name":"spr_wallPart","path":"sprites/spr_wallPart/spr_wallPart.yy",},},
     {"id":{"name":"EnemyMeleeAttack","path":"scripts/EnemyMeleeAttack/EnemyMeleeAttack.yy",},},
     {"id":{"name":"spr_daveHandL","path":"sprites/spr_daveHandL/spr_daveHandL.yy",},},
+    {"id":{"name":"spr_flagBuff","path":"sprites/spr_flagBuff/spr_flagBuff.yy",},},
     {"id":{"name":"obj_splat","path":"objects/obj_splat/obj_splat.yy",},},
     {"id":{"name":"spr_potatomineEmerge","path":"sprites/spr_potatomineEmerge/spr_potatomineEmerge.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
@@ -190,6 +198,12 @@
     {"id":{"name":"spr_carA","path":"sprites/spr_carA/spr_carA.yy",},},
     {"id":{"name":"spr_grassTiles","path":"sprites/spr_grassTiles/spr_grassTiles.yy",},},
     {"id":{"name":"sPeashooter","path":"sprites/sPeashooter/sPeashooter.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"spr_kernelPultChargeMax","path":"sprites/spr_kernelPultChargeMax/spr_kernelPultChargeMax.yy",},},
+    {"id":{"name":"spr_wallnutArmor","path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},},
+    {"id":{"name":"sBuffed","path":"sprites/sBuffed/sBuffed.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_gravestones","path":"sprites/spr_gravestones/spr_gravestones.yy",},},
     {"id":{"name":"spr_puffshroomSingleReload","path":"sprites/spr_puffshroomSingleReload/spr_puffshroomSingleReload.yy",},},
     {"id":{"name":"spr_zombieDying","path":"sprites/spr_zombieDying/spr_zombieDying.yy",},},

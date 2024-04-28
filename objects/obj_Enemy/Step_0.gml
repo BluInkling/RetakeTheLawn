@@ -20,7 +20,6 @@ if !dying && !isDead{
 				state = ENEMYSTATE.ATTACK
 				shootcounter = 0
 			}
-			
 		} else if enemyType.behavior == "melee" {
 			switch (state){
 					case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
@@ -29,6 +28,21 @@ if !dying && !isDead{
 					case ENEMYSTATE.ATTACK: EnemyState_Attack(); break;
 	
 				}
+		} else if enemyType.behavior == "support"{
+			switch (state){
+				case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
+				//case ENEMYSTATE.CHASE: EnemyState_Chase(); break;
+				case ENEMYSTATE.WANDER: EnemyState_Wander(); break;
+				case ENEMYSTATE.ATTACK: EnemyState_Attack(); break;
+			}
+			if (state != ENEMYSTATE.ATTACK){
+				shootcounter += random_range(0.5,1);
+			}
+
+			if(shootcounter >= room_speed * 4){ //100% chance to start SHOOT every 2 seconds
+				state = ENEMYSTATE.ATTACK
+				shootcounter = 0
+			}
 		}
 	}else{
 		moveX = 0

@@ -48,6 +48,8 @@ stunLength = 120
 butterX = 0
 butterY = 0
 
+buffField = false
+
 
 xVel = moveX*spd + forceX
 yVel = moveY*spd + forceY
@@ -70,6 +72,7 @@ hb = noone
 egun = noone
 
 hasHit = false
+alreadyBuffed = false//NEVERMINDDD --> [] //when buffed by a flag, add its id to a list. it checks if the id that buffed this zombie is NOT the array to buff this. after the buff field is done, it romoves the id fro the array
 	
 if hat == "cone"{
 	hatSpr = spr_zombieCone
@@ -85,6 +88,9 @@ if hat == "cone"{
 	wepspr = enemyType.weaponspr
 	projspr = enemyType.projspr
 
+}else if hat == "flag"{ //ALSO TEMPORARY
+	hatSpr = spr_zombieFlag
+	hasHat = true	
 }
 
 function Hit(damage,type,dir){
@@ -155,4 +161,10 @@ function Destroy(){
 	
 	instance_destroy(hb)
 	instance_destroy()
+}
+
+function Buff(){
+	spd += 0.5;
+	hp += 3;
+	alarm_set(2,240)
 }
