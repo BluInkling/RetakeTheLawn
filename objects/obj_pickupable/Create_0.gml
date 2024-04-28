@@ -42,7 +42,7 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_
 			//type = choose(kindofpickup.torchwood,kindofpickup.cocoabean)
 			var timeout = 0
 			do{
-				type = choose(kindofpickup.torchwood,kindofpickup.cocoabean,kindofpickup.potatomine)
+				type = choose(kindofpickup.torchwood,kindofpickup.cocoabean,kindofpickup.potatomine,kindofpickup.cherrybomb)
 				/*
 				timeout += 1
 				if timeout > 100{

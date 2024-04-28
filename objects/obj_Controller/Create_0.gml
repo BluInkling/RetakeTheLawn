@@ -250,7 +250,7 @@ secondary = 0
 
 mainamount = 8 //total amn of main weps
 
-secondaryamount = 3; //total amnt of subs
+secondaryamount = 4; //total amnt of subs
 
 mainweapon = inventoryPrimary[primary]
 subweapon = inventorySecondary[secondary]
