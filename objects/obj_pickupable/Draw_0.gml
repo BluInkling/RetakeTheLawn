@@ -1,7 +1,6 @@
 
 //draw_self()
 
-draw_set_font(fnt1)
 if overlap == spr_potatomineIdle{
 	draw_sprite(overlap,image_index,x,y+4)
 }else{

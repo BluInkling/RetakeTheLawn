@@ -1,6 +1,5 @@
 /// @description more test
 
-draw_set_font(fnt1)
 //if (alarm[0] > 0) draw_text(x,y-55,"Reloading...")
 if (reloading){
 	draw_sprite(spr_reload,image_index*11/image_number,obj_player.x,y-24)

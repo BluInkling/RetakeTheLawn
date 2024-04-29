@@ -46,6 +46,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"snowpea","folderPath":"folders/Sprites/plants/primary/snowpea.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"threepeater","folderPath":"folders/Sprites/plants/primary/threepeater.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"secondary","folderPath":"folders/Sprites/plants/secondary.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"cherrybomb","folderPath":"folders/Sprites/plants/secondary/cherrybomb.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"cocoabean","folderPath":"folders/Sprites/plants/secondary/cocoabean.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"potatomine","folderPath":"folders/Sprites/plants/secondary/potatomine.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"torchwood","folderPath":"folders/Sprites/plants/secondary/torchwood.yy",},
@@ -59,9 +60,11 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"flag","folderPath":"folders/Sprites/zombies/base/flag.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"cherrybomb","folderPath":"folders/Sprites/plants/secondary/cherrybomb.yy",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"burbankbigcondensed_black.otf","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"burbankbigcondensed_bold.otf","CopyToMask":-1,"filePath":"datafiles",},
+  ],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {

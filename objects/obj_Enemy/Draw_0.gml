@@ -5,7 +5,7 @@
 
 
 if global.debug{
-	draw_set_font(fnt1)
+	draw_set_font(global.fnt_bold)
 	draw_text_transformed(x,y+16,string(depth)+" Health: " + string(hp+armor) + "Type: " + string(enemyType.type),.25,.25,0)
 	//draw_set_alpha(0.25)
 	//draw_circle_color(x,y,radius,c_yellow,c_yellow,false)

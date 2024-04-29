@@ -18,13 +18,13 @@ if paused == true{
 	    */
 		surface_reset_target();
     }else{
-		draw_set_font(fnt1)
+		draw_set_font(global.fnt_bold)
 	    draw_surface(paused_surf, 0, 0);
 	    draw_set_alpha(0.5);
 	    draw_rectangle_colour(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
 	    draw_set_alpha(1);
 	    draw_set_halign(fa_center);
-	    draw_text_transformed_colour(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 4, "PAUSED", 0.5, 0.5, 0, c_white, c_white, c_white, c_white, 1);
+		draw_text_color(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 4, "PAUSED", c_white, c_white, c_white, c_white, 1);
 	    draw_set_halign(fa_left);
     }
 }

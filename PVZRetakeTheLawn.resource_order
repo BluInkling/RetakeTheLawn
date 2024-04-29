@@ -3,11 +3,11 @@
     {"name":"props","order":1,"path":"folders/Objects/props.yy",},
     {"name":"effects","order":2,"path":"folders/Sprites/effects.yy",},
     {"name":"kernelPult","order":1,"path":"folders/Sprites/plants/primary/kernelPult.yy",},
+    {"name":"cherrybomb","order":2,"path":"folders/Sprites/plants/secondary/cherrybomb.yy",},
     {"name":"cocoabean","order":1,"path":"folders/Sprites/plants/secondary/cocoabean.yy",},
     {"name":"props","order":1,"path":"folders/Sprites/props.yy",},
     {"name":"base","order":2,"path":"folders/Sprites/zombies/base.yy",},
     {"name":"flag","order":10,"path":"folders/Sprites/zombies/base/flag.yy",},
-    {"name":"cherrybomb","order":2,"path":"folders/Sprites/plants/secondary/cherrybomb.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_zombieRun","order":5,"path":"sprites/spr_zombieRun/spr_zombieRun.yy",},

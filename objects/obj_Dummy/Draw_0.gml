@@ -13,10 +13,10 @@ if(flashAlpha > 0){
 }
 
 depth = 300-(y)///100)
-
-draw_set_font(fnt1)
+/*
+draw_set_font(global.fnt_bold)
 draw_text_transformed(x,y+16,string(depth)+" Health: " + string(hp+armor) + "Type: " + string(enemyType.type),.20,.20,0)
-
+*/
 
 
 
