@@ -8,6 +8,7 @@
     {"name":"props","order":1,"path":"folders/Sprites/props.yy",},
     {"name":"base","order":2,"path":"folders/Sprites/zombies/base.yy",},
     {"name":"flag","order":10,"path":"folders/Sprites/zombies/base/flag.yy",},
+    {"name":"iceberglettuce","order":3,"path":"folders/Sprites/plants/secondary/iceberglettuce.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_zombieRun","order":5,"path":"sprites/spr_zombieRun/spr_zombieRun.yy",},

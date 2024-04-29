@@ -60,6 +60,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"flag","folderPath":"folders/Sprites/zombies/base/flag.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"iceberglettuce","folderPath":"folders/Sprites/plants/secondary/iceberglettuce.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"burbankbigcondensed_black.otf","CopyToMask":-1,"filePath":"datafiles",},
@@ -138,6 +139,7 @@
     {"id":{"name":"spr_repeaterShoot","path":"sprites/spr_repeaterShoot/spr_repeaterShoot.yy",},},
     {"id":{"name":"sEnemyGun","path":"sprites/sEnemyGun/sEnemyGun.yy",},},
     {"id":{"name":"spr_zombieDead","path":"sprites/spr_zombieDead/spr_zombieDead.yy",},},
+    {"id":{"name":"spr_icebergLettuce","path":"sprites/spr_icebergLettuce/spr_icebergLettuce.yy",},},
     {"id":{"name":"spr_graveBBreak","path":"sprites/spr_graveBBreak/spr_graveBBreak.yy",},},
     {"id":{"name":"spr_puffshroomReload","path":"sprites/spr_puffshroomReload/spr_puffshroomReload.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
