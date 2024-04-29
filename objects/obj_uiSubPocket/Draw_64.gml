@@ -46,6 +46,9 @@ switch(obj_Controller.subweapon.wepname){
 	case "cherrybomb":
 		draw_sprite(sCherry,image_index,20,164)
 		break;
+	case "iceberglettuce":
+		draw_sprite(sFrozenPea,image_index,20,164)
+		break;
 }
 //draw_sprite(spr_pocket,0,20,172)
 var offset = lerp(32,0,obj_Controller.cooldownSecondary[obj_Controller.secondary]/obj_SubWeapon.sub.cooldown)

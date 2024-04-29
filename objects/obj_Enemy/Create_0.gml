@@ -66,13 +66,16 @@ dying = false
 isDead = false
 
 spawning = true
-sprite_index = enemyType.spawnspr
+sprite_index = enemyType.spawnspr;
 
 hb = noone
 egun = noone
 
 hasHit = false
 alreadyBuffed = false//NEVERMINDDD --> [] //when buffed by a flag, add its id to a list. it checks if the id that buffed this zombie is NOT the array to buff this. after the buff field is done, it romoves the id fro the array
+	
+frozen = false
+	
 	
 if hat == "cone"{
 	hatSpr = spr_zombieCone
@@ -136,7 +139,15 @@ function Hit(damage,type,dir){
 			flashColor = c_red;
 		}
 	}else{
+<<<<<<< Updated upstream
 		flashColor = c_white;
+=======
+		if !cold and !frozen{
+			flashColor = c_white;
+		}else{
+			flashAlpha = 0.2;
+		}
+>>>>>>> Stashed changes
 	}
 	Force(2,dir)
 }
@@ -168,3 +179,15 @@ function Buff(){
 	hp += 3;
 	alarm_set(2,240)
 }
+
+function Freeze(){
+	state = ENEMYSTATE.IDLE
+	sprite_index = enemyType.idlespr
+	frozen = true
+	flashAlpha = 0.3;
+	flashColor = c_blue//c_aqua;
+	image_speed = 0
+	spd = 0;
+	alarm_set(0,200)
+}
+

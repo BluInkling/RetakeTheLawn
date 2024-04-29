@@ -48,6 +48,7 @@ sub = obj_SubWeapon.sub
 state = "flying"
 
 
+
 hitByAttack = ds_list_create();
 
 
@@ -74,6 +75,36 @@ function ProcessExplosion(){
 					Hit(6,"normal", point_direction(x,y,hitID.x,hitID.y))
 				}*/
 				hitID.Hit(10,"normal", point_direction(x,y,hitID.x,hitID.y))
+			}
+	
+		}
+	}
+	ds_list_destroy(hitByAttackNow);
+
+}
+
+function ProcessFrozenExplosion(){
+
+	var hitByAttackNow = ds_list_create();
+	var hits = instance_place_list(x,y,obj_Enemy,hitByAttackNow,false);
+	if (hits > 0)
+	{
+		for (var i = 0; i < hits; i++)
+		{
+			// if this instance has not yet been hit by atacck
+			var hitID = hitByAttackNow[| i]; //shorthand for finfing a particular entry in a ds list; ds_list_find_value(hitbyattacknow, i) does the sawme thing
+			if (ds_list_find_index(hitByAttack,hitID) == -1)//checks to see if the i enemy hit is already in the list
+			{ 
+				ds_list_add(hitByAttack,hitID);
+				/*
+				with (hitID)
+				{
+					//show_debug_message("hit :" + string(hitID))
+					//Bug found: because 'with' was being used, the x and y referenced were the same as hitID's x and y
+					//A direct invocation solves this
+					Hit(6,"normal", point_direction(x,y,hitID.x,hitID.y))
+				}*/
+				hitID.Freeze()
 			}
 	
 		}

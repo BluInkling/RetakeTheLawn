@@ -3,7 +3,7 @@
 spd = enemyType.spd
 cold = false
 hasButter = false
-
+frozen = false
 
 
 

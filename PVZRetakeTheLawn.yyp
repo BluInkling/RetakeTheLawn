@@ -99,10 +99,12 @@
     {"id":{"name":"outline_start_surface","path":"scripts/outline_start_surface/outline_start_surface.yy",},},
     {"id":{"name":"sPumpkind","path":"sprites/sPumpkind/sPumpkind.yy",},},
     {"id":{"name":"spr_peashooterReload","path":"sprites/spr_peashooterReload/spr_peashooterReload.yy",},},
+    {"id":{"name":"rm_day2","path":"rooms/rm_day2/rm_day2.yy",},},
     {"id":{"name":"spr_wallPart","path":"sprites/spr_wallPart/spr_wallPart.yy",},},
     {"id":{"name":"EnemyMeleeAttack","path":"scripts/EnemyMeleeAttack/EnemyMeleeAttack.yy",},},
     {"id":{"name":"spr_daveHandL","path":"sprites/spr_daveHandL/spr_daveHandL.yy",},},
     {"id":{"name":"spr_flagBuff","path":"sprites/spr_flagBuff/spr_flagBuff.yy",},},
+    {"id":{"name":"PvZ2_Penny_28Full_Body_29","path":"sprites/PvZ2_Penny_28Full_Body_29/PvZ2_Penny_28Full_Body_29.yy",},},
     {"id":{"name":"obj_splat","path":"objects/obj_splat/obj_splat.yy",},},
     {"id":{"name":"spr_potatomineEmerge","path":"sprites/spr_potatomineEmerge/spr_potatomineEmerge.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
@@ -144,6 +146,11 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_actor","path":"objects/obj_actor/obj_actor.yy",},},
     {"id":{"name":"spr_Bigsun","path":"sprites/spr_Bigsun/spr_Bigsun.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"parkentrance","path":"sprites/parkentrance/parkentrance.yy",},},
+    {"id":{"name":"obj_vase","path":"objects/obj_vase/obj_vase.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_zombieNoHandAttack","path":"sprites/spr_zombieNoHandAttack/spr_zombieNoHandAttack.yy",},},
     {"id":{"name":"obj_outlinable","path":"objects/obj_outlinable/obj_outlinable.yy",},},
     {"id":{"name":"obj_playerArms","path":"objects/obj_playerArms/obj_playerArms.yy",},},
@@ -163,6 +170,7 @@
     {"id":{"name":"spr_graveASpawn","path":"sprites/spr_graveASpawn/spr_graveASpawn.yy",},},
     {"id":{"name":"obj_uiHeart","path":"objects/obj_uiHeart/obj_uiHeart.yy",},},
     {"id":{"name":"obj_Gravestone","path":"objects/obj_Gravestone/obj_Gravestone.yy",},},
+    {"id":{"name":"sIce","path":"sprites/sIce/sIce.yy",},},
     {"id":{"name":"spr_zombieHead","path":"sprites/spr_zombieHead/spr_zombieHead.yy",},},
     {"id":{"name":"spr_concreteTiles","path":"sprites/spr_concreteTiles/spr_concreteTiles.yy",},},
     {"id":{"name":"outline_init","path":"scripts/outline_init/outline_init.yy",},},
@@ -189,6 +197,7 @@
     {"id":{"name":"EnemyState_Attack","path":"scripts/EnemyState_Attack/EnemyState_Attack.yy",},},
     {"id":{"name":"spr_zombieHitbox","path":"sprites/spr_zombieHitbox/spr_zombieHitbox.yy",},},
     {"id":{"name":"sExplosion","path":"sprites/sExplosion/sExplosion.yy",},},
+    {"id":{"name":"sBush","path":"sprites/sBush/sBush.yy",},},
     {"id":{"name":"PlayerState_Free","path":"scripts/PlayerState_Free/PlayerState_Free.yy",},},
     {"id":{"name":"obj_zombieHitbox","path":"objects/obj_zombieHitbox/obj_zombieHitbox.yy",},},
     {"id":{"name":"obj_RoomController","path":"objects/obj_RoomController/obj_RoomController.yy",},},
@@ -267,6 +276,7 @@
     {"id":{"name":"sgraveShine","path":"sprites/sgraveShine/sgraveShine.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_day2","path":"rooms/rm_day2/rm_day2.yy",},},
     {"roomId":{"name":"rm_mainTestRoom","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},},
     {"roomId":{"name":"rm_prototyperoom","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},},
     {"roomId":{"name":"rm_tileTest","path":"rooms/rm_tileTest/rm_tileTest.yy",},},

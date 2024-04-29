@@ -33,7 +33,9 @@ function EnemyState_Attack(){
 		}
 	}
 	else if enemyType.behavior == "support"{
-		sprite_index = enemyType.idlespr //shooting sprite?
+		moveX = 0;
+		moveY = 0;
+		sprite_index = enemyType.attackspr //shooting sprite?
 		buffField = true;
 		counter += 1;
 		//if(collision_circle(x,y,128,obj_Enemy,false,true)){
@@ -44,7 +46,7 @@ function EnemyState_Attack(){
 		//		show_debug_message("enemy buffed")
 		//		show_debug_message(id)
 		//	
-		show_debug_message(spd)
+		//show_debug_message(spd)
 		//	}
 		//}
 		var _list = ds_list_create();

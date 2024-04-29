@@ -254,6 +254,13 @@ subweaponstats = {
 		subdownsprite : sCherry,
 		cooldown : 300,
 		throwable : true
+	},
+	iceberglettuce :{
+		wepname : "iceberglettuce",
+		subidlesprite : sFrozenPea, // for pocket
+		subdownsprite : sFrozenPea,
+		cooldown : 300,
+		throwable : false
 	}
 }
 
@@ -347,11 +354,11 @@ enemystats = {
 		type : "flagzombie",
 		hp : 8,
 		armor : 0,
-		idlespr : spr_zombieIdle,
-		movespr : spr_zombieRun,
-		attackspr : spr_zombieAttack,
-		attacksprHB : spr_zombieAttackHB,
-		spawnspr : spr_zombieSpawn,
+		idlespr : spr_zombieFlagIdle,
+		movespr : spr_zombieFlagRun,
+		attackspr : spr_zombieFlagWave,
+		attacksprHB : spr_zombieFlagWave,
+		spawnspr : spr_zombieFlagSpawn,
 		spd : .9,
 		onhead : "flag", //TEMPORARY UNTIL FLAG ZOMBIE SPRITES PUTIN
 		behavior : "support",

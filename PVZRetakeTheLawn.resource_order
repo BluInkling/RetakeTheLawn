@@ -8,46 +8,155 @@
     {"name":"ts_objects","order":1,"path":"tilesets/ts_objects/ts_objects.yy",},
 =======
     {"name":"spr_bubbleSmall","order":6,"path":"sprites/spr_bubbleSmall/spr_bubbleSmall.yy",},
+<<<<<<< Updated upstream
     {"name":"sCherry","order":6,"path":"sprites/sCherry/sCherry.yy",},
+=======
+    {"name":"obj_zenBase","order":7,"path":"objects/obj_zenBase/obj_zenBase.yy",},
+    {"name":"sCherry","order":29,"path":"sprites/sCherry/sCherry.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_kernel","order":4,"path":"sprites/spr_kernel/spr_kernel.yy",},
     {"name":"spr_pocket","order":3,"path":"sprites/spr_pocket/spr_pocket.yy",},
     {"name":"ts_objects","order":1,"path":"tilesets/ts_objects/ts_objects.yy",},
     {"name":"GM_Fire_spr_Fire","order":2,"path":"sprites/GM_Fire_spr_Fire/GM_Fire_spr_Fire.yy",},
     {"name":"spr_zombieButter","order":1,"path":"sprites/spr_zombieButter/spr_zombieButter.yy",},
+<<<<<<< Updated upstream
     {"name":"sPumpkinUI","order":7,"path":"sprites/sPumpkinUI/sPumpkinUI.yy",},
     {"name":"spr_snowDisp","order":3,"path":"sprites/spr_snowDisp/spr_snowDisp.yy",},
     {"name":"spr_daveArmPuff","order":3,"path":"sprites/spr_daveArmPuff/spr_daveArmPuff.yy",},
 >>>>>>> Stashed changes
     {"name":"sTempPool","order":2,"path":"sprites/sTempPool/sTempPool.yy",},
     {"name":"sPumpkind","order":8,"path":"sprites/sPumpkind/sPumpkind.yy",},
+=======
+    {"name":"sPumpkinUI","order":30,"path":"sprites/sPumpkinUI/sPumpkinUI.yy",},
+    {"name":"spr_sparkleB","order":2,"path":"sprites/spr_sparkleB/spr_sparkleB.yy",},
+    {"name":"ps_sparkle","order":3,"path":"particles/ps_sparkle/ps_sparkle.yy",},
+    {"name":"spr_snowDisp","order":3,"path":"sprites/spr_snowDisp/spr_snowDisp.yy",},
+    {"name":"spr_daveArmPuff","order":3,"path":"sprites/spr_daveArmPuff/spr_daveArmPuff.yy",},
+    {"name":"sTempPool","order":25,"path":"sprites/sTempPool/sTempPool.yy",},
+    {"name":"spr_vaseHB","order":10,"path":"sprites/spr_vaseHB/spr_vaseHB.yy",},
+    {"name":"sPumpkind","order":31,"path":"sprites/sPumpkind/sPumpkind.yy",},
+    {"name":"rm_day2","order":1,"path":"rooms/rm_day2/rm_day2.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_flagBuff","order":2,"path":"sprites/spr_flagBuff/spr_flagBuff.yy",},
+    {"name":"PvZ2_Penny_28Full_Body_29","order":35,"path":"sprites/PvZ2_Penny_28Full_Body_29/PvZ2_Penny_28Full_Body_29.yy",},
     {"name":"spr_cabbagePultRecover","order":3,"path":"sprites/spr_cabbagePultRecover/spr_cabbagePultRecover.yy",},
+<<<<<<< Updated upstream
     {"name":"sEnemyGun","order":4,"path":"sprites/sEnemyGun/sEnemyGun.yy",},
+=======
+    {"name":"spr_kernelPultIdle","order":2,"path":"sprites/spr_kernelPultIdle/spr_kernelPultIdle.yy",},
+    {"name":"spr_wallnut","order":1,"path":"sprites/spr_wallnut/spr_wallnut.yy",},
+    {"name":"spr_zombieDeadRun","order":8,"path":"sprites/spr_zombieDeadRun/spr_zombieDeadRun.yy",},
+    {"name":"spr_wallPool","order":1,"path":"sprites/spr_wallPool/spr_wallPool.yy",},
+    {"name":"sEnemyGun","order":27,"path":"sprites/sEnemyGun/sEnemyGun.yy",},
+    {"name":"spr_zombieDead","order":7,"path":"sprites/spr_zombieDead/spr_zombieDead.yy",},
+    {"name":"spr_graveBBreak","order":4,"path":"sprites/spr_graveBBreak/spr_graveBBreak.yy",},
+    {"name":"spr_none","order":6,"path":"sprites/spr_none/spr_none.yy",},
+    {"name":"sDirt","order":23,"path":"sprites/sDirt/sDirt.yy",},
+    {"name":"spr_butterDisp","order":11,"path":"sprites/spr_butterDisp/spr_butterDisp.yy",},
+>>>>>>> Stashed changes
     {"name":"obj_EnemyProjectile","order":3,"path":"objects/obj_EnemyProjectile/obj_EnemyProjectile.yy",},
     {"name":"spr_cabbagePultShoot","order":4,"path":"sprites/spr_cabbagePultShoot/spr_cabbagePultShoot.yy",},
     {"name":"spr_carB","order":2,"path":"sprites/spr_carB/spr_carB.yy",},
     {"name":"obj_carC","order":4,"path":"objects/obj_carC/obj_carC.yy",},
+<<<<<<< Updated upstream
     {"name":"send","order":1,"path":"sprites/send/send.yy",},
     {"name":"spr_cabbagePultIdle","order":2,"path":"sprites/spr_cabbagePultIdle/spr_cabbagePultIdle.yy",},
+=======
+    {"name":"ts_poolWater","order":3,"path":"tilesets/ts_poolWater/ts_poolWater.yy",},
+    {"name":"parkentrance","order":33,"path":"sprites/parkentrance/parkentrance.yy",},
+    {"name":"obj_vase","order":5,"path":"objects/obj_vase/obj_vase.yy",},
+    {"name":"spr_zombieNoHandAttack","order":2,"path":"sprites/spr_zombieNoHandAttack/spr_zombieNoHandAttack.yy",},
+    {"name":"send","order":24,"path":"sprites/send/send.yy",},
+    {"name":"sfireeffect","order":22,"path":"sprites/sfireeffect/sfireeffect.yy",},
+    {"name":"sEnemy","order":21,"path":"sprites/sEnemy/sEnemy.yy",},
+    {"name":"spr_daveHandRPuff","order":2,"path":"sprites/spr_daveHandRPuff/spr_daveHandRPuff.yy",},
+    {"name":"spr_cabbagePultIdle","order":2,"path":"sprites/spr_cabbagePultIdle/spr_cabbagePultIdle.yy",},
+    {"name":"spr_vaseBreak","order":9,"path":"sprites/spr_vaseBreak/spr_vaseBreak.yy",},
+    {"name":"spr_shadowMain","order":7,"path":"sprites/spr_shadowMain/spr_shadowMain.yy",},
+    {"name":"sIce","order":32,"path":"sprites/sIce/sIce.yy",},
+    {"name":"spr_butter","order":1,"path":"sprites/spr_butter/spr_butter.yy",},
+    {"name":"spr_vaseIdle","order":8,"path":"sprites/spr_vaseIdle/spr_vaseIdle.yy",},
+>>>>>>> Stashed changes
     {"name":"obj_carA","order":2,"path":"objects/obj_carA/obj_carA.yy",},
+    {"name":"sWall","order":18,"path":"sprites/sWall/sWall.yy",},
+    {"name":"sFlamingPea","order":19,"path":"sprites/sFlamingPea/sFlamingPea.yy",},
+    {"name":"sTrigger","order":17,"path":"sprites/sTrigger/sTrigger.yy",},
+    {"name":"ssunshro","order":20,"path":"sprites/ssunshro/ssunshro.yy",},
     {"name":"spr_carC","order":3,"path":"sprites/spr_carC/spr_carC.yy",},
+<<<<<<< Updated upstream
     {"name":"obj_tree","order":1,"path":"objects/obj_tree/obj_tree.yy",},
     {"name":"spr_carA","order":1,"path":"sprites/spr_carA/spr_carA.yy",},
 <<<<<<< Updated upstream
 =======
+=======
+    {"name":"scircle","order":15,"path":"sprites/scircle/scircle.yy",},
+    {"name":"sTorchvood","order":16,"path":"sprites/sTorchvood/sTorchvood.yy",},
+    {"name":"sPea","order":14,"path":"sprites/sPea/sPea.yy",},
+    {"name":"spr_kernelPultReload","order":4,"path":"sprites/spr_kernelPultReload/spr_kernelPultReload.yy",},
+    {"name":"sCabbage","order":13,"path":"sprites/sCabbage/sCabbage.yy",},
+    {"name":"sBush","order":34,"path":"sprites/sBush/sBush.yy",},
+    {"name":"spr_zombieSpawn","order":6,"path":"sprites/spr_zombieSpawn/spr_zombieSpawn.yy",},
+    {"name":"obj_tree","order":1,"path":"objects/obj_tree/obj_tree.yy",},
+    {"name":"spr_peaDisp","order":2,"path":"sprites/spr_peaDisp/spr_peaDisp.yy",},
+    {"name":"obj_wallPool","order":6,"path":"objects/obj_wallPool/obj_wallPool.yy",},
+    {"name":"spr_carA","order":1,"path":"sprites/spr_carA/spr_carA.yy",},
+    {"name":"sPeashooter","order":12,"path":"sprites/sPeashooter/sPeashooter.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_kernelPultChargeMax","order":1,"path":"sprites/spr_kernelPultChargeMax/spr_kernelPultChargeMax.yy",},
 <<<<<<< Updated upstream
 =======
     {"name":"spr_wallnutArmor","order":4,"path":"sprites/spr_wallnutArmor/spr_wallnutArmor.yy",},
     {"name":"sBuffed","order":3,"path":"sprites/sBuffed/sBuffed.yy",},
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
     {"name":"sKernelpult","order":5,"path":"sprites/sKernelpult/sKernelpult.yy",},
 >>>>>>> Stashed changes
+=======
+    {"name":"sKernelpult","order":28,"path":"sprites/sKernelpult/sKernelpult.yy",},
+    {"name":"ts_poolWalls","order":2,"path":"tilesets/ts_poolWalls/ts_poolWalls.yy",},
+>>>>>>> Stashed changes
     {"name":"spr_cabbagePultChargeMax","order":1,"path":"sprites/spr_cabbagePultChargeMax/spr_cabbagePultChargeMax.yy",},
     {"name":"spr_objectTiles","order":1,"path":"sprites/spr_objectTiles/spr_objectTiles.yy",},
+<<<<<<< Updated upstream
     {"name":"EnemyRangeAttack","order":1,"path":"scripts/EnemyRangeAttack/EnemyRangeAttack.yy",},
     {"name":"obj_carB","order":3,"path":"objects/obj_carB/obj_carB.yy",},
     {"name":"sArmyHat","order":3,"path":"sprites/sArmyHat/sArmyHat.yy",},
     {"name":"obj_EnemyWeapon","order":2,"path":"objects/obj_EnemyWeapon/obj_EnemyWeapon.yy",},
+=======
+    {"name":"spr_puffshroomShoot2","order":1,"path":"sprites/spr_puffshroomShoot2/spr_puffshroomShoot2.yy",},
+    {"name":"sgravewall","order":10,"path":"sprites/sgravewall/sgravewall.yy",},
+    {"name":"spr_pocketReloading","order":1,"path":"sprites/spr_pocketReloading/spr_pocketReloading.yy",},
+    {"name":"sPlayer","order":11,"path":"sprites/sPlayer/sPlayer.yy",},
+    {"name":"spr_bubbleBigDisp","order":7,"path":"sprites/spr_bubbleBigDisp/spr_bubbleBigDisp.yy",},
+    {"name":"sPotatomin","order":9,"path":"sprites/sPotatomin/sPotatomin.yy",},
+    {"name":"spr_cabbageDisp","order":8,"path":"sprites/spr_cabbageDisp/spr_cabbageDisp.yy",},
+    {"name":"spr_bubbleBig","order":9,"path":"sprites/spr_bubbleBig/spr_bubbleBig.yy",},
+    {"name":"spr_zombieNoHandIdle","order":3,"path":"sprites/spr_zombieNoHandIdle/spr_zombieNoHandIdle.yy",},
+    {"name":"spr_zombieFlagSpawn","order":3,"path":"sprites/spr_zombieFlagSpawn/spr_zombieFlagSpawn.yy",},
+    {"name":"spocket","order":8,"path":"sprites/spocket/spocket.yy",},
+    {"name":"spr_zombieFlagWave","order":2,"path":"sprites/spr_zombieFlagWave/spr_zombieFlagWave.yy",},
+    {"name":"shiny","order":7,"path":"sprites/shiny/shiny.yy",},
+    {"name":"EnemyRangeAttack","order":1,"path":"scripts/EnemyRangeAttack/EnemyRangeAttack.yy",},
+    {"name":"sgrave","order":5,"path":"sprites/sgrave/sgrave.yy",},
+    {"name":"sRepeater","order":6,"path":"sprites/sRepeater/sRepeater.yy",},
+    {"name":"spr_graveABreak","order":3,"path":"sprites/spr_graveABreak/spr_graveABreak.yy",},
+    {"name":"spr_graveDBreak","order":5,"path":"sprites/spr_graveDBreak/spr_graveDBreak.yy",},
+    {"name":"obj_carB","order":3,"path":"objects/obj_carB/obj_carB.yy",},
+    {"name":"sHealth","order":4,"path":"sprites/sHealth/sHealth.yy",},
+    {"name":"sArmyHat","order":26,"path":"sprites/sArmyHat/sArmyHat.yy",},
+    {"name":"spr_zombieFlagRun","order":1,"path":"sprites/spr_zombieFlagRun/spr_zombieFlagRun.yy",},
+    {"name":"spr_cocoaBeanActivate","order":1,"path":"sprites/spr_cocoaBeanActivate/spr_cocoaBeanActivate.yy",},
+    {"name":"spr_zombieNoHandRun","order":4,"path":"sprites/spr_zombieNoHandRun/spr_zombieNoHandRun.yy",},
+    {"name":"spr_cabbagePultReload","order":5,"path":"sprites/spr_cabbagePultReload/spr_cabbagePultReload.yy",},
+    {"name":"spr_sparkleA","order":1,"path":"sprites/spr_sparkleA/spr_sparkleA.yy",},
+    {"name":"modernpacket","order":3,"path":"sprites/modernpacket/modernpacket.yy",},
+    {"name":"obj_vaseHB","order":7,"path":"objects/obj_vaseHB/obj_vaseHB.yy",},
+    {"name":"spr_graveCBreak","order":2,"path":"sprites/spr_graveCBreak/spr_graveCBreak.yy",},
+    {"name":"sFrozenPea","order":2,"path":"sprites/sFrozenPea/sFrozenPea.yy",},
+    {"name":"GM_FlameIntensity_spr_Fire","order":1,"path":"sprites/GM_FlameIntensity_spr_Fire/GM_FlameIntensity_spr_Fire.yy",},
+    {"name":"obj_EnemyWeapon","order":2,"path":"objects/obj_EnemyWeapon/obj_EnemyWeapon.yy",},
+    {"name":"spr_zenBase","order":11,"path":"sprites/spr_zenBase/spr_zenBase.yy",},
+    {"name":"sCabbagepult","order":1,"path":"sprites/sCabbagepult/sCabbagepult.yy",},
+>>>>>>> Stashed changes
   ],
 }
