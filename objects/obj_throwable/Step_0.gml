@@ -62,8 +62,6 @@ switch(sub.wepname){
 					instance_destroy(self)
 				}
 				break;
-			
-			
 		}
 		break;
 	case "cherrybomb":
@@ -106,8 +104,40 @@ switch(sub.wepname){
 					instance_destroy(self)
 				}
 				break;
-	
-}
+				}
+			break;
+	case "iceberglettuce":
+			switch(state){
+			case "flying":
+				//show_debug_message("flying")
+				sprite_index = sFrozenPea
+				step+=stepSpd
+				if !place_meeting(lerp(startX,targetX,step),y,obj_wall){
+					x = lerp(startX,targetX,step)
+				}
+				if !place_meeting(x,lerp(startY,targetY,step),obj_wall){
+					y = lerp(startY,targetY,step)
+				}
+				drawX = x
+				drawY = y-z
+				z=(-1*power(step,2)+step)*175
+				if step > 1{
+					state = "explode"
+					image_index = 0
+				}
+				break;
+			case "explode":
+				//show_debug_message("exploding")
+				image_blend = c_blue
+				sprite_index = sExplosion
+				ProcessFrozenExplosion()
+				if image_index >= image_number-1{
+					//show_debug_message("dying")
+					instance_destroy(self)
+				}
+				break;
+			}
+			break;
 }
 
 

@@ -77,3 +77,7 @@ if buffField{
 if alreadyBuffed{
 	draw_sprite(sBuffed,0,x,y)
 }
+
+if frozen{
+	draw_sprite(sIce,0,x,y)
+}

@@ -48,7 +48,7 @@ function EnemyState_Attack(){
 		//		show_debug_message("enemy buffed")
 		//		show_debug_message(id)
 		//	
-		show_debug_message(spd)
+		//show_debug_message(spd)
 		//	}
 		//}
 		var _list = ds_list_create();

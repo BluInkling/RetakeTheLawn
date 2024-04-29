@@ -5,6 +5,7 @@
 event_inherited();
 if !dying && !isDead{
 	if !spawning{
+		if !frozen{
 		if enemyType.behavior = "ranged"{
 			switch (state){
 					case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
@@ -16,7 +17,7 @@ if !dying && !isDead{
 				shootcounter += random_range(0.4,1);
 			}
 
-			if(shootcounter >= room_speed * 4){ //100% chance to start SHOOT every 2 seconds
+			if(shootcounter >= room_speed * 3){ //100% chance to start SHOOT every 2 seconds
 				state = ENEMYSTATE.ATTACK
 				shootcounter = 0
 			}
@@ -39,12 +40,14 @@ if !dying && !isDead{
 				shootcounter += random_range(0.5,1);
 			}
 
-			if(shootcounter >= room_speed * 4){ //100% chance to start SHOOT every 2 seconds
+			if(shootcounter >= room_speed * 3){ //buff every 3 seconds
 				state = ENEMYSTATE.ATTACK
 				shootcounter = 0
 			}
 		}
-	}else{
+		}
+	}
+	else{
 		moveX = 0
 		moveY = 0
 		sprite_index = enemyType.spawnspr

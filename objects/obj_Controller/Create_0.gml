@@ -231,6 +231,13 @@ subweaponstats = {
 		subdownsprite : spr_cherryBombIdle,
 		cooldown : 600,
 		throwable : true
+	},
+	iceberglettuce :{
+		wepname : "iceberglettuce",
+		subidlesprite : sFrozenPea, // for pocket
+		subdownsprite : sFrozenPea,
+		cooldown : 300,
+		throwable : false
 	}
 }
 
