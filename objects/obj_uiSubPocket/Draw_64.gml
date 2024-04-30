@@ -85,3 +85,13 @@ switch(obj_Controller.subweapon.wepname){
 var offset = lerp(32,0,obj_Controller.cooldownSecondary[obj_Controller.secondary]/obj_SubWeapon.sub.cooldown)
 //draw_sprite_part(spr_pocket,0,0,0,32,32,4,156)
 draw_sprite_part(spr_pocket,0,0,0+offset,32,32,4,144+offset)
+
+if alpha > 0{
+	draw_set_color(c_white)
+	draw_set_alpha(alpha)
+	draw_set_halign(fa_center)
+	draw_set_font(global.fnt_textSmall)
+	draw_text(20,140,"FULL")
+	draw_set_halign(fa_left)
+	draw_set_alpha(1)
+}

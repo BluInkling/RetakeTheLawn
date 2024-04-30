@@ -3,7 +3,7 @@
 options = irandom_range(2,3)
 optionList = []
 for (var i=0;i<options;++i){
-	var base = instance_create_layer(x-(20*options-1)+40*i,y,"Walls",obj_zenBase)
+	var base = instance_create_layer(x-(20*(options-1))+40*i,y,"Walls",obj_zenBase)
 	base.host = self
 }
 

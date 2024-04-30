@@ -62,8 +62,8 @@ if keyboard_check_pressed(ord("G")){ // Gives all weapons
 	with obj_Controller{
 		mainInventorySpace = mainamount
 		subInventorySpace = secondaryamount
-		inventoryPrimary = [weaponstats.peashooter,weaponstats.repeater,weaponstats.snowpea,weaponstats.threepeater,weaponstats.cabbagepult,weaponstats.kernelpult,weaponstats.fumeshroom,weaponstats.puffshroom]
-		ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip,weaponstats.cabbagepult.clip,weaponstats.kernelpult.clip,weaponstats.fumeshroom.clip,weaponstats.puffshroom.clip]
+		inventoryPrimary = [weaponstats.peashooter,weaponstats.repeater,weaponstats.snowpea,weaponstats.threepeater,weaponstats.cabbagepult,weaponstats.kernelpult,weaponstats.fumeshroom,weaponstats.puffshroom,weaponstats.gatlingpea]
+		ammoPrimary = [weaponstats.peashooter.clip,weaponstats.repeater.clip,weaponstats.snowpea.clip,weaponstats.threepeater.clip,weaponstats.cabbagepult.clip,weaponstats.kernelpult.clip,weaponstats.fumeshroom.clip,weaponstats.puffshroom.clip,weaponstats.gatlingpea.clip]
 
 		inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood,subweaponstats.cocoabean,subweaponstats.cherrybomb,subweaponstats.iceberglettuce]
 		cooldownSecondary = [0,0,0,0,0]

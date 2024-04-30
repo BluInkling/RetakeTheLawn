@@ -17,6 +17,7 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 					array_delete(obj_Controller.inventoryPrimary,obj_Controller.primary,1)
 					array_delete(obj_Controller.ammoPrimary,obj_Controller.primary,1)
 					instance_create_depth(obj_player.x,obj_player.y,depth,obj_pickupable)
+					obj_uiMainPocket.ShowFull()
 				}
 				array_push(obj_Controller.inventoryPrimary,type)
 				array_push(obj_Controller.ammoPrimary,savedStat)
@@ -39,6 +40,7 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 					array_delete(obj_Controller.inventorySecondary,obj_Controller.secondary,1)
 					array_delete(obj_Controller.cooldownSecondary,obj_Controller.secondary,1)
 					instance_create_depth(obj_player.x,obj_player.y,depth,obj_pickupable)
+					obj_uiSubPocket.ShowFull()
 				}
 				array_push(obj_Controller.inventorySecondary,type)
 				//show_debug_message(savedStat)

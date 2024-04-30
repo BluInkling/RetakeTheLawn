@@ -216,7 +216,24 @@ weaponstats = {
 		secondammo : false,
 		showname : "Puff-shrooms",
 		desc : "Dual-wield, rapidly shoots bubbles in a small range"
-	}
+	},
+	gatlingpea : 
+	{
+		wepname : "gatlingpea",
+		mainidlesprite : spr_gatlingPeaIdle,
+		mainreloadsprite : spr_gatlingPeaReload,
+		mainshootsprite : spr_gatlingPeaShoot,
+		projtype : projstats.pea,
+		accuracy : 25,
+		clip : 8,
+		shootFrames : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+		projOffsetX : 2,
+		projOffsetY : -5,
+		chargeable : false,
+		secondammo : false,
+		showname : "Gatling Pea",
+		desc : "Shoots lots of peas in bursts, but unreliable at long range"
+	},
 }
 
 subweaponstats = {
@@ -281,7 +298,7 @@ cooldownSecondary = [0]//[0,0]
 primary = 0
 secondary = 0
 
-mainamount = 8 //total amn of main weps
+mainamount = 9 //total amn of main weps
 secondaryamount = 5; //total amnt of subs
 
 mainInventorySpace = 4

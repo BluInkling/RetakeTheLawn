@@ -16,6 +16,14 @@ for (var i=0; i<obj_MainWeapon.ammo; i++){
 	draw_sprite(ammoSprite,0,314,138-8*i)
 }
 
-
+if alpha > 0{
+	draw_set_color(c_white)
+	draw_set_alpha(alpha)
+	draw_set_halign(fa_center)
+	draw_set_font(global.fnt_textSmall)
+	draw_text(300,140,"FULL")
+	draw_set_halign(fa_left)
+	draw_set_alpha(1)
+}
 
 

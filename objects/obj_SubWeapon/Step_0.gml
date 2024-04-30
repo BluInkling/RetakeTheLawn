@@ -78,7 +78,7 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 }
 //show_debug_message(obj_Controller.cooldownSecondary[obj_Controller.secondary])
 
-if keyboard_check_pressed(ord("E")){
+if keyboard_check_pressed(ord("E")) || keyboard_check_pressed(vk_shift){
 	with obj_Controller{
 		secondary += 1
 		if secondary > array_length(inventorySecondary)-1{
