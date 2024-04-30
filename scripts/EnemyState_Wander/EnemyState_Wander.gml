@@ -11,10 +11,32 @@ function EnemyState_Wander(){
 		switch(change){
 			case 0: state = ENEMYSTATE.WANDER;
 			case 1:
-				my_dir = irandom_range(0,359);
-				moveX = lengthdir_x(1, my_dir);
-				moveY = lengthdir_y(1, my_dir);
-				counter = 0;
+				if enemyType.behavior != "support"{
+					my_dir = irandom_range(0,359);
+					moveX = lengthdir_x(1, my_dir);
+					moveY = lengthdir_y(1, my_dir);
+					counter = 0;
+				}else{
+					//show_debug_message("I THE FLAG ZOMBIE")
+					if instance_number(obj_Enemy) > 1{
+						show_debug_message("FRIEND!!!")
+						x += 100000;
+						var friend = instance_nearest(x-100000,y,obj_Enemy)
+						x -= 100000;
+						var targetX = friend.x//+random_range(-15,15)
+						var targetY = friend.y//+random_range(-15,15)
+						my_dir = point_direction(x,y,targetX,targetY)
+						moveX = lengthdir_x(1, my_dir);
+						moveY = lengthdir_y(1, my_dir);
+						counter = 0;
+					}else{
+						my_dir = irandom_range(0,359);
+						moveX = lengthdir_x(1, my_dir);
+						moveY = lengthdir_y(1, my_dir);
+						counter = 0;
+					}
+				}
+				//break
 		}
 	}
 	

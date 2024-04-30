@@ -98,6 +98,10 @@ flaming = false
 flamePS = noone
 
 function ChangePrimary(){
+	image_index = 0
+	reloading = false
+	shootavailable = true
+	idle = true
 	main = obj_Controller.mainweapon
 	animIdle = main.mainidlesprite
 	animShoot = main.mainshootsprite

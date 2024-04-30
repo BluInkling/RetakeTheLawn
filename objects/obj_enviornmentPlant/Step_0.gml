@@ -9,7 +9,7 @@ if type == "sunflower" {
 }
 if(collision_circle(x,y,16,obj_player,false,false)){
 	draw = true
-	if(keyboard_check_pressed(ord("E"))){
+	if(keyboard_check_pressed(vk_space)){
 		if type == "wallnut"{
 			with(obj_player){
 				wallnutArmor = 1

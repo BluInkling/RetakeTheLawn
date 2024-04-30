@@ -170,8 +170,8 @@ function Destroy(){
 }
 
 function Buff(){
-	spd += 0.5;
-	hp += 3;
+	spd += 0.25;
+	hp += 2;
 	alarm_set(2,240)
 }
 

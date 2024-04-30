@@ -30,9 +30,10 @@ if !dying && !isDead{
 	
 				}
 		} else if enemyType.behavior == "support"{
+			//show_debug_message(state)
 			switch (state){
-				case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
-				//case ENEMYSTATE.CHASE: EnemyState_Chase(); break;
+				case ENEMYSTATE.IDLE: EnemyState_Wander(); break;//EnemyState_Idle(); break;
+				case ENEMYSTATE.CHASE: EnemyState_Wander(); break;
 				case ENEMYSTATE.WANDER: EnemyState_Wander(); break;
 				case ENEMYSTATE.ATTACK: EnemyState_Attack(); break;
 			}

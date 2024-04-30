@@ -23,7 +23,7 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_
 	if (kindofpickup == obj_Controller.weaponstats){
 		if (array_length(obj_Controller.inventoryPrimary) == obj_Controller.mainamount){
 			kindofpickup = "sun"
-			type = "sun" //random collectable
+			type = {name : "sun",showname : "Sun",desc : "Heals three health points"} //random collectable
 			overlap = spr_sun
 			name = "sun"
 		} else {
@@ -42,7 +42,7 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_
 	else {
 		if (array_length(obj_Controller.inventorySecondary) == obj_Controller.secondaryamount){
 			kindofpickup = "sun"
-			type = "sun" //random collectable
+			type = {name : "sun",showname : "Sun",desc : "Heals three health points"} //random collectable
 			overlap = spr_sun
 			name = "sun"
 		

@@ -2,7 +2,7 @@
 
 if(collision_circle(x,y,8,obj_player,false,false)){
 	draw = true
-	if(keyboard_check_pressed(ord("E"))){
+	if(keyboard_check_pressed(vk_space)){
 		if (kindofpickup == obj_Controller.weaponstats){
 			
 			if !(array_contains(obj_Controller.inventoryPrimary,type)){

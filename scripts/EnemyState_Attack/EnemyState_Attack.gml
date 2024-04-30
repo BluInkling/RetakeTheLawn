@@ -60,6 +60,18 @@ function EnemyState_Attack(){
 				//show_debug_message("going to zombie")
 				with(_list[| i]){
 					//hp ++;
+					if armor == 0{
+						hat = choose("cone","cone","bucket")
+						if hat == "cone"{
+							hatSpr = spr_zombieCone
+							hasHat = true
+							armor = 4
+						}else if hat == "bucket"{
+							hatSpr = spr_zombieBucket
+							hasHat = true
+							armor = 8
+						}
+					}
 					if alreadyBuffed == false{
 						Buff()
 						alreadyBuffed = true

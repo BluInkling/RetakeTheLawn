@@ -124,10 +124,10 @@ if reloading{
 	}
 }
 
-if keyboard_check_pressed(vk_shift) || mouse_wheel_up() || mouse_wheel_down(){
+if keyboard_check_pressed(ord("Q")) || mouse_wheel_up() || mouse_wheel_down(){
 	obj_Controller.ammoPrimary[obj_Controller.primary] = ammo
 	with obj_Controller{
-		if mouse_wheel_down(){
+		if mouse_wheel_up(){
 			primary -= 1
 		}else{
 			primary += 1

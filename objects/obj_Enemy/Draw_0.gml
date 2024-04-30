@@ -28,13 +28,13 @@ event_inherited();
 
 if hasHat{
 	hatFrame = armor <= enemyType.armor/2
-	if sprite_index == spr_zombieIdle{
+	if sprite_index == spr_zombieIdle || sprite_index == spr_zombieNoHandIdle{
 		hatX = obj_Controller.zombieHeadAnims.idle.x[image_index]*image_xscale
 		hatY = obj_Controller.zombieHeadAnims.idle.y[image_index]
-	}else if sprite_index == spr_zombieAttack{
+	}else if sprite_index == spr_zombieAttack || sprite_index == spr_zombieNoHandAttack{
 		hatX = obj_Controller.zombieHeadAnims.attack.x[image_index]*image_xscale
 		hatY = obj_Controller.zombieHeadAnims.attack.y[image_index]
-	}else if sprite_index == spr_zombieRun{
+	}else if sprite_index == spr_zombieRun || sprite_index == spr_zombieNoHandRun{
 		hatX = obj_Controller.zombieHeadAnims.run.x[image_index]*image_xscale
 		hatY = obj_Controller.zombieHeadAnims.run.y[image_index]
 	} else if sprite_index == spr_zombieSpawn{
