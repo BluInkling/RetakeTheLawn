@@ -88,7 +88,9 @@ weaponstats = {
 		projOffsetX : 2,
 		projOffsetY : -5,
 		chargeable : false,
-		secondammo : false
+		secondammo : false,
+		showname : "Peashooter",
+		desc : "Reliable all-arounder"
 	},
 	repeater : 
 	{
@@ -103,7 +105,9 @@ weaponstats = {
 		projOffsetX : 2,
 		projOffsetY : -5,
 		chargeable : false,
-		secondammo : false
+		secondammo : false,
+		showname : "Repeater",
+		desc : "Fires two peas at a time!"
 	},
 	snowpea : 
 	{
@@ -118,7 +122,9 @@ weaponstats = {
 		projOffsetX : 2,
 		projOffsetY : -5,
 		chargeable : false,
-		secondammo : false
+		secondammo : false,
+		showname : "Snow Pea",
+		desc : "Shoots frozen peas that slow zombies"
 	},
 	threepeater : 
 	{
@@ -133,7 +139,9 @@ weaponstats = {
 		projOffsetX : 2,
 		projOffsetY : -5,
 		chargeable : false,
-		secondammo : false
+		secondammo : false,
+		showname : "Threepeater",
+		desc : "Fires three peas at a time in a wide spread"
 	},
 	cabbagepult : 
 	{
@@ -151,7 +159,9 @@ weaponstats = {
 		projOffsetY : -5,
 		chargeable : true,
 		chargetime : 35,//30,
-		secondammo : false //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+		secondammo : false, //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+		showname : "Cabbage-pult",
+		desc : "Chargeable, fully charged shots pierce enemies"
 	},
 	kernelpult : 
 	{
@@ -169,7 +179,9 @@ weaponstats = {
 		projOffsetY : -5,
 		chargeable : true,
 		chargetime : 35,//30,
-		secondammo : projstats.butter //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+		secondammo : projstats.butter, //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+		showname : "Kernel-pult",
+		desc : "Chargeable, fully charged shots butter enemies"
 	},	
 	fumeshroom : 
 	{
@@ -184,7 +196,9 @@ weaponstats = {
 		projOffsetX : 2,
 		projOffsetY : -2,
 		chargeable : false,
-		secondammo : projstats.smallbubble
+		secondammo : projstats.smallbubble,
+		showname : "Fume-shroom",
+		desc : "Shoots lots of bubbles in a small range, pierceing enemies"
 	},
 	puffshroom : 
 	{
@@ -199,7 +213,9 @@ weaponstats = {
 		projOffsetX : 3,
 		projOffsetY : -2,
 		chargeable : false,
-		secondammo : false
+		secondammo : false,
+		showname : "Puff-shrooms",
+		desc : "Dual-wield, rapidly shoots bubbles in a small range"
 	}
 }
 
@@ -209,35 +225,45 @@ subweaponstats = {
 		subidlesprite : spr_potatomineIdle, // for pocket
 		subdownsprite : spr_potatomineThrow,
 		cooldown : 1200,
-		throwable : true
+		throwable : true,
+		showname : "Potato Mine",
+		desc : "Throws three mines onto the field which explode on contact with enemies"
 	},
 	torchwood :{
 		wepname : "torchwood",
 		subidlesprite : spr_torchwoodIdle, // for pocket
 		subdownsprite : spr_torchwoodActivate,
 		cooldown : 600,
-		throwable: false
+		throwable: false,
+		showname : "Torchwood",
+		desc : "Empowers the primary plant to shoot flaming projectiles"
 	},
 	cocoabean :{
 		wepname : "cocoabean",
 		subidlesprite : spr_cocoaBeanIdle, // for pocket
 		subdownsprite : spr_cocoaBeanActivate,
 		cooldown : 800,
-		throwable: false
+		throwable: false,
+		showname : "Cocoa Bean",
+		desc : "Doubles the primary plant's speed by for a time"
 	},
 	cherrybomb :{
 		wepname : "cherrybomb",
 		subidlesprite : spr_cherryBombIdle, // for pocket
 		subdownsprite : spr_cherryBombIdle,
 		cooldown : 600,
-		throwable : true
+		throwable : true,
+		showname : "Cherry Bomb",
+		desc : "Throws a Cherry Bomb that explodes on contact"
 	},
 	iceberglettuce :{
 		wepname : "iceberglettuce",
-		subidlesprite : sFrozenPea, // for pocket
-		subdownsprite : sFrozenPea,
-		cooldown : 300,
-		throwable : false
+		subidlesprite : spr_iceshroomIdle, // for pocket
+		subdownsprite : spr_iceshroomIdle,
+		cooldown : 400,
+		throwable : false,
+		showname : "Ice-shroom",
+		desc : "Throws an Ice-shroom that slows enemies on contact"
 	}
 }
 
@@ -256,8 +282,10 @@ primary = 0
 secondary = 0
 
 mainamount = 8 //total amn of main weps
+secondaryamount = 5; //total amnt of subs
 
-secondaryamount = 4; //total amnt of subs
+mainInventorySpace = 4
+subInventorySpace = 2
 
 mainweapon = inventoryPrimary[primary]
 subweapon = inventorySecondary[secondary]
@@ -385,5 +413,14 @@ zombieHeadAnims = { //Storing it here for now
 	}
 }
 
+//Spawn Managers
+instance_create_depth(0,0,0,obj_devManager)
+instance_create_depth(0,0,0,obj_endController)
+instance_create_depth(0,0,0,obj_pauseController)
+instance_create_depth(0,0,0,obj_camera)
 
-
+//UI
+instance_create_depth(0,0,0,obj_uiHeart)
+instance_create_depth(0,0,0,obj_uiMainPocket)
+instance_create_depth(0,0,0,obj_uiSubPocket)
+instance_create_depth(0,0,0,obj_uiPickupDesc)

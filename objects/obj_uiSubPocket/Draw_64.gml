@@ -77,7 +77,8 @@ switch(obj_Controller.subweapon.wepname){
 		draw_sprite(sprite_index,image_index,20,164)
 		break;
 	case "iceberglettuce":
-		draw_sprite(sFrozenPea,image_index,20,164)
+		sprite_index = obj_Controller.subweapon.subidlesprite
+		draw_sprite(sprite_index,image_index,20,164)
 		break;
 }
 //draw_sprite(spr_pocket,0,20,172)

@@ -4,6 +4,11 @@ draw = false
 
 
 type = noone;
+overlap = spr_none
+name = "none"
+
+fixed = false
+savedStat = 0
 //set "what it is" with a string
 //if player in radius and pickable thing isnt in players inventory array: 
 //then add it to their array and switch to it
@@ -30,6 +35,7 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_
 			
 			overlap = type.mainidlesprite
 			name = type.wepname
+			savedStat = type.clip
 		}
 	
 	} 
@@ -44,7 +50,7 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_
 			//type = choose(kindofpickup.torchwood,kindofpickup.cocoabean)
 			var timeout = 0
 			do{
-				type = choose(kindofpickup.torchwood,kindofpickup.cocoabean,kindofpickup.potatomine,kindofpickup.cherrybomb)
+				type = choose(kindofpickup.torchwood,kindofpickup.cocoabean,kindofpickup.potatomine,kindofpickup.cherrybomb,kindofpickup.iceberglettuce)
 				/*
 				timeout += 1
 				if timeout > 100{
@@ -56,13 +62,34 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_
 			
 			overlap = type.subidlesprite
 			name = type.wepname
+			savedStat = 0
 		}
 	}
 }
 
-RandomChoose()
 part = part_system_create(ps_sparkle)
 part_system_position(part,x,y)
+
+if global.fixedDrop != noone{
+	fixed = true
+	kindofpickup = global.fixedDropType
+	type = global.fixedDrop
+	savedStat = global.fixedStat
+	global.fixedDropType = noone
+	global.fixedDrop = noone
+	global.fixedStat = 0
+	if kindofpickup == obj_Controller.weaponstats{
+		overlap = type.mainidlesprite
+	}else{
+		overlap = type.subidlesprite
+	}
+	name = type.wepname
+}else{
+	RandomChoose()
+	//show_debug_message(2)
+}
+
+
 //} 
 //else {
 //	show_debug_message(array_length(obj_Controller.inventoryPrimary))

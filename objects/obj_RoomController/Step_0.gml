@@ -24,7 +24,7 @@ if(triggered)
 			with (obj_Door) closed = false;
 			with(obj_Gravestone) crumble();
 			//with(obj_enviornmentPlant) instance_destroy();
-			instance_create_layer(x+32,y+32,"Walls",obj_enviornmentPlant)
+			instance_create_layer(obj_player.x,obj_player.y+4,"Walls",obj_enviornmentPlant)
 			instance_destroy();
 		}
 		else {

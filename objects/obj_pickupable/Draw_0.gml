@@ -19,6 +19,16 @@ if (draw){
 		draw_sprite(overlap,image_index,x,y)
 	}
 	shader_reset()
+	obj_uiPickupDesc.name = type.showname
+	obj_uiPickupDesc.desc = type.desc
+	with obj_uiPickupDesc{
+		if alpha < 1{
+			alpha += alphaStep*3
+			if alpha > 1{
+				alpha = 1
+			}
+		}
+	}
 } //else draw_text_transformed(x,y-32,"noo?",0.25,0.25,0)
 depth = 400-y+12
 
