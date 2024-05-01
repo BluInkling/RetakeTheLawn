@@ -30,6 +30,9 @@ if enemyType.behavior == "ranged"{
 enemyType = global.grabthis;
 //show_debug_message("grabbed:" + string(enemyType))
 
+if enemyType == obj_Controller.enemystats.imp{
+	attackradius = 32
+}
 //-------------------
 hp = enemyType.hp
 armor = enemyType.armor
@@ -114,8 +117,10 @@ function Hit(damage,type,dir,flaming){
 	}
 
 	if hasHand && hp <= enemyType.hp/2{
-		hasHand = false
-		instance_create_layer(x-2*image_xscale,y-8,"Bullets",obj_zombieGib)
+		if enemyType != obj_Controller.enemystats.imp{
+			hasHand = false
+			instance_create_layer(x-2*image_xscale,y-8,"Bullets",obj_zombieGib)
+		}
 	}
 	flashAlpha = 1;
 
@@ -157,7 +162,12 @@ function SpawnHat(){
 }
 
 function SpawnHead(spr){
-	var head = instance_create_layer(x+4*image_xscale,y-16,"Bullets",obj_zombieGib)
+	if enemyType != obj_Controller.enemystats.imp{
+		var head = instance_create_layer(x+4*image_xscale,y-16,"Bullets",obj_zombieGib)
+	}else{
+		var head = instance_create_layer(x+4*image_xscale,y-8,"Bullets",obj_zombieGib)
+		head.yVel = random_range(-3,-1.5)
+	}
 	head.sprite_index = spr
 	head.image_xscale = image_xscale
 	head.height = y

@@ -32,7 +32,7 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 			if !(array_contains(obj_Controller.inventorySecondary,type)){
 				//show_debug_message("added to sub arsenal")
 				if array_length(obj_Controller.inventorySecondary) == obj_Controller.subInventorySpace{
-					show_debug_message("full inventory");
+					//show_debug_message("full inventory");
 					var drop = obj_Controller.inventorySecondary[obj_Controller.secondary]
 					global.fixedDrop = drop
 					global.fixedDropType = obj_Controller.subweaponstats

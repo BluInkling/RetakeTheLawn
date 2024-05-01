@@ -324,6 +324,9 @@ enemystats = {
 		idlesprH : spr_zombieNoHandIdle,
 		movesprH : spr_zombieNoHandRun,
 		attacksprH : spr_zombieNoHandAttack,
+		dyingspr: spr_zombieDying,
+		deadspr: spr_zombieDead,
+		headspr: spr_zombieHead,
 		spd : .75,
 		onhead : "none",
 		behavior : "melee"
@@ -341,6 +344,9 @@ enemystats = {
 		idlesprH : spr_zombieNoHandIdle,
 		movesprH : spr_zombieNoHandRun,
 		attacksprH : spr_zombieNoHandAttack,
+		dyingspr: spr_zombieDying,
+		deadspr: spr_zombieDead,
+		headspr: spr_zombieHead,
 		spd : .5,
 		onhead : "cone",
 		behavior : "melee"
@@ -358,6 +364,9 @@ enemystats = {
 		idlesprH : spr_zombieNoHandIdle,
 		movesprH : spr_zombieNoHandRun,
 		attacksprH : spr_zombieNoHandAttack,
+		dyingspr: spr_zombieDying,
+		deadspr: spr_zombieDead,
+		headspr: spr_zombieHead,
 		spd : .5,
 		onhead : "bucket",
 		behavior : "melee"
@@ -375,6 +384,9 @@ enemystats = {
 		idlesprH : spr_zombieNoHandIdle,
 		movesprH : spr_zombieNoHandRun,
 		attacksprH : spr_zombieNoHandAttack,
+		dyingspr: spr_zombieDying,
+		deadspr: spr_zombieDead,
+		headspr: spr_zombieHead,
 		spd : .5,
 		onhead : "armyhat",
 		behavior : "ranged",
@@ -396,10 +408,33 @@ enemystats = {
 		idlesprH : spr_zombieNoHandFlagIdle,
 		movesprH : spr_zombieNoHandFlagRun,
 		attacksprH : spr_zombieNoHandFlagWave,
+		dyingspr: spr_zombieDying,
+		deadspr: spr_zombieDead,
+		headspr: spr_zombieHead,
 		spd : .9,
 		onhead : "none", //TEMPORARY UNTIL FLAG ZOMBIE SPRITES PUTIN
 		behavior : "support",
 		damage : 0,
+	},
+	imp :
+	{
+		type : "imp",
+		hp : 4,
+		armor : 0,
+		idlespr : spr_impIdle,
+		movespr : spr_impRun,
+		attackspr : spr_impAttack,
+		attacksprHB : spr_impAttack,//HB,
+		spawnspr : spr_impSpawn,
+		idlesprH : spr_impIdle,
+		movesprH : spr_impRun,
+		attacksprH : spr_impAttack,
+		dyingspr: spr_impDying,
+		deadspr: spr_impDead,
+		headspr: spr_impHead,
+		spd : 1.5,
+		onhead : "none",
+		behavior : "melee"
 	}
 	
 }

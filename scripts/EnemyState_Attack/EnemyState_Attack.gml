@@ -75,7 +75,7 @@ function EnemyState_Attack(){
 					if alreadyBuffed == false{
 						Buff()
 						alreadyBuffed = true
-						show_debug_message("Buffed!")
+						//show_debug_message("Buffed!")
 						sprite_index = enemyType.idlespr
 					}
 				}
@@ -85,7 +85,7 @@ function EnemyState_Attack(){
 		ds_list_destroy(_list);
 		if(image_index > image_number-1){
 		//if(counter >= room_speed * 3){ //50% chance to start wandering every 3 seconds
-			show_debug_message("buff state ended")
+			///show_debug_message("buff state ended")
 			buffField = false
 			state = ENEMYSTATE.WANDER
 			//counter = 0

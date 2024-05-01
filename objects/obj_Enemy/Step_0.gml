@@ -68,7 +68,7 @@ if !dying && !isDead{
 			}
 		}
 	}
-}else{
+}else if !isDead{
 	if state != ENEMYSTATE.IDLE{
 		//Run death
 	}else{
@@ -76,7 +76,7 @@ if !dying && !isDead{
 	}
 	moveX = 0
 	moveY = 0
-	sprite_index = spr_zombieDying
+	sprite_index = enemyType.dyingspr
 	if image_index > image_number-1{
 		isDead = true
 		alarm[1] = 60
@@ -84,5 +84,5 @@ if !dying && !isDead{
 }
 
 if isDead{
-	sprite_index = spr_zombieDead
+	sprite_index = enemyType.deadspr
 }

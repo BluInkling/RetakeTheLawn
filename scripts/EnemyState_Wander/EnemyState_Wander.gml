@@ -19,7 +19,7 @@ function EnemyState_Wander(){
 				}else{
 					//show_debug_message("I THE FLAG ZOMBIE")
 					if instance_number(obj_Enemy) > 1{
-						show_debug_message("FRIEND!!!")
+						//show_debug_message("FRIEND!!!")
 						x += 100000;
 						var friend = instance_nearest(x-100000,y,obj_Enemy)
 						x -= 100000;

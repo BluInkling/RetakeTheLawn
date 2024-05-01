@@ -3,12 +3,18 @@ waves = ds_list_create();
 basic = obj_Controller.enemystats.basic
 conehead = obj_Controller.enemystats.conehead
 buckethead = obj_Controller.enemystats.buckethead
+//imp = obj_Controller.enemystats.imp
 
 ds_list_add(waves,[0,obj_Enemy,0,0,basic]);
 //ds_list_add(waves,[0,obj_Enemy,0,50,basic]);
 ds_list_add(waves,[0,obj_Enemy,0,100,basic]);
-
-
+/*
+ds_list_add(waves,[0,obj_Enemy,0,100,imp]);
+ds_list_add(waves,[0,obj_Enemy,0,100,imp]);
+ds_list_add(waves,[0,obj_Enemy,0,100,imp]);
+ds_list_add(waves,[0,obj_Enemy,0,100,imp]);
+ds_list_add(waves,[0,obj_Enemy,0,100,imp]);
+*/
 ds_list_add(waves,[1,obj_Enemy,0,0,basic]);
 //ds_list_add(waves,[1,obj_Enemy,0,30,basic]);
 ds_list_add(waves,[1,obj_Enemy,0,60,basic]);

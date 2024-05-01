@@ -1,4 +1,4 @@
-show_debug_message("proj created")
+//show_debug_message("proj created")
 
 zomid = noone
 

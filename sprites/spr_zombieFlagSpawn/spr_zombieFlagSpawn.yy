@@ -37,7 +37,7 @@
   "origin": 9,
   "parent": {
     "name": "flag",
-    "path": "folders/Sprites/zombies/base/flag.yy",
+    "path": "folders/Sprites/zombies/flag.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

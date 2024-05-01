@@ -54,7 +54,7 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_
 				/*
 				timeout += 1
 				if timeout > 100{
-					show_debug_message(obj_Controller.inventorySecondary)
+					//show_debug_message(obj_Controller.inventorySecondary)
 					break
 				}
 				*/

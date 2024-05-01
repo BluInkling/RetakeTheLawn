@@ -33,7 +33,7 @@ if (hp <= 0 && !dying)
 	dying = true
 	if (instance_exists(egun)) instance_destroy(egun)
 	image_index = 0
-	SpawnHead(spr_zombieHead)
+	SpawnHead(enemyType.headspr)
 	if hb != noone{
 		instance_destroy(hb)
 	}

@@ -1,9 +1,14 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyMeleeAttack(){
-
-	if image_index < 8{
-		attackDir = point_direction(x,y,obj_player.x,obj_player.y)
+	if enemyType != obj_Controller.enemystats.imp{
+		if image_index < 8{
+			attackDir = point_direction(x,y,obj_player.x,obj_player.y)
+		}
+	}else{
+		if image_index < 4{
+			attackDir = point_direction(x,y,obj_player.x,obj_player.y)
+		}
 	}
 	if image_index < 5{
 		moveX = 0

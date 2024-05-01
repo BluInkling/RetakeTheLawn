@@ -5,7 +5,7 @@ progressInputs = [
 [keyboard_check(ord("W")),keyboard_check(ord("A")),keyboard_check(ord("S")),keyboard_check(ord("D"))],
 [mouse_check_button(mb_left)]
 ]
-show_debug_message(alpha)
+//show_debug_message(alpha)
 if active{
 	if alpha < 3{
 		alpha += alphaStep*3
