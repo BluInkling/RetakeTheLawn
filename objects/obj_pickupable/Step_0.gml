@@ -22,6 +22,9 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 				array_push(obj_Controller.inventoryPrimary,type)
 				array_push(obj_Controller.ammoPrimary,savedStat)
 				obj_MainWeapon.GotoPrimary(array_length(obj_Controller.inventoryPrimary)-1)
+				if !global.hasNewMain{
+					obj_uiTutorial.NewMain()
+				}
 				
 			} else {
 				//show_debug_message("alreayd have this main....");
@@ -46,6 +49,9 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 				//show_debug_message(savedStat)
 				array_push(obj_Controller.cooldownSecondary,savedStat)
 				obj_SubWeapon.GotoSecondary(array_length(obj_Controller.inventorySecondary)-1)
+				if !global.hasNewSub{
+					obj_uiTutorial.NewSub()
+				}
 			} else {
 				//show_debug_message("alreayd have this sub....");
 			}

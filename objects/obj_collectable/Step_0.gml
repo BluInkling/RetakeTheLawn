@@ -39,6 +39,10 @@ if type == "sun"{
 		}
 		
 		instance_create_layer(x,y,"Gun",obj_uiSun)
+		if !global.hasCollected{
+				global.hasCollected = true
+				obj_uiTutorial.active = false
+			}
 		instance_destroy()//self
 		//audio_sound_pitch(sunsfx,random_range(0.90,1.50))
 		//audio_play_sound(sunsfx,1,false)
@@ -59,6 +63,10 @@ if type == "stagnantsun"{
 		//audio_play_sound(sunsfx,1,false)
 		
 		instance_create_layer(x,y,"Gun",obj_uiSun)
+		if !global.hasCollected{
+				global.hasCollected = true
+				obj_uiTutorial.active = false
+			}
 		instance_destroy()//self
 		
 

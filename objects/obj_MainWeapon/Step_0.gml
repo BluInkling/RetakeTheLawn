@@ -125,6 +125,10 @@ if reloading{
 }
 
 if keyboard_check_pressed(ord("Q")) || mouse_wheel_up() || mouse_wheel_down(){
+	if !global.hasNewMain && array_length(obj_Controller.inventoryPrimary)>1{
+		global.hasNewMain = true
+		obj_uiTutorial.active = false
+	}
 	obj_Controller.ammoPrimary[obj_Controller.primary] = ammo
 	with obj_Controller{
 		if mouse_wheel_up(){

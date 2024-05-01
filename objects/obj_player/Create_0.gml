@@ -5,8 +5,8 @@ event_inherited()
 
 maxhp = 8
 hp = maxhp;
-wallnutArmor = 0
-pumpkinArmor = 0
+wallnutArmor = global.wallArmor
+pumpkinArmor = global.pumpArmor
 
 xInput = 0
 yInput = 0

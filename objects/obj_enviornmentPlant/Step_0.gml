@@ -14,11 +14,19 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 			with(obj_player){
 				wallnutArmor = 1
 			}
+			if !global.hasCollected{
+				global.hasCollected = true
+				obj_uiTutorial.active = false
+			}
 			instance_destroy()
 		}
 		if type == "pumpkin"{
 			with(obj_player){
 				pumpkinArmor = 1;
+			}
+			if !global.hasCollected{
+				global.hasCollected = true
+				obj_uiTutorial.active = false
 			}
 			instance_destroy()
 		}
@@ -34,3 +42,6 @@ if type == "pumpkin"{
 	sprite_index = spr_pumpkin
 }
 
+if !global.hasCollected{
+	obj_uiTutorial.Collect()
+}

@@ -29,6 +29,7 @@ image_angle = moveDir
 
 function Destroy(_other){ //Will eventually add splat animation
 	if !is_undefined(_other){
+		
 		//show_debug_message("SPLAT")
 		//if _other.object_index == obj_wall{
 			//var splatObj = instance_create_layer(x,y,"Bullets",obj_splat)

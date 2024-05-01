@@ -54,6 +54,7 @@ if !dying && !isDead{
 		sprite_index = enemyType.spawnspr
 		if image_index > image_number-1{
 			spawning = false
+			
 			hb = instance_create_layer(x,y,"Player",obj_zombieHitbox)
 			if (enemyType.type == "footsoldier"){ //gives footsoldiers a GUN
 				egun = instance_create_layer(x,y,"Gun",obj_EnemyWeapon);

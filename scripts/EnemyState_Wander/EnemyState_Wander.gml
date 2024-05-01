@@ -54,7 +54,7 @@ function EnemyState_Wander(){
 		sprite_index = enemyType.movesprH
 	}
 	
-	if moveX != 0{
+	if moveX != 0 && !instance_exists(egun){
 		image_xscale = sign(moveX);
 	}
 }

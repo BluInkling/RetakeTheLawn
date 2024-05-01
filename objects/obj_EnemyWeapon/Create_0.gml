@@ -10,8 +10,8 @@ projspr = noone
 
 eproj = noone
 
-
-
+shooting = false
+baseSpr = spr_zombieGunIdle
 
 
 
@@ -30,4 +30,6 @@ function Shoot(){
 		moveSpd = other.projspd
 		damage = other.damage
 	}
+	shooting = true
+	image_index = 0
 }

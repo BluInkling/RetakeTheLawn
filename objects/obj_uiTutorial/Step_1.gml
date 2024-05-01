@@ -3,7 +3,8 @@
 
 progressInputs = [
 [keyboard_check(ord("W")),keyboard_check(ord("A")),keyboard_check(ord("S")),keyboard_check(ord("D"))],
-[mouse_check_button(mb_left)]
+[mouse_check_button(mb_left)],
+[mouse_check_button(mb_right)]
 ]
 //show_debug_message(alpha)
 if active{
@@ -15,11 +16,12 @@ if active{
 		alpha -= alphaStep
 	}
 }
-
-if progress >= 0 && active{
-	for (var i = 0;i<array_length(progressInputs[progress]);i++){
-		if progressInputs[progress][i]{
-			toNext = true
+if !global.hasDoneTutorial{
+	if progress >= 0 && active{
+		for (var i = 0;i<array_length(progressInputs[progress]);i++){
+			if progressInputs[progress][i]{
+				toNext = true
+			}
 		}
 	}
 }

@@ -14,27 +14,45 @@ progress = -1
 delay = 120
 active = false
 toNext = false
-progressText = ["Use WASD to Move","Move the Mouse to Aim, Left click to shoot"]
+progressText = ["Use WASD to Move","Move the MOUSE to aim, LEFT CLICK to shoot","Use RIGHT CLICK to activate the secondary plant"]
 progressInputs = [
 [keyboard_check(ord("W")),keyboard_check(ord("A")),keyboard_check(ord("S")),keyboard_check(ord("D"))],
-[mouse_check_button(mb_left)]
+[mouse_check_button(mb_left)],
+[mouse_check_button(mb_right)]
 ]
 
 alarm[0] = 1
 function NextProgress(){
-	progress += 1
-	if progress >= array_length(progressInputs){
-		instance_destroy()
-		show_debug_message("STOP")
-	}else{
-		active = true
-		text = progressText[progress]
-		width = string_width(text)/2.9//*3
+	if !global.hasDoneTutorial{
+		progress += 1
+		if progress >= array_length(progressInputs){
+			show_debug_message(array_length(progressInputs))
+			global.hasDoneTutorial = true
+		}else{
+			active = true
+			text = progressText[progress]
+			width = string_width(text)/2.7//*3
+		}
 	}
 }
 
+function NewMain(){
+	active = true
+	text = "Use Q or SCROLL to switch primary plants " 
+	width = string_width(text)/2.5//*3
+}
 
+function NewSub(){
+	active = true
+	text = "Use E or SHIFT to switch secondary plants " 
+	width = string_width(text)/2.5//*3
+}
 
+function Collect(){
+	active = true
+	text = "Use SPACE to pick up items" 
+	width = string_width(text)/2.5//*3
+}
 
 
 

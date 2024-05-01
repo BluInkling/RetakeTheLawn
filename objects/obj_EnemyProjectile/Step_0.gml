@@ -14,6 +14,7 @@ if place_meeting(x,y,obj_player){
 		with(obj_player){
 			Hit(1)
 		}
+		obj_player.Force(3,moveDir)
 		//enemy.Hit(damage,type,moveDir)
 		Destroy()
 	//show_debug_message("Enemy hit!")

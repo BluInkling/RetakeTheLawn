@@ -283,18 +283,37 @@ subweaponstats = {
 		desc : "Throws an Ice-shroom that slows enemies on contact"
 	}
 }
+/*
+if !instance_exists(obj_inventoryTracker){
+	instance_create_depth(0,0,0,obj_inventoryTracker)
+	//obj_inventoryTracker.primaryInv = [weaponstats.peashooter]
+	obj_inventoryTracker.ammo = [weaponstats.peashooter.clip]
+	obj_inventoryTracker.secondaryInv = [subweaponstats.torchwood]
+	obj_inventoryTracker.cool = [0]
+}
 
-
-
-
+if array_length(global.primaryInventory) == 0{
+	global.primaryInventory = [weaponstats.peashooter]
+	global.ammoPrimary = [weaponstats.peashooter.clip]
+	global.secondaryInventory = [subweaponstats.torchwood]
+	global.subCooldown = [0]
+}
+*/
 inventoryPrimary = [weaponstats.peashooter]
 ammoPrimary = [weaponstats.peashooter.clip]
-//inventoryPrimary = [weaponstats.puffshroom]
+inventorySecondary = [subweaponstats.torchwood]
+cooldownSecondary = [0]
+/*
+inventoryPrimary = obj_inventoryTracker.primaryInv
+//show_debug_message(obj_inventoryTracker.primaryInv)
+ammoPrimary = variable_clone(obj_inventoryTracker.ammo)
+//inventoryPrimary = [weaponstats.peashooter] //OK this is the weirdest bug I've ever had, if this line doesnt exist global.primaryInventory keeps updating uncontrolably
 //ammoPrimary = [weaponstats.puffshroom.clip]
-//inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
-inventorySecondary = [subweaponstats.cherrybomb]
-cooldownSecondary = [0]//[0,0]
 
+//inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
+inventorySecondary = variable_clone(obj_inventoryTracker.secondaryInv)
+cooldownSecondary = variable_clone(obj_inventoryTracker.cool)
+*/
 primary = 0
 secondary = 0
 
@@ -376,13 +395,13 @@ enemystats = {
 		type : "footsoldier",
 		hp : 4,
 		armor : 6,
-		idlespr : spr_zombieIdle,
-		movespr : spr_zombieRun,
+		idlespr : spr_zombieIdleNoArms,
+		movespr : spr_zombieRunNoArms,
 		attackspr : spr_zombieAttack,
 		attacksprHB : spr_zombieAttackHB,
 		spawnspr : spr_zombieSpawn,
-		idlesprH : spr_zombieNoHandIdle,
-		movesprH : spr_zombieNoHandRun,
+		idlesprH : spr_zombieIdleNoArms,
+		movesprH : spr_zombieRunNoArms,
 		attacksprH : spr_zombieNoHandAttack,
 		dyingspr: spr_zombieDying,
 		deadspr: spr_zombieDead,
@@ -392,8 +411,8 @@ enemystats = {
 		behavior : "ranged",
 		damage : 2,
 		projspd : 5,
-		weaponspr : sEnemyGun,
-		projspr : sFrozenPea
+		weaponspr : spr_zombieGunIdle,
+		projspr : spr_zombieBullet
 	},
 	flagzombie :
 	{
@@ -476,3 +495,4 @@ instance_create_depth(0,0,0,obj_uiHeart)
 instance_create_depth(0,0,0,obj_uiMainPocket)
 instance_create_depth(0,0,0,obj_uiSubPocket)
 instance_create_depth(0,0,0,obj_uiPickupDesc)
+instance_create_depth(0,0,0,obj_uiTutorial)

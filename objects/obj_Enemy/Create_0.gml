@@ -88,7 +88,7 @@ if hat == "cone"{
 	hatSpr = spr_zombieBucket
 	hasHat = true
 }else if hat == "armyhat"{ //if soldier zombie then give it a hat and gun
-	hatSpr = sArmyHat
+	hatSpr = spr_zombieHelmet
 	hasHat = true	
 	projspd = enemyType.projspd
 	damage = enemyType.damage
@@ -123,13 +123,13 @@ function Hit(damage,type,dir,flaming){
 		}
 	}
 	flashAlpha = 1;
-
 	if type == obj_Controller.projstats.butter{ //BUTTER STUN
 		spd = 0;
 		hasButter = true;
 		alarm_set(0,stunLength)
 	}
 	if type == obj_Controller.projstats.snow{
+		show_debug_message("SLOW")
 		cold = true
 		flashAlpha = 0.2;
 		flashColor = c_blue//c_aqua;

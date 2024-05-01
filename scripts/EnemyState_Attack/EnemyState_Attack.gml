@@ -60,7 +60,7 @@ function EnemyState_Attack(){
 				//show_debug_message("going to zombie")
 				with(_list[| i]){
 					//hp ++;
-					if armor == 0{
+					if armor == 0 && enemyType != obj_Controller.enemystats.imp{
 						hat = choose("cone","cone","bucket")
 						if hat == "cone"{
 							hatSpr = spr_zombieCone

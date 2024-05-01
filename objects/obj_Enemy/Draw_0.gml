@@ -21,6 +21,13 @@ if global.debug{
 if !spawning{
 	draw_sprite(spr_shadowMain,0,x,y-2) 
 }
+if (instance_exists(egun)){
+	if obj_player.x > x{
+		image_xscale = 1
+	}else{
+		image_xscale = -1
+	}
+}
 draw_self()
 
 event_inherited();
@@ -28,13 +35,13 @@ event_inherited();
 
 if hasHat{
 	hatFrame = armor <= enemyType.armor/2
-	if sprite_index == spr_zombieIdle || sprite_index == spr_zombieNoHandIdle{
+	if sprite_index == spr_zombieIdle || sprite_index == spr_zombieNoHandIdle || sprite_index == spr_zombieIdleNoArms{
 		hatX = obj_Controller.zombieHeadAnims.idle.x[image_index]*image_xscale
 		hatY = obj_Controller.zombieHeadAnims.idle.y[image_index]
 	}else if sprite_index == spr_zombieAttack || sprite_index == spr_zombieNoHandAttack{
 		hatX = obj_Controller.zombieHeadAnims.attack.x[image_index]*image_xscale
 		hatY = obj_Controller.zombieHeadAnims.attack.y[image_index]
-	}else if sprite_index == spr_zombieRun || sprite_index == spr_zombieNoHandRun{
+	}else if sprite_index == spr_zombieRun || sprite_index == spr_zombieNoHandRun || sprite_index == spr_zombieRunNoArms{
 		hatX = obj_Controller.zombieHeadAnims.run.x[image_index]*image_xscale
 		hatY = obj_Controller.zombieHeadAnims.run.y[image_index]
 	} else if sprite_index == spr_zombieSpawn{
