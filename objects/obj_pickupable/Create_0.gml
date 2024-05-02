@@ -3,6 +3,7 @@ randomize()
 draw = false
 
 
+
 type = noone;
 //set "what it is" with a string
 //if player in radius and pickable thing isnt in players inventory array: 

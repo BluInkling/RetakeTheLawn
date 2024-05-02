@@ -30,7 +30,8 @@ moving = false
 animIdle = spr_daveIdle
 animRun = spr_daveRun
 
-hascontrol = true;
+
+hascontrol = false;
 
 //how morbid!
 dead = false
@@ -38,13 +39,50 @@ dead = false
 cold = false;
 frozen = false;
 
+inBattle = false;
+inGarden = false;
+
+warned = false
+
 instance_create_layer(0,0,"Player",obj_Controller)
+instance_create_layer(1,0,"Player",obj_Music)
 instance_create_layer(0,0,"Gun",obj_MainWeapon)
 instance_create_layer(0,0,"Player",obj_SubWeapon)
 
 <<<<<<< Updated upstream
 =======
 function Hit(damage){
+<<<<<<< Updated upstream
+=======
+	
+	if wallnutArmor+pumpkinArmor > 0{
+		var tempHp = hp+wallnutArmor+pumpkinArmor
+		var tempArmor = 0
+		tempHp-=damage
+		tempArmor = tempHp - hp
+		if wallnutArmor && pumpkinArmor{
+			if tempArmor == 1{
+				pumpkinArmor = 0
+			}else if tempArmor == 0{
+				wallnutArmor = 0
+			}
+		}else if pumpkinArmor{
+			if tempArmor == 0{
+				pumpkinArmor = 0
+			}
+		}else if wallnutArmor{
+			if tempArmor == 0{
+				wallnutArmor = 0
+			}
+		}
+		//show_debug_message(tempHp)
+		
+	}else{
+		hp -= damage;
+	}
+	flashAlpha = 1;
+	/*
+>>>>>>> Stashed changes
 	if wallnutArmor > 0{ //if has armor
 		wallnutArmor -= damage//armor takes damage
 		if wallnutArmor <= 0{ //if no more armor

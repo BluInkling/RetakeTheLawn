@@ -2,6 +2,7 @@ show_debug_message("proj created")
 
 zomid = noone
 
+audio_play_sound(NormalShotLong00__1_,1,false,1,0,random_range(0.90,1.20))
 
 
 

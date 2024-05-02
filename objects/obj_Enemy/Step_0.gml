@@ -41,6 +41,7 @@ if !dying && !isDead{
 			}
 
 			if(shootcounter >= room_speed * 3){ //buff every 3 seconds
+				audio_play_sound(choose(sukhbir,sukhbir2,sukhbir3),1,false,1,0,random_range(0.90,1.20))
 				state = ENEMYSTATE.ATTACK
 				shootcounter = 0
 			}
@@ -53,6 +54,9 @@ if !dying && !isDead{
 		sprite_index = enemyType.spawnspr
 		if image_index > image_number-1{
 			spawning = false
+			var chance = irandom_range(0,100)
+			grsound = groansounds[irandom_range(0,array_length(groansounds)-1)]
+			if (chance < 30) audio_play_sound(grsound,1,false,1,0,random_range(0.90,1.20))
 			hb = instance_create_layer(x,y,"Player",obj_zombieHitbox)
 			if (enemyType.type == "footsoldier"){ //gives footsoldiers a GUN
 				egun = instance_create_layer(x,y,"Gun",obj_EnemyWeapon);
@@ -84,4 +88,8 @@ if !dying && !isDead{
 
 if isDead{
 	sprite_index = spr_zombieDead
+}
+
+if sprite_index == spr_zombieDying && image_index > 10 && image_index < 13 && !audio_is_playing(fallsound){
+	audio_play_sound(fallsound,1,false,1,0,1)	
 }

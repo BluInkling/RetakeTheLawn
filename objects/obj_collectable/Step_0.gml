@@ -23,6 +23,7 @@ if type == "sun"{
 	if(moving == false && place_meeting(x,y,obj_player)){
 		with(obj_player){
 			hp += 3;
+			audio_play_sound(choose(snd_sun,snd_sun2,snd_sun3,snd_sun4),1,false)
 		}
 		instance_create_layer(x,y,"Gun",obj_uiSun)
 		//audio_sound_pitch(sunsfx,random_range(0.90,1.50))
@@ -39,6 +40,7 @@ if type == "stagnantsun"{
 	if(place_meeting(x,y,obj_player)){
 		with(obj_player){
 			hp += 3;
+			audio_play_sound(choose(snd_sun,snd_sun2,snd_sun3,snd_sun4),1,false)
 		}
 		//audio_sound_pitch(sunsfx,random_range(0.90,1.50))
 		//audio_play_sound(sunsfx,1,false)

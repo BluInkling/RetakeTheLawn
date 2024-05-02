@@ -78,6 +78,38 @@ function Destroy(_other){ //Will eventually add splat animation
 	instance_destroy()
 }
 
+peasounds = [peaHit,peaHit2,peaHit3]
+flingsounds = [flingHit,flingHit2,flingHit3]
+bubblesound = popsfx
+
+function PlaySoundSplat(){
+	if main.family == "pea"{
+		sound = peasounds[irandom_range(0,array_length(peasounds)-1)]
+		audio_sound_pitch(sound,random_range(0.90,1.40))
+		audio_play_sound(sound,1,false,0.9)
+		
+	}
+	else if main.family == "fling"{
+		sound = flingsounds[irandom_range(0,array_length(flingsounds)-1)]
+		audio_sound_pitch(sound,random_range(0.95,1.40))
+		if (butter == true) {
+			buttersound = snd_butter
+			audio_sound_pitch(buttersound,random_range(0.90,1.40))
+			audio_play_sound(buttersound,1,false,0.9,0,1)
+		} else {
+			audio_play_sound(sound,1,false,0.9)
+		}
+	}
+	//else if main.family == "bubble"{
+	//	sound = bubblesound
+	//	audio_sound_pitch(sound,random_range(0.80,1.40))
+	//	audio_sound_gain(sound,50,0)
+	//	audio_play_sound(sound,1,false)
+		
+	//}
+	
+}
+
 
 
 

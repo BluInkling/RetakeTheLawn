@@ -47,6 +47,11 @@ if (hits > 0)
 			ds_list_add(hitByAttack,hitID);
 			with (hitID)
 			{
+<<<<<<< Updated upstream
+=======
+				Hit(1)
+				audio_play_sound(choose(snd_eat,snd_eat2,snd_eat3),1,false,0.9)
+>>>>>>> Stashed changes
 				//show_debug_message("Ahh im hit")
 				hp--; // minus 1 //DEAR FUTURE MAX: make hp when u wake upaw
 				//flash = 3;

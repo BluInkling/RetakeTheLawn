@@ -20,6 +20,9 @@ if obj_Controller.cooldownSecondary[obj_Controller.secondary] == 0{
 if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable == true{
 	//show_debug_message("sub activated!")
 	//show_debug_message(sub)
+	audio_sound_pitch(throwsound,random_range(0.90,1.20))
+	
+	
 	if sub.wepname == "torchwood"{
 		//show_debug_message("torch activated!")
 		if (main.wepname == "peashooter" or main.wepname == "repeater" or main.wepname == "snowpea" or main.wepname == "threepeater") obj_MainWeapon.projtype = "flaming" //the sprites and projectile stats are changed in oProjectile
@@ -27,11 +30,13 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 		
 		//cooldown = 120
 		subavailable = false
+		audio_play_sound(choose(Ignite,Ignite2),1,false)
 		alarm_set(0,240)
 	}
 	if sub.wepname == "potatomine"{
 		//show_debug_message("potatomine activated!")
 		var aimDir = point_direction(obj_player.x,obj_player.y,mouse_x,mouse_y);
+		audio_play_sound(throwsound,1,false)
 		for (var i = 0; i < 3;i++){
 			var mine = instance_create_layer(obj_player.x,obj_player.y,"Player",obj_throwable)
 			mine.dist = point_distance(obj_player.x,obj_player.y,mouse_x,mouse_y)
@@ -42,8 +47,18 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 		subavailable = false
 		//alarm_set(0,cooldown)
 	}
+<<<<<<< Updated upstream
+=======
+	if sub.wepname == "cocoabean"{
+		obj_MainWeapon.image_speed = 2
+		subavailable = false
+		audio_play_sound(wakeup,1,false)
+		alarm[1] = 360
+	}
+>>>>>>> Stashed changes
 	if sub.wepname == "cherrybomb"{
 		//show_debug_message("potatomine activated!")
+		audio_play_sound(throwsound,1,false)
 		var aimDir = point_direction(obj_player.x,obj_player.y,mouse_x,mouse_y);
 			var bomb = instance_create_layer(obj_player.x,obj_player.y,"Player",obj_throwable)
 			bomb.dist = point_distance(obj_player.x,obj_player.y,mouse_x,mouse_y)
@@ -56,6 +71,7 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 	}
 	if sub.wepname == "iceberglettuce"{
 		//show_debug_message("potatomine activated!")
+		audio_play_sound(throwsound,1,false)
 		var aimDir = point_direction(obj_player.x,obj_player.y,mouse_x,mouse_y);
 			var letti = instance_create_layer(obj_player.x,obj_player.y,"Player",obj_throwable)
 			letti.dist = point_distance(obj_player.x,obj_player.y,mouse_x,mouse_y)

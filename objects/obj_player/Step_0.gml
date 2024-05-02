@@ -52,6 +52,8 @@ if !place_meeting(x,y+yVel,obj_wall){
 }
 
 if hp < 1 && !dead{
+	audio_play_sound(NOOO,2,false)
 	dead = true
 	obj_endController.End()
 }
+

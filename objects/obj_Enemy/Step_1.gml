@@ -30,6 +30,7 @@ if !place_meeting(x,y+yVel,obj_wall){
 if (hp <= 0 && !dying)
 {
 	dying = true
+	audio_play_sound(snd_gibPop,1,false,0.9,0,random_range(0.8,1.2))
 	if (instance_exists(egun)) instance_destroy(egun)
 	image_index = 0
 	SpawnHead(spr_zombieHead)

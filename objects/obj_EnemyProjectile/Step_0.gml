@@ -13,6 +13,7 @@ if place_meeting(x,y,obj_wall){
 if place_meeting(x,y,obj_player){
 		with(obj_player){
 			Hit(1)
+			audio_play_sound(HitEffectiveCommon02,1,false,1,0,random_range(0.90,1.20))
 		}
 		//enemy.Hit(damage,type,moveDir)
 		Destroy()

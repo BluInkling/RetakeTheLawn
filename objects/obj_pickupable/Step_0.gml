@@ -26,7 +26,12 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 		} 
 		if (kindofpickup == "sun"){
 			with(obj_player) hp += 3;
+<<<<<<< Updated upstream
 			show_debug_message("Sun healed!")
+=======
+			audio_play_sound(choose(snd_sun,snd_sun2,snd_sun3,snd_sun4),1,false)
+			//show_debug_message("Sun healed!")
+>>>>>>> Stashed changes
 		}
 		
 		instance_destroy();

@@ -4,6 +4,7 @@
 
 if keyboard_check_pressed(ord("P")){
 	paused = !paused;
+	audio_play_sound(pause,1,false)
 	if paused == false{
 		instance_activate_all();
 		surface_free(paused_surf);

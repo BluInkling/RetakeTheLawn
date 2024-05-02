@@ -17,6 +17,7 @@ projstats = {
 		movespeed : 7,
 		lifetime: 15,//20,
 		damage : 2,
+		family : "pea"
 	},
 	snow :
 	{
@@ -26,6 +27,7 @@ projstats = {
 		movespeed : 7,
 		lifetime: 15,//20,
 		damage : 2,
+		family : "pea"
 	},
 	cabbage :
 	{
@@ -35,6 +37,7 @@ projstats = {
 		movespeed : 8,
 		lifetime: 20,
 		damage : 3.5,
+		family : "fling"
 	},
 	kernel :
 	{
@@ -44,6 +47,7 @@ projstats = {
 		movespeed : 8,
 		lifetime: 20,
 		damage : 2,
+		family : "fling"
 	},
 	butter :
 	{
@@ -53,24 +57,39 @@ projstats = {
 		movespeed : 7,
 		lifetime: 20,
 		damage : 2.5,
+		family : "fling"
 	},
 	bigbubble :
 	{
 		mainsprite : spr_bubbleBig,
 		splatsprite : spr_bubbleBigDisp,
 		dispsprite : spr_bubbleBigDisp,
+<<<<<<< Updated upstream
 		movespeed : 8,
 		lifetime: 13,//20,
 		damage : 1,
+=======
+		movespeed : 4,
+		lifetime: 8,//20,
+		damage : 1.25,
+		family : "bubble"
+>>>>>>> Stashed changes
 	},
 	smallbubble :
 	{
 		mainsprite : spr_bubbleSmall,
 		splatsprite : spr_bubbleSmallDisp,
 		dispsprite : spr_bubbleSmallDisp,
+<<<<<<< Updated upstream
 		movespeed : 10,
 		lifetime: 11,//20,
 		damage : 0.5,
+=======
+		movespeed : 6,
+		lifetime: 10,//20,
+		damage : 0.75,
+		family : "bubble"
+>>>>>>> Stashed changes
 	}
 }
 
@@ -94,7 +113,15 @@ weaponstats = {
 		shootFrames : [1],
 		projOffsetX : 2,
 		projOffsetY : -5,
+<<<<<<< Updated upstream
 		chargeable : false
+=======
+		chargeable : false,
+		secondammo : false,
+		showname : "Peashooter",
+		desc : "Reliable all-arounder",
+		family : "pea"
+>>>>>>> Stashed changes
 	},
 	repeater : 
 	{
@@ -113,7 +140,15 @@ weaponstats = {
 		shootFrames : [1,2],
 		projOffsetX : 2,
 		projOffsetY : -5,
+<<<<<<< Updated upstream
 		chargeable : false
+=======
+		chargeable : false,
+		secondammo : false,
+		showname : "Repeater",
+		desc : "Fires two peas at a time!",
+		family : "pea"
+>>>>>>> Stashed changes
 	},
 	snowpea : 
 	{
@@ -132,7 +167,15 @@ weaponstats = {
 		shootFrames : [1],
 		projOffsetX : 2,
 		projOffsetY : -5,
+<<<<<<< Updated upstream
 		chargeable : false
+=======
+		chargeable : false,
+		secondammo : false,
+		showname : "Snow Pea",
+		desc : "Shoots frozen peas that slow zombies",
+		family : "pea"
+>>>>>>> Stashed changes
 	},
 	threepeater : 
 	{
@@ -151,7 +194,15 @@ weaponstats = {
 		shootFrames : [1],
 		projOffsetX : 2,
 		projOffsetY : -5,
+<<<<<<< Updated upstream
 		chargeable : false
+=======
+		chargeable : false,
+		secondammo : false,
+		showname : "Threepeater",
+		desc : "Fires three peas at a time in a wide spread",
+		family : "pea"
+>>>>>>> Stashed changes
 	},
 	cabbagepult : 
 	{
@@ -174,6 +225,7 @@ weaponstats = {
 		projOffsetY : -5,
 		chargeable : true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		chargetime : 30
 		
 	}
@@ -181,6 +233,13 @@ weaponstats = {
 =======
 		chargetime : 30,//30,
 		secondammo : false //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+=======
+		chargetime : 35,//30,
+		secondammo : false, //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+		showname : "Cabbage-pult",
+		desc : "Chargeable, fully charged shots pierce enemies",
+		family : "fling"
+>>>>>>> Stashed changes
 	},
 	kernelpult : 
 	{
@@ -198,7 +257,14 @@ weaponstats = {
 		projOffsetY : -5,
 		chargeable : true,
 		chargetime : 35,//30,
+<<<<<<< Updated upstream
 		secondammo : projstats.butter //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+=======
+		secondammo : projstats.butter, //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
+		showname : "Kernel-pult",
+		desc : "Chargeable, fully charged shots butter enemies",
+		family : "fling"
+>>>>>>> Stashed changes
 	},	
 	fumeshroom : 
 	{
@@ -213,7 +279,14 @@ weaponstats = {
 		projOffsetX : 2,
 		projOffsetY : -2,
 		chargeable : false,
+<<<<<<< Updated upstream
 		secondammo : projstats.smallbubble
+=======
+		secondammo : projstats.smallbubble,
+		showname : "Fume-shroom",
+		desc : "Shoots lots of bubbles in a small range, pierceing enemies",
+		family : "bubble"
+>>>>>>> Stashed changes
 	},
 	puffshroom : 
 	{
@@ -228,8 +301,34 @@ weaponstats = {
 		projOffsetX : 3,
 		projOffsetY : -2,
 		chargeable : false,
+<<<<<<< Updated upstream
 		secondammo : false
 	}
+>>>>>>> Stashed changes
+=======
+		secondammo : false,
+		showname : "Puff-shrooms",
+		desc : "Dual-wield, rapidly shoots bubbles in a small range",
+		family : "bubble"
+	},
+	gatlingpea : 
+	{
+		wepname : "gatlingpea",
+		mainidlesprite : spr_gatlingPeaIdle,
+		mainreloadsprite : spr_gatlingPeaReload,
+		mainshootsprite : spr_gatlingPeaShoot,
+		projtype : projstats.pea,
+		accuracy : 20,
+		clip : 8,
+		shootFrames : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+		projOffsetX : 2,
+		projOffsetY : -5,
+		chargeable : false,
+		secondammo : false,
+		showname : "Gatling Pea",
+		desc : "Shoots lots of peas in bursts, but unreliable at long range",
+		family : "pea"
+	},
 >>>>>>> Stashed changes
 }
 
@@ -394,4 +493,17 @@ zombieHeadAnims = { //Storing it here for now
 }
 
 
+<<<<<<< Updated upstream
 
+=======
+//UI
+instance_create_depth(0,0,0,obj_uiHeart)
+instance_create_depth(0,0,0,obj_uiMainPocket)
+instance_create_depth(0,0,0,obj_uiSubPocket)
+instance_create_depth(0,0,0,obj_uiPickupDesc)
+
+
+//UNCOMMENT FOR BEGINNING COUNTDOWN
+//instance_create_layer(0,0,"Player",obj_countdown)
+obj_player.hascontrol = true
+>>>>>>> Stashed changes

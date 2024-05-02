@@ -98,6 +98,7 @@ if hat == "cone"{
 
 function Hit(damage,type,dir){
 	if armor > 0{ //if has armor
+		PlaySoundHit()
 		armor -= damage//armor takes damage
 		if armor <= 0{ //if no more armor
 			hasHat = false
@@ -113,8 +114,16 @@ function Hit(damage,type,dir){
 	}
 
 	if hasHand && hp <= enemyType.hp/2{
+<<<<<<< Updated upstream
 		hasHand = false
 		instance_create_layer(x-2*image_xscale,y-8,"Bullets",obj_zombieGib)
+=======
+		if enemyType != obj_Controller.enemystats.imp{
+			audio_play_sound(snd_gibPop,1,false,0.9,0,random_range(0.8,1.2))
+			hasHand = false
+			instance_create_layer(x-2*image_xscale,y-8,"Bullets",obj_zombieGib)
+		}
+>>>>>>> Stashed changes
 	}
 	flashAlpha = 1;
 <<<<<<< Updated upstream
@@ -124,6 +133,7 @@ function Hit(damage,type,dir){
 		spd = 0;
 		hasButter = true;
 		alarm_set(0,stunLength)
+		
 	}
 	if type == obj_Controller.projstats.snow{
 >>>>>>> Stashed changes
@@ -162,7 +172,17 @@ function SpawnHat(){
 }
 
 function SpawnHead(spr){
+<<<<<<< Updated upstream
 	var head = instance_create_layer(x+4*image_xscale,y-16,"Bullets",obj_zombieGib)
+=======
+	
+	if enemyType != obj_Controller.enemystats.imp{
+		var head = instance_create_layer(x+4*image_xscale,y-16,"Bullets",obj_zombieGib)
+	}else{
+		var head = instance_create_layer(x+4*image_xscale,y-8,"Bullets",obj_zombieGib)
+		head.yVel = random_range(-3,-1.5)
+	}
+>>>>>>> Stashed changes
 	head.sprite_index = spr
 	head.image_xscale = image_xscale
 	head.height = y
@@ -191,3 +211,24 @@ function Freeze(){
 	alarm_set(0,200)
 }
 
+bucketsounds = [snd_buckethit,snd_buckethit2]
+conesounds = [snd_conehit,snd_conehit2]
+
+
+function PlaySoundHit(){
+	if hat == "bucket" or hat == "armyhat"{
+		sound = bucketsounds[irandom_range(0,array_length(bucketsounds)-1)]
+		audio_sound_pitch(sound,random_range(0.90,1.40))
+		audio_play_sound(sound,1,false,0.9)
+		
+	}
+	else if hat == "cone"{
+		sound = conesounds[irandom_range(0,array_length(conesounds)-1)]
+		audio_sound_pitch(sound,random_range(0.90,1.40))
+		audio_play_sound(sound,1,false,0.9)
+		
+	}
+}
+
+groansounds = [Groan,Groan2,Groan3,Groan4,Groan5,Groan6,Groan7,Groan8]
+fallsound = choose(zombie_falling_1,zombie_falling_2,bodyfall,bodyfall2)
