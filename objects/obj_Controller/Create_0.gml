@@ -283,37 +283,31 @@ subweaponstats = {
 		desc : "Throws an Ice-shroom that slows enemies on contact"
 	}
 }
-/*
-if !instance_exists(obj_inventoryTracker){
-	instance_create_depth(0,0,0,obj_inventoryTracker)
-	//obj_inventoryTracker.primaryInv = [weaponstats.peashooter]
-	obj_inventoryTracker.ammo = [weaponstats.peashooter.clip]
-	obj_inventoryTracker.secondaryInv = [subweaponstats.torchwood]
-	obj_inventoryTracker.cool = [0]
-}
 
 if array_length(global.primaryInventory) == 0{
 	global.primaryInventory = [weaponstats.peashooter]
 	global.ammoPrimary = [weaponstats.peashooter.clip]
 	global.secondaryInventory = [subweaponstats.torchwood]
-	global.subCooldown = [0]
+	global.cooldownSecondary = [0]
 }
-*/
-inventoryPrimary = [weaponstats.peashooter]
-ammoPrimary = [weaponstats.peashooter.clip]
-inventorySecondary = [subweaponstats.torchwood]
-cooldownSecondary = [0]
-/*
-inventoryPrimary = obj_inventoryTracker.primaryInv
-//show_debug_message(obj_inventoryTracker.primaryInv)
-ammoPrimary = variable_clone(obj_inventoryTracker.ammo)
-//inventoryPrimary = [weaponstats.peashooter] //OK this is the weirdest bug I've ever had, if this line doesnt exist global.primaryInventory keeps updating uncontrolably
-//ammoPrimary = [weaponstats.puffshroom.clip]
 
-//inventorySecondary = [subweaponstats.potatomine,subweaponstats.torchwood]
-inventorySecondary = variable_clone(obj_inventoryTracker.secondaryInv)
-cooldownSecondary = variable_clone(obj_inventoryTracker.cool)
-*/
+function InvSetup(_prim,_ammo,_sec,_cool){ // DO NOT TOUCH, I DON'T KNOW WHY THIS WORKS BUT IT DOES
+	var test = [0]
+	array_copy(test,0,_prim,0,array_length(_prim))
+	inventoryPrimary = test
+	var test2 = [0]
+	array_copy(test2,0,_ammo,0,array_length(_ammo))
+	ammoPrimary = test2
+	var test3 = [0]
+	array_copy(test3,0,_sec,0,array_length(_sec))
+	inventorySecondary = test3
+	var test4 = [0]
+	array_copy(test4,0,_cool,0,array_length(_cool))
+	cooldownSecondary = test4
+}
+InvSetup(global.primaryInventory,global.ammoPrimary,global.secondaryInventory,global.subCooldown)
+show_debug_message(inventoryPrimary)
+//show_debug_message(inventoryPrimary)
 primary = 0
 secondary = 0
 
@@ -325,6 +319,7 @@ subInventorySpace = 2
 
 mainweapon = inventoryPrimary[primary]
 subweapon = inventorySecondary[secondary]
+
 
 
 //subweapon = "torchwood"

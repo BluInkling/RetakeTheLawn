@@ -12,6 +12,9 @@ if place_meeting(x,y,obj_player){
 	obj_inventoryTracker.cool = obj_Controller.cooldownSecondary
 	show_debug_message(obj_inventoryTracker.primaryInv)
 	*/
+	//global.test = obj_Controller.testA
+	global.primaryInventory = obj_Controller.inventoryPrimary
+	global.ammoPrimary = obj_Controller.ammoPrimary
 	room_goto(global.roomOrder[global.levelProgress])
 }
 

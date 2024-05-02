@@ -53,3 +53,4 @@ switch(subweapon){
 		break;
 }
 */
+//show_debug_message(global.test)

@@ -22,6 +22,8 @@ global.ammoPrimary = []
 global.secondaryInventory = []
 global.subCooldown = []
 
+//global.test = []
+
 //Tutorial Progress
 global.hasDoneTutorial = false
 global.hasNewMain = false

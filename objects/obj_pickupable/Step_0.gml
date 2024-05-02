@@ -21,6 +21,13 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 				}
 				array_push(obj_Controller.inventoryPrimary,type)
 				array_push(obj_Controller.ammoPrimary,savedStat)
+				//obj_Controller.tempPrim = obj_Controller.inventoryPrimary
+				//obj_Controller.tempAmmo = obj_Controller.ammoPrimary
+				/*
+				show_debug_message(obj_Controller.tempPrim)
+				show_debug_message(global.primaryInventory)
+				show_debug_message("")
+				*/
 				obj_MainWeapon.GotoPrimary(array_length(obj_Controller.inventoryPrimary)-1)
 				if !global.hasNewMain{
 					obj_uiTutorial.NewMain()
