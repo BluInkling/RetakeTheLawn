@@ -103,7 +103,7 @@ function Destroy(_other){ //Will eventually add splat animation
 }
 
 peasounds = [peaHit,peaHit2,peaHit3]
-flingsounds = [flingHit,flingHit2,flingHit3]
+flingsounds = [flingHit,/*flingHit2,*/flingHit3]
 bubblesound = popsfx
 
 function PlaySoundSplat(){

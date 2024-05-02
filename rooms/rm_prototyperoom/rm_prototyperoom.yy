@@ -301,7 +301,6 @@
     {"name":"inst_4AC49F11","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},
     {"name":"inst_3BD6BC08","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},
     {"name":"inst_26CE905B","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},
-    {"name":"inst_7E0AA723","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},
     {"name":"inst_7F9DDEBE","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},
     {"name":"inst_66108C5C","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},
     {"name":"inst_1DD4453","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},

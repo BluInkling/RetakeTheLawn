@@ -5,16 +5,16 @@ conehead = obj_Controller.enemystats.conehead
 buckethead = obj_Controller.enemystats.buckethead
 soldier = obj_Controller.enemystats.footsoldier
 flag = obj_Controller.enemystats.flagzombie
-imp = obj_Controller.enemystats.imp
+impA = obj_Controller.enemystats.imp
 
 ds_list_add(waves,[0,obj_Enemy,0,0,flag]);
 ds_list_add(waves,[0,obj_Enemy,0,50,flag]);
 ds_list_add(waves,[0,obj_Enemy,0,0,soldier]);
 ds_list_add(waves,[0,obj_Enemy,0,50,soldier]);
 ds_list_add(waves,[0,obj_Enemy,0,0,basic]);
-ds_list_add(waves,[0,obj_Enemy,0,50,imp]);
-ds_list_add(waves,[0,obj_Enemy,0,50,imp]);
-ds_list_add(waves,[0,obj_Enemy,0,50,imp]);
+ds_list_add(waves,[0,obj_Enemy,0,50,impA]);
+ds_list_add(waves,[0,obj_Enemy,0,50,impA]);
+ds_list_add(waves,[0,obj_Enemy,0,50,impA]);
 ds_list_add(waves,[0,obj_Enemy,0,50,conehead]);
 ds_list_add(waves,[0,obj_Enemy,0,0,buckethead]);
 ds_list_add(waves,[0,obj_Enemy,0,50,buckethead]);
@@ -35,9 +35,9 @@ ds_list_add(waves,[2,obj_Enemy,0,0,soldier]);
 ds_list_add(waves,[2,obj_Enemy,0,0,soldier]);
 ds_list_add(waves,[2,obj_Enemy,0,0,flag]);
 ds_list_add(waves,[2,obj_Enemy,0,0,flag]);
-ds_list_add(waves,[0,obj_Enemy,0,50,imp]);
-ds_list_add(waves,[0,obj_Enemy,0,50,imp]);
-ds_list_add(waves,[0,obj_Enemy,0,50,imp]);
+ds_list_add(waves,[0,obj_Enemy,0,50,impA]);
+ds_list_add(waves,[0,obj_Enemy,0,50,impA]);
+ds_list_add(waves,[0,obj_Enemy,0,50,impA]);
 ds_list_add(waves,[2,obj_Enemy,0,100,buckethead]);
 ds_list_add(waves,[2,obj_Enemy,0,100,buckethead]);
 ds_list_add(waves,[2,obj_Enemy,0,300,soldier]);
