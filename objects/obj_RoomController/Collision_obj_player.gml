@@ -4,6 +4,9 @@
 if(triggered == false){
 	//close doors and stop from retriggering
 	with(obj_Door) closed = true;
+	with(obj_Music) switchMusic = true;
+	with(obj_player) inBattle = true;
+	audio_play_sound(zombiesWereComing,1,false,0.9)
 	//instance_create_layer(x+irandom_range(-10,10),y+irandom_range(-10,10),"Walls",obj_enviornmentPlant)
 	triggered = true
 	

@@ -13,6 +13,7 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 		if type == "wallnut"{
 			with(obj_player){
 				wallnutArmor = 1
+				audio_play_sound(PLANT_WALLNUT_1,1,false)
 			}
 			if !global.hasCollected{
 				global.hasCollected = true
@@ -23,6 +24,7 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 		if type == "pumpkin"{
 			with(obj_player){
 				pumpkinArmor = 1;
+				audio_play_sound(PLANT_WALLNUT_1,1,false)
 			}
 			if !global.hasCollected{
 				global.hasCollected = true
@@ -34,6 +36,7 @@ if(collision_circle(x,y,16,obj_player,false,false)){
 }else{
 	draw = false
 }
+
 if type == "wallnut"{
 	sprite_index = spr_wallnut
 }

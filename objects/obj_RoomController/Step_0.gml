@@ -23,6 +23,9 @@ if(triggered)
 		if(current_wave == total_waves){
 			with (obj_Door) closed = false;
 			with(obj_Gravestone) crumble();
+			with(obj_player) inBattle = false;
+			with(obj_Music) switchMusic = true;
+			audio_play_sound(winmusic,1,false) //maybe another sound... its too long
 			//with(obj_enviornmentPlant) instance_destroy();
 			instance_create_layer(obj_player.x,obj_player.y+4,"Walls",obj_enviornmentPlant)
 			instance_destroy();

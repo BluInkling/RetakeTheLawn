@@ -34,11 +34,13 @@ switch(sub.wepname){
 				z=(-1*power(step,2)+step)*175
 				if step > 1{
 					state = "landed"
+					audio_play_sound(potatomineInground,1,false)
 					image_index = 0
 				}
 				break;
 			case "landed":
 				//show_debug_message("landed")
+				
 				sprite_index = spr_potatomineEmerge
 				if image_index >= image_number -1{
 					//show_debug_message("chnage to waiting")
@@ -50,10 +52,12 @@ switch(sub.wepname){
 				sprite_index = spr_potatomineIdle
 				if(collision_circle(x,y-10,4,obj_zombieHitbox,false,false)){
 					state = "explode"
+					audio_play_sound(potato_mine,1,false)
 					image_index = 0
 				}
 				break;
 			case "explode":
+				
 				//show_debug_message("exploding")
 				sprite_index = spr_potatomineExplode
 				ProcessExplosion()
@@ -76,22 +80,26 @@ switch(sub.wepname){
 					x += xVel
 				}else{
 					state = "explode"
+					audio_play_sound(cherrybomb,1,false,1,0,random_range(0.90,1.20))
 					image_index = 0
 				}
 				if !place_meeting(x,y+yVel,obj_wall){
 					y += yVel
 				}else{
 					state = "explode"
+					audio_play_sound(cherrybomb,1,false,1,0,random_range(0.90,1.20))
 					image_index = 0
 				}
 				if place_meeting(x,y,obj_zombieHitbox){
 					state = "explode"
+					audio_play_sound(cherrybomb,1,false,1,0,random_range(0.90,1.20))
 					image_index = 0
 				}
 				drawX = x
 				drawY = y
 				if step > 1{
 					state = "explode"
+					audio_play_sound(cherrybomb,1,false,1,0,random_range(0.90,1.20))
 					image_index = 0
 				}
 				break;
@@ -117,22 +125,26 @@ switch(sub.wepname){
 				if !place_meeting(x+xVel,y,obj_wall){
 					x += xVel
 				}else{
+					audio_play_sound(freezeSound,1,false,1,0,random_range(0.90,1.20))
 					state = "explode"
 					image_index = 0
 				}
 				if !place_meeting(x,y+yVel,obj_wall){
 					y += yVel
 				}else{
+					audio_play_sound(freezeSound,1,false,1,0,random_range(0.90,1.20))
 					state = "explode"
 					image_index = 0
 				}
 				if place_meeting(x,y,obj_zombieHitbox){
+					audio_play_sound(freezeSound,1,false,1,0,random_range(0.90,1.20))
 					state = "explode"
 					image_index = 0
 				}
 				drawX = x
 				drawY = y
 				if step > 1{
+					audio_play_sound(freezeSound,1,false,1,0,random_range(0.90,1.20))
 					state = "explode"
 					image_index = 0
 				}

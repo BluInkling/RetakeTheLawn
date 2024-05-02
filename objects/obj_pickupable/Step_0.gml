@@ -65,6 +65,7 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 		} 
 		if (kindofpickup == "sun"){
 			with(obj_player) hp += 3;
+			audio_play_sound(choose(snd_sun,snd_sun2,snd_sun3,snd_sun4),1,false)
 			//show_debug_message("Sun healed!")
 		}
 		part_system_destroy(part)

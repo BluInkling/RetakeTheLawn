@@ -16,6 +16,7 @@ projstats = {
 		movespeed : 7,
 		lifetime: 15,//20,
 		damage : 2,
+		family : "pea"
 	},
 	snow :
 	{
@@ -25,6 +26,7 @@ projstats = {
 		movespeed : 7,
 		lifetime: 15,//20,
 		damage : 2,
+		family : "pea"
 	},
 	cabbage :
 	{
@@ -34,6 +36,7 @@ projstats = {
 		movespeed : 8,
 		lifetime: 20,
 		damage : 3.5,
+		family : "fling"
 	},
 	kernel :
 	{
@@ -43,6 +46,7 @@ projstats = {
 		movespeed : 8,
 		lifetime: 20,
 		damage : 2,
+		family : "fling"
 	},
 	butter :
 	{
@@ -52,6 +56,7 @@ projstats = {
 		movespeed : 7,
 		lifetime: 20,
 		damage : 2.5,
+		family : "fling"
 	},
 	bigbubble :
 	{
@@ -61,6 +66,7 @@ projstats = {
 		movespeed : 4,
 		lifetime: 8,//20,
 		damage : 1.25,
+		family : "bubble"
 	},
 	smallbubble :
 	{
@@ -70,6 +76,7 @@ projstats = {
 		movespeed : 6,
 		lifetime: 10,//20,
 		damage : 0.75,
+		family : "bubble"
 	}
 }
 
@@ -90,7 +97,8 @@ weaponstats = {
 		chargeable : false,
 		secondammo : false,
 		showname : "Peashooter",
-		desc : "Reliable all-arounder"
+		desc : "Reliable all-arounder",
+		family : "pea"
 	},
 	repeater : 
 	{
@@ -107,7 +115,8 @@ weaponstats = {
 		chargeable : false,
 		secondammo : false,
 		showname : "Repeater",
-		desc : "Fires two peas at a time!"
+		desc : "Fires two peas at a time!",
+		family : "pea"
 	},
 	snowpea : 
 	{
@@ -124,7 +133,8 @@ weaponstats = {
 		chargeable : false,
 		secondammo : false,
 		showname : "Snow Pea",
-		desc : "Shoots frozen peas that slow zombies"
+		desc : "Shoots frozen peas that slow zombies",
+		family : "pea"
 	},
 	threepeater : 
 	{
@@ -141,7 +151,8 @@ weaponstats = {
 		chargeable : false,
 		secondammo : false,
 		showname : "Threepeater",
-		desc : "Fires three peas at a time in a wide spread"
+		desc : "Fires three peas at a time in a wide spread",
+		family : "pea"
 	},
 	cabbagepult : 
 	{
@@ -161,7 +172,8 @@ weaponstats = {
 		chargetime : 35,//30,
 		secondammo : false, //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
 		showname : "Cabbage-pult",
-		desc : "Chargeable, fully charged shots pierce enemies"
+		desc : "Chargeable, fully charged shots pierce enemies",
+		family : "fling"
 	},
 	kernelpult : 
 	{
@@ -181,7 +193,8 @@ weaponstats = {
 		chargetime : 35,//30,
 		secondammo : projstats.butter, //FOR USE IN THE FUME SHROOM AND KERNEL PULT TO DEFINE SECONDARY AMMO AND AMMO TYPE/CHANCE
 		showname : "Kernel-pult",
-		desc : "Chargeable, fully charged shots butter enemies"
+		desc : "Chargeable, fully charged shots butter enemies",
+		family : "fling"
 	},	
 	fumeshroom : 
 	{
@@ -198,7 +211,8 @@ weaponstats = {
 		chargeable : false,
 		secondammo : projstats.smallbubble,
 		showname : "Fume-shroom",
-		desc : "Shoots lots of bubbles in a small range, pierceing enemies"
+		desc : "Shoots lots of bubbles in a small range, pierceing enemies",
+		family : "bubble"
 	},
 	puffshroom : 
 	{
@@ -215,7 +229,8 @@ weaponstats = {
 		chargeable : false,
 		secondammo : false,
 		showname : "Puff-shrooms",
-		desc : "Dual-wield, rapidly shoots bubbles in a small range"
+		desc : "Dual-wield, rapidly shoots bubbles in a small range",
+		family : "bubble"
 	},
 	gatlingpea : 
 	{
@@ -224,7 +239,7 @@ weaponstats = {
 		mainreloadsprite : spr_gatlingPeaReload,
 		mainshootsprite : spr_gatlingPeaShoot,
 		projtype : projstats.pea,
-		accuracy : 25,
+		accuracy : 20,
 		clip : 8,
 		shootFrames : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
 		projOffsetX : 2,
@@ -232,7 +247,8 @@ weaponstats = {
 		chargeable : false,
 		secondammo : false,
 		showname : "Gatling Pea",
-		desc : "Shoots lots of peas in bursts, but unreliable at long range"
+		desc : "Shoots lots of peas in bursts, but unreliable at long range",
+		family : "pea"
 	},
 }
 
@@ -491,3 +507,7 @@ instance_create_depth(0,0,0,obj_uiMainPocket)
 instance_create_depth(0,0,0,obj_uiSubPocket)
 instance_create_depth(0,0,0,obj_uiPickupDesc)
 instance_create_depth(0,0,0,obj_uiTutorial)
+
+//UNCOMMENT FOR BEGINNING COUNTDOWN
+//instance_create_layer(0,0,"Player",obj_countdown)
+obj_player.hascontrol = true

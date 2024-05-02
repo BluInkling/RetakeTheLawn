@@ -22,6 +22,50 @@ bubblesShot = 0
 
 puffCheck = 1
 
+peasounds = [snd_peashoot,snd_peashoot2]
+flingsounds =[flingFling,flingFling2,flingFling3]
+fumesounds = [Fume]
+puffsounds =[Puff]
+
+function PlaySound(type){
+	if main.family == "pea"{
+		sound = peasounds[irandom_range(0,array_length(peasounds)-1)]
+		audio_sound_pitch(sound,random_range(0.90,1.40))
+		if main.wepname == "snowpea"{
+			sparklesound = Snow_pea_sparkles
+			audio_sound_pitch(sparklesound,random_range(0.90,1.40))
+			audio_play_sound(sparklesound,1,false,0.9,0,1)
+			audio_play_sound(sound,1,false,0.9,0,1)
+		} else {
+			audio_play_sound(sound,1,false,0.9)
+		}
+	}
+	else if main.family == "fling"{
+		sound = flingsounds[irandom_range(0,array_length(flingsounds)-1)]
+		audio_sound_pitch(sound,random_range(0.95,1.40))
+		if (type == "butter") {
+			//buttersound = snd_butter
+			//audio_sound_pitch(buttersound,random_range(0.90,1.40))
+			//audio_play_sound(buttersound,1,false,0.9,0,1)
+			audio_sound_pitch(sound,random_range(0.70,.80))
+			audio_play_sound(sound,1,false,0.9,0,1)
+		} else {
+			audio_play_sound(sound,1,false,0.9)
+		}
+	}
+	else if main.family == "bubble"{
+		sound = fumesounds[irandom_range(0,array_length(fumesounds)-1)]
+		audio_sound_pitch(sound,random_range(0.90,1.40))
+		if (type == "small") {
+			puffsound = Puff
+			audio_sound_pitch(puffsound,random_range(0.90,1.30))
+			audio_play_sound(puffsound,1,false,0.9,0,1)
+		} else {
+			audio_play_sound(sound,1,false,0.9)
+		}
+	}
+	
+}
 
 function ShootProjectile(){
 
@@ -38,13 +82,15 @@ function ShootProjectile(){
 			if percentagecharged == 1{
 				if (main.wepname == "cabbagepult"){
 					piercing = true
+					with(other) PlaySound("");
 				}
 				if (main.wepname == "kernelpult"){
 					type = main.secondammo
 					sprite_index = type.mainsprite
 					butter = true;
-					//show_debug_message(type)
+					with(other) PlaySound("butter");
 				}
+				
 			} else if(percentagecharged < 1){
 				if (main.wepname == "kernelpult"){
 					var num = irandom_range(0,100)
@@ -52,8 +98,9 @@ function ShootProjectile(){
 						type = main.secondammo
 						sprite_index = type.mainsprite
 						butter = true;
-					} 
-				}
+						with(other) PlaySound("butter");
+					} else with(other) PlaySound("");
+				} else with(other) PlaySound("");
 			}
 		}
 		counter = 0
@@ -70,6 +117,12 @@ function ShootProjectile(){
 		}
 		else{
 		var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
+		}
+		if main.family != "bubble"{
+			PlaySound("");
+		}
+		else if main.wepname == "puffshroom"{
+			PlaySound("small");
 		}
 	}
 }
@@ -98,6 +151,7 @@ flaming = false
 flamePS = noone
 
 function ChangePrimary(){
+	audio_play_sound(snd_selectpacket,1,false,1,0,random_range(0.9,1.2))
 	image_index = 0
 	reloading = false
 	shootavailable = true

@@ -19,6 +19,8 @@ if !main.chargeable{
 		//	puffCheck = puffCheck * -1
 		//}
 		image_index = 0
+		
+		
 		//var _x = x + lengthdir_x(60, image_angle - 0);
 		//var _y = y + lengthdir_y(60, image_angle - 0);
 		//instance_create_layer(_x, _y, "Bullets", oEffect);

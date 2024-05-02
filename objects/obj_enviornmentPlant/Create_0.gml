@@ -1,4 +1,4 @@
-
+audio_play_sound(choose(snd_plantplant,snd_plantplant2),1,false)
 
 type = choose("sunflower","wallnut","pumpkin")
 

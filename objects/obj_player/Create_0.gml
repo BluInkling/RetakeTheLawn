@@ -26,7 +26,8 @@ moving = false
 animIdle = spr_daveIdle
 animRun = spr_daveRun
 
-hascontrol = true;
+
+hascontrol = false;
 
 //how morbid!
 dead = false
@@ -34,7 +35,13 @@ dead = false
 cold = false;
 frozen = false;
 
+inBattle = false;
+inGarden = false;
+
+warned = false
+
 instance_create_layer(0,0,"Player",obj_Controller)
+instance_create_layer(1,0,"Player",obj_Music)
 instance_create_layer(0,0,"Gun",obj_MainWeapon)
 instance_create_layer(0,0,"Player",obj_SubWeapon)
 
