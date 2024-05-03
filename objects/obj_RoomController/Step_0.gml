@@ -23,6 +23,10 @@ if(triggered)
 		if(current_wave == total_waves){
 			with (obj_Door) closed = false;
 			with(obj_Gravestone) crumble();
+			with(obj_graveDoor){
+				breaking = true
+				image_index = 0
+			}
 			with(obj_player) inBattle = false;
 			with(obj_Music) switchMusic = true;
 			audio_play_sound(winmusic,1,false) //maybe another sound... its too long

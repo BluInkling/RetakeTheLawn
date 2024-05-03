@@ -42,6 +42,12 @@ if !place_meeting(x+xVel,y,obj_wall) && !place_meeting(x+xVel,y,obj_wallPool){
 		}
 	}
 	
+}else{
+	if place_meeting(x+xVel,y,obj_graveDoor){
+		if instance_nearest(x,y,obj_graveDoor).inactive{
+			x+=xVel
+		}
+	}
 }
 if !place_meeting(x,y+yVel,obj_wall) && !place_meeting(x,y+yVel,obj_wallPool){
 	if !place_meeting(x,y+yVel, obj_actor){
@@ -58,6 +64,12 @@ if !place_meeting(x,y+yVel,obj_wall) && !place_meeting(x,y+yVel,obj_wallPool){
 			_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
 		}
 		//y+=yVel
+	}
+}else{
+	if place_meeting(x,y+yVel,obj_graveDoor){
+		if instance_nearest(x,y,obj_graveDoor).inactive{
+			y+=yVel
+		}
 	}
 }
 

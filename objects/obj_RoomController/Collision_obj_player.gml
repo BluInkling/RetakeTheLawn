@@ -4,6 +4,11 @@
 if(triggered == false){
 	//close doors and stop from retriggering
 	with(obj_Door) closed = true;
+	with(obj_graveDoor){
+		inactive = false
+		spawning = true
+		image_index = 0
+	}
 	with(obj_Music) switchMusic = true;
 	with(obj_player) inBattle = true;
 	audio_play_sound(zombiesWereComing,1,false,0.9)
