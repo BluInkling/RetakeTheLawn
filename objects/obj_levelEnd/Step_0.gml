@@ -15,6 +15,7 @@ if place_meeting(x,y,obj_player){
 	//global.test = obj_Controller.testA
 	global.primaryInventory = obj_Controller.inventoryPrimary
 	global.ammoPrimary = obj_Controller.ammoPrimary
+	global.levelProgress += 1
 	room_goto(global.roomOrder[global.levelProgress])
 }
 

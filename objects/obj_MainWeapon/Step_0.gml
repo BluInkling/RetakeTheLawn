@@ -146,6 +146,12 @@ if keyboard_check_pressed(ord("Q")) || mouse_wheel_up() || mouse_wheel_down(){
 		}
 		mainweapon = inventoryPrimary[primary]
 	}
+
+	if switchAudio && array_length(obj_Controller.inventoryPrimary)>1{
+		switchAudio = false
+		alarm[4] = 8
+		audio_play_sound(snd_selectpacket,1,false,0.5,0,random_range(0.9,1.2))
+	}
 	ChangePrimary()
 }
 

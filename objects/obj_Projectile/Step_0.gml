@@ -24,9 +24,19 @@ if place_meeting(x,y,obj_zombieHitbox){
 			enemy.Hit(damage,type,moveDir,flaming)
 			array_push(piercingList,enemy)
 		}
+		if type == obj_Controller.projstats.butter{
+			type = obj_Controller.projstats.kernel
+			sprite_index = type.mainsprite //sets sprite to mainweapons normal proj sprite
+			splat = type.splatsprite
+			damage = type.damage
+			dispSpr = type.dispsprite
+			piercing = false
+		}
 	}else{
-		enemy.Hit(damage,type,moveDir,flaming)
-		Destroy()
+		if !array_contains(piercingList,enemy){
+			enemy.Hit(damage,type,moveDir,flaming)
+			Destroy()
+		}
 	}
 	//show_debug_message("Enemy hit!")
 }

@@ -2,6 +2,16 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"obj_uiTutorial","order":2,"path":"objects/obj_uiTutorial/obj_uiTutorial.yy",},
+    {"name":"obj_bushA","order":2,"path":"objects/obj_bushA/obj_bushA.yy",},
+    {"name":"spr_bushB","order":5,"path":"sprites/spr_bushB/spr_bushB.yy",},
+    {"name":"spr_skidB","order":2,"path":"sprites/spr_skidB/spr_skidB.yy",},
     {"name":"spr_impIdle","order":1,"path":"sprites/spr_impIdle/spr_impIdle.yy",},
+    {"name":"spr_bushC","order":6,"path":"sprites/spr_bushC/spr_bushC.yy",},
+    {"name":"spr_skidA","order":3,"path":"sprites/spr_skidA/spr_skidA.yy",},
+    {"name":"obj_bushB","order":3,"path":"objects/obj_bushB/obj_bushB.yy",},
+    {"name":"spr_parkSign","order":1,"path":"sprites/spr_parkSign/spr_parkSign.yy",},
+    {"name":"obj_propPark","order":1,"path":"objects/obj_propPark/obj_propPark.yy",},
+    {"name":"obj_bushC","order":4,"path":"objects/obj_bushC/obj_bushC.yy",},
+    {"name":"spr_bushA","order":4,"path":"sprites/spr_bushA/spr_bushA.yy",},
   ],
 }

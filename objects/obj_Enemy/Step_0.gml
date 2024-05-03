@@ -5,8 +5,8 @@
 event_inherited();
 if !dying && !isDead{
 	if !spawning{
-		if !frozen{
-		if enemyType.behavior = "ranged"{
+		if !frozen && !hasButter{
+		if enemyType.behavior == "ranged"{
 			switch (state){
 					case ENEMYSTATE.IDLE: EnemyState_Idle(); break;
 					//case ENEMYSTATE.CHASE: EnemyState_Chase(); break;

@@ -28,6 +28,7 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 				show_debug_message(global.primaryInventory)
 				show_debug_message("")
 				*/
+				audio_play_sound(choose(snd_plantplant,snd_plantplant2),1,false,1,0,random_range(0.9,1.2))
 				obj_MainWeapon.GotoPrimary(array_length(obj_Controller.inventoryPrimary)-1)
 				if !global.hasNewMain{
 					obj_uiTutorial.NewMain()
@@ -55,6 +56,7 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 				array_push(obj_Controller.inventorySecondary,type)
 				//show_debug_message(savedStat)
 				array_push(obj_Controller.cooldownSecondary,savedStat)
+				audio_play_sound(choose(snd_plantplant,snd_plantplant2),1,false,1,0,random_range(0.9,1.2))
 				obj_SubWeapon.GotoSecondary(array_length(obj_Controller.inventorySecondary)-1)
 				if !global.hasNewSub{
 					obj_uiTutorial.NewSub()

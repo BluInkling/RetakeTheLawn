@@ -61,7 +61,7 @@ function PlaySound(type){
 			audio_sound_pitch(puffsound,random_range(0.90,1.30))
 			audio_play_sound(puffsound,1,false,0.9,0,1)
 		} else {
-			audio_play_sound(sound,1,false,0.9)
+			audio_play_sound(sound,8,false,0.75)
 		}
 	}
 	
@@ -88,6 +88,7 @@ function ShootProjectile(){
 					type = main.secondammo
 					sprite_index = type.mainsprite
 					butter = true;
+					piercing = true
 					with(other) PlaySound("butter");
 				}
 				
@@ -150,8 +151,10 @@ chargeMax = false
 flaming = false
 flamePS = noone
 
+//Audio
+switchAudio = true
+
 function ChangePrimary(){
-	audio_play_sound(snd_selectpacket,1,false,1,0,random_range(0.9,1.2))
 	image_index = 0
 	reloading = false
 	shootavailable = true

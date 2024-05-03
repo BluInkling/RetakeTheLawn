@@ -55,14 +55,13 @@ if hasHat{
 
 
 if hasButter{
-	
-	if sprite_index == spr_zombieIdle{
+	if sprite_index == spr_zombieIdle || sprite_index == spr_zombieNoHandIdle || sprite_index == spr_zombieFlagIdle || sprite_index == spr_zombieIdleNoArms || sprite_index == spr_zombieNoHandFlagRun || sprite_index == spr_zombieFlagWave{
 		butterX = obj_Controller.zombieHeadAnims.idle.x[image_index]//*image_xscale
 		butterY = obj_Controller.zombieHeadAnims.idle.y[image_index]
-	}else if sprite_index == spr_zombieAttack{
+	}else if sprite_index == spr_zombieAttack || sprite_index == spr_zombieNoHandAttack{
 		butterX = obj_Controller.zombieHeadAnims.attack.x[image_index]//*image_xscale
 		butterY = obj_Controller.zombieHeadAnims.attack.y[image_index]
-	}else if sprite_index == spr_zombieRun{
+	}else if sprite_index == spr_zombieRun || sprite_index == spr_zombieNoHandRun || sprite_index == spr_zombieRunNoArms || sprite_index == spr_zombieFlagRun || sprite_index == spr_zombieNoHandFlagIdle{
 		butterX = obj_Controller.zombieHeadAnims.run.x[image_index]//*image_xscale
 		butterY = obj_Controller.zombieHeadAnims.run.y[image_index]
 	} else if sprite_index == spr_zombieSpawn{

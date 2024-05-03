@@ -123,6 +123,13 @@ function PlaySoundSplat(){
 		} else {
 			audio_play_sound(sound,1,false,0.9)
 		}
+	}else if main.family == "bubble"{
+		sound = peasounds[irandom_range(0,array_length(peasounds)-1)]
+		if !audio_is_playing(sound){
+			audio_sound_pitch(sound,random_range(0.90,1.40))
+			audio_play_sound(sound,4,false,0.25)
+		}
+		
 	}
 	//else if main.family == "bubble"{
 	//	sound = bubblesound

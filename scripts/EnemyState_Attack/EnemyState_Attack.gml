@@ -23,8 +23,10 @@ function EnemyState_Attack(){
 		sprite_index = enemyType.idlespr //shooting sprite?
 		counter += 1;
 		if(counter >= room_speed * 1){ //50% chance to start wandering every 3 seconds
-			with (egun){
-				Shoot();
+			if point_distance(x,y,obj_player.x,obj_player.y) < 180{
+				with (egun){
+					Shoot();
+				}
 			}
 			state = ENEMYSTATE.WANDER
 			counter = 0

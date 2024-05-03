@@ -55,7 +55,7 @@ projstats = {
 		dispsprite: spr_butterDisp,
 		movespeed : 7,
 		lifetime: 20,
-		damage : 2.5,
+		damage : 2,
 		family : "fling"
 	},
 	bigbubble :

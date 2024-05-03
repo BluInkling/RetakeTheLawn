@@ -18,7 +18,6 @@ function GotoSecondary(ind){
 	ChangeSecondary()
 }
 function ChangeSecondary(){
-	audio_play_sound(snd_selectpacket,1,false,1,0,random_range(0.9,1.2))
 	sub = obj_Controller.subweapon
 	sprite_index = sub.subidlesprite
 	//cooldown = obj_Controller.cooldownSecondary[secondary]

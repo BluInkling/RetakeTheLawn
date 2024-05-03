@@ -98,6 +98,9 @@ if keyboard_check_pressed(ord("E")) || keyboard_check_pressed(vk_shift){
 		subweapon = inventorySecondary[secondary]
 		
 	}
+	if !audio_is_playing(snd_selectpacket) && array_length(obj_Controller.inventorySecondary)>1{
+		audio_play_sound(snd_selectpacket,1,false,0.5,0,random_range(0.9,1.2))
+	}
 	ChangeSecondary()
 }
 
