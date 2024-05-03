@@ -32,6 +32,9 @@ if idle{
 }
 depth = obj_player.depth-50
 
+if drawcharging{
+	// draw_circular_bar(x ,y ,value, max, colour, radius, transparency, width)
+	draw_circular_bar(x ,y-24 ,counter, main.chargetime, c_white, 8, .75,5)
+}
+
 draw_self()
-
-

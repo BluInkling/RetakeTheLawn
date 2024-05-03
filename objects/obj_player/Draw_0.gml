@@ -29,3 +29,6 @@ if obj_MainWeapon.projtype = "flaming"{
 
 
 
+//if obj_MainWeapon.charging{
+//	draw_circular_bar(x ,y-16 ,obj_MainWeapon.percentagecharged * 100, 100, c_white, 50, 1, 100)
+//}

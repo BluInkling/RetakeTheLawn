@@ -21,6 +21,7 @@ if(triggered)
 	//next wave OR end spawner when all enemies have died
 	if (remaining[current_wave] <= 0){
 		if(current_wave == total_waves){
+			wavebar.fading = true
 			with (obj_Door) closed = false;
 			with(obj_Gravestone) crumble();
 			with(obj_player) inBattle = false;

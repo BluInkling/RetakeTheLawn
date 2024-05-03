@@ -76,8 +76,21 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"imp","folderPath":"folders/Sprites/zombies/imp.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+<<<<<<< Updated upstream
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player SOunds","folderPath":"folders/Sounds/Player SOunds.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SUKBIHR","folderPath":"folders/Sounds/Zombie Sounds/Groans/SUKBIHR.yy",},
+=======
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TalkingSounds","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"peashootr","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds/peashootr.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"gatlingpea","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds/gatlingpea.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"fumeshroom","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds/fumeshroom.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"icepea","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds/icepea.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"puffshrom","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds/puffshrom.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"flingers","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds/flingers.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sunflowers","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds/sunflowers.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"kernel boy","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds/flingers/kernel boy.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"repeater","folderPath":"folders/Sounds/Plant Sounds/TalkingSounds/repeater.yy",},
+>>>>>>> Stashed changes
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"burbankbigcondensed_black.otf","CopyToMask":-1,"filePath":"datafiles",},
@@ -91,9 +104,11 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"Turret_PeaRepeater_VO_Spawn_0_5_0","path":"sounds/Turret_PeaRepeater_VO_Spawn_0_5_0/Turret_PeaRepeater_VO_Spawn_0_5_0.yy",},},
     {"id":{"name":"obj_throwable","path":"objects/obj_throwable/obj_throwable.yy",},},
     {"id":{"name":"quad_bezier","path":"scripts/quad_bezier/quad_bezier.yy",},},
     {"id":{"name":"spr_frozenPea","path":"sprites/spr_frozenPea/spr_frozenPea.yy",},},
+    {"id":{"name":"Turret_PeaShooter_VO_Spawn_0_3_0","path":"sounds/Turret_PeaShooter_VO_Spawn_0_3_0/Turret_PeaShooter_VO_Spawn_0_3_0.yy",},},
     {"id":{"name":"spr_peashooterShoot","path":"sprites/spr_peashooterShoot/spr_peashooterShoot.yy",},},
     {"id":{"name":"spr_repeaterIdle","path":"sprites/spr_repeaterIdle/spr_repeaterIdle.yy",},},
     {"id":{"name":"spr_zombieRun","path":"sprites/spr_zombieRun/spr_zombieRun.yy",},},
@@ -120,7 +135,11 @@
     {"id":{"name":"peaHit","path":"sounds/peaHit/peaHit.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"spr_potatomineIdle","path":"sprites/spr_potatomineIdle/spr_potatomineIdle.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"obj_primary","path":"objects/obj_primary/obj_primary.yy",},},
+=======
+    {"id":{"name":"vo_turret_fume_shroom_spawn_0_7_0","path":"sounds/vo_turret_fume_shroom_spawn_0_7_0/vo_turret_fume_shroom_spawn_0_7_0.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_splatPea","path":"sprites/spr_splatPea/spr_splatPea.yy",},},
 <<<<<<< Updated upstream
 =======
@@ -139,6 +158,7 @@
     {"id":{"name":"spr_torchwoodActive","path":"sprites/spr_torchwoodActive/spr_torchwoodActive.yy",},},
     {"id":{"name":"spr_daveHandR","path":"sprites/spr_daveHandR/spr_daveHandR.yy",},},
     {"id":{"name":"snd_eat3","path":"sounds/snd_eat3/snd_eat3.yy",},},
+    {"id":{"name":"Turret_DoomShroom_VO_Spawn_1_3_0","path":"sounds/Turret_DoomShroom_VO_Spawn_1_3_0/Turret_DoomShroom_VO_Spawn_1_3_0.yy",},},
     {"id":{"name":"spr_daveIdle","path":"sprites/spr_daveIdle/spr_daveIdle.yy",},},
     {"id":{"name":"obj_fadable","path":"objects/obj_fadable/obj_fadable.yy",},},
 <<<<<<< Updated upstream
@@ -158,6 +178,7 @@
     {"id":{"name":"spr_peashooterReload","path":"sprites/spr_peashooterReload/spr_peashooterReload.yy",},},
     {"id":{"name":"rm_day2","path":"rooms/rm_day2/rm_day2.yy",},},
     {"id":{"name":"vase_breaking","path":"sounds/vase_breaking/vase_breaking.yy",},},
+    {"id":{"name":"Turret_ScaredyShroom_VO_Spawn_1_4_0","path":"sounds/Turret_ScaredyShroom_VO_Spawn_1_4_0/Turret_ScaredyShroom_VO_Spawn_1_4_0.yy",},},
     {"id":{"name":"spr_wallPart","path":"sprites/spr_wallPart/spr_wallPart.yy",},},
     {"id":{"name":"EnemyMeleeAttack","path":"scripts/EnemyMeleeAttack/EnemyMeleeAttack.yy",},},
     {"id":{"name":"spr_daveHandL","path":"sprites/spr_daveHandL/spr_daveHandL.yy",},},
@@ -170,6 +191,11 @@
     {"id":{"name":"Fume","path":"sounds/Fume/Fume.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_cabbagePultRecover","path":"sprites/spr_cabbagePultRecover/spr_cabbagePultRecover.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"spr_pumpkinArmor","path":"sprites/spr_pumpkinArmor/spr_pumpkinArmor.yy",},},
+    {"id":{"name":"Turret_PeaShooter_VO_Spawn_0_5_0","path":"sounds/Turret_PeaShooter_VO_Spawn_0_5_0/Turret_PeaShooter_VO_Spawn_0_5_0.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_daveArmDown","path":"sprites/spr_daveArmDown/spr_daveArmDown.yy",},},
     {"id":{"name":"snd_fanfareyousuck","path":"sounds/snd_fanfareyousuck/snd_fanfareyousuck.yy",},},
     {"id":{"name":"spr_snowpeaShoot","path":"sprites/spr_snowpeaShoot/spr_snowpeaShoot.yy",},},
@@ -197,6 +223,10 @@
     {"id":{"name":"obj_countdown","path":"objects/obj_countdown/obj_countdown.yy",},},
     {"id":{"name":"flingFling2","path":"sounds/flingFling2/flingFling2.yy",},},
     {"id":{"name":"zombiesWereComing","path":"sounds/zombiesWereComing/zombiesWereComing.yy",},},
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+    {"id":{"name":"Turret_PeaShooter_VO_Spawn_0_2_0","path":"sounds/Turret_PeaShooter_VO_Spawn_0_2_0/Turret_PeaShooter_VO_Spawn_0_2_0.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"spr_pea","path":"sprites/spr_pea/spr_pea.yy",},},
     {"id":{"name":"spr_repeaterShoot","path":"sprites/spr_repeaterShoot/spr_repeaterShoot.yy",},},
@@ -210,25 +240,39 @@
 =======
     {"id":{"name":"peaHit3","path":"sounds/peaHit3/peaHit3.yy",},},
     {"id":{"name":"spr_icebergLettuce","path":"sprites/spr_icebergLettuce/spr_icebergLettuce.yy",},},
+    {"id":{"name":"Turret_PeaShooter_Ice_VO_Spawn_0_0_0","path":"sounds/Turret_PeaShooter_Ice_VO_Spawn_0_0_0/Turret_PeaShooter_Ice_VO_Spawn_0_0_0.yy",},},
     {"id":{"name":"spr_graveBBreak","path":"sprites/spr_graveBBreak/spr_graveBBreak.yy",},},
+    {"id":{"name":"Turret_PeaRepeater_VO_Spawn_1_0_0","path":"sounds/Turret_PeaRepeater_VO_Spawn_1_0_0/Turret_PeaRepeater_VO_Spawn_1_0_0.yy",},},
     {"id":{"name":"spr_puffshroomReload","path":"sprites/spr_puffshroomReload/spr_puffshroomReload.yy",},},
+    {"id":{"name":"sWaveBar","path":"sprites/sWaveBar/sWaveBar.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"snd_sun3","path":"sounds/snd_sun3/snd_sun3.yy",},},
+    {"id":{"name":"Turret_PeaGatling_VO_Spawn_0_5_0","path":"sounds/Turret_PeaGatling_VO_Spawn_0_5_0/Turret_PeaGatling_VO_Spawn_0_5_0.yy",},},
     {"id":{"name":"spr_none","path":"sprites/spr_none/spr_none.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"sDirt","path":"sprites/sDirt/sDirt.yy",},},
     {"id":{"name":"obj_EnemyProjectile","path":"objects/obj_EnemyProjectile/obj_EnemyProjectile.yy",},},
     {"id":{"name":"spr_zombieAttackHB","path":"sprites/spr_zombieAttackHB/spr_zombieAttackHB.yy",},},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+    {"id":{"name":"Turret_ScaredyShroom_VO_Spawn_1_0_0","path":"sounds/Turret_ScaredyShroom_VO_Spawn_1_0_0/Turret_ScaredyShroom_VO_Spawn_1_0_0.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_iceshroomExplode","path":"sprites/spr_iceshroomExplode/spr_iceshroomExplode.yy",},},
     {"id":{"name":"countdownSpr3","path":"sprites/countdownSpr3/countdownSpr3.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"spr_cabbagePultShoot","path":"sprites/spr_cabbagePultShoot/spr_cabbagePultShoot.yy",},},
     {"id":{"name":"spr_carB","path":"sprites/spr_carB/spr_carB.yy",},},
     {"id":{"name":"snd_timer","path":"sounds/snd_timer/snd_timer.yy",},},
+    {"id":{"name":"Turret_PeaShooter_VO_Spawn_1_1_0","path":"sounds/Turret_PeaShooter_VO_Spawn_1_1_0/Turret_PeaShooter_VO_Spawn_1_1_0.yy",},},
     {"id":{"name":"spr_zombieBucket","path":"sprites/spr_zombieBucket/spr_zombieBucket.yy",},},
+    {"id":{"name":"snd_pause","path":"sounds/snd_pause/snd_pause.yy",},},
     {"id":{"name":"EnemyState_Wander","path":"scripts/EnemyState_Wander/EnemyState_Wander.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"spr_poolWallTiles","path":"sprites/spr_poolWallTiles/spr_poolWallTiles.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_puffshroomSingleShoot","path":"sprites/spr_puffshroomSingleShoot/spr_puffshroomSingleShoot.yy",},},
 <<<<<<< Updated upstream
 =======
@@ -238,6 +282,7 @@
     {"id":{"name":"closetohome","path":"sounds/closetohome/closetohome.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"sh_outline","path":"shaders/sh_outline/sh_outline.yy",},},
+    {"id":{"name":"Turret_PeaRepeater_VO_Spawn_0_0_0","path":"sounds/Turret_PeaRepeater_VO_Spawn_0_0_0/Turret_PeaRepeater_VO_Spawn_0_0_0.yy",},},
     {"id":{"name":"spr_peashooterIdle","path":"sprites/spr_peashooterIdle/spr_peashooterIdle.yy",},},
     {"id":{"name":"spr_graveCSpawn","path":"sprites/spr_graveCSpawn/spr_graveCSpawn.yy",},},
     {"id":{"name":"spr_daveRun","path":"sprites/spr_daveRun/spr_daveRun.yy",},},
@@ -248,6 +293,11 @@
     {"id":{"name":"spr_potatomineThrow","path":"sprites/spr_potatomineThrow/spr_potatomineThrow.yy",},},
     {"id":{"name":"Documentation","path":"scripts/Documentation/Documentation.yy",},},
     {"id":{"name":"EnemyState_Chase","path":"scripts/EnemyState_Chase/EnemyState_Chase.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"spr_daveHandLPuff","path":"sprites/spr_daveHandLPuff/spr_daveHandLPuff.yy",},},
+    {"id":{"name":"spr_kernelDisp","path":"sprites/spr_kernelDisp/spr_kernelDisp.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_zombieIdle","path":"sprites/spr_zombieIdle/spr_zombieIdle.yy",},},
     {"id":{"name":"countdownSpr2","path":"sprites/countdownSpr2/countdownSpr2.yy",},},
     {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},},
@@ -261,6 +311,11 @@
     {"id":{"name":"spr_impSpawn","path":"sprites/spr_impSpawn/spr_impSpawn.yy",},},
     {"id":{"name":"snd_plantfooddropped","path":"sounds/snd_plantfooddropped/snd_plantfooddropped.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"spr_impIdle","path":"sprites/spr_impIdle/spr_impIdle.yy",},},
+    {"id":{"name":"Turret_ScaredyShroom_VO_Unhide_1_2_0","path":"sounds/Turret_ScaredyShroom_VO_Unhide_1_2_0/Turret_ScaredyShroom_VO_Unhide_1_2_0.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"zombie_falling_1","path":"sounds/zombie_falling_1/zombie_falling_1.yy",},},
     {"id":{"name":"ts_poolWater","path":"tilesets/ts_poolWater/ts_poolWater.yy",},},
     {"id":{"name":"spr_zombieFlagIdle","path":"sprites/spr_zombieFlagIdle/spr_zombieFlagIdle.yy",},},
@@ -269,7 +324,11 @@
     {"id":{"name":"obj_actor","path":"objects/obj_actor/obj_actor.yy",},},
     {"id":{"name":"spr_Bigsun","path":"sprites/spr_Bigsun/spr_Bigsun.yy",},},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+    {"id":{"name":"spr_zombieNoHandFlagIdle","path":"sprites/spr_zombieNoHandFlagIdle/spr_zombieNoHandFlagIdle.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"parkentrance","path":"sprites/parkentrance/parkentrance.yy",},},
     {"id":{"name":"obj_vase","path":"objects/obj_vase/obj_vase.yy",},},
 <<<<<<< Updated upstream
@@ -313,11 +372,15 @@
     {"id":{"name":"obj_Gravestone","path":"objects/obj_Gravestone/obj_Gravestone.yy",},},
     {"id":{"name":"sIce","path":"sprites/sIce/sIce.yy",},},
     {"id":{"name":"peaHit2","path":"sounds/peaHit2/peaHit2.yy",},},
+    {"id":{"name":"Turret_PeaRepeater_VO_Spawn_0_1_0","path":"sounds/Turret_PeaRepeater_VO_Spawn_0_1_0/Turret_PeaRepeater_VO_Spawn_0_1_0.yy",},},
     {"id":{"name":"spr_zombieHead","path":"sprites/spr_zombieHead/spr_zombieHead.yy",},},
     {"id":{"name":"spr_concreteTiles","path":"sprites/spr_concreteTiles/spr_concreteTiles.yy",},},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {"id":{"name":"outline_init","path":"scripts/outline_init/outline_init.yy",},},
 =======
+=======
+>>>>>>> Stashed changes
     {"id":{"name":"spr_butter","path":"sprites/spr_butter/spr_butter.yy",},},
     {"id":{"name":"Groan7","path":"sounds/Groan7/Groan7.yy",},},
     {"id":{"name":"sukhbir","path":"sounds/sukhbir/sukhbir.yy",},},
@@ -326,6 +389,10 @@
     {"id":{"name":"selectTrowel","path":"sounds/selectTrowel/selectTrowel.yy",},},
     {"id":{"name":"spr_vaseIdle","path":"sprites/spr_vaseIdle/spr_vaseIdle.yy",},},
     {"id":{"name":"snd_plantplant2","path":"sounds/snd_plantplant2/snd_plantplant2.yy",},},
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+    {"id":{"name":"Turret_PeaShooter_VO_Spawn_0_6_0","path":"sounds/Turret_PeaShooter_VO_Spawn_0_6_0/Turret_PeaShooter_VO_Spawn_0_6_0.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"obj_enviornmentPlant","path":"objects/obj_enviornmentPlant/obj_enviornmentPlant.yy",},},
     {"id":{"name":"obj_Controller","path":"objects/obj_Controller/obj_Controller.yy",},},
@@ -334,6 +401,7 @@
     {"id":{"name":"fnt2","path":"fonts/fnt2/fnt2.yy",},},
     {"id":{"name":"obj_carA","path":"objects/obj_carA/obj_carA.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
+    {"id":{"name":"rm_day3","path":"rooms/rm_day3/rm_day3.yy",},},
     {"id":{"name":"fnt1","path":"fonts/fnt1/fnt1.yy",},},
     {"id":{"name":"sFlamingPea","path":"sprites/sFlamingPea/sFlamingPea.yy",},},
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},},
@@ -344,6 +412,10 @@
 =======
     {"id":{"name":"obj_uiPickupDesc","path":"objects/obj_uiPickupDesc/obj_uiPickupDesc.yy",},},
     {"id":{"name":"potatomineInground","path":"sounds/potatomineInground/potatomineInground.yy",},},
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+    {"id":{"name":"Turret_ScaredyShroom_VO_Unhide_1_4_0","path":"sounds/Turret_ScaredyShroom_VO_Unhide_1_4_0/Turret_ScaredyShroom_VO_Unhide_1_4_0.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"scircle","path":"sprites/scircle/scircle.yy",},},
     {"id":{"name":"EnemyState_Idle","path":"scripts/EnemyState_Idle/EnemyState_Idle.yy",},},
@@ -351,13 +423,21 @@
     {"id":{"name":"reward","path":"sounds/reward/reward.yy",},},
     {"id":{"name":"ts_concrete","path":"tilesets/ts_concrete/ts_concrete.yy",},},
     {"id":{"name":"spr_threepeaterShoot","path":"sprites/spr_threepeaterShoot/spr_threepeaterShoot.yy",},},
+    {"id":{"name":"Turret_SunTurret_VO_Spawn_0_3_0","path":"sounds/Turret_SunTurret_VO_Spawn_0_3_0/Turret_SunTurret_VO_Spawn_0_3_0.yy",},},
+    {"id":{"name":"obj_damagePopOff","path":"objects/obj_damagePopOff/obj_damagePopOff.yy",},},
     {"id":{"name":"sTorchvood","path":"sprites/sTorchvood/sTorchvood.yy",},},
     {"id":{"name":"obj_wallPart","path":"objects/obj_wallPart/obj_wallPart.yy",},},
     {"id":{"name":"Groan6","path":"sounds/Groan6/Groan6.yy",},},
     {"id":{"name":"sPea","path":"sprites/sPea/sPea.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"vo_turret_fume_shroom_spawn_0_3_0","path":"sounds/vo_turret_fume_shroom_spawn_0_3_0/vo_turret_fume_shroom_spawn_0_3_0.yy",},},
+    {"id":{"name":"spr_kernelPultReload","path":"sprites/spr_kernelPultReload/spr_kernelPultReload.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"sCabbage","path":"sprites/sCabbage/sCabbage.yy",},},
     {"id":{"name":"EnemyState_Attack","path":"scripts/EnemyState_Attack/EnemyState_Attack.yy",},},
     {"id":{"name":"Groan","path":"sounds/Groan/Groan.yy",},},
+    {"id":{"name":"Turret_PeaGatling_VO_Spawn_0_0_0","path":"sounds/Turret_PeaGatling_VO_Spawn_0_0_0/Turret_PeaGatling_VO_Spawn_0_0_0.yy",},},
     {"id":{"name":"crazydavelong1","path":"sounds/crazydavelong1/crazydavelong1.yy",},},
     {"id":{"name":"imp","path":"sounds/imp/imp.yy",},},
     {"id":{"name":"sunflowerPlantfoos","path":"sounds/sunflowerPlantfoos/sunflowerPlantfoos.yy",},},
@@ -372,6 +452,7 @@
     {"id":{"name":"PlayerState_Free","path":"scripts/PlayerState_Free/PlayerState_Free.yy",},},
     {"id":{"name":"crazydavescream2","path":"sounds/crazydavescream2/crazydavescream2.yy",},},
     {"id":{"name":"Groan4","path":"sounds/Groan4/Groan4.yy",},},
+    {"id":{"name":"Turret_SunTurret_VO_Spawn_0_7_0","path":"sounds/Turret_SunTurret_VO_Spawn_0_7_0/Turret_SunTurret_VO_Spawn_0_7_0.yy",},},
     {"id":{"name":"cherrybomb","path":"sounds/cherrybomb/cherrybomb.yy",},},
     {"id":{"name":"Groan3","path":"sounds/Groan3/Groan3.yy",},},
     {"id":{"name":"snd_conehit","path":"sounds/snd_conehit/snd_conehit.yy",},},
@@ -381,8 +462,12 @@
     {"id":{"name":"crazydavescream","path":"sounds/crazydavescream/crazydavescream.yy",},},
     {"id":{"name":"crazydaveshort1","path":"sounds/crazydaveshort1/crazydaveshort1.yy",},},
     {"id":{"name":"spr_zombieNoHandFlagRun","path":"sprites/spr_zombieNoHandFlagRun/spr_zombieNoHandFlagRun.yy",},},
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     {"id":{"name":"obj_RoomController","path":"objects/obj_RoomController/obj_RoomController.yy",},},
+    {"id":{"name":"Turret_ScaredyShroom_VO_Spawn_1_1_0","path":"sounds/Turret_ScaredyShroom_VO_Spawn_1_1_0/Turret_ScaredyShroom_VO_Spawn_1_1_0.yy",},},
     {"id":{"name":"spr_zombieSpawn","path":"sprites/spr_zombieSpawn/spr_zombieSpawn.yy",},},
     {"id":{"name":"snd_select2","path":"sounds/snd_select2/snd_select2.yy",},},
     {"id":{"name":"ts_house","path":"tilesets/ts_house/ts_house.yy",},},
@@ -412,12 +497,17 @@
     {"id":{"name":"spr_puffshroomSingleReload","path":"sprites/spr_puffshroomSingleReload/spr_puffshroomSingleReload.yy",},},
     {"id":{"name":"snd_conehit2","path":"sounds/snd_conehit2/snd_conehit2.yy",},},
     {"id":{"name":"spr_zombieDying","path":"sprites/spr_zombieDying/spr_zombieDying.yy",},},
+    {"id":{"name":"Turret_PeaRepeater_VO_Spawn_0_6_0","path":"sounds/Turret_PeaRepeater_VO_Spawn_0_6_0/Turret_PeaRepeater_VO_Spawn_0_6_0.yy",},},
     {"id":{"name":"spr_graveBSpawn","path":"sprites/spr_graveBSpawn/spr_graveBSpawn.yy",},},
     {"id":{"name":"spr_graveDSpawn","path":"sprites/spr_graveDSpawn/spr_graveDSpawn.yy",},},
     {"id":{"name":"Snow_pea_sparkles","path":"sounds/Snow_pea_sparkles/Snow_pea_sparkles.yy",},},
     {"id":{"name":"spr_snowpeaReload","path":"sprites/spr_snowpeaReload/spr_snowpeaReload.yy",},},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+    {"id":{"name":"losemusic","path":"sounds/losemusic/losemusic.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"sKernelpult","path":"sprites/sKernelpult/sKernelpult.yy",},},
     {"id":{"name":"spr_kernelPultShoot","path":"sprites/spr_kernelPultShoot/spr_kernelPultShoot.yy",},},
 >>>>>>> Stashed changes
@@ -428,15 +518,26 @@
     {"id":{"name":"Puff","path":"sounds/Puff/Puff.yy",},},
 >>>>>>> Stashed changes
     {"id":{"name":"spr_objectTiles","path":"sprites/spr_objectTiles/spr_objectTiles.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"spr_puffshroomShoot2","path":"sprites/spr_puffshroomShoot2/spr_puffshroomShoot2.yy",},},
+    {"id":{"name":"Turret_ScaredyShroom_VO_Unhide_1_1_0","path":"sounds/Turret_ScaredyShroom_VO_Unhide_1_1_0/Turret_ScaredyShroom_VO_Unhide_1_1_0.yy",},},
+    {"id":{"name":"spr_zombieGunIdle","path":"sprites/spr_zombieGunIdle/spr_zombieGunIdle.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"obj_zombieGib","path":"objects/obj_zombieGib/obj_zombieGib.yy",},},
+    {"id":{"name":"Turret_SunTurret_VO_Spawn_0_10_0","path":"sounds/Turret_SunTurret_VO_Spawn_0_10_0/Turret_SunTurret_VO_Spawn_0_10_0.yy",},},
     {"id":{"name":"Ignite2","path":"sounds/Ignite2/Ignite2.yy",},},
     {"id":{"name":"Groan2","path":"sounds/Groan2/Groan2.yy",},},
+    {"id":{"name":"vo_turret_fume_shroom_spawn_1_2_0","path":"sounds/vo_turret_fume_shroom_spawn_1_2_0/vo_turret_fume_shroom_spawn_1_2_0.yy",},},
     {"id":{"name":"flingFling","path":"sounds/flingFling/flingFling.yy",},},
     {"id":{"name":"obj_uiSun","path":"objects/obj_uiSun/obj_uiSun.yy",},},
     {"id":{"name":"sgravewall","path":"sprites/sgravewall/sgravewall.yy",},},
+    {"id":{"name":"vo_turret_fume_shroom_spawn_0_4_0","path":"sounds/vo_turret_fume_shroom_spawn_0_4_0/vo_turret_fume_shroom_spawn_0_4_0.yy",},},
     {"id":{"name":"spr_pocketReloading","path":"sprites/spr_pocketReloading/spr_pocketReloading.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"Turret_DoomShroom_VO_Spawn_2_1_0","path":"sounds/Turret_DoomShroom_VO_Spawn_2_1_0/Turret_DoomShroom_VO_Spawn_2_1_0.yy",},},
     {"id":{"name":"zombie_falling_2","path":"sounds/zombie_falling_2/zombie_falling_2.yy",},},
+    {"id":{"name":"obj_WaveBar","path":"objects/obj_WaveBar/obj_WaveBar.yy",},},
     {"id":{"name":"obj_endController","path":"objects/obj_endController/obj_endController.yy",},},
     {"id":{"name":"spr_repeaterReload","path":"sprites/spr_repeaterReload/spr_repeaterReload.yy",},},
 <<<<<<< Updated upstream
@@ -459,6 +560,10 @@
     {"id":{"name":"spocket","path":"sprites/spocket/spocket.yy",},},
     {"id":{"name":"spr_threepeaterReload","path":"sprites/spr_threepeaterReload/spr_threepeaterReload.yy",},},
     {"id":{"name":"obj_SubWeapon","path":"objects/obj_SubWeapon/obj_SubWeapon.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"Turret_PeaShooter_Ice_VO_Spawn_1_5_0","path":"sounds/Turret_PeaShooter_Ice_VO_Spawn_1_5_0/Turret_PeaShooter_Ice_VO_Spawn_1_5_0.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"obj_Projectile","path":"objects/obj_Projectile/obj_Projectile.yy",},},
     {"id":{"name":"shiny","path":"sprites/shiny/shiny.yy",},},
 <<<<<<< Updated upstream
@@ -468,6 +573,8 @@
     {"id":{"name":"spr_impRun","path":"sprites/spr_impRun/spr_impRun.yy",},},
     {"id":{"name":"flingFling3","path":"sounds/flingFling3/flingFling3.yy",},},
     {"id":{"name":"EnemyRangeAttack","path":"scripts/EnemyRangeAttack/EnemyRangeAttack.yy",},},
+    {"id":{"name":"Turret_PeaGatling_VO_Spawn_0_3_0","path":"sounds/Turret_PeaGatling_VO_Spawn_0_3_0/Turret_PeaGatling_VO_Spawn_0_3_0.yy",},},
+    {"id":{"name":"Turret_PeaGatling_VO_Spawn_0_2_0","path":"sounds/Turret_PeaGatling_VO_Spawn_0_2_0/Turret_PeaGatling_VO_Spawn_0_2_0.yy",},},
     {"id":{"name":"sgrave","path":"sprites/sgrave/sgrave.yy",},},
     {"id":{"name":"spr_pumpkin","path":"sprites/spr_pumpkin/spr_pumpkin.yy",},},
     {"id":{"name":"winmusic","path":"sounds/winmusic/winmusic.yy",},},
@@ -492,15 +599,26 @@
     {"id":{"name":"spr_torchwoodIdle","path":"sprites/spr_torchwoodIdle/spr_torchwoodIdle.yy",},},
     {"id":{"name":"spr_sunflower","path":"sprites/spr_sunflower/spr_sunflower.yy",},},
     {"id":{"name":"spr_snowpeaIdle","path":"sprites/spr_snowpeaIdle/spr_snowpeaIdle.yy",},},
+    {"id":{"name":"Turret_DoomShroom_VO_Spawn_0_1_0","path":"sounds/Turret_DoomShroom_VO_Spawn_0_1_0/Turret_DoomShroom_VO_Spawn_0_1_0.yy",},},
     {"id":{"name":"sArmyHat","path":"sprites/sArmyHat/sArmyHat.yy",},},
     {"id":{"name":"spr_zombieCone","path":"sprites/spr_zombieCone/spr_zombieCone.yy",},},
     {"id":{"name":"spr_roadTiles","path":"sprites/spr_roadTiles/spr_roadTiles.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"Turret_ScaredyShroom_VO_Unhide_1_3_0","path":"sounds/Turret_ScaredyShroom_VO_Unhide_1_3_0/Turret_ScaredyShroom_VO_Unhide_1_3_0.yy",},},
+    {"id":{"name":"spr_cocoaBeanActivate","path":"sprites/spr_cocoaBeanActivate/spr_cocoaBeanActivate.yy",},},
+    {"id":{"name":"Turret_PeaGatling_VO_Spawn_1_1_0","path":"sounds/Turret_PeaGatling_VO_Spawn_1_1_0/Turret_PeaGatling_VO_Spawn_1_1_0.yy",},},
+    {"id":{"name":"obj_inventoryTracker","path":"objects/obj_inventoryTracker/obj_inventoryTracker.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"ts_road","path":"tilesets/ts_road/ts_road.yy",},},
     {"id":{"name":"obj_Music","path":"objects/obj_Music/obj_Music.yy",},},
     {"id":{"name":"spr_torchwoodActivate","path":"sprites/spr_torchwoodActivate/spr_torchwoodActivate.yy",},},
     {"id":{"name":"spr_zombieNoHandRun","path":"sprites/spr_zombieNoHandRun/spr_zombieNoHandRun.yy",},},
     {"id":{"name":"spr_cabbagePultCharge","path":"sprites/spr_cabbagePultCharge/spr_cabbagePultCharge.yy",},},
+    {"id":{"name":"Turret_PeaShooter_Ice_VO_Spawn_1_2_0","path":"sounds/Turret_PeaShooter_Ice_VO_Spawn_1_2_0/Turret_PeaShooter_Ice_VO_Spawn_1_2_0.yy",},},
+    {"id":{"name":"Turret_PeaShooter_Ice_VO_Spawn_1_3_0","path":"sounds/Turret_PeaShooter_Ice_VO_Spawn_1_3_0/Turret_PeaShooter_Ice_VO_Spawn_1_3_0.yy",},},
     {"id":{"name":"spr_cabbage","path":"sprites/spr_cabbage/spr_cabbage.yy",},},
+    {"id":{"name":"Turret_ScaredyShroom_VO_Unhide_0_0_0","path":"sounds/Turret_ScaredyShroom_VO_Unhide_0_0_0/Turret_ScaredyShroom_VO_Unhide_0_0_0.yy",},},
     {"id":{"name":"reward2","path":"sounds/reward2/reward2.yy",},},
     {"id":{"name":"countdownSpr1","path":"sprites/countdownSpr1/countdownSpr1.yy",},},
     {"id":{"name":"outline_end","path":"scripts/outline_end/outline_end.yy",},},
@@ -522,6 +640,7 @@
     {"id":{"name":"mus_Grasswalk","path":"sounds/mus_Grasswalk/mus_Grasswalk.yy",},},
     {"id":{"name":"obj_vaseHB","path":"objects/obj_vaseHB/obj_vaseHB.yy",},},
     {"id":{"name":"spr_fire","path":"sprites/spr_fire/spr_fire.yy",},},
+    {"id":{"name":"Turret_DoomShroom_VO_Spawn_2_3_0","path":"sounds/Turret_DoomShroom_VO_Spawn_2_3_0/Turret_DoomShroom_VO_Spawn_2_3_0.yy",},},
     {"id":{"name":"spr_graveCBreak","path":"sprites/spr_graveCBreak/spr_graveCBreak.yy",},},
     {"id":{"name":"snd_loadingscreenwoosh","path":"sounds/snd_loadingscreenwoosh/snd_loadingscreenwoosh.yy",},},
     {"id":{"name":"HitEffectiveCommon02","path":"sounds/HitEffectiveCommon02/HitEffectiveCommon02.yy",},},
@@ -536,12 +655,18 @@
     {"id":{"name":"spr_puffshroomIdle","path":"sprites/spr_puffshroomIdle/spr_puffshroomIdle.yy",},},
     {"id":{"name":"crazydaveextralong2","path":"sounds/crazydaveextralong2/crazydaveextralong2.yy",},},
     {"id":{"name":"spr_reload","path":"sprites/spr_reload/spr_reload.yy",},},
+    {"id":{"name":"Turret_ScaredyShroom_VO_Spawn_2_0_0","path":"sounds/Turret_ScaredyShroom_VO_Spawn_2_0_0/Turret_ScaredyShroom_VO_Spawn_2_0_0.yy",},},
     {"id":{"name":"sCabbagepult","path":"sprites/sCabbagepult/sCabbagepult.yy",},},
     {"id":{"name":"mus_Loonboon","path":"sounds/mus_Loonboon/mus_Loonboon.yy",},},
     {"id":{"name":"sgraveShine","path":"sprites/sgraveShine/sgraveShine.yy",},},
   ],
   "RoomOrderNodes": [
+<<<<<<< Updated upstream
+=======
+    {"roomId":{"name":"rm_day3","path":"rooms/rm_day3/rm_day3.yy",},},
+>>>>>>> Stashed changes
     {"roomId":{"name":"rm_day2","path":"rooms/rm_day2/rm_day2.yy",},},
+    {"roomId":{"name":"rm_prototyperoom","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},},
     {"roomId":{"name":"rm_mainTestRoom","path":"rooms/rm_mainTestRoom/rm_mainTestRoom.yy",},},
     {"roomId":{"name":"rm_prototyperoom","path":"rooms/rm_prototyperoom/rm_prototyperoom.yy",},},
     {"roomId":{"name":"rm_tileTest","path":"rooms/rm_tileTest/rm_tileTest.yy",},},
