@@ -47,7 +47,9 @@ audio_listener_orientation(0, 0, 1000, 0, -1 ,0);
 camera_set_view_size(view,zoomX*view_width,zoomY*view_height)
 camera_set_view_pos(view_camera[0],camX-camera_get_view_width(view_camera[0])/2,camY-camera_get_view_height(view_camera[0])/2)
 
-
+if keyboard_check_pressed(vk_space){
+	room_goto(rm_prototyperoom)
+}
 
 
 

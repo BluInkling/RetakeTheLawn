@@ -24,6 +24,10 @@ if place_meeting(x,y,obj_zombieHitbox){
 			enemy.Hit(damage,type,moveDir,flaming)
 			array_push(piercingList,enemy)
 		}
+		show_debug_message(string(enemy.hp+enemy.armor)+" = "+string(damage))
+		if type == obj_Controller.projstats.cabbage && array_length(piercingList) > 1 && damage/2 >= enemy.hp+enemy.armor{
+			audio_play_sound(snd_killDing,4,0,0.25)
+		}
 		if type == obj_Controller.projstats.butter{
 			type = obj_Controller.projstats.kernel
 			sprite_index = type.mainsprite //sets sprite to mainweapons normal proj sprite

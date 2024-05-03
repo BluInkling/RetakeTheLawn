@@ -35,6 +35,20 @@
   "spriteId": null,
   "timeUnits": 1,
   "tracks": [
+    {"resourceType":"GMAudioTrack","resourceVersion":"1.1","name":"mus_ChooseYourSeeds","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<AudioKeyframe>","resourceVersion":"1.0","Keyframes":[
+          {"resourceType":"Keyframe<AudioKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"AudioKeyframe","resourceVersion":"1.0","Id":{"name":"mus_ChooseYourSeeds","path":"sounds/mus_ChooseYourSeeds/mus_ChooseYourSeeds.yy",},"Mode":0,},},"Disabled":false,"id":"d9c0d297-d1de-4df3-aed3-69833dfeab53","IsCreationKey":false,"Key":0.0,"Length":814.0,"Stretch":false,},
+        ],},"modifiers":[],"trackColour":4294079560,"tracks":[
+        {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"gain","builtinName":5,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"1.0","Keyframes":[
+              {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.9,},},"Disabled":false,"id":"d81cdc1a-f8a0-41d3-9cd0-bc06c8e2c6aa","IsCreationKey":false,"Key":736.0,"Length":1.0,"Stretch":false,},
+              {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,},},"Disabled":false,"id":"c63f8b11-657b-4a21-9b9f-9aad174118a6","IsCreationKey":false,"Key":805.0,"Length":1.0,"Stretch":false,},
+            ],},"modifiers":[],"trackColour":4294079560,"tracks":[],"traits":0,},
+        {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"position","builtinName":14,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"1.0","Keyframes":[
+              {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.7853699,},"1":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":14.240608,},},"Disabled":false,"id":"b8f731f0-05f8-4fea-b988-3dffc95f02e4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            ],},"modifiers":[],"trackColour":4294079560,"tracks":[],"traits":0,},
+        {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"rotation","builtinName":8,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"1.0","Keyframes":[
+              {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,},},"Disabled":false,"id":"b842b2b4-927f-4b41-90f1-6b138d672b6c","IsCreationKey":true,"Key":0.0,"Length":1.0,"Stretch":false,},
+            ],},"modifiers":[],"trackColour":4294079560,"tracks":[],"traits":0,},
+      ],"traits":0,},
     {"resourceType":"GMAudioTrack","resourceVersion":"1.1","name":"snd_selectpacket","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<AudioKeyframe>","resourceVersion":"1.0","Keyframes":[
           {"resourceType":"Keyframe<AudioKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"AudioKeyframe","resourceVersion":"1.0","Id":{"name":"snd_selectpacket","path":"sounds/snd_selectpacket/snd_selectpacket.yy",},"Mode":0,},},"Disabled":false,"id":"27f71057-aa82-4f3c-bbe3-b88931a24377","IsCreationKey":false,"Key":887.0,"Length":51.0,"Stretch":false,},
         ],},"modifiers":[],"trackColour":4294082632,"tracks":[
