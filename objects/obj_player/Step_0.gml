@@ -3,6 +3,7 @@
 if (hascontrol){
 event_inherited()
 
+
 //if (!instance_exists(obj_MainWeapon)){
 //	instance_create_layer(x,y,"Gun",obj_MainWeapon)	
 //}
@@ -76,8 +77,12 @@ if !place_meeting(x,y+yVel,obj_wall) && !place_meeting(x,y+yVel,obj_wallPool){
 }
 
 if hp < 1 && !dead{
+	audio_stop_all()
+	with(obj_Music) instance_destroy()
 	audio_play_sound(NOOO,2,false)
+	audio_play_sound(losemusic,2,false)
 	dead = true
+	
 	obj_endController.End()
 }
 
