@@ -507,6 +507,7 @@ instance_create_depth(0,0,0,obj_uiMainPocket)
 instance_create_depth(0,0,0,obj_uiSubPocket)
 instance_create_depth(0,0,0,obj_uiPickupDesc)
 instance_create_depth(0,0,0,obj_uiTutorial)
+instance_create_depth(0,0,-1000,obj_fadeIn)
 
 //UNCOMMENT FOR BEGINNING COUNTDOWN
 //instance_create_layer(0,0,"Player",obj_countdown)

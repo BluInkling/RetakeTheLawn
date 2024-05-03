@@ -3,7 +3,8 @@
 
 
 if paused && keyboard_check_pressed(vk_anykey){
-	room_restart()
+	//room_restart()
+	FadeOut(room)
 }
 if paused == true{
 	alarm[0]++;

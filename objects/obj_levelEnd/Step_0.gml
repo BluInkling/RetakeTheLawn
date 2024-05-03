@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if place_meeting(x,y,obj_player){
+if place_meeting(x,y,obj_player) && !instance_exists(obj_fadeOut){
 	global.wallArmor = obj_player.wallnutArmor
 	global.pumpArmor = obj_player.pumpkinArmor
 	/*
@@ -16,7 +16,8 @@ if place_meeting(x,y,obj_player){
 	global.primaryInventory = obj_Controller.inventoryPrimary
 	global.ammoPrimary = obj_Controller.ammoPrimary
 	global.levelProgress += 1
-	room_goto(global.roomOrder[global.levelProgress])
+	FadeOut(global.roomOrder[global.levelProgress])
+	//room_goto(global.roomOrder[global.levelProgress])
 }
 
 

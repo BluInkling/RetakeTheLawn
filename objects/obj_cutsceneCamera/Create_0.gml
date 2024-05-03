@@ -89,7 +89,7 @@ views = [
 	x: 456,
 	y: 288,
 	zoom : 1,
-	hold: 60,
+	hold: 20,
 	transition: 300
 },
 ]

@@ -2,12 +2,13 @@
   "FolderOrderSettings": [
     {"name":"cutscene","order":1,"path":"folders/Sprites/cutscene.yy",},
     {"name":"dave","order":2,"path":"folders/Sprites/cutscene/dave.yy",},
-    {"name":"door","order":1,"path":"folders/Sprites/misc/door.yy",},
     {"name":"imp","order":4,"path":"folders/Sprites/cutscene/imp.yy",},
+    {"name":"door","order":1,"path":"folders/Sprites/misc/door.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_uiTutorial","order":2,"path":"objects/obj_uiTutorial/obj_uiTutorial.yy",},
     {"name":"spr_doorBBreak","order":5,"path":"sprites/spr_doorBBreak/spr_doorBBreak.yy",},
+    {"name":"FadeOut","order":1,"path":"scripts/FadeOut/FadeOut.yy",},
     {"name":"spr_tacoImpRun","order":2,"path":"sprites/spr_tacoImpRun/spr_tacoImpRun.yy",},
     {"name":"obj_bushA","order":2,"path":"objects/obj_bushA/obj_bushA.yy",},
     {"name":"spr_daveAngryRun","order":3,"path":"sprites/spr_daveAngryRun/spr_daveAngryRun.yy",},
@@ -33,9 +34,11 @@
     {"name":"obj_cutsceneManager","order":1,"path":"objects/obj_cutsceneManager/obj_cutsceneManager.yy",},
     {"name":"obj_propPark","order":1,"path":"objects/obj_propPark/obj_propPark.yy",},
     {"name":"obj_bushC","order":4,"path":"objects/obj_bushC/obj_bushC.yy",},
+    {"name":"obj_fadeIn","order":4,"path":"objects/obj_fadeIn/obj_fadeIn.yy",},
     {"name":"spr_doorASpawn","order":2,"path":"sprites/spr_doorASpawn/spr_doorASpawn.yy",},
     {"name":"spr_bushA","order":4,"path":"sprites/spr_bushA/spr_bushA.yy",},
     {"name":"spr_daveGetUp","order":2,"path":"sprites/spr_daveGetUp/spr_daveGetUp.yy",},
     {"name":"spr_daveAngryIdle","order":4,"path":"sprites/spr_daveAngryIdle/spr_daveAngryIdle.yy",},
+    {"name":"obj_fadeOut","order":5,"path":"objects/obj_fadeOut/obj_fadeOut.yy",},
   ],
 }

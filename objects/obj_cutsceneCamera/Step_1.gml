@@ -41,7 +41,8 @@ if transitioning{
 	camY = lerp(views[curr].y,views[curr+1].y,counter/views[curr].transition)
 }
 
-
+audio_listener_position(camX,camY,100*zoomX)
+audio_listener_orientation(0, 0, 1000, 0, -1 ,0);
 
 camera_set_view_size(view,zoomX*view_width,zoomY*view_height)
 camera_set_view_pos(view_camera[0],camX-camera_get_view_width(view_camera[0])/2,camY-camera_get_view_height(view_camera[0])/2)
