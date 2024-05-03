@@ -8,6 +8,8 @@ currBattleMusic = noone
 currNormalMusic = noone
 switchMusic = true;
 
+pausemenu = false
+
 
 
 

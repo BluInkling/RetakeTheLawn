@@ -16,6 +16,7 @@ projtype = main.projtype // flaming, ice, butter SET IN CONTROLLER SRTUCT
 angle = 0
 
 chargeable = main.chargeable
+drawcharging = false
 
 bubbleCounter = 0
 bubblesShot = 0
@@ -28,6 +29,55 @@ fumesounds = [Fume]
 puffsounds =[Puff]
 
 function PlaySound(type){
+	if main.family == "pea"{
+		sound = peasounds[irandom_range(0,array_length(peasounds)-1)]
+		audio_sound_pitch(sound,random_range(0.90,1.40))
+		if main.wepname == "snowpea"{
+			sparklesound = Snow_pea_sparkles
+			audio_sound_pitch(sparklesound,random_range(0.90,1.40))
+			audio_play_sound(sparklesound,1,false,0.9,0,1)
+			audio_play_sound(sound,1,false,0.9,0,1)
+		} else {
+			audio_play_sound(sound,1,false,0.9)
+		}
+	}
+	else if main.family == "fling"{
+		sound = flingsounds[irandom_range(0,array_length(flingsounds)-1)]
+		audio_sound_pitch(sound,random_range(0.95,1.40))
+		if (type == "butter") {
+			//buttersound = snd_butter
+			//audio_sound_pitch(buttersound,random_range(0.90,1.40))
+			//audio_play_sound(buttersound,1,false,0.9,0,1)
+			audio_sound_pitch(sound,random_range(0.70,.80))
+			audio_play_sound(sound,1,false,0.9,0,1)
+		} else {
+			audio_play_sound(sound,1,false,0.9)
+		}
+	}
+	else if main.family == "bubble"{
+		sound = fumesounds[irandom_range(0,array_length(fumesounds)-1)]
+		audio_sound_pitch(sound,random_range(0.90,1.40))
+		if (type == "small") {
+			puffsound = Puff
+			audio_sound_pitch(puffsound,random_range(0.90,1.30))
+			audio_play_sound(puffsound,1,false,0.9,0,1)
+		} else {
+			audio_play_sound(sound,8,false,0.75)
+		}
+	}
+	
+}
+
+peasoundsReload = [Turret_PeaShooter_VO_Spawn_0_2_0,Turret_PeaShooter_VO_Spawn_0_3_0,Turret_PeaShooter_VO_Spawn_0_5_0,Turret_PeaShooter_VO_Spawn_0_6_0,Turret_PeaShooter_VO_Spawn_1_1_0]
+repeatersoundsReload = [Turret_PeaRepeater_VO_Spawn_0_0_0,Turret_PeaRepeater_VO_Spawn_0_1_0,Turret_PeaRepeater_VO_Spawn_0_5_0,Turret_PeaRepeater_VO_Spawn_0_6_0,Turret_PeaRepeater_VO_Spawn_1_0_0]
+puffsoundsReload = [Turret_ScaredyShroom_VO_Spawn_1_0_0,Turret_ScaredyShroom_VO_Spawn_1_1_0,Turret_ScaredyShroom_VO_Spawn_1_4_0,Turret_ScaredyShroom_VO_Spawn_2_0_0]
+snowsoundsReload = [Turret_PeaShooter_Ice_VO_Spawn_0_0_0,Turret_PeaShooter_Ice_VO_Spawn_1_3_0,Turret_PeaShooter_Ice_VO_Spawn_1_5_0,Turret_PeaShooter_Ice_VO_Spawn_1_2_0]
+gatlingsoundsReload = [Turret_PeaGatling_VO_Spawn_0_0_0,Turret_PeaGatling_VO_Spawn_0_2_0,Turret_PeaGatling_VO_Spawn_0_3_0,Turret_PeaGatling_VO_Spawn_0_5_0,Turret_PeaGatling_VO_Spawn_1_1_0]
+fumesoundsReload = [vo_turret_fume_shroom_spawn_0_3_0,vo_turret_fume_shroom_spawn_0_4_0,vo_turret_fume_shroom_spawn_0_7_0,vo_turret_fume_shroom_spawn_1_2_0]
+cabbagesoundsReload = [Turret_DoomShroom_VO_Spawn_0_1_0,Turret_DoomShroom_VO_Spawn_1_3_0,Turret_DoomShroom_VO_Spawn_2_1_0,Turret_DoomShroom_VO_Spawn_2_3_0]
+kernelsoundsReload = [Turret_ScaredyShroom_VO_Unhide_0_0_0,Turret_ScaredyShroom_VO_Unhide_1_1_0,Turret_ScaredyShroom_VO_Unhide_1_2_0,Turret_ScaredyShroom_VO_Unhide_1_3_0,Turret_ScaredyShroom_VO_Unhide_1_4_0]
+
+function PlayPlantSound(type){
 	if main.family == "pea"{
 		sound = peasounds[irandom_range(0,array_length(peasounds)-1)]
 		audio_sound_pitch(sound,random_range(0.90,1.40))

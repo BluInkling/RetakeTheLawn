@@ -101,6 +101,8 @@ if hat == "cone"{
 }
 
 function Hit(damage,type,dir,flaming){
+	var damagepopoff = instance_create_layer(x,y,"Bullets",obj_damagePopOff)
+	with (damagepopoff) num = damage
 	if armor > 0{ //if has armor
 		PlaySoundHit()
 		armor -= damage//armor takes damage

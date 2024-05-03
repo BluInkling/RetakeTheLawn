@@ -4,11 +4,14 @@
 
 if keyboard_check_pressed(ord("P")){
 	paused = !paused;
-	audio_play_sound(pause,1,false)
+	audio_play_sound(snd_pause,1,false)
+	with (obj_Music) pausemenu = true
 	if paused == false{
 		instance_activate_all();
 		surface_free(paused_surf);
 		paused_surf = -1;
+		audio_play_sound(backbutton,2,false)
+		with (obj_Music) pausemenu = false
 	}
 }
 if paused == true{
