@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"spr_pocketCooldown","order":1,"path":"sprites/spr_pocketCooldown/spr_pocketCooldown.yy",},
+  ],
 }

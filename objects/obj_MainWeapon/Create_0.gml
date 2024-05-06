@@ -11,6 +11,11 @@ counter = 0
 clip = main.clip
 ammo = clip
 shootavailable = true
+recoil = 0
+recoilRecovery = 0.25
+recoilMax = 3
+recoilX = 0
+recoilY = 0
 
 projtype = main.projtype // flaming, ice, butter SET IN CONTROLLER SRTUCT
 angle = 0
@@ -118,7 +123,7 @@ function PlayPlantSound(type){
 }
 
 function ShootProjectile(){
-
+	recoil = clamp(projtype.damage*2,0,recoilMax)
 	if (chargeable){
 		var proj = instance_create_layer(x+lengthdir_x(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),y+lengthdir_y(shootOffsetDistance,shootOffsetAngle+(obj_playerArms.handsAngle-obj_playerArms.armAngle)),"Bullets",obj_Projectile)
 		with (proj){

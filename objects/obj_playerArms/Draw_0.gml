@@ -62,13 +62,13 @@ depth = obj_player.depth-10
 if obj_MainWeapon.main.wepname == "puffshroom"{
 	sprite_index = spr_daveArmPuff
 	draw_self()
-	draw_sprite_ext(spr_daveHandRPuff,0,handsX,handsY,1,obj_player.xDir,handsAngle,c_white,1)
-	draw_sprite_ext(spr_daveHandLPuff,0,handsX,handsY,1,obj_player.xDir,handsAngle,c_white,1)
+	draw_sprite_ext(spr_daveHandRPuff,0,handsX-obj_MainWeapon.recoilX,handsY-obj_MainWeapon.recoilY,1,obj_player.xDir,handsAngle,c_white,1)
+	draw_sprite_ext(spr_daveHandLPuff,0,handsX-obj_MainWeapon.recoilX,handsY-obj_MainWeapon.recoilY,1,obj_player.xDir,handsAngle,c_white,1)
 }else{
 	sprite_index = spr_daveArm
 	draw_self()
-	draw_sprite_ext(spr_daveHandR,0,handsX,handsY,1,obj_player.xDir,handsAngle,c_white,1)
-	draw_sprite_ext(spr_daveHandL,0,handsX,handsY,1,obj_player.xDir,handsAngle,c_white,1)
+	draw_sprite_ext(spr_daveHandR,0,handsX-obj_MainWeapon.recoilX,handsY-obj_MainWeapon.recoilY,1,obj_player.xDir,handsAngle,c_white,1)
+	draw_sprite_ext(spr_daveHandL,0,handsX-obj_MainWeapon.recoilX,handsY-obj_MainWeapon.recoilY,1,obj_player.xDir,handsAngle,c_white,1)
 }
 
 

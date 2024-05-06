@@ -1,7 +1,12 @@
 if(obj_player.hascontrol){
 
-x = obj_playerArms.handsX + obj_player.xVel
-y = obj_playerArms.handsY + obj_player.yVel
+if recoil > 0{
+	recoilX = lengthdir_x(recoil,obj_playerArms.handsAngle)
+	recoilY = lengthdir_y(recoil,obj_playerArms.handsAngle)
+}
+
+x = obj_playerArms.handsX - recoilX + obj_player.xVel//*obj_player.image_xscale
+y = obj_playerArms.handsY - recoilY + obj_player.yVel
 
 image_angle = point_direction(x,y,mouse_x,mouse_y);
 
@@ -169,6 +174,7 @@ if (keyboard_check_pressed(ord("3"))){
 if (keyboard_check_pressed(ord("4"))){ 
 	GotoPrimary(3)
 }
+
 
 
 

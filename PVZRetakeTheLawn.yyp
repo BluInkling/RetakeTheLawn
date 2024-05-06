@@ -327,6 +327,7 @@
     {"id":{"name":"snd_eat","path":"sounds/snd_eat/snd_eat.yy",},},
     {"id":{"name":"Groan5","path":"sounds/Groan5/Groan5.yy",},},
     {"id":{"name":"spr_impAttack","path":"sprites/spr_impAttack/spr_impAttack.yy",},},
+    {"id":{"name":"spr_pocketCooldown","path":"sprites/spr_pocketCooldown/spr_pocketCooldown.yy",},},
     {"id":{"name":"spr_font","path":"sprites/spr_font/spr_font.yy",},},
     {"id":{"name":"spr_bigSunshroom","path":"sprites/spr_bigSunshroom/spr_bigSunshroom.yy",},},
     {"id":{"name":"spr_cabbagePultIdle","path":"sprites/spr_cabbagePultIdle/spr_cabbagePultIdle.yy",},},

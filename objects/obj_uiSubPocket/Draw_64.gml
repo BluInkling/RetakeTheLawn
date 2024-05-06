@@ -8,8 +8,15 @@ for (var i=0; i<array_length(obj_Controller.inventorySecondary)-1; i++){
 	draw_sprite(spr_pocket,0,(20+3*(array_length(obj_Controller.inventorySecondary)-1))-3*i,160)
 }
 
-draw_sprite(spr_pocket,0,20,160)
+
 //draw_sprite(sprite_index,0,20,174)
+
+if obj_Controller.cooldownSecondary[obj_Controller.secondary] != 0{
+	draw_sprite(spr_pocketCooldown,0,20,160)//draw_sprite_ext(spr_pocket,0,20,160,1,1,0,c_red,1)
+}else{
+	draw_sprite(spr_pocket,0,20,160)
+}
+
 
 
 switch(obj_Controller.subweapon.wepname){
@@ -82,7 +89,7 @@ switch(obj_Controller.subweapon.wepname){
 		break;
 }
 //draw_sprite(spr_pocket,0,20,172)
-var offset = lerp(32,0,obj_Controller.cooldownSecondary[obj_Controller.secondary]/obj_SubWeapon.sub.cooldown)
+var offset = 2+lerp(28,2,obj_Controller.cooldownSecondary[obj_Controller.secondary]/obj_SubWeapon.sub.cooldown)
 //draw_sprite_part(spr_pocket,0,0,0,32,32,4,156)
 draw_sprite_part(spr_pocket,0,0,0+offset,32,32,4,144+offset)
 
