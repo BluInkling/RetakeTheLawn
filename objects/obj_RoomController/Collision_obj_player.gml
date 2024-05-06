@@ -15,6 +15,7 @@ if(triggered == false){
 	//instance_create_layer(x+irandom_range(-10,10),y+irandom_range(-10,10),"Walls",obj_enviornmentPlant)
 	triggered = true
 	
+
 	
 	//work out number of waves and enmies fper wave
 	total_waves = -1;
@@ -29,7 +30,9 @@ if(triggered == false){
 		remaining[total_waves]++;
 	}
 	//show_debug_message("spawning grave")
-	
+	wavebar = instance_create_layer(x,y,"WaveBar",obj_WaveBar)
+	wavebar.wavenum = total_waves
+	wavebar.created = id
 	
 	for(var h = 0;h < array_length(spawn); h++){ //SPAWNS GRAVES ACCORIFNG TO COORDS IN INSTRANCE CREATION CODE
 		instance_create_layer(spawn[h,0],spawn[h,1],"Walls",obj_Gravestone)

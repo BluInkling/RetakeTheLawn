@@ -12,6 +12,8 @@ current_wave = 0;
 enemytospawn = noone
 enemytype = noone;
 
+wavebar = noone;
+
 graves = []
 
 

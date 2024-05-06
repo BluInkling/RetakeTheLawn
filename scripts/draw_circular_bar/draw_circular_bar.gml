@@ -1,7 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function draw_circular_bar(){
 /// draw_circular_bar(x ,y ,value, max, colour, radius, transparency, width)
+function draw_circular_bar(){
+
 
 if (argument2 > 0) { // no point even running if there is nothing to display (also stops /0
     var i, len, tx, ty, val;
@@ -13,7 +14,7 @@ if (argument2 > 0) { // no point even running if there is nothing to display (al
     
     if (val > 1) { // HTML5 version doesnt like triangle with only 2 sides 
     
-        piesurface = surface_create(argument5*2,argument5*2)
+        var piesurface = surface_create(argument5*2,argument5*2)
             
         draw_set_colour(argument4);
         draw_set_alpha(argument6);
@@ -31,16 +32,18 @@ if (argument2 > 0) { // no point even running if there is nothing to display (al
             tx = lengthdir_x(argument5, len);
             ty = lengthdir_y(argument5, len);
             draw_vertex(argument5+tx, argument5+ty);
+			//show_debug_message("This is lterally making a setion")
+			//show_debug_message(i)
         }
         
         draw_primitive_end();
         
         draw_set_alpha(1);
         
-        draw_set_blend_mode(bm_subtract)
+        gpu_set_blendmode(bm_subtract)
         draw_set_colour(c_black)
         draw_circle(argument5-1, argument5-1,argument5-argument7,false)
-        draw_set_blend_mode(bm_normal)
+        gpu_set_blendmode(bm_normal)
 
         surface_reset_target()
      

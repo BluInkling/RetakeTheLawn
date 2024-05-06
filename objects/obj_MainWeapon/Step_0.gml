@@ -54,6 +54,7 @@ if !main.chargeable{
 			idle = false
 			charging = true
 			counter += 1;
+			drawcharging = true
 			//show_debug_message("charging")
 			if counter >= _max{
 				charging = false
@@ -69,6 +70,7 @@ if !main.chargeable{
 	if mouse_check_button_released(mb_left) && counter > 0{
 		//image_index = 0
 		//show_debug_message("SHOOT")
+		drawcharging = false
 		image_index = 0
 		charging = false
 		chargeMax = false
