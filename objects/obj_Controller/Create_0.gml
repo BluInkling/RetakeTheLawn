@@ -321,7 +321,7 @@ function InvSetup(_prim,_ammo,_sec,_cool){ // DO NOT TOUCH, I DON'T KNOW WHY THI
 	array_copy(test4,0,_cool,0,array_length(_cool))
 	cooldownSecondary = test4
 }
-InvSetup(global.primaryInventory,global.ammoPrimary,global.secondaryInventory,global.subCooldown)
+InvSetup(global.primaryInventory,global.ammoPrimary,global.secondaryInventory,global.cooldownSecondary)
 show_debug_message(inventoryPrimary)
 //show_debug_message(inventoryPrimary)
 primary = 0

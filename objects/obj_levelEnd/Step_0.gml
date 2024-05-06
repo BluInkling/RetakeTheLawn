@@ -14,7 +14,9 @@ if place_meeting(x,y,obj_player) && !instance_exists(obj_fadeOut){
 	*/
 	//global.test = obj_Controller.testA
 	global.primaryInventory = obj_Controller.inventoryPrimary
+	global.secondaryInventory = obj_Controller.inventorySecondary
 	global.ammoPrimary = obj_Controller.ammoPrimary
+	global.cooldownSecondary = obj_Controller.cooldownSecondary
 	global.levelProgress += 1
 	FadeOut(global.roomOrder[global.levelProgress])
 	//room_goto(global.roomOrder[global.levelProgress])
