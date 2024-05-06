@@ -12,7 +12,7 @@ global.fnt_bold = font_add("burbankbigcondensed_black.otf",15,0,0,32,128)
 global.fnt_textSmall = font_add_sprite_ext(spr_font,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!?',",true,1)
 
 //Player Inventory and Stats
-global.roomOrder = [rm_prototyperoom,rm_day2]
+global.roomOrder = [rm_prototyperoom,rm_day2,rm_day3]
 global.levelProgress = 0
  //Bug: Snow Pea stops working when brought to next room, peas don't freeze, flaming even works on them
 global.wallArmor = false
