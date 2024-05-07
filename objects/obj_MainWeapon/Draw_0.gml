@@ -7,7 +7,7 @@ if (reloading){
 }
 
 image_yscale = obj_player.xDir
-image_angle = round(obj_playerArms.handsAngle/20)*20
+image_angle = (round(obj_playerArms.handsAngle/20)*20)+recoil*5
 
 
 

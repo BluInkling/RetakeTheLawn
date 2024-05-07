@@ -13,7 +13,7 @@ ammo = clip
 shootavailable = true
 recoil = 0
 recoilRecovery = 0.25
-recoilMax = 3
+recoilMax = 2.5
 recoilX = 0
 recoilY = 0
 

@@ -357,7 +357,7 @@ enemystats = {
 		dyingspr: spr_zombieDying,
 		deadspr: spr_zombieDead,
 		headspr: spr_zombieHead,
-		spd : .75,
+		spd : 1,//.75,
 		onhead : "none",
 		behavior : "melee"
 	},
@@ -377,7 +377,7 @@ enemystats = {
 		dyingspr: spr_zombieDying,
 		deadspr: spr_zombieDead,
 		headspr: spr_zombieHead,
-		spd : .5,
+		spd : 0.75,//.5,
 		onhead : "cone",
 		behavior : "melee"
 	},
@@ -397,7 +397,7 @@ enemystats = {
 		dyingspr: spr_zombieDying,
 		deadspr: spr_zombieDead,
 		headspr: spr_zombieHead,
-		spd : .5,
+		spd : 0.75,//.5,
 		onhead : "bucket",
 		behavior : "melee"
 	},
@@ -417,11 +417,11 @@ enemystats = {
 		dyingspr: spr_zombieDying,
 		deadspr: spr_zombieDead,
 		headspr: spr_zombieHead,
-		spd : .5,
+		spd : 0.75,//.5,
 		onhead : "armyhat",
 		behavior : "ranged",
 		damage : 2,
-		projspd : 5,
+		projspd : 3,
 		weaponspr : spr_zombieGunIdle,
 		projspr : spr_zombieBullet
 	},
@@ -441,7 +441,7 @@ enemystats = {
 		dyingspr: spr_zombieDying,
 		deadspr: spr_zombieDead,
 		headspr: spr_zombieHead,
-		spd : .9,
+		spd : 1.25,//.9,
 		onhead : "none", //TEMPORARY UNTIL FLAG ZOMBIE SPRITES PUTIN
 		behavior : "support",
 		damage : 0,
@@ -508,6 +508,7 @@ instance_create_depth(0,0,0,obj_uiSubPocket)
 instance_create_depth(0,0,0,obj_uiPickupDesc)
 instance_create_depth(0,0,0,obj_uiTutorial)
 instance_create_depth(0,0,-1000,obj_fadeIn)
+instance_create_depth(0,0,-1000,obj_crosshair)
 
 //UNCOMMENT FOR BEGINNING COUNTDOWN
 //instance_create_layer(0,0,"Player",obj_countdown)

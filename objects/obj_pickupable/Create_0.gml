@@ -17,7 +17,7 @@ savedStat = 0
 host = noone
 
 function RandomChoose(){
-kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.weaponstats,obj_Controller.weaponstats,obj_Controller.subweaponstats)
+kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.subweaponstats)
 
 //if ((array_length(obj_Controller.inventoryPrimary) == obj_Controller.mainamount) and (array_length(obj_Controller.inventorySecondary) == obj_Controller.secondaryamount)){ DOESNT WORK FOR SOME REAOSN
 	if (kindofpickup == obj_Controller.weaponstats){

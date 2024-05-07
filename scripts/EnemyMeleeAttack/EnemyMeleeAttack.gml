@@ -14,8 +14,13 @@ function EnemyMeleeAttack(){
 		moveX = 0
 		moveY = 0
 	}else{
-		moveX = lengthdir_x(1,attackDir)
-		moveY = lengthdir_y(1,attackDir)
+		if enemyType != obj_Controller.enemystats.imp{
+			moveX = lengthdir_x(spd*1.5,attackDir)
+			moveY = lengthdir_y(spd*1.5,attackDir)
+		}else{
+			moveX = lengthdir_x(spd*1,attackDir)
+			moveY = lengthdir_y(spd*1,attackDir)
+		}	
 		//spd = 1
 	}
 	
