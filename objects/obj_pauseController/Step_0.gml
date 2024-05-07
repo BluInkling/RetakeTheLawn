@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if keyboard_check_pressed(ord("P")){
+if keyboard_check_pressed(vk_escape){
 	paused = !paused;
 	audio_play_sound(snd_pause,1,false)
 	with (obj_Music) pausemenu = true
@@ -13,6 +13,7 @@ if keyboard_check_pressed(ord("P")){
 		audio_play_sound(backbutton,2,false)
 		with (obj_Music) pausemenu = false
 	}
+	window_set_cursor(cr_none)
 }
 if paused == true{
 	alarm[0]++;

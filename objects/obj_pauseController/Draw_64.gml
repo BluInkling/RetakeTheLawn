@@ -11,6 +11,7 @@ if paused == true{
 	    paused_surf = surface_create(room_width, room_height);
 	    surface_set_target(paused_surf);
 	    draw_surface(application_surface,0,0);
+		
 		/*
 		surface_reset_target();
 		surface_set_target(obj_outlineControl.surf_outline);
@@ -26,6 +27,7 @@ if paused == true{
 	    draw_set_halign(fa_center);
 		draw_text_color(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 4, "PAUSED", c_white, c_white, c_white, c_white, 1);
 	    draw_set_halign(fa_left);
+		window_set_cursor(cr_default)
     }
 }
 

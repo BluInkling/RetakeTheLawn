@@ -77,6 +77,16 @@ projstats = {
 		lifetime: 10,//20,
 		damage : 0.75,
 		family : "bubble"
+	},
+	explosion :
+	{
+		mainsprite : spr_none,
+		splatsprite : spr_none,
+		dispsprite : spr_none,
+		movespeed : 0,
+		lifetime: 0,//20,
+		damage : 0,
+		family : "pea"
 	}
 }
 
@@ -324,8 +334,8 @@ function InvSetup(_prim,_ammo,_sec,_cool){ // DO NOT TOUCH, I DON'T KNOW WHY THI
 InvSetup(global.primaryInventory,global.ammoPrimary,global.secondaryInventory,global.cooldownSecondary)
 show_debug_message(inventoryPrimary)
 //show_debug_message(inventoryPrimary)
-primary = 0
-secondary = 0
+primary = global.primary
+secondary = global.secondary
 
 mainamount = 9 //total amn of main weps
 secondaryamount = 5; //total amnt of subs

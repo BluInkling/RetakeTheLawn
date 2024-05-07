@@ -14,13 +14,15 @@ global.fnt_textSmall = font_add_sprite_ext(spr_font,"ABCDEFGHIJKLMNOPQRSTUVWXYZa
 //Player Inventory and Stats
 global.roomOrder = [rm_prototyperoom,rm_day2,rm_day3]
 global.levelProgress = 0
- //Bug: Snow Pea stops working when brought to next room, peas don't freeze, flaming even works on them
+
 global.wallArmor = false
 global.pumpArmor = false
 global.primaryInventory = []
 global.ammoPrimary = []
 global.secondaryInventory = []
 global.subCooldown = []
+global.primary = 0
+global.secondary = 0
 
 //global.test = []
 

@@ -79,7 +79,7 @@ function ProcessExplosion(){
 					//A direct invocation solves this
 					Hit(6,"normal", point_direction(x,y,hitID.x,hitID.y))
 				}*/
-				hitID.Hit(20,"normal", point_direction(x,y,hitID.x,hitID.y),false)
+				hitID.Hit(20,obj_Controller.projstats.explosion, point_direction(x,y,hitID.x,hitID.y),false)
 			}
 	
 		}

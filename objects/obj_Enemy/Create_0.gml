@@ -133,8 +133,7 @@ function Hit(damage,type,dir,flaming){
 		alarm_set(0,stunLength)
 		
 	}
-	if type == obj_Controller.projstats.snow{
-		show_debug_message("SLOW")
+	if type.mainsprite == obj_Controller.projstats.snow.mainsprite{
 		cold = true
 		flashAlpha = 0.2;
 		flashColor = c_blue//c_aqua;
@@ -146,6 +145,8 @@ function Hit(damage,type,dir,flaming){
 			flashColor = c_white;
 		} else {
 			flashColor = c_red; 
+			cold = false
+			frozen = false
 		}
 	}else{
 		if !cold and !frozen{
