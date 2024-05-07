@@ -82,44 +82,61 @@ fumesoundsReload = [vo_turret_fume_shroom_spawn_0_3_0,vo_turret_fume_shroom_spaw
 cabbagesoundsReload = [Turret_DoomShroom_VO_Spawn_0_1_0,Turret_DoomShroom_VO_Spawn_1_3_0,Turret_DoomShroom_VO_Spawn_2_1_0,Turret_DoomShroom_VO_Spawn_2_3_0]
 kernelsoundsReload = [Turret_ScaredyShroom_VO_Unhide_0_0_0,Turret_ScaredyShroom_VO_Unhide_1_1_0,Turret_ScaredyShroom_VO_Unhide_1_2_0,Turret_ScaredyShroom_VO_Unhide_1_3_0,Turret_ScaredyShroom_VO_Unhide_1_4_0]
 
-function PlayPlantSound(type){
-	if main.family == "pea"{
-		sound = peasounds[irandom_range(0,array_length(peasounds)-1)]
-		audio_sound_pitch(sound,random_range(0.90,1.40))
-		if main.wepname == "snowpea"{
-			sparklesound = Snow_pea_sparkles
-			audio_sound_pitch(sparklesound,random_range(0.90,1.40))
-			audio_play_sound(sparklesound,1,false,0.9,0,1)
-			audio_play_sound(sound,1,false,0.9,0,1)
-		} else {
-			audio_play_sound(sound,1,false,0.9)
-		}
+function PlayReloadSound(){
+	switch(main.wepname){
+		case "peashooter":
+			reloadsound = peasoundsReload[irandom_range(0,array_length(peasoundsReload)-1)]
+			audio_play_sound(reloadsound,1,false,0.15)
+		break;
+		
+		case "repeater":
+			reloadsound = repeatersoundsReload[irandom_range(0,array_length(repeatersoundsReload)-1)]
+			audio_play_sound(reloadsound,1,false,0.15)
+		break;
+		
+		case "snowpea":
+			reloadsound = snowsoundsReload[irandom_range(0,array_length(snowsoundsReload)-1)]
+			audio_play_sound(reloadsound,1,false,0.15)
+		break;
+		
+		case "threepeater":
+			var reloadsound1 = peasoundsReload[irandom_range(0,array_length(peasoundsReload)-1)]
+			var reloadsound2 = peasoundsReload[irandom_range(0,array_length(peasoundsReload)-1)]
+			var reloadsound3 = peasoundsReload[irandom_range(0,array_length(peasoundsReload)-1)]
+			audio_play_sound(reloadsound1,1,false,0.07,0,1)
+			audio_play_sound(reloadsound2,1,false,0.07,0.2,1.15)
+			audio_play_sound(reloadsound3,1,false,0.07,0.4,0.9)
+		break;
+		
+		case "cabbagepult":
+			reloadsound = cabbagesoundsReload[irandom_range(0,array_length(cabbagesoundsReload)-1)]
+			audio_play_sound(reloadsound,1,false,0.35)
+		break;
+		
+		case "kernelpult":
+			reloadsound = kernelsoundsReload[irandom_range(0,array_length(kernelsoundsReload)-1)]
+			audio_play_sound(reloadsound,1,false,0.35)
+		break;
+		
+		case "fumeshroom":
+			reloadsound = fumesoundsReload[irandom_range(0,array_length(fumesoundsReload)-1)]
+			audio_play_sound(reloadsound,1,false,0.30)
+		break;
+		
+		case "puffshroom":
+			var reloadsound4 = puffsoundsReload[irandom_range(0,array_length(puffsoundsReload)-1)]
+			var reloadsound5 = puffsoundsReload[irandom_range(0,array_length(puffsoundsReload)-1)]
+			audio_play_sound(reloadsound4,1,false,0.25,0,1.10)
+			audio_play_sound(reloadsound5,1,false,0.25,0.3,1.25)
+		break;
+		
+		case "gatlingpea":
+			reloadsound = gatlingsoundsReload[irandom_range(0,array_length(gatlingsoundsReload)-1)]
+			audio_play_sound(reloadsound,1,false,0.15)
+		break;
+		
 	}
-	else if main.family == "fling"{
-		sound = flingsounds[irandom_range(0,array_length(flingsounds)-1)]
-		audio_sound_pitch(sound,random_range(0.95,1.40))
-		if (type == "butter") {
-			//buttersound = snd_butter
-			//audio_sound_pitch(buttersound,random_range(0.90,1.40))
-			//audio_play_sound(buttersound,1,false,0.9,0,1)
-			audio_sound_pitch(sound,random_range(0.70,.80))
-			audio_play_sound(sound,1,false,0.9,0,1)
-		} else {
-			audio_play_sound(sound,1,false,0.9)
-		}
-	}
-	else if main.family == "bubble"{
-		sound = fumesounds[irandom_range(0,array_length(fumesounds)-1)]
-		audio_sound_pitch(sound,random_range(0.90,1.40))
-		if (type == "small") {
-			puffsound = Puff
-			audio_sound_pitch(puffsound,random_range(0.90,1.30))
-			audio_play_sound(puffsound,1,false,0.9,0,1)
-		} else {
-			audio_play_sound(sound,8,false,0.75)
-		}
-	}
-	
+
 }
 
 function ShootProjectile(){
@@ -236,6 +253,7 @@ function Reload(){
 	shooting = false
 	reloading = true
 	image_index = 0 
+	PlayReloadSound()
 }
 
 function GotoPrimary(ind){

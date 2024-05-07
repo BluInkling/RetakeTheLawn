@@ -13,7 +13,9 @@ if pausemenu{
 else{
 
 	if !obj_player.inBattle && switchMusic{
-		audio_stop_sound(currBattleMusic)
+
+		
+		//audio_stop_sound(currBattleMusic)
 		//currNormalMusic = normal[random_range(0,array_length(normal))]
 		//show_debug_message(audio_sound_get_track_position(currNormalMusic))
 		//show_debug_message(audio_sound_length(currNormalMusic))
@@ -21,6 +23,8 @@ else{
 		//catch is audio is paused
 		if(audio_is_paused(currNormalMusic)){
 			show_debug_message("Soug is Resumed")
+			audio_sound_gain(currBattleMusic,0,3000)
+			alarm_set(0,2000)
 			audio_sound_gain(currNormalMusic,0,0)
 			audio_sound_gain(currNormalMusic,1,3000)
 			audio_resume_sound(currNormalMusic)
@@ -44,7 +48,7 @@ else{
 		show_debug_message("normal music paused")
 		
 		if(audio_is_paused(currBattleMusic)){
-			show_debug_message("Barrle Soug is Resumed")
+			show_debug_message("Battle Soug is Resumed")
 			audio_sound_gain(currBattleMusic,0,0)
 			audio_sound_gain(currBattleMusic,1,3000)
 			audio_resume_sound(currBattleMusic)
