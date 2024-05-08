@@ -19,13 +19,19 @@ if paused == true{
 	    */
 		surface_reset_target();
     }else{
-		draw_set_font(global.fnt_bold)
+		//draw_set_font(global.fnt_bold)
+		draw_set_font(global.fnt_textSmall)
 	    draw_surface(paused_surf, 0, 0);
 	    draw_set_alpha(0.5);
 	    draw_rectangle_colour(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
 	    draw_set_alpha(1);
 	    draw_set_halign(fa_center);
-		draw_text_color(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 4, "PAUSED", c_white, c_white, c_white, c_white, 1);
+		draw_set_color(c_white)
+		draw_text(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 4, "PAUSED")
+		draw_text(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0])*6 / 8, "Press ESC to continue")
+		draw_text(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0])*7 / 8, "Press SPACE to return to start")
+		draw_set_color(c_yellow)
+		draw_text(camera_get_view_width(view_camera[0]) / 2, (camera_get_view_height(view_camera[0])*7 / 8)+12, "(This will reset current level progress)")
 	    draw_set_halign(fa_left);
 		window_set_cursor(cr_default)
     }

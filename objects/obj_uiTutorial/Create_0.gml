@@ -31,7 +31,8 @@ function NextProgress(){
 		}else{
 			active = true
 			text = progressText[progress]
-			width = string_width(text)/2.7//*3
+			draw_set_font(global.fnt_textSmall)
+			width = (string_width(text)/2)+2//2.7//*3
 		}
 	}
 }

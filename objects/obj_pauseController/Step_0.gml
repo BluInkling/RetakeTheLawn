@@ -15,6 +15,11 @@ if keyboard_check_pressed(vk_escape){
 	}
 	window_set_cursor(cr_none)
 }
+
+if keyboard_check_pressed(vk_space) && paused{
+	room_goto(rm_title)
+}
+
 if paused == true{
 	alarm[0]++;
 	alarm[1]++;

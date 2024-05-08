@@ -29,8 +29,8 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.subweaponstats)
 		} else {
 			//type = choose(kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater,kindofpickup.cabbagepult,kindofpickup.kernelpult,kindofpickup.puffshroom,kindofpickup.fumeshroom)
 			//show_debug_message(obj_Controller.inventoryPrimary)
-			do{
-				type = choose(kindofpickup.peashooter,kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater,kindofpickup.cabbagepult,kindofpickup.kernelpult,kindofpickup.puffshroom,kindofpickup.fumeshroom,kindofpickup.gatlingpea)
+			do{ //Took out kindofpickup.peashooter
+				type = choose(kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater,kindofpickup.cabbagepult,kindofpickup.kernelpult,kindofpickup.puffshroom,kindofpickup.fumeshroom,kindofpickup.gatlingpea)
 			} until(!(array_contains(obj_Controller.inventoryPrimary,type))); //repeat new item is not in the inventory
 			
 			overlap = type.mainidlesprite

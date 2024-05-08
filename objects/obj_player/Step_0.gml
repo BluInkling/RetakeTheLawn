@@ -86,3 +86,6 @@ if hp < 1 && !dead{
 	obj_endController.End()
 }
 
+if !dead{
+	global.playtime += 1000/60
+}

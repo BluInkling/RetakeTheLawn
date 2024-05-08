@@ -14,7 +14,7 @@ if instance_exists(obj_MainWeapon){
 		}
 	}
 }
-
+depth = -1000
 draw_self()
 
 
