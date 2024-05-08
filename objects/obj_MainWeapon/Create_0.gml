@@ -86,7 +86,7 @@ function PlayReloadSound(){
 	switch(main.wepname){
 		case "peashooter":
 			reloadsound = peasoundsReload[irandom_range(0,array_length(peasoundsReload)-1)]
-			audio_play_sound(reloadsound,1,false,0.15)
+			audio_play_sound(reloadsound,1,false,0.0015)
 		break;
 		
 		case "repeater":

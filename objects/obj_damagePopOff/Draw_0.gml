@@ -18,7 +18,7 @@ if moving == true{
 		fade = true
 	}
 
-
+//draw_set_font(global.fnt_textSmall)
 draw_set_font(global.fnt_bold)
 draw_set_color(color)
 
