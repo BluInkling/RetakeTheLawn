@@ -20,6 +20,7 @@ if place_meeting(x,y,obj_player) && !instance_exists(obj_fadeOut){
 	global.primary = obj_Controller.primary
 	global.secondary = obj_Controller.secondary
 	global.levelProgress += 1
+	WriteJSON()
 	FadeOut(global.roomOrder[global.levelProgress])
 	//room_goto(global.roomOrder[global.levelProgress])
 }

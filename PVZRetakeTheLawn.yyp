@@ -100,6 +100,7 @@
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"burbankbigcondensed_black.otf","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"burbankbigcondensed_bold.otf","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"saveData.json","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "isEcma": false,
   "LibraryEmitters": [],
@@ -123,6 +124,7 @@
     {"id":{"name":"PLANT_WALLNUT_1","path":"sounds/PLANT_WALLNUT_1/PLANT_WALLNUT_1.yy",},},
     {"id":{"name":"flingHit3","path":"sounds/flingHit3/flingHit3.yy",},},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},},
+    {"id":{"name":"WriteJSON","path":"scripts/WriteJSON/WriteJSON.yy",},},
     {"id":{"name":"spr_bubbleSmall","path":"sprites/spr_bubbleSmall/spr_bubbleSmall.yy",},},
     {"id":{"name":"obj_outlineControl","path":"objects/obj_outlineControl/obj_outlineControl.yy",},},
     {"id":{"name":"obj_zenBase","path":"objects/obj_zenBase/obj_zenBase.yy",},},
@@ -201,6 +203,7 @@
     {"id":{"name":"spr_snowpeaShoot","path":"sprites/spr_snowpeaShoot/spr_snowpeaShoot.yy",},},
     {"id":{"name":"snd_bell","path":"sounds/snd_bell/snd_bell.yy",},},
     {"id":{"name":"ps_fire","path":"particles/ps_fire/ps_fire.yy",},},
+    {"id":{"name":"ReadJSON","path":"scripts/ReadJSON/ReadJSON.yy",},},
     {"id":{"name":"spr_kernelPultIdle","path":"sprites/spr_kernelPultIdle/spr_kernelPultIdle.yy",},},
     {"id":{"name":"obj_Enemy","path":"objects/obj_Enemy/obj_Enemy.yy",},},
     {"id":{"name":"outline_start","path":"scripts/outline_start/outline_start.yy",},},

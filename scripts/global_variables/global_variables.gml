@@ -21,7 +21,7 @@ global.pumpArmor = false
 global.primaryInventory = []
 global.ammoPrimary = []
 global.secondaryInventory = []
-global.subCooldown = []
+global.cooldownSecondary = []
 global.primary = 0
 global.secondary = 0
 

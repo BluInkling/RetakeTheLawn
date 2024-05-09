@@ -11,7 +11,7 @@ if holding{
 		holding = false
 		counter = 0
 	}
-	show_debug_message("HOLDING: "+string(counter))
+	//show_debug_message("HOLDING: "+string(counter))
 }
 
 if transitioning{
@@ -25,7 +25,7 @@ if transitioning{
 		transitioning = false
 		counter = 0
 	}
-	show_debug_message("transitioning: "+string(counter))
+	//show_debug_message("transitioning: "+string(counter))
 }
 
 if holding{
