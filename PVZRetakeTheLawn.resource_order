@@ -2,6 +2,7 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"obj_crosshair","order":1,"path":"objects/obj_crosshair/obj_crosshair.yy",},
+    {"name":"sPebbles","order":1,"path":"sprites/sPebbles/sPebbles.yy",},
     {"name":"spr_pocketCooldown","order":1,"path":"sprites/spr_pocketCooldown/spr_pocketCooldown.yy",},
     {"name":"spr_crosshair","order":2,"path":"sprites/spr_crosshair/spr_crosshair.yy",},
   ],

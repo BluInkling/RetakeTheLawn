@@ -31,7 +31,10 @@ else{
 		}
 		if (audio_sound_get_track_position(currNormalMusic) >= audio_sound_length(currNormalMusic)) or !audio_is_playing(currNormalMusic){
 			show_debug_message("Soug is over")
-			currNormalMusic = normal[random_range(0,array_length(normal))]
+			show_debug_message(room)
+			if room == 2{
+				currNormalMusic = night[random_range(0,array_length(night))]
+			} else currNormalMusic = normal[random_range(0,array_length(normal))]
 		}
 		if !audio_is_playing(currNormalMusic){
 			show_debug_message("Soug is starting")

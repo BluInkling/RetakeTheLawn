@@ -253,7 +253,7 @@ function Reload(){
 	shooting = false
 	reloading = true
 	image_index = 0 
-	PlayReloadSound()
+	//PlayReloadSound()
 }
 
 function GotoPrimary(ind){
