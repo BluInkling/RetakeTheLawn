@@ -12,6 +12,8 @@ function EnemyState_Attack(){
 			hasHit = false
 			if !alreadyBuffed{
 				spd = enemyType.spd
+			}else{
+				spd = enemyType.spd + 0.25
 			}
 			
 		}
@@ -23,7 +25,7 @@ function EnemyState_Attack(){
 		sprite_index = enemyType.idlespr //shooting sprite?
 		counter += 1;
 		if(counter >= room_speed * 1){ //50% chance to start wandering every 3 seconds
-			if point_distance(x,y,obj_player.x,obj_player.y) < 150{
+			if collision_rectangle(x-160,y-90,x+160,y+90,obj_player,0,0){
 				with (egun){
 					Shoot();
 				}
@@ -62,7 +64,7 @@ function EnemyState_Attack(){
 				//show_debug_message("going to zombie")
 				with(_list[| i]){
 					//hp ++;
-					if armor == 0 && enemyType != obj_Controller.enemystats.imp{
+					if armor == 0 && enemyType != obj_Controller.enemystats.imp && enemyType != obj_Controller.enemystats.flagzombie{
 						hat = choose("cone","cone","bucket")
 						if hat == "cone"{
 							hatSpr = spr_zombieCone

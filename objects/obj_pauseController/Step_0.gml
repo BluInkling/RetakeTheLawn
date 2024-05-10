@@ -17,7 +17,12 @@ if keyboard_check_pressed(vk_escape){
 }
 
 if keyboard_check_pressed(vk_space) && paused{
+	instance_activate_object(obj_pickupable)
+	with obj_pickupable{
+		part_system_destroy(part)
+	}
 	room_goto(rm_title)
+	
 }
 
 if paused == true{

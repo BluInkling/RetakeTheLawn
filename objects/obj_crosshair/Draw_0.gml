@@ -14,7 +14,11 @@ if instance_exists(obj_MainWeapon){
 		}
 	}
 }
-depth = -1000
+if instance_exists(obj_player){
+	depth = obj_player.depth-1000
+}else{
+	depth = -1000
+}
 draw_self()
 
 

@@ -29,10 +29,17 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.subweaponstats)
 		} else {
 			//type = choose(kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater,kindofpickup.cabbagepult,kindofpickup.kernelpult,kindofpickup.puffshroom,kindofpickup.fumeshroom)
 			//show_debug_message(obj_Controller.inventoryPrimary)
-			do{ //Took out kindofpickup.peashooter
-				type = choose(kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater,kindofpickup.cabbagepult,kindofpickup.kernelpult,kindofpickup.puffshroom,kindofpickup.fumeshroom,kindofpickup.gatlingpea)
-			} until(!(array_contains(obj_Controller.inventoryPrimary,type))); //repeat new item is not in the inventory
-			
+			var pass = true
+			do{
+				type = choose(kindofpickup.peashooter,kindofpickup.repeater,kindofpickup.snowpea,kindofpickup.threepeater,kindofpickup.cabbagepult,kindofpickup.kernelpult,kindofpickup.puffshroom,kindofpickup.fumeshroom,kindofpickup.gatlingpea)
+				var test = type.showname
+				pass = true
+				for (var t=0;t<array_length(obj_Controller.inventoryPrimary);t++){
+					if obj_Controller.inventoryPrimary[t].showname == test{
+						pass = false
+					}
+				}
+			} until pass; //repeat new item is not in the inventory
 			overlap = type.mainidlesprite
 			name = type.wepname
 			savedStat = type.clip
@@ -49,17 +56,17 @@ kindofpickup = choose(obj_Controller.weaponstats,obj_Controller.subweaponstats)
 		} else {
 			//type = choose(kindofpickup.torchwood,kindofpickup.cocoabean)
 			var timeout = 0
+			var pass = true
 			do{
 				type = choose(kindofpickup.torchwood,kindofpickup.cocoabean,kindofpickup.potatomine,kindofpickup.cherrybomb,kindofpickup.iceberglettuce)
-				/*
-				timeout += 1
-				if timeout > 100{
-					//show_debug_message(obj_Controller.inventorySecondary)
-					break
+				var test = type.showname
+				pass = true
+				for (var t=0;t<array_length(obj_Controller.inventorySecondary);t++){
+					if obj_Controller.inventorySecondary[t].showname == test{
+						pass = false
+					}
 				}
-				*/
-			} until(!(array_contains(obj_Controller.inventorySecondary,type)))
-			
+			} until pass; //repeat new item is not in the inventory
 			overlap = type.subidlesprite
 			name = type.wepname
 			savedStat = 0

@@ -236,6 +236,7 @@ function ChangePrimary(){
 	animShoot = main.mainshootsprite
 	animReload = main.mainreloadsprite
 	chargeable = main.chargeable
+	counter = 0
 	if chargeable{
 		animCharge = main.mainchargesprite
 		animChargeMax = main.mainchargemaxsprite

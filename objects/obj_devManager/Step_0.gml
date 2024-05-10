@@ -71,7 +71,11 @@ if keyboard_check_pressed(ord("G")){ // Gives all weapons
 
 }
 
-
+if keyboard_check_pressed(ord("F")){
+	with obj_pickupable{
+		part_system_destroy(part)
+	}
+}
 
 
 

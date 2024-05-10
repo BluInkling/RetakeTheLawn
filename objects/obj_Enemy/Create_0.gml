@@ -36,7 +36,7 @@ if enemyType == obj_Controller.enemystats.imp{
 //-------------------
 hp = enemyType.hp
 armor = enemyType.armor
-counter = 0;
+counter = 300;
 shootcounter = 0;
 spd = enemyType.spd
 coldspd = spd*2 / 3;

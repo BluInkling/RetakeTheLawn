@@ -24,7 +24,7 @@ draw_set_color(color)
 
 //show_debug_message(num)
 //draw_text_ext_transformed(x,y-24,string(num),3,64,0.6,0.5,0)
-draw_text_ext_transformed_color(x,y-24,string(num),3,64,0.6,0.5,0,color,color,color,color,alpha)
+draw_text_ext_transformed_color(x,y-24,string(round(num)),3,64,0.6,0.5,0,color,color,color,color,alpha)
 
 
 

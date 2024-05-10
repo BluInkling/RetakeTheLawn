@@ -6,7 +6,7 @@ function EnemyState_Wander(){
 	//show_debug_message("WANDER")
 
 	//Transition Triggers
-	if(counter >= room_speed * 3){
+	if(counter >= room_speed * 2){
 		var change = choose(0,1);
 		switch(change){
 			case 0: state = ENEMYSTATE.WANDER;

@@ -85,6 +85,7 @@ function ProcessExplosion(){
 		}
 	}
 	ds_list_destroy(hitByAttackNow);
+	
 
 }
 

@@ -4,6 +4,9 @@
 alpha += 0.01
 
 if alpha >= 1{
+	with obj_pickupable{
+		part_system_destroy(part)
+	}
 	room_goto(next)
 }
 

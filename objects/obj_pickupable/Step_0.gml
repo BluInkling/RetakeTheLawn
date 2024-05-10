@@ -16,7 +16,7 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 					//show_debug_message(obj_Controller.ammoPrimary)
 					array_delete(obj_Controller.inventoryPrimary,obj_Controller.primary,1)
 					array_delete(obj_Controller.ammoPrimary,obj_Controller.primary,1)
-					instance_create_depth(obj_player.x,obj_player.y,depth,obj_pickupable)
+					instance_create_depth(x,y,depth,obj_pickupable)
 					obj_uiMainPocket.ShowFull()
 				}
 				array_push(obj_Controller.inventoryPrimary,type)
@@ -50,7 +50,7 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 					global.fixedStat = obj_Controller.cooldownSecondary[obj_Controller.secondary]
 					array_delete(obj_Controller.inventorySecondary,obj_Controller.secondary,1)
 					array_delete(obj_Controller.cooldownSecondary,obj_Controller.secondary,1)
-					instance_create_depth(obj_player.x,obj_player.y,depth,obj_pickupable)
+					instance_create_depth(x,y,depth,obj_pickupable)
 					obj_uiSubPocket.ShowFull()
 				}
 				array_push(obj_Controller.inventorySecondary,type)
@@ -74,7 +74,24 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 		for (var i=0;i<instance_number(obj_pickupable);++i){
 			var col = instance_find(obj_pickupable,i)
 			if !col.fixed{
-				col.RandomChoose()	
+				with col{
+					var pass = true
+					var test = type.showname
+					pass = true
+					for (var t=0;t<array_length(obj_Controller.inventoryPrimary);t++){
+						if obj_Controller.inventoryPrimary[t].showname == test{
+							pass = false
+						}
+					}
+					for (var t=0;t<array_length(obj_Controller.inventorySecondary);t++){
+						if obj_Controller.inventorySecondary[t].showname == test{
+							pass = false
+						}
+					}
+					if !pass{
+						col.RandomChoose()	
+					}
+				}
 			}
 			
 		}
@@ -85,10 +102,6 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 		
 	}
 } else draw = false
-
-
-
-
 
 
 
