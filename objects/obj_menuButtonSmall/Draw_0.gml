@@ -26,12 +26,15 @@ if place_meeting(x,y,obj_crosshair){
 				buffer_write(_buffer, buffer_string,_string)
 				buffer_save(_buffer,"saveData.json")
 				buffer_delete(_buffer)
+				audio_play_sound(snd_plantplant,0,0)
 				host.ChangeMenu("done")
 				break;
 			case "no":
+				audio_play_sound(pickupfromseedpacket,0,0)
 				host.ChangeMenu("continue")
 				break
 			case "okay":
+				audio_play_sound(pickupfromseedpacket,0,0)
 				host.ChangeMenu("new")
 				break
 		}

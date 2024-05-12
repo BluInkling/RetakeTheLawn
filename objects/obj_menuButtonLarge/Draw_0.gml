@@ -9,16 +9,20 @@ if place_meeting(x,y,obj_crosshair){
 		switch (type){
 			case "space":
 				image_index = 0
+				audio_play_sound(pickupfromseedpacket,0,0)
 				SpawnMenu()
 				//image_index = 0
 				break;
 			case "new":
+				audio_play_sound(pickupfromseedpacket,0,0)
 				FadeOut(rm_cutscene)
 				break
 			case "continue":
+			audio_play_sound(pickupfromseedpacket,0,0)
 				FadeOut(global.roomOrder[global.levelProgress])
 				break
 			case "reset":
+				audio_play_sound(selectTrowel,0,0)
 				host.ChangeMenu("sure")
 				break
 		}

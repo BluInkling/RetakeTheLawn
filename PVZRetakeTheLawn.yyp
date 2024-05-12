@@ -303,6 +303,7 @@
     {"id":{"name":"obj_carC","path":"objects/obj_carC/obj_carC.yy",},},
     {"id":{"name":"obj_menuPortraitMini","path":"objects/obj_menuPortraitMini/obj_menuPortraitMini.yy",},},
     {"id":{"name":"spr_impSpawn","path":"sprites/spr_impSpawn/spr_impSpawn.yy",},},
+    {"id":{"name":"mus_Menu","path":"sounds/mus_Menu/mus_Menu.yy",},},
     {"id":{"name":"snd_plantfooddropped","path":"sounds/snd_plantfooddropped/snd_plantfooddropped.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"spr_impIdle","path":"sprites/spr_impIdle/spr_impIdle.yy",},},

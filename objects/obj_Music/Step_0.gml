@@ -33,8 +33,8 @@ else{
 			show_debug_message("Soug is over")
 			show_debug_message(room)
 			if room == 2{
-				currNormalMusic = night[random_range(0,array_length(night))]
-			} else currNormalMusic = normal[random_range(0,array_length(normal))]
+				currNormalMusic = night[irandom_range(0,array_length(night)-1)]
+			} else currNormalMusic = normal[irandom_range(0,array_length(normal)-1)]
 		}
 		if !audio_is_playing(currNormalMusic){
 			show_debug_message("Soug is starting")

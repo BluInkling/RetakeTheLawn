@@ -15,6 +15,7 @@
     {"name":"spr_menuButtonOther","order":9,"path":"sprites/spr_menuButtonOther/spr_menuButtonOther.yy",},
     {"name":"spr_titleBack","order":10,"path":"sprites/spr_titleBack/spr_titleBack.yy",},
     {"name":"obj_menuPortraitMini","order":7,"path":"objects/obj_menuPortraitMini/obj_menuPortraitMini.yy",},
+    {"name":"mus_Menu","order":1,"path":"sounds/mus_Menu/mus_Menu.yy",},
     {"name":"obj_titleLogo","order":2,"path":"objects/obj_titleLogo/obj_titleLogo.yy",},
     {"name":"obj_titleController","order":1,"path":"objects/obj_titleController/obj_titleController.yy",},
     {"name":"spr_pocketCooldown","order":1,"path":"sprites/spr_pocketCooldown/spr_pocketCooldown.yy",},
