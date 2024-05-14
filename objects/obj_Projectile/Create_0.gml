@@ -53,7 +53,7 @@ if flaming{
 		dispSpr = type.dispsprite
 	}else{
 		image_blend = c_orange
-		damage += 2
+		damage += damage * .50 //increases it by a percentag
 		flamePS = part_system_create(ps_fire)
 	}
 }

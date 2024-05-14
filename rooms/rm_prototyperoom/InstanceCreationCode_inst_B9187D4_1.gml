@@ -15,6 +15,7 @@ ds_list_add(waves,[0,obj_Enemy,0,100,imp]);
 ds_list_add(waves,[0,obj_Enemy,0,100,imp]);
 ds_list_add(waves,[0,obj_Enemy,0,100,imp]);
 */
+
 ds_list_add(waves,[1,obj_Enemy,0,0,basic]);
 //ds_list_add(waves,[1,obj_Enemy,0,30,basic]);
 ds_list_add(waves,[1,obj_Enemy,0,60,basic]);

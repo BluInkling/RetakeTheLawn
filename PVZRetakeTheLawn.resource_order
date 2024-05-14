@@ -1,5 +1,8 @@
 {
-  "FolderOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"Night","order":1,"path":"folders/Sounds/Background Music/Night.yy",},
+    {"name":"Normal","order":2,"path":"folders/Sounds/Background Music/Normal.yy",},
+  ],
   "ResourceOrderSettings": [
     {"name":"spr_menuButtonNeutral","order":6,"path":"sprites/spr_menuButtonNeutral/spr_menuButtonNeutral.yy",},
     {"name":"WriteJSON","order":2,"path":"scripts/WriteJSON/WriteJSON.yy",},
@@ -30,6 +33,10 @@
     {"name":"spr_menuButtonPositive","order":7,"path":"sprites/spr_menuButtonPositive/spr_menuButtonPositive.yy",},
     {"name":"obj_menuPortraitMain","order":6,"path":"objects/obj_menuPortraitMain/obj_menuPortraitMain.yy",},
     {"name":"spr_waveBar","order":14,"path":"sprites/spr_waveBar/spr_waveBar.yy",},
+    {"name":"mus_menu_zombieonlawnINST","order":4,"path":"sounds/mus_menu_zombieonlawnINST/mus_menu_zombieonlawnINST.yy",},
+    {"name":"spr_pocketCooldown","order":1,"path":"sprites/spr_pocketCooldown/spr_pocketCooldown.yy",},
+    {"name":"mus_RigorMormist","order":3,"path":"sounds/mus_RigorMormist/mus_RigorMormist.yy",},
+    {"name":"mus_WateryGraves","order":1,"path":"sounds/mus_WateryGraves/mus_WateryGraves.yy",},
     {"name":"spr_crosshair","order":2,"path":"sprites/spr_crosshair/spr_crosshair.yy",},
   ],
 }
