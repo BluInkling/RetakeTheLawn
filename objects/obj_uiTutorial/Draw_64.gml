@@ -4,6 +4,8 @@ depth = -1000
 if alpha > 0{
 	draw_set_color(c_black)
 	draw_set_alpha(0.5*clamp(alpha,0,1))
+	draw_set_font(global.fnt_textSmall)
+	width = (string_width(text)/2)+2
 	draw_rectangle(center-width,0,center+width,height,false)
 	draw_set_alpha(alpha)
 	draw_set_color(c_white)

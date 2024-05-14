@@ -89,3 +89,16 @@ if hp < 1 && !dead{
 if !dead{
 	global.playtime += 1000/60
 }
+
+if itime > 0{
+	itime -= 1
+	flashAlpha = 0.25
+	/*
+	if itime % 15 == 0{
+		flashAlpha = 1
+	}
+	*/
+	if itime <= 0{
+		invulnerable = false
+	}
+}

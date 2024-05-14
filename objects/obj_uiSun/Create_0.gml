@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-startX = ((obj_camera.camX+camera_get_view_width(view_camera[0])/2)-x)//obj_player.
-startY = ((obj_camera.camY+camera_get_view_height(view_camera[0])/2)-y)
+startX = (x-(obj_camera.camX-camera_get_view_width(view_camera[0])/2))//obj_player.
+startY = (y-(obj_camera.camY-camera_get_view_height(view_camera[0])/2))
 
-endX = 24
-endY = 24
+endX = 32
+endY = 32
 
 drawX = 0
 drawY = 0

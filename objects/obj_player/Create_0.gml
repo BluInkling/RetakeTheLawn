@@ -40,6 +40,10 @@ inGarden = false;
 
 warned = false
 
+invulnerable = false
+iframes = 60
+itime = 0
+
 instance_create_layer(0,0,"Player",obj_Controller)
 instance_create_layer(1,0,"Player",obj_Music)
 instance_create_layer(0,0,"Gun",obj_MainWeapon)
@@ -47,32 +51,37 @@ instance_create_layer(0,0,"Player",obj_SubWeapon)
 
 
 function Hit(damage){
-	if wallnutArmor+pumpkinArmor > 0{
-		var tempHp = hp+wallnutArmor+pumpkinArmor
-		var tempArmor = 0
-		tempHp-=damage
-		tempArmor = tempHp - hp
-		if wallnutArmor && pumpkinArmor{
-			if tempArmor == 1{
-				pumpkinArmor = 0
-			}else if tempArmor == 0{
-				wallnutArmor = 0
+	if !invulnerable{
+		if wallnutArmor+pumpkinArmor > 0{
+			var tempHp = hp+wallnutArmor+pumpkinArmor
+			var tempArmor = 0
+			tempHp-=damage
+			tempArmor = tempHp - hp
+			if wallnutArmor && pumpkinArmor{
+				if tempArmor == 1{
+					pumpkinArmor = 0
+				}else if tempArmor == 0{
+					wallnutArmor = 0
+				}
+			}else if pumpkinArmor{
+				if tempArmor == 0{
+					pumpkinArmor = 0
+				}
+			}else if wallnutArmor{
+				if tempArmor == 0{
+					wallnutArmor = 0
+				}
 			}
-		}else if pumpkinArmor{
-			if tempArmor == 0{
-				pumpkinArmor = 0
-			}
-		}else if wallnutArmor{
-			if tempArmor == 0{
-				wallnutArmor = 0
-			}
-		}
-		//show_debug_message(tempHp)
+			//show_debug_message(tempHp)
 		
-	}else{
-		hp -= damage;
+		}else{
+			hp -= damage;
+		}
+		flashAlpha = 1;
+		invulnerable = true
+		itime = iframes
 	}
-	flashAlpha = 1;
+	
 	/*
 	if wallnutArmor > 0{ //if has armor
 		wallnutArmor -= damage//armor takes damage

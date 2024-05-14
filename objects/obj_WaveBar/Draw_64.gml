@@ -30,7 +30,7 @@ for (var f=0;f<wavenum+1;f++){
 	draw_sprite(spr_flag,0,xplace+width-(spacing*f),yplace)
 	//show_debug_message(spacing)
 }
-draw_sprite(spr_zombieHead,0,xplace+progress,yplace)
+draw_sprite(spr_zombieHead,0,xplace+progress,yplace+1)
 
 
 } else {
