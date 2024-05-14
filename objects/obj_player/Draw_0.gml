@@ -20,6 +20,8 @@ if moving{
 
 image_xscale = xDir
 
+depth = ceil(382-y)//18
+
 draw_sprite(spr_shadowMain,0,x,y+14)
 
 draw_self()

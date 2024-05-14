@@ -8,7 +8,7 @@ alphaStep = 0.025
 
 function ShowFull(){
 	alpha = 2
-	show_debug_message("FULL")
+	//show_debug_message("FULL")
 }
 
 

@@ -22,6 +22,12 @@ if inactive{
 	sprite_index = spr_none
 }
 depth = 400-y
+/*
+if instance_exists(obj_player){
+	//depth = obj_player.depth// +8
+}
+*/
+
 draw_self()
 
 

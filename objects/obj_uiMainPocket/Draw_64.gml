@@ -25,5 +25,18 @@ if alpha > 0{
 	draw_set_halign(fa_left)
 	draw_set_alpha(1)
 }
-
-
+//show_debug_message(mouse_y-obj_camera.camY)
+/* Cut for too much complexity
+if mouse_x-obj_camera.camX > 120 && mouse_y-obj_camera.camY > 50{
+	obj_uiPickupDesc.name = obj_Controller.inventoryPrimary[obj_Controller.primary].showname
+	obj_uiPickupDesc.desc = obj_Controller.inventoryPrimary[obj_Controller.primary].desc
+	with obj_uiPickupDesc{
+		if alpha < 1{
+			alpha += alphaStep*3
+			if alpha > 1{
+				alpha = 1
+			}
+		}
+	}
+}
+*/
