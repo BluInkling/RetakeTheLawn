@@ -6,7 +6,11 @@ if paused && keyboard_check_pressed(vk_space){
 	//room_restart()
 	show_debug_message("LEAVE")
 	instance_activate_object(obj_pickupable)
+	instance_activate_object(obj_taco)
 	with obj_pickupable{
+		part_system_destroy(part)
+	}
+	with obj_taco{
 		part_system_destroy(part)
 	}
 	room_goto(room)

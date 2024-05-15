@@ -55,3 +55,4 @@ switch(subweapon){
 */
 //show_debug_message(global.test)
 //show_debug_message(inventoryPrimary)
+//show_debug_message(global.levelProgress)

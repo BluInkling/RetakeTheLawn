@@ -48,6 +48,9 @@ if (hp <= 0 && !dying)
 			}
 		}
 	}
+	if enemyType.type == "tacoimp"{
+		instance_create_depth(x,y,0,obj_taco)
+	}
 }
 
 

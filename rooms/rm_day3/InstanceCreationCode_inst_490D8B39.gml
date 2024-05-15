@@ -40,8 +40,8 @@ ds_list_add(waves,[2,obj_Enemy,300,0,conehead]);
 //locations to spawn gravestones in room
 //x
 //y
-spawn[0,0] = 991
-spawn[0,1] = 976
+spawn[0,0] = 1504
+spawn[0,1] = 832
 
 spawn[1,0] = 1704
 spawn[1,1] = 971

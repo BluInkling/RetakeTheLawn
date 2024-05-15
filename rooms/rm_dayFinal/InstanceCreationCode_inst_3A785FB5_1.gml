@@ -6,6 +6,9 @@ buckethead = obj_Controller.enemystats.buckethead
 soldier = obj_Controller.enemystats.footsoldier
 flag = obj_Controller.enemystats.flagzombie
 impA = obj_Controller.enemystats.imp
+tacoimp = obj_Controller.enemystats.tacoimp
+
+//ds_list_add(waves,[0,obj_Enemy,0,400,tacoimp]);
 
 ds_list_add(waves,[0,obj_Enemy,0,0,flag]);
 ds_list_add(waves,[0,obj_Enemy,0,50,flag]);
@@ -67,7 +70,8 @@ ds_list_add(waves,[3,obj_Enemy,0,100,basic]);
 ds_list_add(waves,[3,obj_Enemy,0,0,buckethead]);
 ds_list_add(waves,[3,obj_Enemy,0,0,buckethead]);
 
-ds_list_add(waves,[4,obj_Enemy,0,400,impA]);
+ds_list_add(waves,[4,obj_Enemy,0,400,tacoimp]);
+
 //locations to spawn gravestones in room
 //x
 //y

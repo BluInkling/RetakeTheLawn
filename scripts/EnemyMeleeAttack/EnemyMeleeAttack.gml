@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyMeleeAttack(){
-	if enemyType != obj_Controller.enemystats.imp{
+	if enemyType != obj_Controller.enemystats.imp && enemyType != obj_Controller.enemystats.tacoimp{
 		if image_index < 8{
 			attackDir = point_direction(x,y,obj_player.x,obj_player.y)
 		}
@@ -14,7 +14,7 @@ function EnemyMeleeAttack(){
 		moveX = 0
 		moveY = 0
 	}else{
-		if enemyType != obj_Controller.enemystats.imp{
+		if enemyType != obj_Controller.enemystats.imp && enemyType != obj_Controller.enemystats.tacoimp{
 			moveX = lengthdir_x(spd*1.5,attackDir)
 			moveY = lengthdir_y(spd*1.5,attackDir)
 		}else{

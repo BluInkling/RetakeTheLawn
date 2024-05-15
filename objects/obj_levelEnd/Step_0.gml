@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if place_meeting(x,y,obj_player) && !instance_exists(obj_fadeOut){
+if place_meeting(x,y,obj_player) && !instance_exists(obj_fadeOut) && !touched{
+	touched = true
 	global.wallArmor = obj_player.wallnutArmor
 	global.pumpArmor = obj_player.pumpkinArmor
 	/*
@@ -21,6 +22,7 @@ if place_meeting(x,y,obj_player) && !instance_exists(obj_fadeOut){
 	global.secondary = obj_Controller.secondary
 	global.levelProgress += 1
 	WriteJSON()
+	//show_debug_message(global.levelProgress)
 	FadeOut(global.roomOrder[global.levelProgress])
 	//room_goto(global.roomOrder[global.levelProgress])
 }
