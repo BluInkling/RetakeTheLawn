@@ -21,15 +21,19 @@ function ReadJSON(){
 	}
 	file_text_close(_file)
 	saveData = json_parse(_fileStr)
-	show_debug_message(saveData) 
-	global.levelProgress = saveData.levelProgress
-	global.playtime = saveData.playtime
-	global.wallArmor = saveData.wallArmor
-	global.pumpArmor = saveData.pumpArmor
-	global.primaryInventory = saveData.primaryInventory
-	global.ammoPrimary = saveData.ammoPrimary
-	global.secondaryInventory = saveData.secondaryInventory 
-	global.cooldownSecondary = saveData.cooldownSecondary
-	global.primary = saveData.primary 
-	global.secondary = saveData.secondary
+	if is_undefined(saveData.playtime){
+		WriteJSON()
+	}else{
+		//show_debug_message(saveData) 
+		global.levelProgress = saveData.levelProgress
+		global.playtime = saveData.playtime
+		global.wallArmor = saveData.wallArmor
+		global.pumpArmor = saveData.pumpArmor
+		global.primaryInventory = saveData.primaryInventory
+		global.ammoPrimary = saveData.ammoPrimary
+		global.secondaryInventory = saveData.secondaryInventory 
+		global.cooldownSecondary = saveData.cooldownSecondary
+		global.primary = saveData.primary 
+		global.secondary = saveData.secondary
+	}
 }

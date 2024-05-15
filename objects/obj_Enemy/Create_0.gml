@@ -230,4 +230,9 @@ groansounds = [Groan,Groan2,Groan3,Groan4,Groan5,Groan6,Groan7,Groan8]
 fallsound = choose(zombie_falling_1,zombie_falling_2,bodyfall,bodyfall2)
 if enemyType == obj_Controller.enemystats.imp || enemyType == obj_Controller.enemystats.tacoimp{
 	audio_play_sound(choose(imp1,imp2),1,false,0.5,0,random_range(0.90,1.20))
+} 
+if enemyType == obj_Controller.enemystats.tacoimp{
+	with obj_throwable{
+		instance_destroy()
+	}
 }
