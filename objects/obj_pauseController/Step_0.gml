@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if !window_has_focus() && !paused{
+	paused = true
+	audio_play_sound(snd_pause,1,false)
+	with (obj_Music) pausemenu = true
+}
 
 if keyboard_check_pressed(vk_escape){
 	paused = !paused;
@@ -21,6 +25,7 @@ if keyboard_check_pressed(vk_space) && paused{
 	with obj_pickupable{
 		part_system_destroy(part)
 	}
+	with (obj_Music) pausemenu = false
 	room_goto(rm_title)
 	
 }

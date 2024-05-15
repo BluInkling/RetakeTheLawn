@@ -38,7 +38,7 @@ if (hp <= 0 && !dying)
 	if hb != noone{
 		instance_destroy(hb)
 	}
-	if (instance_exists(obj_RoomController))
+	if (instance_exists(obj_RoomController) && !fromVase)
 	{
 		with(obj_RoomController)
 		{

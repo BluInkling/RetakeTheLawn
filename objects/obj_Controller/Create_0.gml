@@ -475,6 +475,26 @@ enemystats = {
 		spd : 1.5,
 		onhead : "none",
 		behavior : "melee"
+	},
+	tacoimp :
+	{
+		type : "tacoimp",
+		hp : 4,
+		armor : 0,
+		idlespr : spr_tacoImpIdle,
+		movespr : spr_tacoImpRun,
+		attackspr : spr_impAttack,
+		attacksprHB : spr_impAttack,//HB,
+		spawnspr : spr_impSpawn,
+		idlesprH : spr_tacoImpIdle,
+		movesprH : spr_tacoImpRun,
+		attacksprH : spr_impAttack,
+		dyingspr: spr_impDying,
+		deadspr: spr_impDead,
+		headspr: spr_impHead,
+		spd : 1.5,
+		onhead : "none",
+		behavior : "melee"
 	}
 	
 }

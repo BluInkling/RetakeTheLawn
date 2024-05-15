@@ -40,6 +40,8 @@ else if checkRoom{
 	}
 	checkRoom = false
 	switchMusic = true
+	currNormalMusic = normal[global.levelProgress]
+	currBattleMusic = battle[global.levelProgress]
 }
 else if switchMusic{
 	show_debug_message("music time!!")
@@ -65,9 +67,12 @@ else if switchMusic{
 			show_debug_message("Soug is over")
 			show_debug_message(type)
 			audio_sound_gain(currNormalMusic,1,0)
+			currNormalMusic = normal[global.levelProgress]
+			/*
 			if type == "night"{
 				currNormalMusic = night[random_range(0,array_length(night))]
 			} else currNormalMusic = normal[random_range(0,array_length(normal))]
+			*/
 		}
 		if !audio_is_playing(currNormalMusic){
 			show_debug_message("Soug is starting")
@@ -101,9 +106,12 @@ else if switchMusic{
 			switchMusic = false
 		}
 		if !(audio_is_playing(currBattleMusic)){
+			/*
 			if type == "night"{
 				currBattleMusic = mus_WateryGraves
 			} else currBattleMusic = battle[random_range(0,array_length(battle))]
+			*/
+			currBattleMusic = battle[global.levelProgress]
 			show_debug_message("playing zombie sound")
 			audio_sound_gain(currBattleMusic,1,0)
 			audio_play_sound(currBattleMusic,1,true)

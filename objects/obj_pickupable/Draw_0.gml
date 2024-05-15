@@ -1,13 +1,15 @@
 
 //draw_self()
-if (kindofpickup == obj_Controller.weaponstats){
-	draw_sprite(spr_shadowPlant,0,x,y+6)
-}else if type.wepname == "cherrybomb" || type.wepname == "iceberglettuce"{
-	draw_sprite(spr_shadowPlant,0,x,y+2)
-}else if type.wepname == "cocoabean"{
-	draw_sprite(spr_shadowPlant,0,x+2,y+4)
-}else if type.wepname == "torchwood"{
-	draw_sprite(spr_shadowPlant,0,x,y+4)
+if instance_exists(obj_Controller){
+	if (kindofpickup == obj_Controller.weaponstats){
+		draw_sprite(spr_shadowPlant,0,x,y+6)
+	}else if type.wepname == "cherrybomb" || type.wepname == "iceberglettuce"{
+		draw_sprite(spr_shadowPlant,0,x,y+2)
+	}else if type.wepname == "cocoabean"{
+		draw_sprite(spr_shadowPlant,0,x+2,y+4)
+	}else if type.wepname == "torchwood"{
+		draw_sprite(spr_shadowPlant,0,x,y+4)
+	}
 }
 if overlap == spr_potatomineIdle{
 	draw_sprite(overlap,image_index,x,y+4)

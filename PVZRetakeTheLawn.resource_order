@@ -1,8 +1,14 @@
 {
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
+    {"name":"spr_taco","order":1,"path":"sprites/spr_taco/spr_taco.yy",},
+    {"name":"spr_busD","order":2,"path":"sprites/spr_busD/spr_busD.yy",},
     {"name":"spr_treeB","order":1,"path":"sprites/spr_treeB/spr_treeB.yy",},
+    {"name":"obj_taco","order":1,"path":"objects/obj_taco/obj_taco.yy",},
+    {"name":"spr_flowerpot","order":3,"path":"sprites/spr_flowerpot/spr_flowerpot.yy",},
     {"name":"spr_shadowProp","order":1,"path":"sprites/spr_shadowProp/spr_shadowProp.yy",},
+    {"name":"obj_flowerpot","order":1,"path":"objects/obj_flowerpot/obj_flowerpot.yy",},
     {"name":"spr_shadowPlant","order":2,"path":"sprites/spr_shadowPlant/spr_shadowPlant.yy",},
+    {"name":"snd_graveRise","order":1,"path":"sounds/snd_graveRise/snd_graveRise.yy",},
   ],
 }

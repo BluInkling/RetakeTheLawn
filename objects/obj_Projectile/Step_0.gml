@@ -28,7 +28,7 @@ if place_meeting(x,y,obj_zombieHitbox){
 		if type == obj_Controller.projstats.cabbage && array_length(piercingList) > 1 && damage/2 >= enemy.hp+enemy.armor{
 			audio_play_sound(snd_killDing,4,0,0.25)
 		}
-		if type == obj_Controller.projstats.butter{
+		if type.mainsprite == spr_butter{
 			type = obj_Controller.projstats.kernel
 			sprite_index = type.mainsprite //sets sprite to mainweapons normal proj sprite
 			splat = type.splatsprite
@@ -48,7 +48,7 @@ if place_meeting(x,y,obj_zombieHitbox){
 //lil fun easter egg
 if place_meeting(x,y,obj_pickupable){
 	var col = instance_nearest(x,y,obj_pickupable)
-	if col.type == obj_Controller.subweaponstats.torchwood && !flaming{
+	if col.type.wepname =="torchwood" && !flaming{
 		flaming = true
 		image_blend = c_orange
 		damage += 2

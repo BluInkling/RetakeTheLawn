@@ -13,6 +13,7 @@ function Break(){
 		global.grabthis = enemytype
 		var zombie = instance_create_layer(x,y,"Player",obj_Enemy)
 		zombie.image_index = zombie.image_number-2
+		zombie.fromVase = true
 	}else{
 		instance_create_layer(x,y-6,"Player",chosen)
 	}

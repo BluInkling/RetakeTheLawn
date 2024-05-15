@@ -29,7 +29,7 @@ if paused == true{
 		draw_set_color(c_white)
 		draw_text(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 4, "PAUSED")
 		draw_text(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0])*6 / 8, "Press ESC to continue")
-		draw_text(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0])*7 / 8, "Press SPACE to return to start")
+		draw_text(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0])*7 / 8, "Press SPACE to return to the menu")
 		draw_set_color(c_yellow)
 		draw_text(camera_get_view_width(view_camera[0]) / 2, (camera_get_view_height(view_camera[0])*7 / 8)+12, "(This will reset current level progress)")
 	    draw_set_halign(fa_left);

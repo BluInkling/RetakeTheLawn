@@ -25,7 +25,11 @@ if paused == true{
 	    draw_set_alpha(1);
 	    draw_set_halign(fa_center);
 	    draw_text_color(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0]) / 4, "Zombies ate your brains!", c_white, c_white, c_white, c_white, 1);
-	    draw_set_halign(fa_left);
+		draw_set_color(c_white)
+		draw_set_font(global.fnt_textSmall)
+		draw_text(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0])*6 / 8, "Press SPACE to restart current level")
+		draw_text(camera_get_view_width(view_camera[0]) / 2, camera_get_view_height(view_camera[0])*7 / 8, "Press ESC to return to the menu")
+		draw_set_halign(fa_left);
     }
 }
 

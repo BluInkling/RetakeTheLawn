@@ -71,7 +71,7 @@ function ChangeMenu(_state){
 	}
 	
 }
-if !global.hasDoneTutorial && global.levelProgress == 0{
+if global.levelProgress == 0{
 	ChangeMenu("new")
 }else{
 	ChangeMenu("continue")

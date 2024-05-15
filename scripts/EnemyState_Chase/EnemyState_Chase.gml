@@ -21,6 +21,9 @@ function EnemyState_Chase(){
 	if(collision_circle(x,y,attackradius,obj_player,false,false)){
 		state = ENEMYSTATE.ATTACK;
 		attackDir = point_direction(x,y,obj_player.x,obj_player.y)
+		if enemyType == obj_Controller.enemystats.imp{
+			audio_play_sound(choose(imp1,imp2),1,false,0.5,0,random_range(0.90,1.20))
+		}
 	}
 	
 	if hasHand{

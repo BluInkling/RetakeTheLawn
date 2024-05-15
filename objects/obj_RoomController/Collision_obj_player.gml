@@ -6,7 +6,8 @@ if(triggered == false){
 	with(obj_Door) closed = true;
 	with(obj_graveDoor){
 		inactive = false
-		spawning = true
+		spawning = 
+		audio_play_sound(snd_graveRise,10,0,0.15,0,random_range(0.75,1.1))
 		image_index = 0
 	}
 	with(obj_Music) switchMusic = true;

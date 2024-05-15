@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bushC",
-    "path": "sprites/spr_bushC/spr_bushC.yy",
+    "name": "spr_busD",
+    "path": "sprites/spr_busD/spr_busD.yy",
   },
   "spriteMaskId": null,
   "visible": true,

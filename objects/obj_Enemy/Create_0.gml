@@ -79,6 +79,8 @@ hasHit = false
 alreadyBuffed = false//NEVERMINDDD --> [] //when buffed by a flag, add its id to a list. it checks if the id that buffed this zombie is NOT the array to buff this. after the buff field is done, it romoves the id fro the array
 	
 frozen = false
+
+fromVase = false
 	
 	
 if hat == "cone"{
@@ -127,7 +129,9 @@ function Hit(damage,type,dir,flaming){
 		}
 	}
 	flashAlpha = 1;
-	if type == obj_Controller.projstats.butter{ //BUTTER STUN
+	//show_debug_message("BUTTER")
+	if type.mainsprite == spr_butter{ //BUTTER STUN
+		show_debug_message("BUTTER")
 		spd = 0;
 		hasButter = true;
 		alarm_set(0,stunLength)
@@ -188,6 +192,7 @@ function Destroy(){
 function Buff(){
 	spd += 0.25;
 	hp += 2;
+	hp = clamp(hp,0,enemyType.hp)
 	alarm_set(2,240)
 }
 
@@ -223,3 +228,6 @@ function PlaySoundHit(){
 
 groansounds = [Groan,Groan2,Groan3,Groan4,Groan5,Groan6,Groan7,Groan8]
 fallsound = choose(zombie_falling_1,zombie_falling_2,bodyfall,bodyfall2)
+if enemyType == obj_Controller.enemystats.imp{
+	audio_play_sound(choose(imp1,imp2),1,false,0.5,0,random_range(0.90,1.20))
+}

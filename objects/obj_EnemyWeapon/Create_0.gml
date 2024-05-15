@@ -35,4 +35,5 @@ function Shoot(){
 	shooting = true
 	sprite_index = spr_zombieGunShoot
 	image_index = 0
+	audio_play_sound(snd_back2,4,0,1.5,0,random_range(0.75,1.1))
 }
