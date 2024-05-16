@@ -8,6 +8,7 @@ if chosen == obj_Enemy{
 hb = instance_create_layer(x,y,"Player",obj_vaseHB)
 breaking = false
 function Break(){
+	if !breaking{
 	instance_destroy(hb)
 	if chosen == obj_Enemy{
 		global.grabthis = enemytype
@@ -21,6 +22,7 @@ function Break(){
 	sprite_index = spr_vaseBreak
 	//instance_create_layer(x,y,"Player",obj_vaseBreak)
 	//instance_destroy()
+	}
 }
 
 

@@ -32,6 +32,9 @@ draw_self()
 
 event_inherited();
 
+if image_index > image_number-1{
+	image_index = 0
+}
 
 if hasHat{
 	hatFrame = armor <= enemyType.armor/2
