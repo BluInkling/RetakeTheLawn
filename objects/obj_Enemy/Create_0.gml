@@ -122,7 +122,7 @@ function Hit(damage,type,dir,flaming){
 	}
 
 	if hasHand && hp <= enemyType.hp/2{
-		if enemyType != obj_Controller.enemystats.imp{
+		if enemyType != obj_Controller.enemystats.imp && enemyType != obj_Controller.enemystats.tacoimp{
 			audio_play_sound(snd_gibPop,1,false,0.9,0,random_range(0.8,1.2))
 			hasHand = false
 			instance_create_layer(x-2*image_xscale,y-8,"Bullets",obj_zombieGib)
@@ -172,7 +172,7 @@ function SpawnHat(){
 }
 
 function SpawnHead(spr){
-	if enemyType != obj_Controller.enemystats.imp{
+	if enemyType != obj_Controller.enemystats.imp && enemyType != obj_Controller.enemystats.tacoimp{
 		var head = instance_create_layer(x+4*image_xscale,y-16,"Bullets",obj_zombieGib)
 	}else{
 		var head = instance_create_layer(x+4*image_xscale,y-8,"Bullets",obj_zombieGib)

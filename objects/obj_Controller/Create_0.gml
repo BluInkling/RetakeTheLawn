@@ -526,7 +526,7 @@ zombieHeadAnims = { //Storing it here for now
 }
 
 //Spawn Managers
-instance_create_depth(0,0,0,obj_devManager)
+//instance_create_depth(0,0,0,obj_devManager)
 instance_create_depth(0,0,0,obj_endController)
 instance_create_depth(0,0,0,obj_pauseController)
 instance_create_depth(0,0,0,obj_camera)

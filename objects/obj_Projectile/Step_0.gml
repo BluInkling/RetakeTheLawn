@@ -24,7 +24,7 @@ if place_meeting(x,y,obj_zombieHitbox){
 			enemy.Hit(damage,type,moveDir,flaming)
 			array_push(piercingList,enemy)
 		}
-		show_debug_message(string(enemy.hp+enemy.armor)+" = "+string(damage))
+		//show_debug_message(string(enemy.hp+enemy.armor)+" = "+string(damage))
 		if type == obj_Controller.projstats.cabbage && array_length(piercingList) > 1 && damage/2 >= enemy.hp+enemy.armor{
 			audio_play_sound(snd_killDing,4,0,0.25)
 		}
@@ -48,11 +48,13 @@ if place_meeting(x,y,obj_zombieHitbox){
 //lil fun easter egg
 if place_meeting(x,y,obj_pickupable){
 	var col = instance_nearest(x,y,obj_pickupable)
-	if col.type.wepname =="torchwood" && !flaming{
-		flaming = true
-		image_blend = c_orange
-		damage += 2
-		flamePS = part_system_create(ps_fire)
+	if !is_undefined(col.type){
+		if col.type.wepname =="torchwood" && !flaming{
+			flaming = true
+			image_blend = c_orange
+			damage += 2
+			flamePS = part_system_create(ps_fire)
+		}
 	}
 }
 
