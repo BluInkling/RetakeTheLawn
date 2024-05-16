@@ -2,12 +2,24 @@
 
 if type == "sunflower" {
 	if (round(image_index) == 13 && !hasSunned){//collision_circle(x,y,64,obj_player,false,false) &&  && !instance_exists(obj_collectable)){
-		alarm[0] = 1
+		GiveSun(false)
 		hasSunned = true
 		//show_debug_message("Sunned")
 	}
-}
-if(collision_circle(x,y,16,obj_player,false,false)){
+}else if type == "sunshroom" {
+	if (round(image_index) == 19 && !hasSunned){//collision_circle(x,y,64,obj_player,false,false) &&  && !instance_exists(obj_collectable)){
+		GiveSun(true)
+		hasSunned = true
+		//show_debug_message("Sunned")
+	}
+}else if type == "sunshroomL" {
+	if (round(image_index) == 14 && !hasSunned){//collision_circle(x,y,64,obj_player,false,false) &&  && !instance_exists(obj_collectable)){
+		GiveSun(true)
+		GiveSun(true)
+		hasSunned = true
+		//show_debug_message("Sunned")
+	}
+}else if(collision_circle(x,y,16,obj_player,false,false)){
 	draw = true
 	if(keyboard_check_pressed(vk_space)){
 		if type == "wallnut"{

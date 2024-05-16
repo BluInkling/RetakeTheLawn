@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if type == "sun"{
+if type == "sun" || type == "sunS"{
 	
 	if moving == true{
 		yVel+=grav
@@ -34,14 +34,26 @@ if type == "sun"{
 	
 	
 	if(moving == false && place_meeting(x,y,obj_player)){
-		with(obj_player){
-			hp += 3;
-			audio_play_sound(choose(snd_sun,snd_sun2,snd_sun3,snd_sun4),1,false)
-		}
-		var damagepopoff = instance_create_layer(x,y,"Bullets",obj_damagePopOff)
-		with (damagepopoff){ 
-			num = 3
-			color = c_lime
+		if type =="sun"{ 
+			with(obj_player){
+				hp += 3;
+				audio_play_sound(choose(snd_sun,snd_sun2,snd_sun3,snd_sun4),1,false)
+			}
+			var damagepopoff = instance_create_layer(x,y,"Bullets",obj_damagePopOff)
+			with (damagepopoff){ 
+				num = 3
+				color = c_lime
+			}
+		}else{
+			with(obj_player){
+				hp += 2;
+				audio_play_sound(choose(snd_sun,snd_sun2,snd_sun3,snd_sun4),1,false)
+			}
+			var damagepopoff = instance_create_layer(x,y,"Bullets",obj_damagePopOff)
+			with (damagepopoff){ 
+				num = 2
+				color = c_lime
+			}
 		}
 		instance_create_layer(x-8,y,"Gun",obj_uiSun)
 		if !global.hasCollected{

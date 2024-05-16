@@ -8,6 +8,7 @@
     {"name":"obj_taco","order":1,"path":"objects/obj_taco/obj_taco.yy",},
     {"name":"spr_tacoImpRunMirror","order":2,"path":"sprites/spr_tacoImpRunMirror/spr_tacoImpRunMirror.yy",},
     {"name":"spr_flowerpot","order":3,"path":"sprites/spr_flowerpot/spr_flowerpot.yy",},
+    {"name":"spr_sunS","order":3,"path":"sprites/spr_sunS/spr_sunS.yy",},
     {"name":"rm_endCutscene","order":1,"path":"rooms/rm_endCutscene/rm_endCutscene.yy",},
     {"name":"spr_daveWin","order":1,"path":"sprites/spr_daveWin/spr_daveWin.yy",},
     {"name":"spr_shadowProp","order":1,"path":"sprites/spr_shadowProp/spr_shadowProp.yy",},

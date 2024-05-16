@@ -201,6 +201,7 @@
     {"id":{"name":"Fume","path":"sounds/Fume/Fume.yy",},},
     {"id":{"name":"spr_tacoImpRun","path":"sprites/spr_tacoImpRun/spr_tacoImpRun.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
+    {"id":{"name":"spr_sunS","path":"sprites/spr_sunS/spr_sunS.yy",},},
     {"id":{"name":"spr_cabbagePultRecover","path":"sprites/spr_cabbagePultRecover/spr_cabbagePultRecover.yy",},},
     {"id":{"name":"spr_pumpkinArmor","path":"sprites/spr_pumpkinArmor/spr_pumpkinArmor.yy",},},
     {"id":{"name":"Turret_PeaShooter_VO_Spawn_0_5_0","path":"sounds/Turret_PeaShooter_VO_Spawn_0_5_0/Turret_PeaShooter_VO_Spawn_0_5_0.yy",},},
