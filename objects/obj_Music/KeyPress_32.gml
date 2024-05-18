@@ -4,9 +4,9 @@
 
 
 
-show_debug_message(audio_is_playing(currNormalMusic))
+//show_debug_message(audio_is_playing(currNormalMusic))
 
-show_debug_message(audio_is_playing(currBattleMusic))
+//show_debug_message(audio_is_playing(currBattleMusic))
 
 
 

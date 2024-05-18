@@ -1,7 +1,7 @@
 
 //draw_self()
 if instance_exists(obj_Controller){
-	if (kindofpickup == obj_Controller.weaponstats){
+	if (kindofpickup == obj_Controller.weaponstats || kindofpickup == "sun"){
 		draw_sprite(spr_shadowPlant,0,x,y+6)
 	}else if type.wepname == "cherrybomb" || type.wepname == "iceberglettuce"{
 		draw_sprite(spr_shadowPlant,0,x,y+2)

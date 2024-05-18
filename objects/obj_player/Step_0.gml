@@ -89,7 +89,7 @@ if hp < 1 && !dead{
 if !dead{
 	global.playtime += 1000/60
 }
-
+show_debug_message(Timer(global.playtime))
 if itime > 0{
 	itime -= 1
 	flashAlpha = 0.25

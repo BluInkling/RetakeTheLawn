@@ -6,9 +6,9 @@ function Timer(_time){
 	var milliseconds = _time;
 
 	var ms = ((milliseconds % 1000) / 100),
-	    seconds = round(((milliseconds / 1000) % 60)),
-	    minutes = round(((milliseconds / (1000 * 60)) % 60)),
-	    hours = round(((milliseconds / (1000 * 60 * 60)) % 24));
+	    seconds = floor(((milliseconds / 1000) % 60)),
+	    minutes = floor(((milliseconds / (1000 * 60)) % 60)),
+	    hours = floor(((milliseconds / (1000 * 60 * 60)) % 24));
 	if(hours<10) hours="0"+string(hours);
 	if(minutes<10) minutes="0"+string(minutes);
 	if(seconds<10) seconds="0"+string(seconds);

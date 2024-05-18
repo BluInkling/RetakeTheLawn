@@ -13,6 +13,7 @@
     {"name":"spr_daveWin","order":1,"path":"sprites/spr_daveWin/spr_daveWin.yy",},
     {"name":"spr_shadowProp","order":1,"path":"sprites/spr_shadowProp/spr_shadowProp.yy",},
     {"name":"spr_tacoImpAttack","order":3,"path":"sprites/spr_tacoImpAttack/spr_tacoImpAttack.yy",},
+    {"name":"WritePlaytime","order":1,"path":"scripts/WritePlaytime/WritePlaytime.yy",},
     {"name":"obj_flowerpot","order":1,"path":"objects/obj_flowerpot/obj_flowerpot.yy",},
     {"name":"spr_shadowPlant","order":2,"path":"sprites/spr_shadowPlant/spr_shadowPlant.yy",},
     {"name":"snd_graveRise","order":1,"path":"sounds/snd_graveRise/snd_graveRise.yy",},

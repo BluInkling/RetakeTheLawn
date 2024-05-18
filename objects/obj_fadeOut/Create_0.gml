@@ -13,6 +13,3 @@ with(obj_Music) fadeOut = true
 
 
 
-
-
-

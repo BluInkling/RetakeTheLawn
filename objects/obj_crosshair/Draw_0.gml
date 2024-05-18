@@ -19,7 +19,9 @@ if instance_exists(obj_player){
 }else{
 	depth = -1000
 }
-draw_self()
+if room != rm_cutscene{
+	draw_self()
+}
 
 
 

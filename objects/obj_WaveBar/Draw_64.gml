@@ -12,7 +12,7 @@ if created != noone && !done{
 if done && instance_exists(created){
 	//minispacing = spacing/waveNums[created.current_wave] waveNums[created.current_wave] + 
 	progress = spacing * created.current_wave + lerp(spacing,0,created.remaining[created.current_wave]/waveNums[created.current_wave])
-	show_debug_message(spacing)
+	//show_debug_message(spacing)
 }
 if !fading{
 

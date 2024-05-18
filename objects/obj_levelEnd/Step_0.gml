@@ -11,7 +11,7 @@ if place_meeting(x,y,obj_player) && !instance_exists(obj_fadeOut) && !touched{
 	obj_inventoryTracker.ammo = obj_Controller.ammoPrimary
 	obj_inventoryTracker.secondaryInv = obj_Controller.inventorySecondary
 	obj_inventoryTracker.cool = obj_Controller.cooldownSecondary
-	show_debug_message(obj_inventoryTracker.primaryInv)
+	//show_debug_message(obj_inventoryTracker.primaryInv)
 	*/
 	//global.test = obj_Controller.testA
 	global.primaryInventory = obj_Controller.inventoryPrimary

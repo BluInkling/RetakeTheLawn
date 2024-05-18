@@ -16,6 +16,7 @@ if place_meeting(x,y,obj_crosshair){
 				global.secondaryInventory = []
 				global.cooldownSecondary = []
 				global.primary = 0
+				global.playtime = 0
 				global.secondary = 0
 				global.hasDoneTutorial = false
 				global.hasNewMain = false

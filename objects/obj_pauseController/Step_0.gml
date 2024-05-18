@@ -25,6 +25,7 @@ if keyboard_check_pressed(vk_space) && paused{
 	with obj_pickupable{
 		part_system_destroy(part)
 	}
+	WritePlaytime()
 	with (obj_Music) pausemenu = false
 	room_goto(rm_title)
 	

@@ -24,9 +24,9 @@ if(collision_circle(x,y,8,obj_player,false,false)){
 				//obj_Controller.tempPrim = obj_Controller.inventoryPrimary
 				//obj_Controller.tempAmmo = obj_Controller.ammoPrimary
 				/*
-				show_debug_message(obj_Controller.tempPrim)
-				show_debug_message(global.primaryInventory)
-				show_debug_message("")
+				//show_debug_message(obj_Controller.tempPrim)
+				//ug_message(global.primaryInventory)
+				//show_debug_message("")
 				*/
 				audio_play_sound(choose(snd_plantplant,snd_plantplant2),1,false,1,0,random_range(0.9,1.2))
 				obj_MainWeapon.GotoPrimary(array_length(obj_Controller.inventoryPrimary)-1)

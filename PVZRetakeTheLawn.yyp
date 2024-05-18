@@ -520,6 +520,7 @@
     {"id":{"name":"obj_WaveBar","path":"objects/obj_WaveBar/obj_WaveBar.yy",},},
     {"id":{"name":"obj_endController","path":"objects/obj_endController/obj_endController.yy",},},
     {"id":{"name":"spr_repeaterReload","path":"sprites/spr_repeaterReload/spr_repeaterReload.yy",},},
+    {"id":{"name":"WritePlaytime","path":"scripts/WritePlaytime/WritePlaytime.yy",},},
     {"id":{"name":"spr_bubbleBigDisp","path":"sprites/spr_bubbleBigDisp/spr_bubbleBigDisp.yy",},},
     {"id":{"name":"crazydavelong2","path":"sounds/crazydavelong2/crazydavelong2.yy",},},
     {"id":{"name":"sTest","path":"sprites/sTest/sTest.yy",},},

@@ -131,7 +131,7 @@ function Hit(damage,type,dir,flaming){
 	flashAlpha = 1;
 	//show_debug_message("BUTTER")
 	if type.mainsprite == spr_butter{ //BUTTER STUN
-		show_debug_message("BUTTER")
+		//show_debug_message("BUTTER")
 		spd = 0;
 		hasButter = true;
 		alarm_set(0,stunLength)

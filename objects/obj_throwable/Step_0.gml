@@ -50,7 +50,7 @@ switch(sub.wepname){
 			case "waiting":
 				//show_debug_message("waiting")
 				sprite_index = spr_potatomineIdle
-				if(collision_circle(x,y-10,4,obj_zombieHitbox,false,false)){
+				if(collision_circle(x,y-10,4,obj_zombieHitbox,false,false)) || place_meeting(x,y,obj_wallPool){
 					state = "explode"
 					audio_play_sound(potato_mine,1,false)
 					image_index = 0
