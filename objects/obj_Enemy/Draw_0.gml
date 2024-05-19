@@ -79,6 +79,34 @@ if hasButter{
 	
 }
 
+if obj_player.mustache || obj_player.future || obj_player.flower{
+	if sprite_index == spr_zombieIdle || sprite_index == spr_zombieNoHandIdle || sprite_index == spr_zombieFlagIdle || sprite_index == spr_zombieIdleNoArms || sprite_index == spr_zombieNoHandFlagRun{
+		eggX = obj_Controller.zombieHeadAnims.idle.x[image_index]//*image_xscale
+		eggY = obj_Controller.zombieHeadAnims.idle.y[image_index]
+	}else if sprite_index == spr_zombieAttack || sprite_index == spr_zombieNoHandAttack || sprite_index == spr_zombieFlagWave || sprite_index == spr_zombieNoHandFlagWave{
+		eggX = obj_Controller.zombieHeadAnims.attack.x[image_index]//*image_xscale
+		eggY = obj_Controller.zombieHeadAnims.attack.y[image_index]
+	}else if sprite_index == spr_zombieRun || sprite_index == spr_zombieNoHandRun || sprite_index == spr_zombieRunNoArms || sprite_index == spr_zombieFlagRun || sprite_index == spr_zombieNoHandFlagIdle{
+		eggX = obj_Controller.zombieHeadAnims.run.x[image_index]//*image_xscale
+		eggY = obj_Controller.zombieHeadAnims.run.y[image_index]
+	} else if sprite_index == spr_zombieSpawn{
+		eggX = obj_Controller.zombieHeadAnims.spawn.x[image_index]//*image_xscale
+		eggY = obj_Controller.zombieHeadAnims.spawn.y[image_index]
+	}
+	if eggY < 0{
+		if obj_player.mustache{
+			draw_sprite_ext(spr_easterEggs,1,x+eggX*image_xscale,y+eggY+5,image_xscale,1,0,c_white,1)
+		}
+		if obj_player.future{
+			draw_sprite_ext(spr_easterEggs,2,x+eggX*image_xscale,y+eggY+5,image_xscale,1,0,c_white,1)
+		}
+		if obj_player.flower{
+			draw_sprite_ext(spr_easterEggs,0,x+eggX*image_xscale,y+eggY+5,image_xscale,1,0,c_white,1)
+		}
+		//show_debug_message(eggY)
+	}
+}
+
 if buffField{
 	draw_sprite(spr_flagBuff,0,x,y)
 }

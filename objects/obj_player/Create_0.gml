@@ -44,6 +44,10 @@ invulnerable = false
 iframes = 60
 itime = 0
 
+mustache = false
+flower = false
+future = false
+
 instance_create_layer(0,0,"Player",obj_Controller)
 instance_create_layer(1,0,"Player",obj_Music)
 instance_create_layer(0,0,"Gun",obj_MainWeapon)

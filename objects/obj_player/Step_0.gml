@@ -35,11 +35,13 @@ if !place_meeting(x+xVel,y,obj_wall) && !place_meeting(x+xVel,y,obj_wallPool){
 		if _other.object_index == obj_Enemy{
 			if !_other.dying{
 				_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+				x+=xVel*.75
 			}else{
 				x+=xVel
 			}
 		}else{
 			_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+			//x+=xVel
 		}
 	}
 	
@@ -58,11 +60,13 @@ if !place_meeting(x,y+yVel,obj_wall) && !place_meeting(x,y+yVel,obj_wallPool){
 		if _other.object_index == obj_Enemy{
 			if !_other.dying{
 				_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+				y+=yVel*.75
 			}else{
 				y+=yVel
 			}
 		}else{
 			_other.Force(moveSpd,point_direction(0,0,xVel,yVel))
+			//y+=yVel
 		}
 		//y+=yVel
 	}
@@ -89,7 +93,7 @@ if hp < 1 && !dead{
 if !dead{
 	global.playtime += 1000/60
 }
-show_debug_message(Timer(global.playtime))
+//show_debug_message(Timer(global.playtime))
 if itime > 0{
 	itime -= 1
 	flashAlpha = 0.25
@@ -102,3 +106,18 @@ if itime > 0{
 		invulnerable = false
 	}
 }
+
+var test = string_copy(keyboard_string,string_length(keyboard_string)-15,15)
+if string_count("mustache",test) > 0{
+	mustache = true
+}
+if string_count("flower",test) > 0{
+	flower = true
+}
+if string_count("future",test) > 0{
+	future = true
+}
+if string_count("heal",test) > 0{
+	hp = maxhp
+}
+//show_debug_message(test)

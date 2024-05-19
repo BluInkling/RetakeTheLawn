@@ -66,6 +66,9 @@ hatFrame = 0
 hatX = 0
 hatY = 0
 
+eggX = 0
+eggY = 0
+
 dying = false
 isDead = false
 

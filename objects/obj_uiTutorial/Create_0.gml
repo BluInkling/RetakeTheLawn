@@ -39,13 +39,13 @@ function NextProgress(){
 
 function NewMain(){
 	active = true
-	text = "Use Q or SCROLL to switch primary plants " 
+	text = "Use E or SCROLL to switch primary plants " 
 	width = string_width(text)/2.5//*3
 }
 
 function NewSub(){
 	active = true
-	text = "Use E or SHIFT to switch secondary plants " 
+	text = "Use Q or SHIFT to switch secondary plants " 
 	width = string_width(text)/2.5//*3
 }
 

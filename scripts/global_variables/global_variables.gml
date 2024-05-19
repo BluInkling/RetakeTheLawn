@@ -32,4 +32,3 @@ global.hasDoneTutorial = false
 global.hasNewMain = false
 global.hasNewSub = false
 global.hasCollected = false
-

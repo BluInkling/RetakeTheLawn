@@ -94,12 +94,11 @@ if shooting{
 		testFrame = floor(image_index)
 	}
 	if array_contains(main.shootFrames,testFrame){
+		ammo --;
 		if main.wepname == "fumeshroom"{
 			bubblesShot = 0
-			ammo --;
 			alarm_set(3,1)
 		}else{
-			ammo --;
 			if main.wepname == "puffshroom"{
 				if testFrame == main.shootFrames[0]{
 					main.projOffsetX = 1
@@ -133,7 +132,7 @@ if reloading{
 	}
 }
 
-if keyboard_check_pressed(ord("Q")) || mouse_wheel_up() || mouse_wheel_down(){
+if keyboard_check_pressed(ord("E")) || mouse_wheel_up() || mouse_wheel_down(){
 	if !global.hasNewMain && array_length(obj_Controller.inventoryPrimary)>1{
 		global.hasNewMain = true
 		obj_uiTutorial.active = false

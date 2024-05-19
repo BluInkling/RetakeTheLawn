@@ -85,7 +85,7 @@ if ((mouse_check_button(mb_right)) or keyboard_check(ord("B")))  && subavailable
 }
 //show_debug_message(obj_Controller.cooldownSecondary[obj_Controller.secondary])
 
-if keyboard_check_pressed(ord("E")) || keyboard_check_pressed(vk_shift){
+if keyboard_check_pressed(ord("Q")) || keyboard_check_pressed(vk_shift){
 	if !global.hasNewSub && array_length(obj_Controller.inventorySecondary)>1{
 		global.hasNewSub = true
 		obj_uiTutorial.active = false

@@ -214,7 +214,7 @@ weaponstats = {
 		mainshootsprite : spr_fumeshroomShoot,
 		projtype : projstats.bigbubble,
 		accuracy : 15,
-		clip : 3,
+		clip : 6,
 		shootFrames : [5,7,9],
 		projOffsetX : 2,
 		projOffsetY : -2,

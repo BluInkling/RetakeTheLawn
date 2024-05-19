@@ -165,6 +165,7 @@
     {"id":{"name":"snd_eat3","path":"sounds/snd_eat3/snd_eat3.yy",},},
     {"id":{"name":"Turret_DoomShroom_VO_Spawn_1_3_0","path":"sounds/Turret_DoomShroom_VO_Spawn_1_3_0/Turret_DoomShroom_VO_Spawn_1_3_0.yy",},},
     {"id":{"name":"spr_titleLogo","path":"sprites/spr_titleLogo/spr_titleLogo.yy",},},
+    {"id":{"name":"spr_easterEggs","path":"sprites/spr_easterEggs/spr_easterEggs.yy",},},
     {"id":{"name":"spr_daveIdle","path":"sprites/spr_daveIdle/spr_daveIdle.yy",},},
     {"id":{"name":"spr_snowDisp","path":"sprites/spr_snowDisp/spr_snowDisp.yy",},},
     {"id":{"name":"obj_fadable","path":"objects/obj_fadable/obj_fadable.yy",},},

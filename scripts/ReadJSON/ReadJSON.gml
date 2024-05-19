@@ -13,6 +13,9 @@ global.emptyData = {
 	secondary : 0
 }
 function ReadJSON(){
+	if !file_exists("saveData.json"){
+		WriteJSON()
+	}
 	var _file = file_text_open_read("saveData.json")
 	var _fileStr = ""
 

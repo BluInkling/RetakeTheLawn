@@ -6,7 +6,9 @@ if type == "sun" || type == "sunS"{
 	
 	if moving == true{
 		yVel+=grav
-		x+=xVel
+		if !place_meeting(x+xVel,y,obj_wall) && !place_meeting(x+xVel,y,obj_wallPool) && !place_meeting(x+xVel,y,obj_wallPart){
+			x+=xVel
+		}
 		if y < height{
 			y+=yVel
 		}else{

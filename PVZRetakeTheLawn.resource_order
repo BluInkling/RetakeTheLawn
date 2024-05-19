@@ -5,6 +5,7 @@
     {"name":"spr_busD","order":2,"path":"sprites/spr_busD/spr_busD.yy",},
     {"name":"spr_tacoImpIdleMirror","order":1,"path":"sprites/spr_tacoImpIdleMirror/spr_tacoImpIdleMirror.yy",},
     {"name":"spr_treeB","order":1,"path":"sprites/spr_treeB/spr_treeB.yy",},
+    {"name":"spr_easterEggs","order":1,"path":"sprites/spr_easterEggs/spr_easterEggs.yy",},
     {"name":"obj_taco","order":1,"path":"objects/obj_taco/obj_taco.yy",},
     {"name":"spr_tacoImpRunMirror","order":2,"path":"sprites/spr_tacoImpRunMirror/spr_tacoImpRunMirror.yy",},
     {"name":"spr_flowerpot","order":3,"path":"sprites/spr_flowerpot/spr_flowerpot.yy",},
